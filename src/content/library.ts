@@ -12,6 +12,7 @@ import { gayatriAvahanam } from "./gayatri-avahanam";
 import { gayatriMantra } from "./gayatri-mantra";
 import { gayatriUdvasanam } from "./gayatri-udvasanam";
 import { guruNamaskara } from "./guru-namaskara";
+import { isvararpanam } from "./isvararpanam";
 import { karanyasa } from "./karanyasa";
 import { marjana } from "./marjana";
 import { mitraSukta } from "./mitra-sukta";
@@ -71,6 +72,7 @@ export const books: Book[] = [
       bhagavanNamaskara,
       bhumyAkasaAbhivandanam,
       comingSoon("abhivada", "अभिवादः", "abhivādaḥ", "Abhivāda"),
+      isvararpanam,
     ],
   },
 ];

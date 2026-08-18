@@ -149,4 +149,4 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 27 | 95–98 | भगवन्नमस्कारः | ready (`bhagavan-namaskara`) |
 | 28 | 99–104 | भूम्याकाशाभिवन्दनम् | ready (`bhumy-akasa-abhivandanam`) |
 | 29 | 105–108 | अभिवादः | skipped (coming soon on the site; personal name / pravara) |
-| 30 | 109–113 | ईश्वरार्पणम् | upcoming |
+| 30 | 109–113 | ईश्वरार्पणम् | ready (`isvararpanam`) |
