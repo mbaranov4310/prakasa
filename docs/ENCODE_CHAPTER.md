@@ -124,9 +124,9 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 3 | 9–11 | भूतोच्छाटनम् | ready (`bhutocchatanam`) |
 | 4 | 12–15 | प्राणायामः | ready (`pranayama`) |
 | 5 | 16–22 | संकल्पः | next (contains personal name / gotra) |
-| 6 | 23–25 | मार्जनः | upcoming |
-| 7 | 26–28 | प्रातः काल मन्त्राचमनः | upcoming |
-| 8 | 29–31 | द्वितीय मार्जनः | upcoming |
+| 6 | 23–25 | मार्जनः | ready (`marjana`) |
+| 7 | 26–28 | प्रातः काल मन्त्राचमनः | ready (`pratah-mantracamana`) |
+| 8 | 29–31 | द्वितीय मार्जनः | ready (`dvitiya-marjana`) |
 | 9 | 32–34 | पुनः मार्जनः | upcoming |
 | 10 | 35–37 | अघमर्षण मन्त्रः | upcoming |
 | 11 | 38–41 | पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम् | upcoming (repeat prāṇāyāma: reuse Ch 4) |
