@@ -15,7 +15,7 @@ const tatha: [string, string][] = [
 ];
 
 export const mudraPradarsanam: Chapter = {
-  id: "mudra-pradarshanam",
+  id: "mudra-pradarsanam",
   titleDev: "मुद्रा प्रदर्शनम्",
   titleIast: "mudrā pradarśanam",
   titleEn: "Mudrā pradarśana",

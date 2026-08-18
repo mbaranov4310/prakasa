@@ -136,9 +136,9 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 14 | 49–53 | गायत्री-आवाहन-न्यासः | ready (`gayatri-avahana-nyasa`) |
 | 15 | 54 | आचमनम् | skip (repeat of Ch 2; no extra card) |
 | 16 | 55–57 | गायत्री जप संकल्पः | skipped (saṅkalpa; coming soon) |
-| 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | upcoming |
-| 18 | 63–64 | ध्यानम् | upcoming |
-| 19 | 65–67 | मुद्रा प्रदर्शनम् | upcoming |
+| 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | ready (`karanyasa`) |
+| 18 | 63–64 | ध्यानम् | ready (`dhyanam`) |
+| 19 | 65–67 | मुद्रा प्रदर्शनम् | ready (`mudra-pradarsanam`) |
 | 20 | 68–70 | गायत्री मन्त्रः | upcoming |
 | 21 | 71–73 | अष्ट-मुद्रा प्रदर्शनम् | upcoming |
 | 22 | 74–78 | प्रातः काल सूर्योपस्थानम् | upcoming |
