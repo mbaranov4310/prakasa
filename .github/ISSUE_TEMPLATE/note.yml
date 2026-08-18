@@ -1,0 +1,32 @@
+name: Send a note
+description: A correction, question, or comment about a mantra
+title: "[note] "
+labels: ["note"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of note is this?
+      options:
+        - Correction to the Sanskrit
+        - This is actually two words (or should be one)
+        - Translation / meaning
+        - Glossary
+        - Display / website bug
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: Where?
+      description: Chapter and word or line, if you know it (for example शरीर-शुद्धिः, अपवित्रः)
+    validations:
+      required: false
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: What should change, or what you noticed.
+    validations:
+      required: true
