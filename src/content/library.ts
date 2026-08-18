@@ -1,3 +1,4 @@
+import { acamana } from "./acamana";
 import { bhutocchatanam } from "./bhutocchatanam";
 import { guruNamaskara } from "./guru-namaskara";
 import { sariraSuddhi } from "./sarira-suddhi";
@@ -22,7 +23,7 @@ export const books: Book[] = [
     chapters: [
       guruNamaskara,
       sariraSuddhi,
-      comingSoon("acamana", "आचमनम्", "ācamanam", "Ācamana"),
+      acamana,
       bhutocchatanam,
       comingSoon("pranayama", "प्राणायामः", "prāṇāyāmaḥ", "Prāṇāyāma"),
       comingSoon("sankalpa", "संकल्पः", "saṅkalpaḥ", "Saṅkalpa"),
