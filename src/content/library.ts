@@ -1,6 +1,7 @@
 import { acamana } from "./acamana";
 import { bhutocchatanam } from "./bhutocchatanam";
 import { guruNamaskara } from "./guru-namaskara";
+import { pranayama } from "./pranayama";
 import { sariraSuddhi } from "./sarira-suddhi";
 import type { Book } from "../types";
 
@@ -25,7 +26,7 @@ export const books: Book[] = [
       sariraSuddhi,
       acamana,
       bhutocchatanam,
-      comingSoon("pranayama", "प्राणायामः", "prāṇāyāmaḥ", "Prāṇāyāma"),
+      pranayama,
       comingSoon("sankalpa", "संकल्पः", "saṅkalpaḥ", "Saṅkalpa"),
     ],
   },

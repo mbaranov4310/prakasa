@@ -122,8 +122,8 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 1b | 1–3 | शरीर-शुद्धिः | ready (`sarira-suddhi`) |
 | 2 | 4–8 | आचमनम् | ready (`acamana`) |
 | 3 | 9–11 | भूतोच्छाटनम् | ready (`bhutocchatanam`) |
-| 4 | 12–15 | प्राणायामः | next |
-| 5 | 16–22 | संकल्पः | upcoming (contains personal name / gotra) |
+| 4 | 12–15 | प्राणायामः | ready (`pranayama`) |
+| 5 | 16–22 | संकल्पः | next (contains personal name / gotra) |
 | 6 | 23–25 | मार्जनः | upcoming |
 | 7 | 26–28 | प्रातः काल मन्त्राचमनः | upcoming |
 | 8 | 29–31 | द्वितीय मार्जनः | upcoming |
