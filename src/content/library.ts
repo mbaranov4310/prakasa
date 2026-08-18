@@ -1,13 +1,16 @@
 import { acamana } from "./acamana";
 import { aghamarsana } from "./aghamarsana";
 import { astaMudra } from "./asta-mudra";
+import { bhagavanNamaskara } from "./bhagavan-namaskara";
 import { bhutocchatanam } from "./bhutocchatanam";
+import { bhumyAkasaAbhivandanam } from "./bhumy-akasa-abhivandanam";
 import { dhyanam } from "./dhyanam";
 import { digdevataNamaskara } from "./digdevata-namaskara";
 import { dvitiyaMarjana } from "./dvitiya-marjana";
 import { gayatriAvahanaNyasa } from "./gayatri-avahana-nyasa";
 import { gayatriAvahanam } from "./gayatri-avahanam";
 import { gayatriMantra } from "./gayatri-mantra";
+import { gayatriUdvasanam } from "./gayatri-udvasanam";
 import { guruNamaskara } from "./guru-namaskara";
 import { karanyasa } from "./karanyasa";
 import { marjana } from "./marjana";
@@ -64,6 +67,10 @@ export const books: Book[] = [
       digdevataNamaskara,
       muniNamaskara,
       pranama,
+      gayatriUdvasanam,
+      bhagavanNamaskara,
+      bhumyAkasaAbhivandanam,
+      comingSoon("abhivada", "अभिवादः", "abhivādaḥ", "Abhivāda"),
     ],
   },
 ];
