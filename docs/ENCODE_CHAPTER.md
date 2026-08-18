@@ -142,11 +142,11 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 20 | 68–70 | गायत्री मन्त्रः | ready (`gayatri-mantra`) |
 | 21 | 71–73 | अष्ट-मुद्रा प्रदर्शनम् | ready (`asta-mudra`; skip repeated nyāsa/dhyāna) |
 | 22 | 74–78 | मित्र सूक्तम् | ready (`mitra-sukta`; skip repeat ācamana) |
-| 23 | 79–82 | दिग्देवता नमस्कारः | upcoming |
-| 24 | 83–87 | मुनि नमस्कारः, सन्ध्यादेवता नमस्कारः | upcoming |
-| 25 | 88–91 | प्रणामः | upcoming |
+| 23 | 79–82 | दिग्देवता नमस्कारः | ready (`digdevata-namaskara`) |
+| 24 | 83–87 | मुनि नमस्कारः, सन्ध्यादेवता नमस्कारः | ready (`muni-namaskara`) |
+| 25 | 88–91 | प्रणामः | ready (`pranama`) |
 | 26 | 92–94 | गायत्री उद्वासनम् | upcoming |
 | 27 | 95–98 | भगवन्नमस्कारः | upcoming |
 | 28 | 99–104 | भूम्याकाशाभिवन्दनम् | upcoming |
-| 29 | 105–108 | अभिवादः | upcoming (personal name / pravara) |
+| 29 | 105–108 | अभिवादः | skipped (coming soon on the site; personal name / pravara) |
 | 30 | 109–113 | ईश्वरार्पणम् | upcoming |
