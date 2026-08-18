@@ -139,9 +139,9 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | ready (`karanyasa`) |
 | 18 | 63–64 | ध्यानम् | ready (`dhyanam`) |
 | 19 | 65–67 | मुद्रा प्रदर्शनम् | ready (`mudra-pradarsanam`) |
-| 20 | 68–70 | गायत्री मन्त्रः | upcoming |
-| 21 | 71–73 | अष्ट-मुद्रा प्रदर्शनम् | upcoming |
-| 22 | 74–78 | प्रातः काल सूर्योपस्थानम् | upcoming |
+| 20 | 68–70 | गायत्री मन्त्रः | ready (`gayatri-mantra`) |
+| 21 | 71–73 | अष्ट-मुद्रा प्रदर्शनम् | ready (`asta-mudra`; skip repeated nyāsa/dhyāna) |
+| 22 | 74–78 | मित्र सूक्तम् | ready (`mitra-sukta`; skip repeat ācamana) |
 | 23 | 79–82 | दिग्देवता नमस्कारः | upcoming |
 | 24 | 83–87 | मुनि नमस्कारः, सन्ध्यादेवता नमस्कारः | upcoming |
 | 25 | 88–91 | प्रणामः | upcoming |
