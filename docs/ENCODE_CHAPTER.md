@@ -132,8 +132,8 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 10 | 35–37 | अघमर्षण मन्त्रः | ready (`aghamarsana`) |
 | 11 | 38–41 | सूर्योपस्थानम् | ready (`suryopasthana`; skip repeated prāṇāyāma + saṅkalpa vākya) |
 | 12 | 42–44 | सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`; no second ācamana card) |
-| 13 | 45–48 | गायत्री आवाहनम् | upcoming |
-| 14 | 49–53 | गायत्री-आवाहन-न्यासः | upcoming |
+| 13 | 45–48 | गायत्री आवाहनम् | ready (`gayatri-avahanam`) |
+| 14 | 49–53 | गायत्री-आवाहन-न्यासः | ready (`gayatri-avahana-nyasa`) |
 | 15 | 54 | आचमनम् | skip (repeat of Ch 2; no extra card) |
 | 16 | 55–57 | गायत्री जप संकल्पः | skipped (saṅkalpa; coming soon) |
 | 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | upcoming |

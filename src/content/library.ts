@@ -2,6 +2,8 @@ import { acamana } from "./acamana";
 import { aghamarsana } from "./aghamarsana";
 import { bhutocchatanam } from "./bhutocchatanam";
 import { dvitiyaMarjana } from "./dvitiya-marjana";
+import { gayatriAvahanaNyasa } from "./gayatri-avahana-nyasa";
+import { gayatriAvahanam } from "./gayatri-avahanam";
 import { guruNamaskara } from "./guru-namaskara";
 import { marjana } from "./marjana";
 import { pranayama } from "./pranayama";
@@ -42,6 +44,8 @@ export const books: Book[] = [
       aghamarsana,
       suryopasthana,
       sandhyangaTarpana,
+      gayatriAvahanam,
+      gayatriAvahanaNyasa,
     ],
   },
 ];
