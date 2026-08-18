@@ -1,8 +1,10 @@
-# Sandhyā
+# Prakāśa
 
-A web app for reading Sandhyāvandana with clickable word meanings. Click a word, then walk up to the phrase, sentence, or verse.
+A web app for reading Sanskrit with clickable word meanings. Click a word, then walk up to the phrase, sentence, or verse.
 
-Live site: https://mbaranov4310.github.io/sandhya/
+The first collection is Sandhyāvandana.
+
+Live site: https://mbaranov4310.github.io/prakasa/
 
 v0 includes three early mantras. Meanings are hand-encoded from local source PDFs (not published).
 

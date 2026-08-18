@@ -1,6 +1,6 @@
 export type NavLang = "sanskrit" | "english";
 
-const KEY = "sandhya-nav-lang";
+const KEY = "prakasa-nav-lang";
 
 export function loadNavLang(): NavLang {
   try {

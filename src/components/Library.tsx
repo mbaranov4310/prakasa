@@ -12,7 +12,9 @@ export function Library() {
         <p className="eyebrow">Library</p>
         <LangToggle />
       </header>
-      <h1>Sandhyā</h1>
+      <h1 className={navLang === "sanskrit" ? "is-deva" : "is-latin"}>
+        {navLang === "sanskrit" ? "प्रकाश" : "Prakāśa"}
+      </h1>
       <ul className="book-grid">
         {books.map((book) => {
           const ready = book.chapters.filter((chapter) => chapter.status === "ready").length;
