@@ -1,10 +1,13 @@
 import { acamana } from "./acamana";
+import { aghamarsana } from "./aghamarsana";
 import { bhutocchatanam } from "./bhutocchatanam";
 import { dvitiyaMarjana } from "./dvitiya-marjana";
 import { guruNamaskara } from "./guru-namaskara";
 import { marjana } from "./marjana";
 import { pranayama } from "./pranayama";
 import { pratahMantracamana } from "./pratah-mantracamana";
+import { punahMarjana } from "./punah-marjana";
+import { sandhyangaTarpana } from "./sandhyanga-tarpana";
 import { sariraSuddhi } from "./sarira-suddhi";
 import type { Book } from "../types";
 
@@ -34,6 +37,15 @@ export const books: Book[] = [
       marjana,
       pratahMantracamana,
       dvitiyaMarjana,
+      punahMarjana,
+      aghamarsana,
+      comingSoon(
+        "punah-pranayama-suryopasthana",
+        "पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम्",
+        "punaḥ prāṇāyāmaḥ, saṅkalpa vākya, sūryopasthānam",
+        "Punaḥ prāṇāyāma, saṅkalpa, sūryopasthāna",
+      ),
+      sandhyangaTarpana,
     ],
   },
 ];

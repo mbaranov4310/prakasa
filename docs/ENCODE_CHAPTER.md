@@ -123,14 +123,14 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 2 | 4–8 | आचमनम् | ready (`acamana`) |
 | 3 | 9–11 | भूतोच्छाटनम् | ready (`bhutocchatanam`) |
 | 4 | 12–15 | प्राणायामः | ready (`pranayama`) |
-| 5 | 16–22 | संकल्पः | next (contains personal name / gotra) |
+| 5 | 16–22 | संकल्पः | skipped (coming soon on the site; do not encode) |
 | 6 | 23–25 | मार्जनः | ready (`marjana`) |
 | 7 | 26–28 | प्रातः काल मन्त्राचमनः | ready (`pratah-mantracamana`) |
 | 8 | 29–31 | द्वितीय मार्जनः | ready (`dvitiya-marjana`) |
-| 9 | 32–34 | पुनः मार्जनः | upcoming |
-| 10 | 35–37 | अघमर्षण मन्त्रः | upcoming |
-| 11 | 38–41 | पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम् | upcoming (repeat prāṇāyāma: reuse Ch 4) |
-| 12 | 42–44 | आचमनम्, सन्ध्याङ्ग तर्पणम् | upcoming (reuse Ch 2 ācamana) |
+| 9 | 32–34 | पुनः मार्जनः | ready (`punah-marjana`) |
+| 10 | 35–37 | अघमर्षण मन्त्रः | ready (`aghamarsana`) |
+| 11 | 38–41 | पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम् | upcoming (includes saṅkalpa vākya; skip for now) |
+| 12 | 42–44 | आचमनम्, सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`) |
 | 13 | 45–48 | गायत्री आवाहनम् | upcoming |
 | 14 | 49–53 | गायत्री-आवाहन-न्यासः | upcoming |
 | 15 | 54 | आचमनम् | upcoming (reuse Ch 2) |
