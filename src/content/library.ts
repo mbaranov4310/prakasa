@@ -9,6 +9,7 @@ import { pratahMantracamana } from "./pratah-mantracamana";
 import { punahMarjana } from "./punah-marjana";
 import { sandhyangaTarpana } from "./sandhyanga-tarpana";
 import { sariraSuddhi } from "./sarira-suddhi";
+import { suryopasthana } from "./suryopasthana";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -39,12 +40,7 @@ export const books: Book[] = [
       dvitiyaMarjana,
       punahMarjana,
       aghamarsana,
-      comingSoon(
-        "punah-pranayama-suryopasthana",
-        "पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम्",
-        "punaḥ prāṇāyāmaḥ, saṅkalpa vākya, sūryopasthānam",
-        "Punaḥ prāṇāyāma, saṅkalpa, sūryopasthāna",
-      ),
+      suryopasthana,
       sandhyangaTarpana,
     ],
   },

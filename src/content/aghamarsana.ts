@@ -23,6 +23,11 @@ export const aghamarsana: Chapter = {
     { term: "āpaḥ", meaning: "sacred waters" },
     { term: "manasaḥ", meaning: "of the mind" },
     { term: "śundhantu", meaning: "may they cleanse" },
+    { term: "muñcatu", meaning: "may it fall off / be released" },
+    { term: "divenmu mucānaḥ", meaning: "may it be let go into the divine realm" },
+    { term: "pūtaṃ", meaning: "pure" },
+    { term: "vājyaṃ", meaning: "strong, vigorous, powerful" },
+    { term: "me", meaning: "my" },
   ],
   root: group("ag-verse", "verse", translation, [
     group(
@@ -44,7 +49,7 @@ export const aghamarsana: Chapter = {
               ["दि", "di"],
               ["वा", "vā"],
             ]),
-            word("ag-muncatu", "", [
+            word("ag-muncatu", "may it fall off / be released", [
               ["मुञ्", "muñ"],
               ["च", "ca"],
               ["तु", "tu"],
@@ -61,12 +66,12 @@ export const aghamarsana: Chapter = {
               ["प", "pa"],
               ["दा", "dā"],
             ]),
-            word("ag-divenmu", "", [
+            word("ag-divenmu", "may it be let go into the divine realm", [
               ["दि", "di"],
               ["वे", "ve"],
               ["न्मु", "nmu"],
             ]),
-            word("ag-mucanah", "", [
+            word("ag-mucanah", "may it be let go into the divine realm", [
               ["मु", "mu"],
               ["चा", "cā"],
               ["नः", "naḥ"],
@@ -115,7 +120,7 @@ export const aghamarsana: Chapter = {
           "phrase",
           "May the sacred waters, acting through purity and clarity, cleanse my mind itself.",
           [
-            word("ag-putam", "", [
+            word("ag-putam", "pure", [
               ["पू", "pū"],
               ["तं", "taṃ"],
             ]),
@@ -125,7 +130,7 @@ export const aghamarsana: Chapter = {
               ["त्रे", "tre"],
               ["ण", "ṇa"],
             ]),
-            word("ag-vajyam", "", [
+            word("ag-vajyam", "strong, vigorous, powerful", [
               ["वा", "vā"],
               ["ज्यम्", "jyam"],
             ]),
@@ -145,7 +150,7 @@ export const aghamarsana: Chapter = {
               ["न्ध", "ndha"],
               ["न्तु", "ntu"],
             ]),
-            word("ag-me", "", [["मे", "me"]]),
+            word("ag-me", "my", [["मे", "me"]]),
             word("ag-manasah", "of the mind", [
               ["म", "ma"],
               ["न", "na"],

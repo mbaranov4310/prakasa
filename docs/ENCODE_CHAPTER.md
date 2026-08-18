@@ -21,8 +21,9 @@ When the chapter is encoded, **commit it, push `main`, and deploy GitHub Pages**
 ### Sources
 
 - **Source of truth:** `data/sandhya_content.pdf` (meanings, glossary, word breaks, the Sanskrit as this book recites it).
-- **Display only:** `data/nice_formating.pdf` (syllable stacking for Devanagari + IAST overlay).
-- If the two PDFs disagree on wording, sandhi, or translation, **content wins**.
+- **Display / fallback glosses:** `data/nice_formating.pdf` (syllable stacking for Devanagari + IAST overlay; word glossary used only when content has no gloss for that word).
+- If the two PDFs **disagree** on wording, sandhi, or a word’s translation, **content wins**.
+- If content has **no** translation for a recitation word and the nicer PDF glossary does, **copy the nicer gloss verbatim**. Do not invent the rest.
 
 ### How to read the PDFs (do not install a PDF library)
 
@@ -49,13 +50,13 @@ If Read on the `.pdf` path works, you are done. Shell conversion to images or ex
 
 ### Hard rules
 
-1. Copy translations and glossary **verbatim** from the content PDF. Do not paraphrase, polish, or add scholarship.
-2. Do not invent glosses for words the PDF does not gloss. Phrase/sentence/verse meanings may use the PDF’s translation of that span; do not invent a new English sentence.
+1. Copy chapter translations **verbatim** from the content PDF (the meaning page). Do not paraphrase, polish, or add scholarship.
+2. Word glosses: content glossary first. If a recitation word has no content gloss, copy the nicer PDF’s glossary line for that word. If both define it and they disagree, keep the content gloss. Do not invent remaining gaps (particles, unlisted words stay empty).
 3. Do not “correct” sandhi or spelling to a textbook form. Recitation forms in this book (for example *Ogm suvah*) stay as written.
 4. Do not split a compound unless the content PDF already treats the pieces as separate glossary entries or separate words on the Sanskrit page. (`भूतपिशाचाः` stayed one word in v0 for this reason.)
 5. Omit ritual stage directions (sip water, touch limbs, hold the nose, and so on). Encode **meanings of the recitation only**.
-6. Personal names, gotra, and similar in saṅkalpa / abhivāda: copy as the content PDF has them.
-7. Reuse an already-encoded tree when the book repeats a block (Ācamana appears more than once). Do not retype it.
+6. Skip saṅkalpa chapters (and saṅkalpa sentences bundled into other chapters). Leave them coming soon; do not encode personal name / gotra / japa-oath formulas.
+7. The content PDF is **ritual order**, not a list of unique texts. Ācamana, prāṇāyāma, and other repeats get **one** library card. Do not add another card when the book says “repeat Chapter N.” If a later PDF chapter mixes a repeat with a **new** mantra, encode only the new recitation (Chapter 11 → sūryopasthāna only; Chapter 12 → tarpaṇa only; skip a second ācamana).
 8. Touch only that chapter’s content module, `src/content/library.ts`, and this status table if you mark the chapter ready. No drive-by refactors.
 
 ### How to encode
@@ -129,12 +130,12 @@ Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not 
 | 8 | 29–31 | द्वितीय मार्जनः | ready (`dvitiya-marjana`) |
 | 9 | 32–34 | पुनः मार्जनः | ready (`punah-marjana`) |
 | 10 | 35–37 | अघमर्षण मन्त्रः | ready (`aghamarsana`) |
-| 11 | 38–41 | पुनः प्राणायामः, संकल्प वाक्य, सूर्योपस्थानम् | upcoming (includes saṅkalpa vākya; skip for now) |
-| 12 | 42–44 | आचमनम्, सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`) |
+| 11 | 38–41 | सूर्योपस्थानम् | ready (`suryopasthana`; skip repeated prāṇāyāma + saṅkalpa vākya) |
+| 12 | 42–44 | सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`; no second ācamana card) |
 | 13 | 45–48 | गायत्री आवाहनम् | upcoming |
 | 14 | 49–53 | गायत्री-आवाहन-न्यासः | upcoming |
-| 15 | 54 | आचमनम् | upcoming (reuse Ch 2) |
-| 16 | 55–57 | गायत्री जप संकल्पः | upcoming |
+| 15 | 54 | आचमनम् | skip (repeat of Ch 2; no extra card) |
+| 16 | 55–57 | गायत्री जप संकल्पः | skipped (saṅkalpa; coming soon) |
 | 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | upcoming |
 | 18 | 63–64 | ध्यानम् | upcoming |
 | 19 | 65–67 | मुद्रा प्रदर्शनम् | upcoming |
