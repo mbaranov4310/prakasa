@@ -14,7 +14,7 @@ export const sariraSuddhi: Chapter = {
     { term: "apavitraḥ", meaning: "impure" },
     { term: "pavitraḥ", meaning: "pure" },
     { term: "vā", meaning: "or" },
-    { term: "sarvāvasthām", meaning: "all states / any condition" },
+    { term: "sarvāvasthām", meaning: "every state" },
     { term: "gataḥ", meaning: "being in" },
     { term: "api", meaning: "even" },
     { term: "yaḥ", meaning: "he who" },
@@ -23,22 +23,22 @@ export const sariraSuddhi: Chapter = {
     { term: "saḥ", meaning: "he" },
     { term: "bāhya", meaning: "outer" },
     { term: "ābhyantara", meaning: "inner" },
-    { term: "śuciḥ", meaning: "pure, cleansed" },
-    { term: "puṇḍarīkākṣa", meaning: "vocative: “O Lotus-Eyed One!”" },
-    { term: "namaḥ", meaning: "reverence, salutation" },
+    { term: "śuciḥ", meaning: "pure" },
+    { term: "puṇḍarīkākṣa", meaning: "O Lotus-Eyed One" },
+    { term: "namaḥ", meaning: "salutation" },
   ],
   root: group(
     "s-verse",
     "verse",
-    "Whether impure or pure, and in whatever state one may be, he who remembers Puṇḍarīkākṣa — the Lotus-Eyed Lord — becomes pure both externally and internally. Puṇḍarīkākṣa! Puṇḍarīkākṣa! Salutations to Puṇḍarīkākṣa!",
+    "",
     [
       group(
         "s-sent-1",
         "sentence",
-        "Whether impure or pure, and in whatever state one may be.",
+        "whether impure or pure, or even in any condition",
         [
           word("s-om", "primordial sound", [["ॐ", "oṃ"]]),
-          group("s-impure-or-pure", "phrase", "whether impure or pure", [
+          group("s-impure-or-pure", "phrase", "impure or pure", [
             word("s-apavitrah", "impure", [
               ["अ", "a"],
               ["प", "pa"],
@@ -52,18 +52,18 @@ export const sariraSuddhi: Chapter = {
             ]),
             word("s-va-1", "or", [["वा", "vā"]], { lineBreakAfter: true }),
           ]),
-          group("s-any-state", "phrase", "and in whatever state one may be", [
-            word("s-sarvavasthan", "all states / any condition", [
+          group("s-any-state", "phrase", "or even in any condition", [
+            word("s-sarvavasthan", "every state", [
               ["स", "sa"],
               ["र्वा", "rvā"],
               ["व", "va"],
               ["स्थाङ्", "sthāṅ"],
             ]),
-            word("s-gatopi", "even being in (that state)", [
+            word("s-gatah", "being in", [
               ["ग", "ga"],
               ["तो", "to"],
-              ["ऽपि", "’pi"],
-            ]),
+            ], { trailing: "" }),
+            word("s-api", "even", [["ऽपि", "’pi"]]),
             word("s-va-2", "or", [["वा", "vā"]], {
               trailing: " ।",
               lineBreakAfter: true,
@@ -74,7 +74,7 @@ export const sariraSuddhi: Chapter = {
       group(
         "s-sent-2",
         "sentence",
-        "He who remembers Puṇḍarīkākṣa — the Lotus-Eyed Lord — becomes pure both externally and internally.",
+        "he who remembers the Lotus-Eyed Lord is pure outwardly and inwardly",
         [
           group("s-who-remembers", "phrase", "he who remembers the Lotus-Eyed Lord", [
             word("s-yah", "he who", [["यः", "yaḥ"]]),
@@ -93,17 +93,19 @@ export const sariraSuddhi: Chapter = {
           group(
             "s-becomes-pure",
             "phrase",
-            "he becomes pure both externally and internally",
+            "he is pure outwardly and inwardly",
             [
               word("s-sah", "he", [["स", "sa"]]),
-              word("s-bahyabhyantarah", "externally and internally", [
+              word("s-bahya", "outer", [
                 ["बा", "bā"],
                 ["ह्या", "hyā"],
+              ], { trailing: "" }),
+              word("s-abhyantarah", "inner", [
                 ["भ्य", "bhya"],
                 ["न्त", "nta"],
                 ["रः", "raḥ"],
               ]),
-              word("s-sucih", "pure, cleansed", [
+              word("s-sucih", "pure", [
                 ["शु", "śu"],
                 ["चिः", "ciḥ"],
               ], { trailing: " ॥", lineBreakAfter: true }),
@@ -112,14 +114,14 @@ export const sariraSuddhi: Chapter = {
         ],
       ),
       group("s-sent-3", "sentence", "O Lotus-Eyed One! O Lotus-Eyed One!", [
-        word("s-pundarikaksa-1", "vocative: “O Lotus-Eyed One!”", [
+        word("s-pundarikaksa-1", "O Lotus-Eyed One", [
           ["पु", "pu"],
           ["ण्ड", "ṇḍa"],
           ["री", "rī"],
           ["का", "kā"],
           ["क्ष", "kṣa"],
         ], { trailing: "! " }),
-        word("s-pundarikaksa-2", "vocative: “O Lotus-Eyed One!”", [
+        word("s-pundarikaksa-2", "O Lotus-Eyed One", [
           ["पु", "pu"],
           ["ण्ड", "ṇḍa"],
           ["री", "rī"],
@@ -136,7 +138,7 @@ export const sariraSuddhi: Chapter = {
           ["क्षा", "kṣā"],
           ["य", "ya"],
         ]),
-        word("s-namah", "reverence, salutation", [
+        word("s-namah", "salutation", [
           ["न", "na"],
           ["मः", "maḥ"],
         ], { trailing: " ॥" }),
