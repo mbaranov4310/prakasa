@@ -15,8 +15,8 @@ export const pratahMantracamana: Chapter = {
     { term: "sūryaḥ", meaning: "Sūrya / the sun" },
     { term: "mā", meaning: "me" },
     { term: "manyuḥ", meaning: "anger (here: Manyu)" },
-    { term: "manyu-patayaḥ", meaning: "lords of anger (here: the forces that govern it)" },
-    { term: "manyu-kṛtebhyaḥ", meaning: "from what anger produces" },
+    { term: "patayaḥ", meaning: "lords / masters" },
+    { term: "kṛtebhyaḥ", meaning: "from things caused" },
     { term: "pāpebhyaḥ", meaning: "from sins" },
     { term: "rakṣantām", meaning: "may they protect" },
     { term: "rātryā", meaning: "by night" },
@@ -64,17 +64,21 @@ export const pratahMantracamana: Chapter = {
               ["न्यु", "nyu"],
             ], { trailing: "" }),
             word("pm-ca-2", "and", [["श्च", "śca"]]),
-            word("pm-manyupatayah", "lords of anger (here: the forces that govern it)", [
+            word("pm-manyu-2", "anger", [
               ["म", "ma"],
               ["न्यु", "nyu"],
+            ], { trailing: "" }),
+            word("pm-patayah", "lords / masters", [
               ["प", "pa"],
               ["त", "ta"],
               ["य", "ya"],
             ], { trailing: "" }),
             word("pm-ca-3", "and", [["श्च", "śca"]]),
-            word("pm-manyukrtebhyah", "from what anger produces", [
+            word("pm-manyu-3", "anger", [
               ["म", "ma"],
               ["न्यु", "nyu"],
+            ], { trailing: "" }),
+            word("pm-krtebhyah", "from things caused", [
               ["कृ", "kṛ"],
               ["ते", "te"],
               ["भ्यः", "bhyaḥ"],
