@@ -17,13 +17,15 @@ export const marjana: Chapter = {
     { term: "mayo", meaning: "joy" },
     { term: "bhuvaḥ", meaning: "becoming / source" },
     { term: "ūrja", meaning: "for strength" },
-    { term: "cakṣas", meaning: "for seeing" },
+    { term: "cakṣas", meaning: "for sight" },
     { term: "śivatamaḥ", meaning: "most auspicious" },
     { term: "rasaḥ", meaning: "essence" },
     { term: "uśatīḥ", meaning: "loving" },
     { term: "mātaraḥ", meaning: "mothers" },
-    { term: "kṣaya", meaning: "for decay (here: impurity)" },
-    { term: "jinvatha", meaning: "you nourish" },
+    { term: "kṣaya", meaning: "for destruction / for the abode" },
+    { term: "jinvatha", meaning: "you invigorate / nourish" },
+    { term: "araṃ", meaning: "fittingly / quickly" },
+    { term: "gamāma", meaning: "let us go" },
   ],
   root: group("m-verse", "verse", "", [
     group(
@@ -58,7 +60,7 @@ export const marjana: Chapter = {
     group(
       "m-sent-2",
       "sentence",
-      "bestow strength on us; for great delight, for seeing",
+      "bestow strength on us; for great joy / battle, for sight",
       [
         group(
           "m-pada-1b",
@@ -82,18 +84,18 @@ export const marjana: Chapter = {
         group(
           "m-pada-1c",
           "phrase",
-          "for great delight, for seeing",
+          "for great joy / battle, for sight",
           [
             word("m-mahe", "for the great", [
               ["म", "ma"],
               ["हे", "he"],
             ]),
-            word("m-ranaya", "for delight", [
+            word("m-ranaya", "for joy / for battle", [
               ["र", "ra"],
               ["णा", "ṇā"],
               ["य", "ya"],
             ]),
-            word("m-caksase", "for seeing", [
+            word("m-caksase", "for sight", [
               ["च", "ca"],
               ["क्ष", "kṣa"],
               ["से", "se"],
@@ -186,28 +188,27 @@ export const marjana: Chapter = {
     group(
       "m-sent-5",
       "sentence",
-      "for that, protect me",
+      "for that, let us go fittingly to you",
       [
         group(
           "m-pada-3a",
           "phrase",
-          "for that, protect me",
+          "for that, let us go fittingly to you",
           [
             word("m-tasma", "for that", [
               ["त", "ta"],
               ["स्मा", "smā"],
             ]),
-            word("m-aranga", "", [
+            word("m-aram", "fittingly / quickly", [
               ["अ", "a"],
-              ["र", "ra"],
-              ["ङ्ग", "ṅga"],
+              ["रं", "raṃ"],
             ]),
-            word("m-mam", "me", [
+            word("m-gamama", "let us go", [
+              ["ग", "ga"],
               ["मा", "mā"],
-              ["म्", "m"],
+              ["म", "ma"],
             ]),
-            word("m-avah", "protect", [
-              ["अ", "a"],
+            word("m-vah-to", "to you", [
               ["वः", "vaḥ"],
             ], { trailing: " ।", lineBreakAfter: true }),
           ],
@@ -217,23 +218,23 @@ export const marjana: Chapter = {
     group(
       "m-sent-6",
       "sentence",
-      "you who nourish for [whose] decay; and, waters, you generate us",
+      "Sāyaṇa: for the destruction of sin (sprinkling) · Sāyaṇa: for the dwelling of food · Bhaṭṭabhāskara: the person as the abode of rasa; and, waters, you produce us",
       [
         group(
           "m-pada-3b",
           "phrase",
-          "you who nourish for [whose] decay",
+          "Sāyaṇa: for the destruction of sin (sprinkling) · Sāyaṇa: for the dwelling of food · Bhaṭṭabhāskara: the person as the abode of rasa",
           [
             word("m-yasya", "whose", [
               ["य", "ya"],
               ["स्य", "sya"],
             ]),
-            word("m-ksayaya", "for decay (here: impurity)", [
+            word("m-ksayaya", "for destruction / for the abode", [
               ["क्ष", "kṣa"],
               ["या", "yā"],
               ["य", "ya"],
             ]),
-            word("m-jinvatha", "you nourish", [
+            word("m-jinvatha", "you invigorate / nourish", [
               ["जि", "ji"],
               ["न्व", "nva"],
               ["थ", "tha"],
@@ -243,13 +244,13 @@ export const marjana: Chapter = {
         group(
           "m-pada-3c",
           "phrase",
-          "and, waters, you generate us",
+          "and, waters, you produce us",
           [
             word("m-apo-2", "waters (here: sacred)", [
               ["आ", "ā"],
               ["पो", "po"],
             ]),
-            word("m-janayatha", "you generate", [
+            word("m-janayatha", "you produce", [
               ["ज", "ja"],
               ["न", "na"],
               ["य", "ya"],
