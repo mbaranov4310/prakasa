@@ -12,10 +12,10 @@ export const aghamarsana: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "drupadāt", meaning: "post (here: fetter)" },
+    { term: "drupadāt", meaning: "post (here: wooden foot-block / fetter)" },
     { term: "iva", meaning: "like" },
     { term: "muñcatu", meaning: "may it release" },
-    { term: "mumucānaḥ", meaning: "having been released" },
+    { term: "mumucānaḥ", meaning: "one who has been released" },
     { term: "svinnaḥ", meaning: "having sweated" },
     { term: "snātvī", meaning: "having bathed" },
     { term: "malāt", meaning: "from dirt" },
@@ -31,14 +31,14 @@ export const aghamarsana: Chapter = {
     group(
       "ag-sent-1",
       "sentence",
-      "like from a post, may it be released; like from a post, having been released",
+      "May [the waters] release [me] as from a wooden foot-fetter; as one released from a drupada.",
       [
         group(
           "ag-pada-1",
           "phrase",
-          "like from a post, may it be released",
+          "May [the waters] release [me] as from a wooden foot-fetter",
           [
-            word("ag-drupadat-1", "post (here: fetter)", [
+            word("ag-drupadat-1", "post (here: wooden foot-block / fetter)", [
               ["द्रु", "dru"],
               ["प", "pa"],
               ["दात्", "dāt"],
@@ -57,9 +57,9 @@ export const aghamarsana: Chapter = {
         group(
           "ag-pada-2",
           "phrase",
-          "like from a post, having been released",
+          "as one released from a drupada",
           [
-            word("ag-drupadat-2", "post (here: fetter)", [
+            word("ag-drupadat-2", "post (here: wooden foot-block / fetter)", [
               ["द्रु", "dru"],
               ["प", "pa"],
               ["दात्", "dāt"],
@@ -68,7 +68,7 @@ export const aghamarsana: Chapter = {
               ["इ", "i"],
               ["व", "va"],
             ]),
-            word("ag-mumucanah", "having been released", [
+            word("ag-mumucanah", "one who has been released", [
               ["मु", "mu"],
               ["मु", "mu"],
               ["चा", "cā"],
