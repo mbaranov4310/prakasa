@@ -13,37 +13,41 @@ export const marjana: Chapter = {
   translation,
   glossary: [
     { term: "mārjana", meaning: "ritual sprinkling of water for purification" },
-    { term: "āpaḥ", meaning: "sacred waters" },
-    { term: "mayo-bhuvaḥ", meaning: "source of joy and well-being" },
-    { term: "ūrja", meaning: "strength, vitality" },
-    { term: "cakṣas", meaning: "vision, clarity" },
-    { term: "śivatamaḥ rasaḥ", meaning: "the most auspicious, healing essence" },
-    { term: "uśatīḥ", meaning: "loving, nurturing" },
+    { term: "āpaḥ", meaning: "waters (here: sacred)" },
+    { term: "mayo", meaning: "joy" },
+    { term: "bhuvaḥ", meaning: "becoming / source" },
+    { term: "ūrja", meaning: "for strength" },
+    { term: "cakṣas", meaning: "for seeing" },
+    { term: "śivatamaḥ", meaning: "most auspicious" },
+    { term: "rasaḥ", meaning: "essence" },
+    { term: "uśatīḥ", meaning: "loving" },
     { term: "mātaraḥ", meaning: "mothers" },
-    { term: "kṣaya", meaning: "decay, depletion, impurity" },
-    { term: "jinvatha", meaning: "to nourish, strengthen, energize" },
+    { term: "kṣaya", meaning: "for decay (here: impurity)" },
+    { term: "jinvatha", meaning: "you nourish" },
   ],
-  root: group("m-verse", "verse", translation, [
+  root: group("m-verse", "verse", "", [
     group(
       "m-sent-1",
       "sentence",
-      "O Waters, you are the source of joy, nourishment, and purity.",
+      "waters, you are indeed sources of joy",
       [
-        word("m-om", "", [["ॐ", "oṃ"]], { lineBreakAfter: true }),
+        word("m-om", "primordial sound", [["ॐ", "oṃ"]], { lineBreakAfter: true }),
         group(
           "m-pada-1a",
           "phrase",
-          "O Waters, you are the source of joy, nourishment, and purity.",
+          "waters, you are indeed sources of joy",
           [
-            word("m-apo-1", "sacred waters", [
+            word("m-apo-1", "waters (here: sacred)", [
               ["आ", "ā"],
               ["पो", "po"],
             ]),
-            word("m-hi", "", [["हि", "hi"]]),
-            word("m-stha", "", [["ष्ठा", "ṣṭhā"]]),
-            word("m-mayobhuvah", "source of joy and well-being", [
+            word("m-hi", "indeed", [["हि", "hi"]]),
+            word("m-stha", "you are", [["ष्ठा", "ṣṭhā"]]),
+            word("m-mayo", "joy", [
               ["म", "ma"],
               ["यो", "yo"],
+            ], { trailing: "" }),
+            word("m-bhuvah", "becoming / source", [
               ["भु", "bhu"],
               ["वः", "vaḥ"],
             ], { trailing: " ।", lineBreakAfter: true }),
@@ -54,20 +58,20 @@ export const marjana: Chapter = {
     group(
       "m-sent-2",
       "sentence",
-      "Grant us strength, vitality, and clarity of vision.",
+      "bestow strength on us; for great delight, for seeing",
       [
         group(
           "m-pada-1b",
           "phrase",
-          "Grant us strength, vitality, and clarity of vision.",
+          "bestow strength on us",
           [
-            word("m-ta", "", [["ता", "tā"]]),
-            word("m-na-1", "", [["न", "na"]]),
-            word("m-urje", "strength, vitality", [
+            word("m-ta", "they", [["ता", "tā"]]),
+            word("m-na-1", "us", [["न", "na"]]),
+            word("m-urje", "for strength", [
               ["ऊ", "ū"],
               ["र्जे", "rje"],
             ]),
-            word("m-dadhatana", "", [
+            word("m-dadhatana", "bestow", [
               ["द", "da"],
               ["धा", "dhā"],
               ["त", "ta"],
@@ -78,18 +82,18 @@ export const marjana: Chapter = {
         group(
           "m-pada-1c",
           "phrase",
-          "Grant us strength, vitality, and clarity of vision.",
+          "for great delight, for seeing",
           [
-            word("m-mahe", "", [
+            word("m-mahe", "for the great", [
               ["म", "ma"],
               ["हे", "he"],
             ]),
-            word("m-ranaya", "", [
+            word("m-ranaya", "for delight", [
               ["र", "ra"],
               ["णा", "ṇā"],
               ["य", "ya"],
             ]),
-            word("m-caksase", "vision, clarity", [
+            word("m-caksase", "for seeing", [
               ["च", "ca"],
               ["क्ष", "kṣa"],
               ["से", "se"],
@@ -101,27 +105,27 @@ export const marjana: Chapter = {
     group(
       "m-sent-3",
       "sentence",
-      "Your essence is most auspicious and healing.",
+      "which is your most auspicious essence; grant us a share of that here",
       [
         group(
           "m-pada-2a",
           "phrase",
-          "Your essence is most auspicious and healing.",
+          "which is your most auspicious essence",
           [
-            word("m-yo", "", [["यो", "yo"]]),
-            word("m-vah", "", [["वः", "vaḥ"]]),
+            word("m-yo", "which", [["यो", "yo"]]),
+            word("m-vah", "your", [["वः", "vaḥ"]]),
             group(
               "m-sivatamah-rasah",
               "phrase",
-              "the most auspicious, healing essence",
+              "the most auspicious essence",
               [
-                word("m-sivatamo", "the most auspicious, healing essence", [
+                word("m-sivatamo", "most auspicious", [
                   ["शि", "śi"],
                   ["व", "va"],
                   ["त", "ta"],
                   ["मो", "mo"],
                 ]),
-                word("m-rasah", "the most auspicious, healing essence", [
+                word("m-rasah", "essence", [
                   ["र", "ra"],
                   ["सः", "saḥ"],
                 ], { trailing: " ।", lineBreakAfter: true }),
@@ -132,20 +136,20 @@ export const marjana: Chapter = {
         group(
           "m-pada-2b",
           "phrase",
-          "Your essence is most auspicious and healing.",
+          "grant us a share of that here",
           [
-            word("m-tasya", "", [
+            word("m-tasya", "of that", [
               ["त", "ta"],
               ["स्य", "sya"],
             ]),
-            word("m-bhajayateha", "", [
+            word("m-bhajayate", "grant a share", [
               ["भा", "bhā"],
               ["ज", "ja"],
               ["य", "ya"],
               ["ते", "te"],
-              ["ह", "ha"],
-            ]),
-            word("m-nah-2", "", [["नः", "naḥ"]], {
+            ], { trailing: "" }),
+            word("m-iha", "here", [["ह", "ha"]]),
+            word("m-nah-2", "us", [["नः", "naḥ"]], {
               trailing: " ।",
               lineBreakAfter: true,
             }),
@@ -156,20 +160,20 @@ export const marjana: Chapter = {
     group(
       "m-sent-4",
       "sentence",
-      "Like loving mothers, you care for all beings.",
+      "like loving mothers",
       [
         group(
           "m-pada-2c",
           "phrase",
-          "Like loving mothers, you care for all beings.",
+          "like loving mothers",
           [
-            word("m-usatiriva", "loving, nurturing", [
+            word("m-usatir", "loving", [
               ["उ", "u"],
               ["श", "śa"],
               ["ती", "tī"],
               ["रि", "ri"],
-              ["व", "va"],
-            ]),
+            ], { trailing: "" }),
+            word("m-iva", "like", [["व", "va"]]),
             word("m-matarah", "mothers", [
               ["मा", "mā"],
               ["त", "ta"],
@@ -182,14 +186,14 @@ export const marjana: Chapter = {
     group(
       "m-sent-5",
       "sentence",
-      "Protect me fully and purify me.",
+      "for that, protect me",
       [
         group(
           "m-pada-3a",
           "phrase",
-          "Protect me fully and purify me.",
+          "for that, protect me",
           [
-            word("m-tasma", "", [
+            word("m-tasma", "for that", [
               ["त", "ta"],
               ["स्मा", "smā"],
             ]),
@@ -198,11 +202,11 @@ export const marjana: Chapter = {
               ["र", "ra"],
               ["ङ्ग", "ṅga"],
             ]),
-            word("m-mam", "", [
+            word("m-mam", "me", [
               ["मा", "mā"],
               ["म्", "m"],
             ]),
-            word("m-avah", "", [
+            word("m-avah", "protect", [
               ["अ", "a"],
               ["वः", "vaḥ"],
             ], { trailing: " ।", lineBreakAfter: true }),
@@ -213,23 +217,23 @@ export const marjana: Chapter = {
     group(
       "m-sent-6",
       "sentence",
-      "May you strengthen me so that decay, weakness, and impurity are removed.",
+      "you who nourish for [whose] decay; and, waters, you generate us",
       [
         group(
           "m-pada-3b",
           "phrase",
-          "May you strengthen me so that decay, weakness, and impurity are removed.",
+          "you who nourish for [whose] decay",
           [
-            word("m-yasya", "", [
+            word("m-yasya", "whose", [
               ["य", "ya"],
               ["स्य", "sya"],
             ]),
-            word("m-ksayaya", "decay, depletion, impurity", [
+            word("m-ksayaya", "for decay (here: impurity)", [
               ["क्ष", "kṣa"],
               ["या", "yā"],
               ["य", "ya"],
             ]),
-            word("m-jinvatha", "to nourish, strengthen, energize", [
+            word("m-jinvatha", "you nourish", [
               ["जि", "ji"],
               ["न्व", "nva"],
               ["थ", "tha"],
@@ -239,20 +243,20 @@ export const marjana: Chapter = {
         group(
           "m-pada-3c",
           "phrase",
-          "May you strengthen me so that decay, weakness, and impurity are removed.",
+          "and, waters, you generate us",
           [
-            word("m-apo-2", "sacred waters", [
+            word("m-apo-2", "waters (here: sacred)", [
               ["आ", "ā"],
               ["पो", "po"],
             ]),
-            word("m-janayatha", "", [
+            word("m-janayatha", "you generate", [
               ["ज", "ja"],
               ["न", "na"],
               ["य", "ya"],
               ["था", "thā"],
             ]),
-            word("m-ca", "", [["च", "ca"]]),
-            word("m-nah-3", "", [["नः", "naḥ"]], { trailing: " ॥" }),
+            word("m-ca", "and", [["च", "ca"]]),
+            word("m-nah-3", "us", [["नः", "naḥ"]], { trailing: " ॥" }),
           ],
         ),
       ],
