@@ -12,44 +12,42 @@ export const aghamarsana: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "agha", meaning: "sin, impurity, moral stain" },
-    { term: "marṣaṇa", meaning: "rubbing away, dissolving" },
-    { term: "drupadā", meaning: "knots, fetters, burdens" },
-    { term: "divā / divaḥ", meaning: "day / daily cycle" },
-    { term: "svinnaḥ", meaning: "fatigued, perspired" },
+    { term: "drupadāt", meaning: "post (here: fetter)" },
+    { term: "iva", meaning: "like" },
+    { term: "muñcatu", meaning: "may it release" },
+    { term: "mumucānaḥ", meaning: "having been released" },
+    { term: "svinnaḥ", meaning: "having sweated" },
     { term: "snātvī", meaning: "having bathed" },
-    { term: "malāḥ", meaning: "impurities" },
-    { term: "pavitra", meaning: "purifier" },
-    { term: "āpaḥ", meaning: "sacred waters" },
-    { term: "manasaḥ", meaning: "of the mind" },
+    { term: "malāt", meaning: "from dirt" },
+    { term: "pūtam", meaning: "purified" },
+    { term: "pavitreṇa", meaning: "with the strainer / purifier" },
+    { term: "ājyam", meaning: "ghee" },
+    { term: "āpaḥ", meaning: "waters" },
     { term: "śundhantu", meaning: "may they cleanse" },
-    { term: "muñcatu", meaning: "may it fall off / be released" },
-    { term: "divenmu mucānaḥ", meaning: "may it be let go into the divine realm" },
-    { term: "pūtaṃ", meaning: "pure" },
-    { term: "vājyaṃ", meaning: "strong, vigorous, powerful" },
     { term: "me", meaning: "my" },
+    { term: "manasaḥ", meaning: "of the mind" },
   ],
-  root: group("ag-verse", "verse", translation, [
+  root: group("ag-verse", "verse", "", [
     group(
       "ag-sent-1",
       "sentence",
-      "May all knots, bonds, and burdens (drupadā) be released by day and night.",
+      "like from a post, may it be released; like from a post, having been released",
       [
         group(
           "ag-pada-1",
           "phrase",
-          "May all knots, bonds, and burdens (drupadā) be released by day and night.",
+          "like from a post, may it be released",
           [
-            word("ag-drupada-1", "knots, fetters, burdens", [
+            word("ag-drupadat-1", "post (here: fetter)", [
               ["द्रु", "dru"],
               ["प", "pa"],
-              ["दा", "dā"],
+              ["दात्", "dāt"],
             ]),
-            word("ag-diva", "day / daily cycle", [
-              ["दि", "di"],
-              ["वा", "vā"],
+            word("ag-iva-1", "like", [
+              ["इ", "i"],
+              ["व", "va"],
             ]),
-            word("ag-muncatu", "may it fall off / be released", [
+            word("ag-muncatu", "may it release", [
               ["मुञ्", "muñ"],
               ["च", "ca"],
               ["तु", "tu"],
@@ -59,19 +57,19 @@ export const aghamarsana: Chapter = {
         group(
           "ag-pada-2",
           "phrase",
-          "May all knots, bonds, and burdens (drupadā) be released by day and night.",
+          "like from a post, having been released",
           [
-            word("ag-drupada-2", "knots, fetters, burdens", [
+            word("ag-drupadat-2", "post (here: fetter)", [
               ["द्रु", "dru"],
               ["प", "pa"],
-              ["दा", "dā"],
+              ["दात्", "dāt"],
             ]),
-            word("ag-divenmu", "may it be let go into the divine realm", [
-              ["दि", "di"],
-              ["वे", "ve"],
-              ["न्मु", "nmu"],
+            word("ag-iva-2", "like", [
+              ["इ", "i"],
+              ["व", "va"],
             ]),
-            word("ag-mucanah", "may it be let go into the divine realm", [
+            word("ag-mumucanah", "having been released", [
+              ["मु", "mu"],
               ["मु", "mu"],
               ["चा", "cā"],
               ["नः", "naḥ"],
@@ -83,14 +81,14 @@ export const aghamarsana: Chapter = {
     group(
       "ag-sent-2",
       "sentence",
-      "Whatever impurities arose from perspiration, sleep, or bodily processes, let them be washed away.",
+      "having sweated, having bathed, like from dirt",
       [
         group(
           "ag-pada-3",
           "phrase",
-          "Whatever impurities arose from perspiration, sleep, or bodily processes, let them be washed away.",
+          "having sweated, having bathed, like from dirt",
           [
-            word("ag-svinnah", "fatigued, perspired", [
+            word("ag-svinnah", "having sweated", [
               ["स्वि", "svi"],
               ["न्नः", "nnaḥ"],
             ]),
@@ -98,13 +96,13 @@ export const aghamarsana: Chapter = {
               ["स्ना", "snā"],
               ["त्वी", "tvī"],
             ]),
-            word("ag-malah", "impurities", [
+            word("ag-malat", "from dirt", [
               ["म", "ma"],
-              ["लाः", "lāḥ"],
+              ["लात्", "lāt"],
             ]),
-            word("ag-divah", "day / daily cycle", [
-              ["दि", "di"],
-              ["वः", "vaḥ"],
+            word("ag-iva-3", "like", [
+              ["इ", "i"],
+              ["व", "va"],
             ], { trailing: " ।", lineBreakAfter: true }),
           ],
         ),
@@ -113,28 +111,32 @@ export const aghamarsana: Chapter = {
     group(
       "ag-sent-3",
       "sentence",
-      "May the sacred waters, acting through purity and clarity, cleanse my mind itself.",
+      "purified like ghee with a strainer, O waters, may they cleanse my mind",
       [
         group(
           "ag-pada-4",
           "phrase",
-          "May the sacred waters, acting through purity and clarity, cleanse my mind itself.",
+          "purified like ghee with a strainer, O waters",
           [
-            word("ag-putam", "pure", [
+            word("ag-putam", "purified", [
               ["पू", "pū"],
               ["तं", "taṃ"],
             ]),
-            word("ag-pavitrena", "purifier", [
+            word("ag-pavitrena", "with the strainer / purifier", [
               ["प", "pa"],
               ["वि", "vi"],
               ["त्रे", "tre"],
               ["ण", "ṇa"],
             ]),
-            word("ag-vajyam", "strong, vigorous, powerful", [
-              ["वा", "vā"],
+            word("ag-iva-4", "like", [
+              ["इ", "i"],
+              ["व", "va"],
+            ]),
+            word("ag-ajyam", "ghee", [
+              ["आ", "ā"],
               ["ज्यम्", "jyam"],
             ]),
-            word("ag-apah", "sacred waters", [
+            word("ag-apah", "waters", [
               ["आ", "ā"],
               ["पः", "paḥ"],
             ], { trailing: " ।", lineBreakAfter: true }),
@@ -143,7 +145,7 @@ export const aghamarsana: Chapter = {
         group(
           "ag-pada-5",
           "phrase",
-          "May the sacred waters, acting through purity and clarity, cleanse my mind itself.",
+          "may they cleanse my mind",
           [
             word("ag-sundhantu", "may they cleanse", [
               ["शु", "śu"],
