@@ -89,13 +89,13 @@ export const pranayama: Chapter = {
           group(
             "p-g-pada2",
             "phrase",
-            "we meditate on the radiance of the deity",
+            "we meditate on the radiance of the divine",
             [
               word("p-bhargo", "radiance", [
                 ["भ", "bha"],
                 ["र्गो", "rgo"],
               ]),
-              word("p-devasya", "of the deity", [
+              word("p-devasya", "of the divine", [
                 ["दे", "de"],
                 ["व", "va"],
                 ["स्य", "sya"],
