@@ -4,15 +4,16 @@ import type { Chapter, SpanNode } from "../types";
 const translation =
   "This is the highest purification mantra to the Waters (Āpaḥ). The sādhaka prays: O Waters, golden-hued, pure, and purifying — born of Kaśyapa, connected with Indra and Agni — be auspicious and comforting to us. You move among humanity with Varuṇa, witnessing truth and untruth. You drip sweetness, cleanse all impurity, and nourish the worlds. You serve the gods in heaven, exist in many forms in the atmosphere, and fill the earth with life-giving waters. With your auspicious sight and touch, cleanse my body and skin. I invoke all divine fires dwelling in the waters — place in me radiance, strength, and vital energy. This mantra completes deep inner and outer purification before the final stages of Sandhyā.";
 
-function apassagamRefrain(id: string, danda: " ।" | " ॥"): SpanNode[] {
+function refrain(id: string, danda: " ।" | " ॥"): SpanNode[] {
   return [
-    word(`${id}-apassagam`, "", [
+    word(`${id}-tah`, "those", [["ताः", "tāḥ"]]),
+    word(`${id}-nah`, "for us", [["नः", "naḥ"]]),
+    word(`${id}-apah`, "waters", [
       ["आ", "ā"],
-      ["प", "pa"],
-      ["स्स", "ssa"],
-      ["गं", "gaṃ"],
+      ["पः", "paḥ"],
     ]),
-    word(`${id}-syonah`, "soothing, benevolent", [
+    word(`${id}-sam`, "peace / well-being", [["शं", "śaṃ"]]),
+    word(`${id}-syonah`, "pleasant / bringing ease", [
       ["स्यो", "syo"],
       ["नाः", "nāḥ"],
     ]),
@@ -32,56 +33,32 @@ export const punahMarjana: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "punaḥ mārjana", meaning: "final, deeper sprinkling for purification" },
-    { term: "hiraṇyavarṇāḥ", meaning: "golden-hued" },
+    { term: "hiraṇyavarṇāḥ", meaning: "golden-hued / pleasing-colored (from clarity)" },
     { term: "śucayaḥ", meaning: "pure" },
-    { term: "pāvaka", meaning: "purifier" },
-    { term: "sujātāḥ", meaning: "well-born" },
-    { term: "kaśyapa", meaning: "progenitor sage" },
-    { term: "svindraḥ", meaning: "with Indra" },
-    { term: "agniṃ", meaning: "Agni (fire)" },
+    { term: "pāvakāḥ", meaning: "purifying" },
+    { term: "yāsu", meaning: "in which" },
+    { term: "jātaḥ", meaning: "born" },
+    { term: "kaśyapaḥ", meaning: "Kaśyapa (here: Prajāpati)" },
+    { term: "indraḥ", meaning: "Indra (here: lightning, the middle one)" },
     { term: "garbham", meaning: "embryo" },
-    { term: "dadhire", meaning: "they hold" },
-    { term: "virūpāḥ", meaning: "of many forms" },
-    { term: "varuṇa", meaning: "lord of cosmic order and truth" },
-    { term: "bhavantu", meaning: "may they be" },
-    { term: "yāsām", meaning: "among whom" },
-    { term: "yāti", meaning: "moves" },
-    { term: "madhye", meaning: "in the midst" },
-    { term: "satya-anṛte", meaning: "truth and untruth" },
-    { term: "avapaśyan", meaning: "seeing, discerning" },
-    { term: "janānām", meaning: "of people" },
-    { term: "śyona", meaning: "soothing, benevolent" },
-    { term: "madhuścut", meaning: "dripping sweetness" },
-    { term: "bhakṣam", meaning: "sustenance" },
-    { term: "antarīkṣe", meaning: "in mid-space" },
-    { term: "bahudhā", meaning: "in many forms" },
-    { term: "pṛthivīm", meaning: "the earth" },
-    { term: "payasaḥ", meaning: "nourishing essence" },
-    { term: "undanti", meaning: "pour out" },
-    { term: "śukrāḥ", meaning: "bright" },
-    { term: "āpaḥ", meaning: "sacred waters" },
-    { term: "śiva-cakṣuṣā", meaning: "auspicious vision" },
-    { term: "upaspṛśata", meaning: "touch gently, cleanse" },
-    { term: "tvacam", meaning: "skin" },
-    { term: "apsu-ṣadaḥ", meaning: "dwelling in waters" },
-    { term: "varcas", meaning: "spiritual radiance" },
-    { term: "bala", meaning: "strength" },
-    { term: "ojas", meaning: "vital energy" },
-    { term: "nidhatta", meaning: "place, deposit" },
+    { term: "śaṃ", meaning: "peace / well-being" },
+    { term: "syonāḥ", meaning: "pleasant / bringing ease" },
+    { term: "satyānṛte", meaning: "truth-and-untruth" },
+    { term: "varcas", meaning: "brilliance" },
+    { term: "ojas", meaning: "ojas" },
   ],
-  root: group("pnm-verse", "verse", translation, [
+  root: group("pnm-verse", "verse", "", [
     group(
       "pnm-sent-1",
       "sentence",
-      "O Waters, golden-hued, pure, and purifying — born of Kaśyapa, connected with Indra and Agni — be auspicious and comforting to us.",
+      "golden-hued, pure, purifying waters, in which Kaśyapa Prajāpati was born, in which Indra; which in diverse forms held Agni as embryo; may those waters be peace and ease for us",
       [
         group(
           "pnm-pada-1a",
           "phrase",
-          "O Waters, golden-hued, pure, and purifying — born of Kaśyapa, connected with Indra and Agni",
+          "golden-hued, pure, purifying; in which Kaśyapa Prajāpati was born; in which Indra",
           [
-            word("pnm-hiranyavarnah", "golden-hued", [
+            word("pnm-hiranyavarnah", "golden-hued / pleasing-colored (from clarity)", [
               ["हि", "hi"],
               ["र", "ra"],
               ["ण्य", "ṇya"],
@@ -93,25 +70,29 @@ export const punahMarjana: Chapter = {
               ["च", "ca"],
               ["यः", "yaḥ"],
             ]),
-            word("pnm-pavakah", "purifier", [
+            word("pnm-pavakah", "purifying", [
               ["पा", "pā"],
               ["व", "va"],
               ["काः", "kāḥ"],
             ]),
-            word("pnm-ya-1", "", [["या", "yā"]]),
-            word("pnm-sujatah", "well-born", [
+            word("pnm-yasu-1", "in which", [
+              ["या", "yā"],
               ["सु", "su"],
+            ], { trailing: "" }),
+            word("pnm-jatah", "born", [
               ["जा", "jā"],
               ["तः", "taḥ"],
             ]),
-            word("pnm-kasyapo", "progenitor sage", [
+            word("pnm-kasyapah", "Kaśyapa (here: Prajāpati)", [
               ["क", "ka"],
               ["श्य", "śya"],
               ["पो", "po"],
             ]),
-            word("pnm-ya-2", "", [["या", "yā"]]),
-            word("pnm-svindrah", "with Indra", [
+            word("pnm-yasu-2", "in which", [
+              ["या", "yā"],
               ["स्वि", "svi"],
+            ], { trailing: "" }),
+            word("pnm-indrah", "Indra (here: lightning, the middle one)", [
               ["न्द्रः", "ndraḥ"],
             ], { trailing: " ।", lineBreakAfter: true }),
           ],
@@ -119,29 +100,28 @@ export const punahMarjana: Chapter = {
         group(
           "pnm-pada-1b",
           "phrase",
-          "be auspicious and comforting to us.",
+          "which in diverse forms held Agni as embryo; may those waters be peace and ease for us",
           [
-            word("pnm-agnim", "Agni (fire)", [
+            word("pnm-agnim", "Agni", [
               ["अ", "a"],
               ["ग्निं", "gniṃ"],
             ]),
-            word("pnm-ya-3", "", [["या", "yā"]]),
+            word("pnm-yah-garbha", "which", [["याः", "yāḥ"]]),
             word("pnm-garbham", "embryo", [
               ["ग", "ga"],
               ["र्भं", "rbhaṃ"],
             ]),
-            word("pnm-dadhire", "they hold", [
+            word("pnm-dadhire", "they have held", [
               ["द", "da"],
               ["धि", "dhi"],
               ["रे", "re"],
             ]),
-            word("pnm-virupastan", "of many forms", [
+            word("pnm-virupah", "of diverse forms", [
               ["वि", "vi"],
               ["रू", "rū"],
-              ["पा", "pā"],
-              ["स्तान", "stān"],
+              ["पाः", "pāḥ"],
             ]),
-            ...apassagamRefrain("pnm-ref-1", " ॥"),
+            ...refrain("pnm-ref-1", " ॥"),
           ],
         ),
       ],
@@ -149,27 +129,27 @@ export const punahMarjana: Chapter = {
     group(
       "pnm-sent-2",
       "sentence",
-      "You move among humanity with Varuṇa, witnessing truth and untruth.",
+      "among whom king Varuṇa goes in the midst, seeing the truth and untruth of people",
       [
         group(
           "pnm-pada-2",
           "phrase",
-          "You move among humanity with Varuṇa, witnessing truth and untruth.",
+          "among whom king Varuṇa goes in the midst, seeing the truth and untruth of people",
           [
-            word("pnm-yasan", "among whom", [
+            word("pnm-yasam-1", "of whom", [
               ["या", "yā"],
               ["साङ्", "sāṅ"],
             ]),
-            word("pnm-raja", "", [
+            word("pnm-raja", "king", [
               ["रा", "rā"],
               ["जा", "jā"],
             ]),
-            word("pnm-varuno", "lord of cosmic order and truth", [
+            word("pnm-varunah", "Varuṇa", [
               ["व", "va"],
               ["रु", "ru"],
               ["णो", "ṇo"],
             ]),
-            word("pnm-yati", "moves", [
+            word("pnm-yati", "goes", [
               ["या", "yā"],
               ["ति", "ti"],
             ]),
@@ -177,17 +157,19 @@ export const punahMarjana: Chapter = {
               ["म", "ma"],
               ["ध्ये", "dhye"],
             ]),
-            word("pnm-satyanrte", "truth and untruth", [
+            word("pnm-satyanrte", "truth-and-untruth", [
               ["स", "sa"],
               ["त्या", "tyā"],
               ["नृ", "nṛ"],
               ["ते", "te"],
             ]),
-            word("pnm-avapasyanjananam", "seeing, discerning", [
+            word("pnm-avapasyan", "seeing", [
               ["अ", "a"],
               ["व", "va"],
               ["पश्", "paś"],
               ["यञ्", "yan"],
+            ], { trailing: "" }),
+            word("pnm-jananam", "of people", [
               ["ज", "ja"],
               ["ना", "nā"],
               ["नाम्", "nām"],
@@ -199,14 +181,14 @@ export const punahMarjana: Chapter = {
     group(
       "pnm-sent-3",
       "sentence",
-      "You drip sweetness, cleanse all impurity, and nourish the worlds.",
+      "honey-flowing, pure, purifying; may those waters be peace and ease for us",
       [
         group(
           "pnm-pada-3",
           "phrase",
-          "You drip sweetness, cleanse all impurity, and nourish the worlds.",
+          "honey-flowing, pure, purifying; may those waters be peace and ease for us",
           [
-            word("pnm-madhuscutah", "dripping sweetness", [
+            word("pnm-madhuscutah", "dripping honey", [
               ["म", "ma"],
               ["धु", "dhu"],
               ["श्चु", "ścu"],
@@ -217,14 +199,13 @@ export const punahMarjana: Chapter = {
               ["च", "ca"],
               ["यो", "yo"],
             ]),
-            word("pnm-yah-1", "", [["याः", "yāḥ"]]),
-            word("pnm-pavakastan", "purifier", [
+            word("pnm-yah-1", "which", [["याः", "yāḥ"]]),
+            word("pnm-pavakah-2", "purifying", [
               ["पा", "pā"],
               ["व", "va"],
-              ["का", "kā"],
-              ["स्तान", "stān"],
+              ["काः", "kāḥ"],
             ]),
-            ...apassagamRefrain("pnm-ref-2", " ॥"),
+            ...refrain("pnm-ref-2", " ॥"),
           ],
         ),
       ],
@@ -232,47 +213,54 @@ export const punahMarjana: Chapter = {
     group(
       "pnm-sent-4",
       "sentence",
-      "You serve the gods in heaven, exist in many forms in the atmosphere, and fill the earth with life-giving waters.",
+      "Bhaṭṭabhāskara: the gods make Soma/amṛta their food · or: the sun’s rays provide their food in heaven; which exist in many forms in mid-space; which moisten the earth with their essence, the clear ones; may those waters be peace and ease for us",
       [
         group(
           "pnm-pada-4a",
           "phrase",
-          "You serve the gods in heaven, exist in many forms in the atmosphere",
+          "Bhaṭṭabhāskara: the gods make Soma/amṛta their food · or: the sun’s rays provide their food in heaven",
           [
-            word("pnm-yasam", "among whom", [
+            word("pnm-yasam-2", "of whom", [
               ["या", "yā"],
               ["सां", "sāṃ"],
             ]),
-            word("pnm-deva", "", [
+            word("pnm-devah", "gods", [
               ["दे", "de"],
               ["वा", "vā"],
             ]),
-            word("pnm-divi", "", [
+            word("pnm-divi", "in heaven", [
               ["दि", "di"],
               ["वि", "vi"],
             ]),
-            word("pnm-krnvanti", "", [
+            word("pnm-krnvanti", "they make", [
               ["कृ", "kṛ"],
               ["ण्व", "ṇva"],
               ["न्ति", "nti"],
             ]),
-            word("pnm-bhaksam", "sustenance", [
+            word("pnm-bhaksam", "food", [
               ["भ", "bha"],
               ["क्षं", "kṣaṃ"],
             ]),
-            word("pnm-ya-4", "", [["या", "yā"]]),
+          ],
+        ),
+        group(
+          "pnm-pada-4b",
+          "phrase",
+          "which exist in many forms in mid-space",
+          [
+            word("pnm-ya-4", "which", [["या", "yā"]]),
             word("pnm-antarikse", "in mid-space", [
               ["अ", "a"],
               ["न्त", "nta"],
               ["रि", "ri"],
               ["क्षे", "kṣe"],
             ]),
-            word("pnm-bahudha", "in many forms", [
+            word("pnm-bahudha", "in many ways", [
               ["ब", "ba"],
               ["हु", "hu"],
               ["धा", "dhā"],
             ]),
-            word("pnm-bhavanti", "", [
+            word("pnm-bhavanti", "they are", [
               ["भ", "bha"],
               ["व", "va"],
               ["न्ति", "nti"],
@@ -280,29 +268,30 @@ export const punahMarjana: Chapter = {
           ],
         ),
         group(
-          "pnm-pada-4b",
+          "pnm-pada-4c",
           "phrase",
-          "and fill the earth with life-giving waters.",
+          "which moisten the earth with their essence, the clear ones; may those waters be peace and ease for us",
           [
-            word("pnm-yah-2", "", [["याः", "yāḥ"]]),
-            word("pnm-prthivim", "the earth", [
+            word("pnm-yah-2", "which", [["याः", "yāḥ"]]),
+            word("pnm-prthivim", "earth", [
               ["पृ", "pṛ"],
               ["थि", "thi"],
               ["वीं", "vīṃ"],
             ]),
-            word("pnm-payasondanti", "pour out nourishing essence", [
+            word("pnm-payasa", "with essence / milk", [
               ["प", "pa"],
               ["य", "ya"],
               ["सो", "so"],
+            ], { trailing: "" }),
+            word("pnm-undanti", "they moisten", [
               ["न्द", "nda"],
               ["न्ति", "nti"],
             ]),
-            word("pnm-sukrastan", "bright", [
+            word("pnm-sukrah", "clear", [
               ["शु", "śu"],
-              ["क्रा", "krā"],
-              ["स्तान", "stān"],
+              ["क्राः", "krāḥ"],
             ]),
-            ...apassagamRefrain("pnm-ref-3", " ॥"),
+            ...refrain("pnm-ref-3", " ॥"),
           ],
         ),
       ],
@@ -310,40 +299,43 @@ export const punahMarjana: Chapter = {
     group(
       "pnm-sent-5",
       "sentence",
-      "With your auspicious sight and touch, cleanse my body and skin.",
+      "O waters, look on me with a peaceful eye; with an auspicious body touch my skin",
       [
         group(
           "pnm-pada-5",
           "phrase",
-          "With your auspicious sight and touch, cleanse my body and skin.",
+          "O waters, look on me with a peaceful eye; with an auspicious body touch my skin",
           [
-            word("pnm-sivena", "auspicious vision", [
+            word("pnm-sivena", "with auspicious / peaceful", [
               ["शि", "śi"],
               ["वे", "ve"],
               ["न", "na"],
             ]),
-            word("pnm-ma", "", [["मा", "mā"]]),
-            word("pnm-caksusa", "auspicious vision", [
+            word("pnm-ma", "me", [["मा", "mā"]]),
+            word("pnm-caksusa", "with the eye", [
               ["च", "ca"],
               ["क्षु", "kṣu"],
               ["षा", "ṣā"],
             ]),
-            word("pnm-pasyatapah", "", [
+            word("pnm-pasyata", "look", [
               ["पश्", "paś"],
               ["य", "ya"],
-              ["ता", "tā"],
+              ["त", "ta"],
+            ], { trailing: "" }),
+            word("pnm-apah-voc", "waters", [
+              ["आ", "ā"],
               ["पः", "paḥ"],
             ]),
-            word("pnm-sivaya", "", [
+            word("pnm-sivaya", "with auspicious", [
               ["शि", "śi"],
               ["व", "va"],
               ["या", "yā"],
             ]),
-            word("pnm-tanva", "", [
+            word("pnm-tanva", "with the body / form", [
               ["त", "ta"],
               ["न्वा", "nvā"],
             ]),
-            word("pnm-vopasprsat", "touch gently, cleanse", [
+            word("pnm-upasprsata", "touch", [
               ["वो", "vo"],
               ["प", "pa"],
               ["स्पृ", "spṛ"],
@@ -354,7 +346,7 @@ export const punahMarjana: Chapter = {
               ["त्व", "tva"],
               ["चं", "caṃ"],
             ]),
-            word("pnm-me", "", [["मे", "me"]], {
+            word("pnm-me", "my", [["मे", "me"]], {
               trailing: " ।",
               lineBreakAfter: true,
             }),
@@ -365,38 +357,39 @@ export const punahMarjana: Chapter = {
     group(
       "pnm-sent-6",
       "sentence",
-      "I invoke all divine fires dwelling in the waters — place in me radiance, strength, and vital energy.",
+      "I invoke all fires that sit in the waters; establish in me brilliance, strength, ojas",
       [
         group(
           "pnm-pada-6",
           "phrase",
-          "I invoke all divine fires dwelling in the waters — place in me radiance, strength, and vital energy.",
+          "I invoke all fires that sit in the waters; establish in me brilliance, strength, ojas",
           [
-            word("pnm-sarvan", "", [
+            word("pnm-sarvan", "all", [
               ["सर्", "sar"],
               ["वाङ्", "vāṅ"],
             ]),
-            word("pnm-agnigam", "", [
+            word("pnm-agnin", "fires", [
               ["अग्", "ag"],
-              ["नी", "nī"],
-              ["गं", "gaṃ"],
+              ["नीन्", "nīn"],
             ]),
-            word("pnm-apsusado", "dwelling in waters", [
+            word("pnm-apsu", "in the waters", [
               ["अप्", "ap"],
               ["सु", "su"],
+            ], { trailing: "" }),
+            word("pnm-sadah", "sitting", [
               ["ष", "ṣa"],
               ["दो", "do"],
             ]),
-            word("pnm-huve", "", [
+            word("pnm-huve", "I invoke", [
               ["हु", "hu"],
               ["वे", "ve"],
             ]),
-            word("pnm-vah", "", [["वः", "vaḥ"]]),
-            word("pnm-mayi", "", [
+            word("pnm-vah", "you", [["वः", "vaḥ"]]),
+            word("pnm-mayi", "in me", [
               ["म", "ma"],
               ["यि", "yi"],
             ]),
-            word("pnm-varco", "spiritual radiance", [
+            word("pnm-varcah", "brilliance", [
               ["वर्", "var"],
               ["चो", "co"],
             ]),
@@ -404,12 +397,12 @@ export const punahMarjana: Chapter = {
               ["ब", "ba"],
               ["ल", "la"],
             ]),
-            word("pnm-ojo", "vital energy", [
+            word("pnm-ojas", "ojas", [
               ["ओ", "o"],
               ["जो", "jo"],
             ]),
-            word("pnm-nidhatta", "place, deposit", [
-              ["नि", "ni"],
+            word("pnm-ni", "down", [["नि", "ni"]], { trailing: "" }),
+            word("pnm-dhatta", "establish", [
               ["ध", "dha"],
               ["त्त", "tta"],
             ], { trailing: " ॥" }),
