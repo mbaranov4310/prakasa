@@ -4,13 +4,27 @@ import type { Chapter } from "../types";
 const translation =
   "This chapter prepares us just before beginning Gāyatrī Japa. First, we invite (āvāhana) the powers needed for japa: Gāyatrī – the mantra itself; Sāvitrī – the illuminating force; Sarasvatī – clarity of speech and understanding; Ṛṣis and Chandas – the seers and the meter; Śrī – auspiciousness; Bala – strength and steadiness. Next, we state the full identity of the Gāyatrī mantra: Ṛṣi: Viśvāmitra; Devatā: Savitā (the Sun principle); Body mapping: Head – Brahmā (creation); Heart – Viṣṇu (sustaining awareness); Crown / tuft – Rudra (transforming power); Womb / base – Earth (support). Then we align prāṇa: Prāṇa, Apāna, Vyāna, Udāna, Samāna; All life-forces working together as one breath. Finally, we affirm that Gāyatrī: Has 24 syllables; Is arranged in three pādas; Has a six-fold body; Has five heads of awareness. This makes the mind steady, complete, and ready for japa.";
 
-const avahayami: [string, string][] = [
-  ["मा", "mā"],
-  ["वा", "vā"],
-  ["ह", "ha"],
-  ["या", "yā"],
-  ["मि", "mi"],
-];
+function avahayami(id: string, options?: { last?: boolean; fusedMa?: boolean }) {
+  const syllables: [string, string][] = options?.fusedMa
+    ? [
+        ["मा", "mā"],
+        ["वा", "vā"],
+        ["ह", "ha"],
+        ["या", "yā"],
+        ["मि", "mi"],
+      ]
+    : [
+        ["आ", "ā"],
+        ["वा", "vā"],
+        ["ह", "ha"],
+        ["या", "yā"],
+        ["मि", "mi"],
+      ];
+  return word(id, "I invite", syllables, {
+    trailing: options?.last ? " ॥" : " ।",
+    lineBreakAfter: true,
+  });
+}
 
 export const gayatriAvahanaNyasa: Chapter = {
   id: "gayatri-avahana-nyasa",
@@ -20,370 +34,272 @@ export const gayatriAvahanaNyasa: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "āvāhayāmi", meaning: "I invoke, I invite to be present" },
-    {
-      term: "gāyatrī / sāvitrī / sarasvatī",
-      meaning: "forms of divine speech, light, wisdom",
-    },
-    { term: "chanda-ṛṣīṇām", meaning: "the seers of the Vedic metres" },
-    { term: "śriyaṃ", meaning: "prosperity, auspicious presence" },
-    { term: "balam", meaning: "strength" },
-    { term: "gāyatrī-chandas", meaning: "Gāyatrī metre" },
-    { term: "viśvāmitra", meaning: "seer (ṛṣi)" },
-    { term: "savitā", meaning: "deity (solar impeller)" },
-    {
-      term: "agnir mukham",
-      meaning: "Agni is the mouth (the offering-point)",
-    },
-    { term: "brahmā śiraḥ", meaning: "Brahmā the head" },
-    { term: "viṣṇuḥ hṛdayam", meaning: "Viṣṇu the heart" },
-    { term: "rudraḥ śikhā", meaning: "Rudra the crest" },
-    { term: "pṛthivī yoniḥ", meaning: "Earth the womb/origin" },
-    {
-      term: "prāṇa–apāna–vyāna–udāna–samānāḥ",
-      meaning: "the five vital airs",
-    },
-    { term: "śveta-varṇāḥ", meaning: "white/pure in radiance" },
-    {
-      term: "sāṅkhyāyana-gōtra",
-      meaning: "of the Sāṅkhyāyana lineage",
-    },
-    { term: "chaturviṃśaty-akṣarā", meaning: "24-syllabled" },
-    { term: "tripadā", meaning: "three-footed" },
-    { term: "ṣaṭ-kukṣiḥ", meaning: "six-sectioned" },
-    { term: "pañca-śīrṣā", meaning: "five-headed" },
-    {
-      term: "upanayanē viniyōgaḥ",
-      meaning: "employed in the Upanayana rite",
-    },
+    { term: "āvāhayāmi", meaning: "I invite" },
+    { term: "viśvāmitra", meaning: "Viśvāmitra" },
+    { term: "savitā", meaning: "Savitā" },
   ],
-  root: group("gan-verse", "verse", translation, [
-    group(
-      "gan-avahana",
-      "verse",
-      "First, we invite (āvāhana) the powers needed for japa: Gāyatrī – the mantra itself; Sāvitrī – the illuminating force; Sarasvatī – clarity of speech and understanding; Ṛṣis and Chandas – the seers and the meter; Śrī – auspiciousness; Bala – strength and steadiness.",
-      [
-        group("gan-gayatrim", "sentence", "Gāyatrī – the mantra itself", [
-          word(
-            "gan-gayatrimavahayami",
-            "forms of divine speech, light, wisdom",
-            [["गा", "gā"], ["य", "ya"], ["त्री", "trī"], ...avahayami],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
-        ]),
-        group("gan-savitrim", "sentence", "Sāvitrī – the illuminating force", [
-          word(
-            "gan-savitrimavahayami",
-            "forms of divine speech, light, wisdom",
-            [["सा", "sā"], ["वि", "vi"], ["त्री", "trī"], ...avahayami],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
-        ]),
-        group(
-          "gan-sarasvatim",
-          "sentence",
-          "Sarasvatī – clarity of speech and understanding",
-          [
-            word(
-              "gan-sarasvatimavahayami",
-              "forms of divine speech, light, wisdom",
-              [
-                ["स", "sa"],
-                ["र", "ra"],
-                ["स्व", "sva"],
-                ["ती", "tī"],
-                ...avahayami,
-              ],
-              { trailing: " ।", lineBreakAfter: true },
-            ),
-          ],
-        ),
-        group(
-          "gan-chandarsin",
-          "sentence",
-          "Ṛṣis and Chandas – the seers and the meter",
-          [
-            word(
-              "gan-chandarsinnavahayami",
-              "the seers of the Vedic metres",
-              [
-                ["छन्", "chan"],
-                ["दर॑", "dar"],
-                ["षी", "ṣī"],
-                ["न्ना", "nnā"],
-                ["वा", "vā"],
-                ["ह", "ha"],
-                ["या", "yā"],
-                ["मि", "mi"],
-              ],
-              { trailing: " ।", lineBreakAfter: true },
-            ),
-          ],
-        ),
-        group("gan-sriyam", "sentence", "Śrī – auspiciousness", [
-          word(
-            "gan-sriyammavahayami",
-            "prosperity, auspicious presence",
-            [["श्रि", "śri"], ["यं", "yam"], ...avahayami],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
-        ]),
-        group("gan-balam", "sentence", "Bala – strength and steadiness", [
-          word(
-            "gan-balamavahayami",
-            "strength",
-            [["ब", "ba"], ["ल", "la"], ...avahayami],
-            { trailing: " ॥", lineBreakAfter: true },
-          ),
-        ]),
-      ],
-    ),
-    group(
-      "gan-identity",
-      "verse",
-      "Next, we state the full identity of the Gāyatrī mantra: Ṛṣi: Viśvāmitra; Devatā: Savitā (the Sun principle); Body mapping: Head – Brahmā (creation); Heart – Viṣṇu (sustaining awareness); Crown / tuft – Rudra (transforming power); Womb / base – Earth (support).",
-      [
-        group("gan-rsi", "sentence", "Ṛṣi: Viśvāmitra", [
-          group("gan-chandas", "phrase", "Gāyatrī metre", [
-            word("gan-gayatrya", "forms of divine speech, light, wisdom", [
-              ["गा", "gā"],
-              ["य", "ya"],
-              ["त्र्या", "tryā"],
-            ]),
-            word(
-              "gan-gayatri-meter",
-              "forms of divine speech, light, wisdom",
-              [
-                ["गा", "gā"],
-                ["य", "ya"],
-                ["त्री", "trī"],
-              ],
-              { lineBreakAfter: true },
-            ),
-            word("gan-chando", "Gāyatrī metre", [
-              ["छ", "cha"],
-              ["न्दो", "ndo"],
-            ]),
+  root: group("gan-verse", "verse", "", [
+    group("gan-avahana", "verse", "", [
+      group("gan-gayatrim", "sentence", "I invite Gāyatrī", [
+        word("gan-gayatrim", "Gāyatrī", [
+          ["गा", "gā"],
+          ["य", "ya"],
+          ["त्री", "trī"],
+        ], { trailing: "" }),
+        avahayami("gan-avahayami-gayatri", { fusedMa: true }),
+      ]),
+      group("gan-savitrim", "sentence", "I invite Sāvitrī", [
+        word("gan-savitrim", "Sāvitrī", [
+          ["सा", "sā"],
+          ["वि", "vi"],
+          ["त्री", "trī"],
+        ], { trailing: "" }),
+        avahayami("gan-avahayami-savitri", { fusedMa: true }),
+      ]),
+      group("gan-sarasvatim", "sentence", "I invite Sarasvatī", [
+        word("gan-sarasvatim", "Sarasvatī", [
+          ["स", "sa"],
+          ["र", "ra"],
+          ["स्व", "sva"],
+          ["ती", "tī"],
+        ], { trailing: "" }),
+        avahayami("gan-avahayami-sarasvati", { fusedMa: true }),
+      ]),
+      group("gan-chandarsin", "sentence", "I invite the seers of the meters", [
+        word("gan-chandarsin", "seers of the meters", [
+          ["छन्", "chan"],
+          ["दर॑", "dar"],
+          ["षी", "ṣī"],
+          ["न्", "n"],
+        ], { trailing: "" }),
+        word("gan-avahayami-chandarsin", "I invite", [
+          ["ना", "nā"],
+          ["वा", "vā"],
+          ["ह", "ha"],
+          ["या", "yā"],
+          ["मि", "mi"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-sriyam", "sentence", "I invite Śrī", [
+        word("gan-sriyam", "Śrī", [
+          ["श्रि", "śri"],
+          ["यं", "yam"],
+        ], { trailing: "" }),
+        avahayami("gan-avahayami-sriyam", { fusedMa: true }),
+      ]),
+      group("gan-balam", "sentence", "I invite strength", [
+        word("gan-balam", "strength", [
+          ["ब", "ba"],
+          ["ल", "la"],
+        ], { trailing: "" }),
+        avahayami("gan-avahayami-balam", { fusedMa: true, last: true }),
+      ]),
+    ]),
+    group("gan-identity", "verse", "", [
+      group("gan-rsi", "sentence", "Gāyatrī meter, Viśvāmitra the ṛṣi", [
+        group("gan-chandas", "phrase", "Gāyatrī meter", [
+          word("gan-gayatrya", "of Gāyatrī", [
+            ["गा", "gā"],
+            ["य", "ya"],
+            ["त्र्या", "tryā"],
           ]),
-          word("gan-visvamitra", "seer (ṛṣi)", [
-            ["वि", "vi"],
-            ["श्वा", "śvā"],
-            ["मि", "mi"],
-            ["त्र", "tra"],
+          word("gan-gayatri-meter", "Gāyatrī", [
+            ["गा", "gā"],
+            ["य", "ya"],
+            ["त्री", "trī"],
+          ], { lineBreakAfter: true }),
+          word("gan-chandah", "meter", [
+            ["छ", "cha"],
+            ["न्दो", "ndo"],
           ]),
-          word("gan-rsih", "", [
-            ["ऋ", "ṛ"],
-            ["षिः", "ṣiḥ"],
-          ], { trailing: " ।", lineBreakAfter: true }),
         ]),
-        group(
-          "gan-devata",
-          "sentence",
-          "Devatā: Savitā (the Sun principle)",
-          [
-            word("gan-savita", "deity (solar impeller)", [
-              ["स", "sa"],
-              ["वि", "vi"],
-              ["ता", "tā"],
-            ]),
-            word("gan-devata-word", "", [
-              ["दे", "de"],
-              ["व", "va"],
-              ["ता", "tā"],
-            ], { trailing: " ।", lineBreakAfter: true }),
-          ],
-        ),
-        group(
-          "gan-agnimukham",
-          "sentence",
-          "Agni is the mouth (the offering-point)",
-          [
-            word(
-              "gan-agnimukham-word",
-              "Agni is the mouth (the offering-point)",
-              [
-                ["अ", "a"],
-                ["ग्नि", "gni"],
-                ["मु", "mu"],
-                ["खम्", "kham"],
-              ],
-              { trailing: " ।", lineBreakAfter: true },
-            ),
-          ],
-        ),
-        group("gan-brahma-sirah", "sentence", "Head – Brahmā (creation)", [
-          word("gan-brahma", "Brahmā the head", [
-            ["ब्र", "bra"],
-            ["ह्मा", "hmā"],
-          ]),
-          word("gan-sirah", "Brahmā the head", [
-            ["शि", "śi"],
-            ["रः", "raḥ"],
-          ], { trailing: " ।", lineBreakAfter: true }),
+        word("gan-visvamitra", "Viśvāmitra", [
+          ["वि", "vi"],
+          ["श्वा", "śvā"],
+          ["मि", "mi"],
+          ["त्र", "tra"],
         ]),
-        group(
-          "gan-visnu-hrdayam",
-          "sentence",
-          "Heart – Viṣṇu (sustaining awareness)",
-          [
-            word("gan-visnuh", "Viṣṇu the heart", [
-              ["वि", "vi"],
-              ["ष्णुः", "ṣṇuḥ"],
-            ]),
-            word("gan-hrdayam", "Viṣṇu the heart", [
-              ["हृ", "hṛ"],
-              ["द", "da"],
-              ["यम्", "yam"],
-            ], { trailing: " ।", lineBreakAfter: true }),
-          ],
-        ),
-        group(
-          "gan-rudra-sikha",
-          "sentence",
-          "Crown / tuft – Rudra (transforming power)",
-          [
-            word("gan-rudrah", "Rudra the crest", [
-              ["रु", "ru"],
-              ["द्रः", "draḥ"],
-            ]),
-            word("gan-sikha", "Rudra the crest", [
-              ["शि", "śi"],
-              ["खा", "khā"],
-            ], { trailing: " ।", lineBreakAfter: true }),
-          ],
-        ),
-        group(
-          "gan-prthivi-yonih",
-          "sentence",
-          "Womb / base – Earth (support)",
-          [
-            word("gan-prthivi", "Earth the womb/origin", [
-              ["पृ", "pṛ"],
-              ["थि", "thi"],
-              ["वी", "vī"],
-            ]),
-            word("gan-yonih", "Earth the womb/origin", [
-              ["यो", "yo"],
-              ["निः", "niḥ"],
-            ], { trailing: " ।", lineBreakAfter: true }),
-          ],
-        ),
-      ],
-    ),
+        word("gan-rsih", "ṛṣi", [
+          ["ऋ", "ṛ"],
+          ["षिः", "ṣiḥ"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-devata", "sentence", "Savitā the deity", [
+        word("gan-savita", "Savitā", [
+          ["स", "sa"],
+          ["वि", "vi"],
+          ["ता", "tā"],
+        ]),
+        word("gan-devata-word", "the deity", [
+          ["दे", "de"],
+          ["व", "va"],
+          ["ता", "tā"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-agnimukham", "sentence", "Agni the mouth", [
+        word("gan-agnih", "Agni", [
+          ["अ", "a"],
+          ["ग्नि", "gni"],
+        ], { trailing: "" }),
+        word("gan-mukham", "mouth", [
+          ["मु", "mu"],
+          ["खम्", "kham"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-brahma-sirah", "sentence", "Brahmā the head", [
+        word("gan-brahma", "Brahmā", [
+          ["ब्र", "bra"],
+          ["ह्मा", "hmā"],
+        ]),
+        word("gan-sirah", "the head", [
+          ["शि", "śi"],
+          ["रः", "raḥ"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-visnu-hrdayam", "sentence", "Viṣṇu the heart", [
+        word("gan-visnuh", "Viṣṇu", [
+          ["वि", "vi"],
+          ["ष्णुः", "ṣṇuḥ"],
+        ]),
+        word("gan-hrdayam", "the heart", [
+          ["हृ", "hṛ"],
+          ["द", "da"],
+          ["यम्", "yam"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-rudra-sikha", "sentence", "Rudra the tuft", [
+        word("gan-rudrah", "Rudra", [
+          ["रु", "ru"],
+          ["द्रः", "draḥ"],
+        ]),
+        word("gan-sikha", "the tuft", [
+          ["शि", "śi"],
+          ["खा", "khā"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-prthivi-yonih", "sentence", "Earth the womb", [
+        word("gan-prthivi", "Earth", [
+          ["पृ", "pṛ"],
+          ["थि", "thi"],
+          ["वी", "vī"],
+        ]),
+        word("gan-yonih", "the womb", [
+          ["यो", "yo"],
+          ["निः", "niḥ"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+    ]),
     group(
       "gan-prana",
       "sentence",
-      "Prāṇa, Apāna, Vyāna, Udāna, Samāna; All life-forces working together as one breath.",
+      "prāṇa, apāna, vyāna, udāna, samāna, together as prāṇa",
       [
-        word("gan-pranapana", "the five vital airs", [
+        word("gan-prana", "prāṇa", [
           ["प्रा", "prā"],
           ["णा", "ṇā"],
+        ], { trailing: "" }),
+        word("gan-apana", "apāna", [
           ["पा", "pā"],
           ["न", "na"],
         ]),
-        word("gan-vyanodana", "the five vital airs", [
+        word("gan-vyana", "vyāna", [
           ["व्या", "vyā"],
           ["नो", "no"],
+        ], { trailing: "" }),
+        word("gan-udana", "udāna", [
           ["दा", "dā"],
           ["न", "na"],
         ]),
-        word("gan-samanah", "the five vital airs", [
+        word("gan-samanah", "samāna", [
           ["स", "sa"],
           ["मा", "mā"],
           ["नाः", "nāḥ"],
         ]),
-        word("gan-sapranah", "", [
+        word("gan-saprana", "together as prāṇa", [
           ["स", "sa"],
           ["प्रा", "prā"],
           ["णाः", "ṇāḥ"],
         ], { trailing: " ।", lineBreakAfter: true }),
       ],
     ),
-    group("gan-varna-gotra", "sentence", "white/pure in radiance; of the Sāṅkhyāyana lineage", [
-      word("gan-svetavarnah", "white/pure in radiance", [
-        ["श्वे", "śve"],
-        ["त", "ta"],
-        ["व", "va"],
-        ["र्णाः", "rṇāḥ"],
-      ]),
-      word("gan-sankhyayanasagotrah", "of the Sāṅkhyāyana lineage", [
-        ["सां", "sāṅ"],
-        ["ख्या", "khyā"],
-        ["य", "ya"],
-        ["न", "na"],
-        ["स", "sa"],
-        ["गो", "go"],
-        ["त्राः", "trāḥ"],
-      ], { trailing: " ।", lineBreakAfter: true }),
-    ]),
     group(
-      "gan-form",
-      "verse",
-      "Finally, we affirm that Gāyatrī: Has 24 syllables; Is arranged in three pādas; Has a six-fold body; Has five heads of awareness.",
-      [
-        group("gan-24", "sentence", "Has 24 syllables", [
-          word(
-            "gan-gayatri-24",
-            "forms of divine speech, light, wisdom",
-            [
-              ["गा", "gā"],
-              ["य", "ya"],
-              ["त्री", "trī"],
-            ],
-          ),
-          word("gan-caturvimsatyaksara", "24-syllabled", [
-            ["च", "ca"],
-            ["तु", "tu"],
-            ["र्विं", "rviṃ"],
-            ["श", "śa"],
-            ["त्य", "tya"],
-            ["क्ष", "kṣa"],
-            ["रा", "rā"],
-          ], { trailing: " ।", lineBreakAfter: true }),
-        ]),
-        group("gan-tripada", "sentence", "Is arranged in three pādas", [
-          word("gan-tripada-word", "three-footed", [
-            ["त्रि", "tri"],
-            ["प", "pa"],
-            ["दा", "dā"],
-          ], { trailing: " ।", lineBreakAfter: true }),
-        ]),
-        group("gan-satkuksih", "sentence", "Has a six-fold body", [
-          word("gan-satkuksih-word", "six-sectioned", [
-            ["ष", "ṣa"],
-            ["ट्कु", "ṭku"],
-            ["क्षिः", "kṣiḥ"],
-          ], { trailing: " ।", lineBreakAfter: true }),
-        ]),
-        group("gan-pancasirsa", "sentence", "Has five heads of awareness", [
-          word("gan-pancasirsa-word", "five-headed", [
-            ["प", "pa"],
-            ["ञ्च", "ñca"],
-            ["शी", "śī"],
-            ["र्षा", "rṣā"],
-          ], { trailing: " ।", lineBreakAfter: true }),
-        ]),
-      ],
-    ),
-    group(
-      "gan-viniyoga",
+      "gan-varna-gotra",
       "sentence",
-      "employed in the Upanayana rite",
+      "white-colored; of the Sāṅkhyāyana gotra",
       [
-        word("gan-upanayane", "employed in the Upanayana rite", [
-          ["उ", "u"],
-          ["प", "pa"],
-          ["न", "na"],
-          ["य", "ya"],
-          ["ने", "ne"],
+        word("gan-svetavarnah", "white-colored", [
+          ["श्वे", "śve"],
+          ["त", "ta"],
+          ["व", "va"],
+          ["र्णाः", "rṇāḥ"],
         ]),
-        word("gan-viniyogah", "employed in the Upanayana rite", [
-          ["वि", "vi"],
-          ["नि", "ni"],
-          ["यो", "yo"],
-          ["गः", "gaḥ"],
-        ], { trailing: " ॥" }),
+        word("gan-sankhyayana", "Sāṅkhyāyana", [
+          ["सां", "sāṅ"],
+          ["ख्या", "khyā"],
+          ["य", "ya"],
+          ["न", "na"],
+        ], { trailing: "" }),
+        word("gan-sagotrah", "of the gotra", [
+          ["स", "sa"],
+          ["गो", "go"],
+          ["त्राः", "trāḥ"],
+        ], { trailing: " ।", lineBreakAfter: true }),
       ],
     ),
+    group("gan-form", "verse", "", [
+      group("gan-24", "sentence", "24-syllabled", [
+        word("gan-gayatri-24", "Gāyatrī", [
+          ["गा", "gā"],
+          ["य", "ya"],
+          ["त्री", "trī"],
+        ]),
+        word("gan-caturvimsatyaksara", "24-syllabled", [
+          ["च", "ca"],
+          ["तु", "tu"],
+          ["र्विं", "rviṃ"],
+          ["श", "śa"],
+          ["त्य", "tya"],
+          ["क्ष", "kṣa"],
+          ["रा", "rā"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-tripada", "sentence", "three-footed", [
+        word("gan-tripada-word", "three-footed", [
+          ["त्रि", "tri"],
+          ["प", "pa"],
+          ["दा", "dā"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-satkuksih", "sentence", "six-bellied", [
+        word("gan-satkuksih-word", "six-bellied", [
+          ["ष", "ṣa"],
+          ["ट्कु", "ṭku"],
+          ["क्षिः", "kṣiḥ"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+      group("gan-pancasirsa", "sentence", "five-headed", [
+        word("gan-pancasirsa-word", "five-headed", [
+          ["प", "pa"],
+          ["ञ्च", "ñca"],
+          ["शी", "śī"],
+          ["र्षा", "rṣā"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
+    ]),
+    group("gan-viniyoga", "sentence", "application in the upanayana", [
+      word("gan-upanayane", "in the upanayana", [
+        ["उ", "u"],
+        ["प", "pa"],
+        ["न", "na"],
+        ["य", "ya"],
+        ["ने", "ne"],
+      ]),
+      word("gan-viniyogah", "application", [
+        ["वि", "vi"],
+        ["नि", "ni"],
+        ["यो", "yo"],
+        ["गः", "gaḥ"],
+      ], { trailing: " ॥" }),
+    ]),
   ]),
 };
