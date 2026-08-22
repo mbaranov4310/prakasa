@@ -67,12 +67,14 @@ export function MantraText({
     >
       {leaves.map((leaf) => {
         const on = highlighted.has(leaf.id);
-        const punct = leaf.trailing?.replace(/^\s+/, "") ?? "";
+        const trailing = leaf.trailing ?? "";
+        const punct = trailing.replace(/^\s+/, "");
+        const wordGap = /^\s/.test(trailing) && !punct;
         return (
           <Fragment key={leaf.id}>
             <span
               data-word-id={leaf.id}
-              className={`word${on ? " highlighted" : ""}`}
+              className={`word${on ? " highlighted" : ""}${wordGap ? " word-gap-after" : ""}`}
               onClick={(event) => {
                 event.stopPropagation();
                 onSelectWord(leaf.id);

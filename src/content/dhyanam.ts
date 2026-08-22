@@ -33,10 +33,10 @@ export const dhyanam: Chapter = {
     { term: "varadā", meaning: "boon-giving" },
     { term: "abhaya", meaning: "fearlessness" },
     { term: "aṅkuśa", meaning: "goad" },
-    { term: "kaśā", meaning: "whip" },
-    { term: "śubhra", meaning: "bright" },
-    { term: "aṅga-pāla", meaning: "body-protecting" },
-    { term: "aṅgadām", meaning: "armlets" },
+    { term: "kaśāḥ", meaning: "whip" },
+    { term: "śubhraṃ", meaning: "white / radiant" },
+    { term: "kapālaṃ", meaning: "skull" },
+    { term: "gadām", meaning: "mace" },
     { term: "śaṅkham", meaning: "conch" },
     { term: "cakram", meaning: "discus" },
     { term: "dhara", meaning: "holding" },
@@ -124,15 +124,15 @@ export const dhyanam: Chapter = {
         word("dh-tattva", "principle", [
           ["तत्", "tat"],
           ["त्व", "tva"],
-        ], { trailing: "" }),
+        ]),
         word("dh-artha", "meaning", [
           ["अर्", "ar"],
           ["थ", "tha"],
-        ], { trailing: "" }),
+        ]),
         word("dh-varna", "letter", [
           ["व", "va"],
           ["र्ण", "rṇa"],
-        ], { trailing: "" }),
+        ]),
         word(
           "dh-atmikam",
           "whose nature is",
@@ -148,7 +148,7 @@ export const dhyanam: Chapter = {
     group(
       "dh-pada-3",
       "sentence",
-      "Gāyatrī, who has the boon and fearlessness gestures, the goad and whip, and bright body-protecting armlets",
+      "Gāyatrī — the boon-giving and fearlessness gestures, the goad, the whip, a white skull, and a mace",
       [
         word("dh-gayatrim", "Gāyatrī", [
           ["गा", "gā"],
@@ -159,38 +159,38 @@ export const dhyanam: Chapter = {
           ["व", "va"],
           ["र", "ra"],
           ["दा", "dā"],
-        ], { trailing: "" }),
+        ]),
         word("dh-abhaya", "fearlessness", [
           ["अ", "a"],
           ["भ", "bha"],
           ["य", "ya"],
-        ], { trailing: "" }),
+        ]),
         word("dh-ankusa", "goad", [
           ["अङ्", "aṅ"],
           ["कु", "ku"],
           ["श", "śa"],
-        ], { trailing: "" }),
-        word("dh-kasa", "whip", [
+        ]),
+        word("dh-kasah", "whip", [
           ["क", "ka"],
-          ["शा", "śā"],
-        ], { trailing: "" }),
-        word("dh-subhra", "bright", [
-          ["शु", "śu"],
-          ["भ्र", "bhra"],
-        ], { trailing: "" }),
-        word("dh-anga-pala", "body-protecting", [
-          ["अङ्", "aṅ"],
-          ["ग", "ga"],
-          ["पा", "pā"],
-          ["ल", "la"],
-        ], { trailing: "" }),
+          ["शाः", "śāḥ"],
+        ]),
+        group("dh-white-skull", "phrase", "a white skull", [
+          word("dh-subhram", "white / radiant", [
+            ["शु", "śu"],
+            ["भ्रं", "bhraṃ"],
+          ]),
+          word("dh-kapalam", "skull", [
+            ["क", "ka"],
+            ["पा", "pā"],
+            ["लं", "laṃ"],
+          ]),
+        ]),
         word(
-          "dh-angadam",
-          "armlets",
+          "dh-gadam",
+          "mace",
           [
-            ["अङ्", "aṅ"],
             ["ग", "ga"],
-            ["दाम्", "dām"],
+            ["दां", "dāṃ"],
           ],
           { trailing: " ।", lineBreakAfter: true },
         ),
@@ -212,7 +212,7 @@ export const dhyanam: Chapter = {
         word("dh-dhara", "holding", [
           ["ध", "dha"],
           ["र", "ra"],
-        ], { trailing: "" }),
+        ]),
         word("dh-aravinda", "lotus", [
           ["अ", "a"],
           ["र", "ra"],

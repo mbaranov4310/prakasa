@@ -245,6 +245,10 @@ button {
   vertical-align: bottom;
 }
 
+.word-gap-after {
+  margin-right: 0.35em;
+}
+
 .word:hover {
   background: #f6ebc4;
 }
