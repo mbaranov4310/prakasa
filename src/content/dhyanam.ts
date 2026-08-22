@@ -39,12 +39,11 @@ export const dhyanam: Chapter = {
     { term: "gadām", meaning: "mace" },
     { term: "śaṅkham", meaning: "conch" },
     { term: "cakram", meaning: "discus" },
-    { term: "dhara", meaning: "holding" },
-    { term: "aravinda", meaning: "lotus" },
-    { term: "yugalam", meaning: "pair" },
-    { term: "hastaiḥ", meaning: "with the hands" },
-    { term: "vahantīm", meaning: "bearing" },
-    { term: "bhaje", meaning: "I adore" },
+    { term: "atha", meaning: "and / furthermore / then" },
+    { term: "aravinda-yugalam", meaning: "pair of lotuses" },
+    { term: "hastaiḥ", meaning: "with / by the hands" },
+    { term: "vahantīm", meaning: "bearing / holding" },
+    { term: "bhaje", meaning: "I worship" },
   ],
   root: group("dh-verse", "verse", "", [
     group(
@@ -199,7 +198,7 @@ export const dhyanam: Chapter = {
     group(
       "dh-pada-4",
       "sentence",
-      "bearing conch, discus, and a pair of lotuses in the hands — I adore",
+      "bearing conch, discus, and then a pair of lotuses in the hands — I worship",
       [
         word("dh-sankham", "conch", [
           ["श", "śa"],
@@ -209,33 +208,31 @@ export const dhyanam: Chapter = {
           ["च", "ca"],
           ["क्रं", "kraṃ"],
         ]),
-        word("dh-dhara", "holding", [
-          ["ध", "dha"],
-          ["र", "ra"],
+        word("dh-atha", "and / furthermore / then", [
+          ["अ", "a"],
+          ["थ", "tha"],
         ]),
-        word("dh-aravinda", "lotus", [
+        word("dh-aravinda-yugalam", "pair of lotuses", [
           ["अ", "a"],
           ["र", "ra"],
           ["वि", "vi"],
           ["न्द", "nda"],
-        ], { trailing: "" }),
-        word("dh-yugalam", "pair", [
           ["यु", "yu"],
           ["ग", "ga"],
           ["लं", "laṃ"],
         ]),
-        word("dh-hastaih", "with the hands", [
+        word("dh-hastaih", "with / by the hands", [
           ["ह", "ha"],
           ["स्तैः", "staiḥ"],
         ]),
-        word("dh-vahantim", "bearing", [
+        word("dh-vahantim", "bearing / holding", [
           ["व", "va"],
           ["ह", "ha"],
           ["न्तीं", "ntīṃ"],
         ]),
         word(
           "dh-bhaje",
-          "I adore",
+          "I worship",
           [
             ["भ", "bha"],
             ["जे", "je"],
