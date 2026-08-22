@@ -24,7 +24,7 @@ const translation =
   elementsMeaning;
 
 function namo(id: string): SpanNode {
-  return word(id, "salutations, bowing", [
+  return word(id, "salutations", [
     ["न", "na"],
     ["मो", "mo"],
   ]);
@@ -36,7 +36,7 @@ function namah(
 ): SpanNode {
   return word(
     id,
-    "salutations, bowing",
+    "salutations",
     [
       ["न", "na"],
       ["मः", "maḥ"],
@@ -45,34 +45,42 @@ function namah(
   );
 }
 
-const gangaYamunaSyllables: [string, string][] = [
-  ["ग", "ga"],
-  ["ङ्गा", "ṅgā"],
-  ["–", "–"],
-  ["य", "ya"],
-  ["मु", "mu"],
-  ["न", "na"],
-  ["यो", "yo"],
-];
-
-function gangaYamunaMadhye(id: string): SpanNode {
-  return word(id, "of Gaṅgā and Yamunā (dual genitive); in the midst, in the region between", [
-    ...gangaYamunaSyllables,
-    ["र्म", "rma"],
-    ["ध्ये", "dhye"],
-  ]);
+function ganga(id: string): SpanNode {
+  return word(
+    id,
+    "Gaṅgā",
+    [
+      ["ग", "ga"],
+      ["ङ्गा", "ṅgā"],
+      ["–", "–"],
+    ],
+    { trailing: "" },
+  );
 }
 
-function gangaYamunaMunibhyah(
+function yamunayoh(id: string): SpanNode {
+  return word(
+    id,
+    "and Yamunā (dual: “of the two”)",
+    [
+      ["य", "ya"],
+      ["मु", "mu"],
+      ["न", "na"],
+      ["योर्", "yor"],
+    ],
+    { trailing: "" },
+  );
+}
+
+function munibhyah(
   id: string,
   options?: { trailing?: string; lineBreakAfter?: boolean },
 ): SpanNode {
   return word(
     id,
-    "of Gaṅgā and Yamunā (dual genitive); to the sages",
+    "to the sages",
     [
-      ...gangaYamunaSyllables,
-      ["र्मु", "rmu"],
+      ["मु", "mu"],
       ["नि", "ni"],
       ["भ्यः", "bhyaḥ"],
     ],
@@ -82,10 +90,10 @@ function gangaYamunaMunibhyah(
 
 function namahLine(
   id: string,
-  meaning: string,
+  targetMeaning: string,
   target: SpanNode,
 ): SpanNode {
-  return group(id, "sentence", meaning, [
+  return group(id, "sentence", `salutations to ${targetMeaning}`, [
     target,
     namah(`${id}-namah`),
   ]);
@@ -99,96 +107,98 @@ export const muniNamaskara: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "namo", meaning: "salutations, bowing" },
-    { term: "gaṅgā–yamunayōḥ", meaning: "of Gaṅgā and Yamunā (dual genitive)" },
-    { term: "madhyē", meaning: "in the midst, in the region between" },
-    { term: "yē vasanti", meaning: "those who dwell" },
-    { term: "tē", meaning: "they" },
-    { term: "mē", meaning: "for me, unto me" },
-    { term: "prasanna-ātmānaḥ", meaning: "serene-hearted, gracious-minded" },
-    { term: "cirañjīvitam", meaning: "long life, longevity" },
-    { term: "vardhayanti", meaning: "they increase, bestow" },
-    { term: "munibhyas ca", meaning: "and to the sages" },
-    { term: "namaḥ / namo namo", meaning: "salutations, repeated reverence" },
-    { term: "sandhyāyai", meaning: "to Sandhyā, the twilight deity" },
+    { term: "namo / namaḥ", meaning: "salutations" },
+    { term: "gaṅgā", meaning: "Gaṅgā" },
+    { term: "yamunayoḥ", meaning: "and Yamunā (dual: “of the two”)" },
+    { term: "madhye", meaning: "in the midst" },
+    { term: "ye", meaning: "who" },
+    { term: "vasanti", meaning: "dwell" },
+    { term: "te", meaning: "they" },
+    { term: "me", meaning: "my / for me" },
+    { term: "prasanna", meaning: "gracious" },
+    { term: "ātmānaḥ", meaning: "in spirit" },
+    { term: "cirañjīvitam", meaning: "long life" },
+    { term: "vardhayantu", meaning: "may they increase" },
+    { term: "munibhyaḥ", meaning: "to the sages" },
+    { term: "sandhyāyai", meaning: "to Sandhyā" },
     { term: "sāvitryai", meaning: "to Sāvitrī" },
     { term: "gāyatryai", meaning: "to Gāyatrī" },
     { term: "sarasvatyai", meaning: "to Sarasvatī" },
-    { term: "sarvābhyaḥ devatābhyaḥ", meaning: "to all deities" },
+    { term: "sarvābhyaḥ", meaning: "to all" },
+    { term: "devatābhyaḥ", meaning: "deities" },
     { term: "devābhyaḥ", meaning: "to the gods" },
-    { term: "ṛṣibhyaḥ", meaning: "to the seers" },
-    { term: "munibhyaḥ", meaning: "to the sages" },
-    { term: "gurubhyaḥ", meaning: "to the teachers" },
+    { term: "ṛṣibhyaḥ", meaning: "to the ṛṣis" },
+    { term: "gurubhyaḥ", meaning: "to the gurus" },
     { term: "mātṛbhyaḥ", meaning: "to the mothers" },
     { term: "pitṛbhyaḥ", meaning: "to the ancestors" },
-    {
-      term: "kāmaḥ akārṣīt",
-      meaning: "“desire did it” (a traditional formula of self-clearing)",
-    },
-    { term: "manyuḥ akārṣīt", meaning: "“anger did it”" },
-    {
-      term: "pṛthivyāḥ … ākāśāt",
-      meaning: "Earth, Waters, Fire, Air, Space (five elements)",
-    },
+    { term: "kāmaḥ", meaning: "desire" },
+    { term: "manyuḥ", meaning: "anger" },
+    { term: "akārṣīt", meaning: "did it / acted" },
+    { term: "pṛthivyāḥ", meaning: "Earth" },
+    { term: "āpaḥ", meaning: "Waters" },
+    { term: "tejaḥ", meaning: "Fire" },
+    { term: "vāyuḥ", meaning: "Air" },
+    { term: "ākāśāt", meaning: "Space" },
   ],
-  root: group("mn-root", "verse", translation, [
-    group("mn-muni", "verse", muniMeaning, [
+  root: group("mn-root", "verse", "", [
+    group("mn-muni", "verse", "", [
       group(
         "mn-muni-dwell",
         "sentence",
-        "Salutations to those who dwell in the region between the Gaṅgā and the Yamunā; may those serene-hearted ones increase my longevity.",
+        "salutations to those who dwell between Gaṅgā and Yamunā; may those gracious in spirit increase my long life",
         [
           namo("mn-namo-dwell"),
-          gangaYamunaMadhye("mn-ganga-madhye"),
-          group("mn-ye-vasanti", "phrase", "those who dwell", [
-            word("mn-ye", "those who dwell", [["ये", "ye"]]),
-            word(
-              "mn-vasanti",
-              "those who dwell",
-              [
-                ["व", "va"],
-                ["स", "sa"],
-                ["न्ति", "nti"],
-              ],
-              { lineBreakAfter: true },
-            ),
+          ganga("mn-ganga-1"),
+          yamunayoh("mn-yamuna-1"),
+          word("mn-madhye", "in the midst", [
+            ["मध्", "madh"],
+            ["ये", "ye"],
           ]),
-          word("mn-te", "they", [["ते", "te"]]),
-          word("mn-me", "for me, unto me", [["मे", "me"]]),
-          word("mn-prasannatmanah", "serene-hearted, gracious-minded", [
-            ["प्र", "pra"],
+          word("mn-ye", "who", [["ये", "ye"]]),
+          word("mn-vasanti", "dwell", [
+            ["व", "va"],
             ["स", "sa"],
-            ["न्ना", "nnā"],
-            ["त्मा", "tmā"],
+            ["न्ति", "nti"],
+          ], { lineBreakAfter: true }),
+          word("mn-te", "they", [["ते", "te"]]),
+          word("mn-me", "my / for me", [["मे", "me"]]),
+          word("mn-prasanna", "gracious", [
+            ["प्र", "pra"],
+            ["सन्", "san"],
+            ["न्", "n"],
+          ], { trailing: "" }),
+          word("mn-atmanah", "in spirit", [
+            ["आत्", "āt"],
+            ["मा", "mā"],
             ["नः", "naḥ"],
           ]),
-          word("mn-ciranjivitam", "long life, longevity", [
+          word("mn-ciranjivitam", "long life", [
             ["चि", "ci"],
-            ["र", "ra"],
-            ["ञ्जी", "ñjī"],
+            ["रञ्", "ran"],
+            ["जी", "jī"],
             ["वि", "vi"],
             ["तं", "taṃ"],
           ]),
-          word(
-            "mn-vardhayantu",
-            "they increase, bestow",
-            [
-              ["वर्", "var"],
-              ["ध", "dha"],
-              ["यन्", "yan"],
-              ["तु", "tu"],
-            ],
-            { trailing: " ॥", lineBreakAfter: true },
-          ),
+          word("mn-vardhayantu", "may they increase", [
+            ["वर्", "var"],
+            ["ध", "dha"],
+            ["यन्", "yan"],
+            ["तु", "tu"],
+          ], {
+            trailing: " ॥",
+            lineBreakAfter: true,
+          }),
         ],
       ),
       group(
         "mn-muni-sages",
         "sentence",
-        "Salutations to the sages of the Gaṅgā and Yamunā.",
+        "salutations to the sages of Gaṅgā and Yamunā",
         [
           namo("mn-namo-sages"),
-          gangaYamunaMunibhyah("mn-ganga-munibhyah-1", {
+          ganga("mn-ganga-2"),
+          yamunayoh("mn-yamuna-2"),
+          munibhyah("mn-munibhyah-1", {
             trailing: " ।",
             lineBreakAfter: true,
           }),
@@ -197,34 +207,36 @@ export const muniNamaskara: Chapter = {
       group(
         "mn-muni-sages-again",
         "sentence",
-        "salutations, salutations again to the sages of the Gaṅgā and Yamunā",
+        "salutations to the sages of Gaṅgā and Yamunā",
         [
           namo("mn-namo-again"),
           namah("mn-namah-again", { trailing: " " }),
-          gangaYamunaMunibhyah("mn-ganga-munibhyah-2", {
+          ganga("mn-ganga-3"),
+          yamunayoh("mn-yamuna-3"),
+          munibhyah("mn-munibhyah-2", {
             trailing: " ।",
             lineBreakAfter: true,
           }),
         ],
       ),
-      group("mn-muni-bow", "sentence", "I bow.", [
+      group("mn-muni-bow", "sentence", "salutations", [
         namah("mn-namah-bow", { trailing: " ॥", lineBreakAfter: true }),
       ]),
     ]),
-    group("mn-sandhya", "verse", sandhyaMeaning + " " + kamaManyuMeaning + " " + elementsMeaning, [
+    group("mn-sandhya", "verse", "", [
       namahLine(
         "mn-sandhyayai",
-        "the presiding divine presence of twilight/prayer time",
-        word("mn-sandhyayai-word", "the presiding divine presence of twilight/prayer time", [
-          ["स", "sa"],
-          ["न्ध्या", "ndhyā"],
+        "Sandhyā",
+        word("mn-sandhyayai-word", "to Sandhyā", [
+          ["सन्", "san"],
+          ["ध्या", "dhyā"],
           ["यै", "yai"],
         ]),
       ),
       namahLine(
         "mn-savitryai",
-        "the divine form of the Gāyatrī energy",
-        word("mn-savitryai-word", "the divine form of the Gāyatrī energy", [
+        "Sāvitrī",
+        word("mn-savitryai-word", "to Sāvitrī", [
           ["सा", "sā"],
           ["वि", "vi"],
           ["त्र्यै", "tryai"],
@@ -232,8 +244,8 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-gayatryai",
-        "the mantra and its cosmic power",
-        word("mn-gayatryai-word", "the mantra and its cosmic power", [
+        "Gāyatrī",
+        word("mn-gayatryai-word", "to Gāyatrī", [
           ["गा", "gā"],
           ["य", "ya"],
           ["त्र्यै", "tryai"],
@@ -241,8 +253,8 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-sarasvatyai",
-        "the Goddess of knowledge and sacred speech",
-        word("mn-sarasvatyai-word", "the Goddess of knowledge and sacred speech", [
+        "Sarasvatī",
+        word("mn-sarasvatyai-word", "to Sarasvatī", [
           ["स", "sa"],
           ["र", "ra"],
           ["स्व", "sva"],
@@ -251,14 +263,14 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-sarvabhyo-devatabhyo",
-        "to all deities",
+        "all deities",
         group("mn-sarvabhyo-devatabhyo-phrase", "phrase", "to all deities", [
-          word("mn-sarvabhyo", "to all deities", [
-            ["स", "sa"],
-            ["र्वा", "rvā"],
+          word("mn-sarvabhyo", "to all", [
+            ["सर्", "sar"],
+            ["वा", "vā"],
             ["भ्यो", "bhyo"],
           ]),
-          word("mn-devatabhyo", "to all deities", [
+          word("mn-devatabhyo", "deities", [
             ["दे", "de"],
             ["व", "va"],
             ["ता", "tā"],
@@ -268,7 +280,7 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-devabhyo",
-        "to the gods",
+        "the gods",
         word("mn-devabhyo-word", "to the gods", [
           ["दे", "de"],
           ["वा", "vā"],
@@ -277,8 +289,8 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-rsibhyo",
-        "to the seers",
-        word("mn-rsibhyo-word", "to the seers", [
+        "the ṛṣis",
+        word("mn-rsibhyo-word", "to the ṛṣis", [
           ["ऋ", "ṛ"],
           ["षि", "ṣi"],
           ["भ्यो", "bhyo"],
@@ -286,7 +298,7 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-munibhyo",
-        "to the sages",
+        "the sages",
         word("mn-munibhyo-word", "to the sages", [
           ["मु", "mu"],
           ["नि", "ni"],
@@ -295,8 +307,8 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-gurubhyo",
-        "to the teachers",
-        word("mn-gurubhyo-word", "to the teachers", [
+        "the gurus",
+        word("mn-gurubhyo-word", "to the gurus", [
           ["गु", "gu"],
           ["रु", "ru"],
           ["भ्यो", "bhyo"],
@@ -304,7 +316,7 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-matrbhyo",
-        "to the mothers",
+        "the mothers",
         word("mn-matrbhyo-word", "to the mothers", [
           ["मा", "mā"],
           ["तृ", "tṛ"],
@@ -313,71 +325,64 @@ export const muniNamaskara: Chapter = {
       ),
       namahLine(
         "mn-pitrbhyo",
-        "to the ancestors",
+        "the ancestors",
         word("mn-pitrbhyo-word", "to the ancestors", [
           ["पि", "pi"],
           ["तृ", "tṛ"],
           ["भ्यो", "bhyo"],
         ]),
       ),
-      group("mn-kama-manyu", "phrase", kamaManyuMeaning, [
-        group("mn-kama", "sentence", "I acted due to desire.", [
-          word("mn-kamo-karsit", "I acted due to desire.", [
-            ["का", "kā"],
-            ["मो", "mo"],
-            ["ऽका", "’kā"],
-            ["र्षी", "rṣī"],
-            ["त्", "t"],
-          ]),
-          namo("mn-namo-kama"),
-          namah("mn-namah-kama"),
+      group("mn-kama", "sentence", "desire did it", [
+        word("mn-kamo", "desire", [
+          ["का", "kā"],
+          ["मो", "mo"],
+        ], { trailing: "" }),
+        word("mn-akarsit-1", "did it / acted", [
+          ["ऽकार्", "’kār"],
+          ["षीत्", "ṣīt"],
         ]),
-        group("mn-manyu", "sentence", "I acted due to anger.", [
-          word("mn-manyurakarsit", "I acted due to anger.", [
-            ["म", "ma"],
-            ["न्यु", "nyu"],
-            ["र", "ra"],
-            ["का", "kā"],
-            ["र्षी", "rṣī"],
-            ["त्", "t"],
-          ]),
-          namo("mn-namo-manyu"),
-          namah("mn-namah-manyu"),
+        namo("mn-namo-kama"),
+        namah("mn-namah-kama"),
+      ]),
+      group("mn-manyu", "sentence", "anger did it", [
+        word("mn-manyuh", "anger", [
+          ["म", "ma"],
+          ["न्यु", "nyu"],
+        ], { trailing: "" }),
+        word("mn-akarsit-2", "did it / acted", [
+          ["रकार्", "rakār"],
+          ["षीत्", "ṣīt"],
         ]),
+        namo("mn-namo-manyu"),
+        namah("mn-namah-manyu"),
       ]),
       group(
         "mn-elements",
         "sentence",
-        "Salutations to Earth, Waters, Fire, Air, and Space.",
+        "salutations to Earth, Waters, Fire, Air, and Space",
         [
-          group(
-            "mn-elements-phrase",
-            "phrase",
-            "Earth, Waters, Fire, Air, Space (five elements)",
-            [
-              word("mn-prthivyah", "Pṛthivī (Earth)", [
-                ["पृ", "pṛ"],
-                ["थि", "thi"],
-                ["व्याः", "vyāḥ"],
-              ]),
-              word("mn-apah", "Āpaḥ (Water)", [
-                ["आ", "ā"],
-                ["पः", "paḥ"],
-              ]),
-              word("mn-tejo", "Tejaḥ (Fire / Light)", [
-                ["ते", "te"],
-                ["जो", "jo"],
-              ]),
-              word("mn-vayurakasat", "Vāyuḥ (Air); Ākāśaḥ (Space / Ether)", [
-                ["वा", "vā"],
-                ["यु", "yu"],
-                ["रा", "rā"],
-                ["का", "kā"],
-                ["शा", "śā"],
-                ["त्", "t"],
-              ]),
-            ],
-          ),
+          word("mn-prthivyah", "Earth", [
+            ["पृ", "pṛ"],
+            ["थि", "thi"],
+            ["व्याः", "vyāḥ"],
+          ]),
+          word("mn-apah", "Waters", [
+            ["आ", "ā"],
+            ["पः", "paḥ"],
+          ]),
+          word("mn-tejo", "Fire", [
+            ["ते", "te"],
+            ["जो", "jo"],
+          ]),
+          word("mn-vayuh", "Air", [
+            ["वा", "vā"],
+            ["यु", "yu"],
+          ], { trailing: "" }),
+          word("mn-akasat", "Space", [
+            ["रा", "rā"],
+            ["का", "kā"],
+            ["शात्", "śāt"],
+          ]),
           namah("mn-namah-elements", { trailing: " ॥" }),
         ],
       ),
