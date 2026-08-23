@@ -8,7 +8,7 @@ const verse2Meaning =
   "I have praised you, O giver of boons, O Mother of the Vedas, you who inspire the twice-born with purity. Having granted me long life on earth, wealth, spiritual radiance, and good progeny, lead me toward Brahmaloka.";
 
 const translation =
-  "This chapter is called Gayatrī Udvāsanam, which means respectfully requesting Gayatrī Devī to return to Her divine abode after completing japa and worship. In Sandhyāvandanam, Gayatrī is not treated as just a mantra, but as a living Devī, the very form of Vedic illumination. “" +
+  "This chapter is called Gayatrī Udvāsanam, which means respectfully requesting Gayatrī Devī to return to Her divine abode after completing japa and worship. In Sandhyāvandanam, Gayatrī is not treated as just a mantra, but as a living Devī, the very form of Vedic illumination. After we invoke Her (āvāhana), perform japa, and complete all associated mudrās and prayers, we must conclude properly by offering udvāsana. “" +
   verse1Meaning +
   "” This expresses that Gayatrī Devī is supreme, pure, and exalted, and now that the prayer is complete, she may depart peacefully. “" +
   verse2Meaning +
@@ -22,250 +22,205 @@ export const gayatriUdvasanam: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "uttame śikhare", meaning: "highest peak" },
-    {
-      term: "parvata-mūrdhani",
-      meaning: "the summit/crest of a mountain",
-    },
-    {
-      term: "brāhmaṇebhyaḥ abhy-anujñātā",
-      meaning: "given leave by the brāhmaṇas",
-    },
-    {
-      term: "gaccha devi yathā-sukham",
-      meaning: "go, O Goddess, as is comfortable to you",
-    },
-    { term: "varadā", meaning: "boon-bestowing one" },
-    { term: "veda-mātā", meaning: "Mother of the Veda (Gāyatrī)" },
-    { term: "pracodayantī", meaning: "she who impels/inspires" },
+    { term: "uttame", meaning: "on the highest" },
+    { term: "śikhare", meaning: "peak" },
+    { term: "jāte", meaning: "born / arisen" },
+    { term: "bhūmyām", meaning: "on the earth" },
+    { term: "parvata", meaning: "mountain" },
+    { term: "mūrdhani", meaning: "on the summit" },
+    { term: "brāhmaṇebhyaḥ", meaning: "by the brāhmaṇas" },
+    { term: "abhyanujñātā", meaning: "having been permitted" },
+    { term: "gaccha", meaning: "go" },
+    { term: "devi", meaning: "O Devī" },
+    { term: "yathā", meaning: "as" },
+    { term: "sukham", meaning: "comfort" },
+    { term: "stuto", meaning: "praised" },
+    { term: "mayā", meaning: "by me" },
+    { term: "varadā", meaning: "boon-giver" },
+    { term: "veda", meaning: "Veda" },
+    { term: "mātā", meaning: "mother" },
+    { term: "pracodayantī", meaning: "impelling" },
+    { term: "pavane", meaning: "wind / vital air" },
+    { term: "dvijātā", meaning: "twice-born" },
     { term: "āyuḥ", meaning: "long life" },
-    { term: "draviṇam", meaning: "wealth and resources" },
-    {
-      term: "brahma-varcasam",
-      meaning: "spiritual brilliance and sacred radiance",
-    },
-    {
-      term: "prajā",
-      meaning: "good progeny / continuation of dharma",
-    },
-    {
-      term: "brahma-lokam",
-      meaning: "spiritual liberation / highest realm",
-    },
+    { term: "pṛthivyām", meaning: "on earth" },
+    { term: "draviṇam", meaning: "wealth" },
+    { term: "brahma", meaning: "Brahman / Veda" },
+    { term: "varcasam", meaning: "radiance" },
+    { term: "mahyam", meaning: "to me" },
+    { term: "dattvā", meaning: "having given" },
+    { term: "prajātuṃ", meaning: "to go forth / to depart" },
+    { term: "lokam", meaning: "world" },
   ],
-  root: group("gu-verse", "verse", translation, [
-    group("gu-verse-1", "sentence", verse1Meaning, [
+  root: group("gu-root", "verse", "", [
+    group("gu-verse-1", "verse", "", [
       group(
-        "gu-peak",
-        "phrase",
-        "Born on the highest peak, on the head of the mountain upon the earth",
+        "gu-verse-1a",
+        "sentence",
+        "born on the highest mountain-peak on the earth",
         [
-          word("gu-uttame", "highest peak", [
+          word("gu-uttame", "on the highest", [
             ["उ", "u"],
             ["त्त", "tta"],
             ["मे", "me"],
           ]),
-          word("gu-sikhare", "highest peak", [
+          word("gu-sikhare", "peak", [
             ["शि", "śi"],
             ["ख", "kha"],
             ["रे", "re"],
           ]),
-          word("gu-jate", "", [
+          word("gu-jate", "born / arisen", [
             ["जा", "jā"],
             ["ते", "te"],
           ]),
-          word("gu-bhumyam", "", [
+          word("gu-bhumyam", "on the earth", [
             ["भू", "bhū"],
             ["म्यां", "myāṃ"],
           ], { lineBreakAfter: true }),
-          word(
-            "gu-parvatamurdhani",
-            "the summit/crest of a mountain",
-            [
-              ["प", "pa"],
-              ["र्व", "rva"],
-              ["त", "ta"],
-              ["मू", "mū"],
-              ["र्ध", "rdha"],
-              ["नि", "ni"],
-            ],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
+          word("gu-parvata", "mountain", [
+            ["पर्", "par"],
+            ["व", "va"],
+            ["त", "ta"],
+          ], { trailing: "" }),
+          word("gu-murdhani", "on the summit", [
+            ["मूर्", "mūr"],
+            ["ध", "dha"],
+            ["नि", "ni"],
+          ], { trailing: " ।", lineBreakAfter: true }),
         ],
       ),
       group(
-        "gu-permitted",
-        "phrase",
-        "having been permitted by the Brāhmaṇas",
+        "gu-verse-1b",
+        "sentence",
+        "having been permitted by the brāhmaṇas, O Devī, go as you wish",
         [
-          word(
-            "gu-brahmanebhyo'bhyanujnata",
-            "given leave by the brāhmaṇas",
-            [
-              ["ब्रा", "brā"],
-              ["ह्म", "hma"],
-              ["णे", "ṇe"],
-              ["भ्यो", "bhyo"],
-              ["ऽभ्य", "'bhya"],
-              ["नु", "nu"],
-              ["ज्ञा", "jñā"],
-              ["ता", "tā"],
-            ],
-            { lineBreakAfter: true },
-          ),
-        ],
-      ),
-      group(
-        "gu-go",
-        "phrase",
-        "O Devī, go happily as you wish",
-        [
-          word("gu-gaccha", "go, O Goddess, as is comfortable to you", [
+          word("gu-brahmanebhyah", "by the brāhmaṇas", [
+            ["ब्राह्", "brāh"],
+            ["म", "ma"],
+            ["णे", "ṇe"],
+            ["भ्यो", "bhyo"],
+          ], { trailing: "" }),
+          word("gu-abhyanujnata", "having been permitted", [
+            ["ऽभ्", "’b"],
+            ["य", "hya"],
+            ["नु", "nu"],
+            ["ज्ञा", "jñā"],
+            ["ता", "tā"],
+          ], { lineBreakAfter: true }),
+          word("gu-gaccha", "go", [
             ["ग", "ga"],
             ["च्छ", "ccha"],
           ]),
-          word("gu-devi", "go, O Goddess, as is comfortable to you", [
+          word("gu-devi", "O Devī", [
             ["दे", "de"],
             ["वि", "vi"],
           ]),
-          word(
-            "gu-yathasukham",
-            "go, O Goddess, as is comfortable to you",
-            [
-              ["य", "ya"],
-              ["था", "thā"],
-              ["सु", "su"],
-              ["ख", "kha"],
-              ["म्", "m"],
-            ],
-            { trailing: " ॥", lineBreakAfter: true },
-          ),
+          word("gu-yatha", "as", [
+            ["य", "ya"],
+            ["था", "thā"],
+          ], { trailing: "" }),
+          word("gu-sukham", "comfort", [
+            ["सु", "su"],
+            ["खम्", "kham"],
+          ], { trailing: " ॥", lineBreakAfter: true }),
         ],
       ),
     ]),
-    group("gu-verse-2", "sentence", verse2Meaning, [
+    group("gu-verse-2", "verse", "", [
       group(
-        "gu-praise",
-        "phrase",
-        "I have praised you, O giver of boons, O Mother of the Vedas",
+        "gu-verse-2a",
+        "sentence",
+        "praised by me is the boon-giving Veda-mother, the twice-born who impels like the vital air",
         [
-          word("gu-stota", "", [
-            ["स्तो", "sto"],
-            ["ता", "tā"],
+          word("gu-stuto", "praised", [
+            ["स्तु", "stu"],
+            ["तो", "to"],
           ]),
-          word("gu-maya", "", [
+          word("gu-maya", "by me", [
             ["म", "ma"],
             ["या", "yā"],
           ]),
-          word("gu-varada", "boon-bestowing one", [
+          word("gu-varada", "boon-giver", [
             ["व", "va"],
             ["र", "ra"],
             ["दा", "dā"],
           ]),
-          word(
-            "gu-vedamata",
-            "Mother of the Veda (Gāyatrī)",
-            [
-              ["वे", "ve"],
-              ["द", "da"],
-              ["मा", "mā"],
-              ["ता", "tā"],
-            ],
-            { lineBreakAfter: true },
-          ),
-        ],
-      ),
-      group(
-        "gu-inspire",
-        "phrase",
-        "you who inspire the twice-born with purity",
-        [
-          word("gu-pracodayanti", "she who impels/inspires", [
+          word("gu-veda", "Veda", [
+            ["वे", "ve"],
+            ["द", "da"],
+          ], { trailing: "" }),
+          word("gu-mata", "mother", [
+            ["मा", "mā"],
+            ["ता", "tā"],
+          ], { lineBreakAfter: true }),
+          word("gu-pracodayanti", "impelling", [
             ["प्र", "pra"],
             ["चो", "co"],
             ["द", "da"],
-            ["य", "ya"],
-            ["न्ती", "ntī"],
+            ["यन्", "yan"],
+            ["ती", "tī"],
           ]),
-          word("gu-pavane", "", [
-            ["पा", "pā"],
+          word("gu-pavane", "wind / vital air", [
+            ["प", "pa"],
             ["व", "va"],
             ["ने", "ne"],
           ]),
-          word(
-            "gu-dvijatan",
-            "",
-            [
-              ["द्वि", "dvi"],
-              ["जा", "jā"],
-              ["तान्", "tān"],
-            ],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
+          word("gu-dvijata", "twice-born", [
+            ["द्वि", "dvi"],
+            ["जा", "jā"],
+            ["ता", "tā"],
+          ], { trailing: " ।", lineBreakAfter: true }),
         ],
       ),
       group(
-        "gu-grant",
-        "phrase",
-        "Having granted me long life on earth, wealth, spiritual radiance, and good progeny, lead me toward Brahmaloka",
+        "gu-verse-2b",
+        "sentence",
+        "having given me long life on earth, wealth, and Vedic radiance, to depart to the world of Brahman",
         [
           word("gu-ayuh", "long life", [
             ["आ", "ā"],
             ["युः", "yuḥ"],
           ]),
-          word("gu-prthivyam", "", [
+          word("gu-prthivyam", "on earth", [
             ["पृ", "pṛ"],
             ["थि", "thi"],
             ["व्यां", "vyāṃ"],
           ]),
-          word(
-            "gu-dravinam",
-            "wealth and resources",
-            [
-              ["द्र", "dra"],
-              ["वि", "vi"],
-              ["णं", "ṇaṃ"],
-            ],
-            { lineBreakAfter: true },
-          ),
-          word(
-            "gu-brahmavarcasam",
-            "spiritual brilliance and sacred radiance",
-            [
-              ["ब्र", "bra"],
-              ["ह्म", "hma"],
-              ["व", "va"],
-              ["र्च", "rca"],
-              ["स", "sa"],
-              ["म्", "m"],
-            ],
-            { lineBreakAfter: true },
-          ),
-          word("gu-mahyam", "", [
+          word("gu-dravinam", "wealth", [
+            ["द्र", "dra"],
+            ["वि", "vi"],
+            ["णं", "ṇaṃ"],
+          ]),
+          word("gu-brahma-1", "Brahman / Veda", [
+            ["ब्रह्", "brah"],
+            ["म", "ma"],
+          ], { trailing: "" }),
+          word("gu-varcasam", "radiance", [
+            ["वर्", "var"],
+            ["च", "ca"],
+            ["सम्", "sam"],
+          ], { lineBreakAfter: true }),
+          word("gu-mahyam", "to me", [
             ["म", "ma"],
             ["ह्यं", "hyaṃ"],
           ]),
-          word("gu-dattva", "", [
+          word("gu-dattva", "having given", [
             ["द", "da"],
             ["त्त्वा", "ttvā"],
           ]),
-          word("gu-prajam", "good progeny / continuation of dharma", [
+          word("gu-prajatum", "to go forth / to depart", [
             ["प्र", "pra"],
-            ["जां", "jāṃ"],
+            ["जा", "jā"],
+            ["तुं", "tuṃ"],
           ]),
-          word("gu-tu", "", [["तु", "tu"]], { lineBreakAfter: true }),
-          word(
-            "gu-brahmalokam",
-            "spiritual liberation / highest realm",
-            [
-              ["ब्र", "bra"],
-              ["ह्म", "hma"],
-              ["लो", "lo"],
-              ["क", "ka"],
-              ["म्", "m"],
-            ],
-            { trailing: " ॥" },
-          ),
+          word("gu-brahma-2", "Brahman / Veda", [
+            ["ब्रह्", "brah"],
+            ["म", "ma"],
+          ], { trailing: "" }),
+          word("gu-lokam", "world", [
+            ["लो", "lo"],
+            ["कम्", "kam"],
+          ], { trailing: " ॥" }),
         ],
       ),
     ]),
