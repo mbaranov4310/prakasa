@@ -1,12 +1,6 @@
 import { group, word } from "../lib/span";
 import type { Chapter } from "../types";
 
-const anantaMeaning =
-  "Salutations to Ananta (the Infinite Lord), who has thousands of forms, thousands of feet, eyes, heads, thighs, and arms.";
-
-const purusaMeaning =
-  "Salutations to that eternal Purusha, who is praised by thousands of names, and who sustains thousands of crores of yugas (ages of time).";
-
 const translation =
   "This chapter is a final salutation to Bhagavān (the Supreme Lord). The verse praises the Lord as Ananta — the Infinite One — whose form is beyond human counting and beyond time. “Salutations to Ananta (the Infinite Lord), who has thousands of forms, thousands of feet, eyes, heads, thighs, and arms. Salutations to that eternal Purusha, who is praised by thousands of names, and who sustains thousands of crores of yugas (ages of time).” This is a declaration that Bhagavān is: infinite in form; infinite in power; infinite in presence; infinite across time cycles. It reminds the practitioner that Sandhyāvandanam ultimately ends not in ritual alone, but in surrender to the Supreme Reality.";
 
@@ -18,129 +12,122 @@ export const bhagavanNamaskara: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "Bhagavān", meaning: "the Supreme Lord, full of divine powers" },
-    { term: "Namah / Namo’stu", meaning: "salutations / I bow" },
-    {
-      term: "Ananta",
-      meaning: "infinite, endless (also name of Ādiśeṣa / Viṣṇu)",
-    },
-    { term: "Sahasra", meaning: "thousand (symbolic of countless)" },
-    { term: "Mūrti", meaning: "form / manifestation" },
-    { term: "Pāda", meaning: "feet" },
-    { term: "Akṣi", meaning: "eyes" },
-    { term: "Śiras", meaning: "head" },
-    { term: "Ūru", meaning: "thighs" },
-    { term: "Bāhu", meaning: "arms" },
-    {
-      term: "Sahasra-nāma",
-      meaning: "thousand names (countless divine names)",
-    },
-    { term: "Puruṣa", meaning: "cosmic being, Supreme Spirit" },
-    { term: "Śāśvata", meaning: "eternal, unchanging" },
-    { term: "Koṭi", meaning: "crore (10 million)" },
-    { term: "Yuga", meaning: "cosmic age cycle" },
-    { term: "Dhāriṇe", meaning: "sustainer / supporter / bearer" },
-    { term: "sahasra-mūrtaye", meaning: "of a thousand forms" },
-    {
-      term: "sahasra-pādākṣi-śiroru-bāhave",
-      meaning: "with a thousand feet, eyes, heads, thighs, and arms",
-    },
-    {
-      term: "sahasra-koṭī-yuga-dhāriṇe",
-      meaning:
-        "to the bearer of innumerable aeons (literally “one who holds/ sustains thousands of crores of ages”)",
-    },
+    { term: "namo / namaḥ", meaning: "salutations" },
+    { term: "astu", meaning: "may there be" },
+    { term: "anantāya", meaning: "to the Infinite" },
+    { term: "sahasra", meaning: "thousand" },
+    { term: "mūrtaye", meaning: "to the form" },
+    { term: "pāda", meaning: "feet" },
+    { term: "akṣi", meaning: "eyes" },
+    { term: "śiras", meaning: "head" },
+    { term: "ūru", meaning: "thighs" },
+    { term: "bāhave", meaning: "arms" },
+    { term: "nāmne", meaning: "to the names" },
+    { term: "puruṣāya", meaning: "to the Puruṣa" },
+    { term: "śāśvate", meaning: "to the eternal" },
+    { term: "koṭī", meaning: "crore" },
+    { term: "yuga", meaning: "age" },
+    { term: "dhāriṇe", meaning: "to the sustainer" },
   ],
-  root: group("bn-verse", "verse", translation, [
-    group("bn-ananta", "sentence", anantaMeaning, [
-      word(
-        "bn-namostvanantaya",
-        "salutations / I bow; infinite, endless (also name of Ādiśeṣa / Viṣṇu)",
-        [
+  root: group("bn-root", "verse", "", [
+    group(
+      "bn-line-1",
+      "sentence",
+      "salutations to the Infinite of a thousand forms, with a thousand feet, eyes, heads, thighs, and arms",
+      [
+        word("bn-namo", "salutations", [
           ["न", "na"],
           ["मो", "mo"],
-          ["ऽस्त्व", "’stva"],
-          ["न", "na"],
-          ["न्ता", "ntā"],
+        ], { trailing: "" }),
+        word("bn-astu", "may there be", [
+          ["ऽस्त्", "’st"],
+          ["व", "va"],
+        ], { trailing: "" }),
+        word("bn-anantaya", "to the Infinite", [
+          ["नन्", "nan"],
+          ["ता", "tā"],
           ["य", "ya"],
-        ],
-      ),
-      word("bn-sahasramurtaye", "of a thousand forms", [
-        ["स", "sa"],
-        ["ह", "ha"],
-        ["स्र", "sra"],
-        ["मू", "mū"],
-        ["र्त", "rta"],
-        ["ये", "ye"],
-      ], { lineBreakAfter: true }),
-      word(
-        "bn-sahasrapadaksisiro",
-        "with a thousand feet, eyes, heads, thighs, and arms",
-        [
+        ]),
+        word("bn-sahasra-1", "thousand", [
           ["स", "sa"],
           ["ह", "ha"],
           ["स्र", "sra"],
+        ], { trailing: "" }),
+        word("bn-murtaye", "to the form", [
+          ["मूर्", "mūr"],
+          ["त", "ta"],
+          ["ये", "ye"],
+        ], { lineBreakAfter: true }),
+        word("bn-sahasra-2", "thousand", [
+          ["स", "sa"],
+          ["ह", "ha"],
+          ["स्र", "sra"],
+        ], { trailing: "" }),
+        word("bn-pada", "feet", [
           ["पा", "pā"],
           ["दा", "dā"],
-          ["क्षि", "kṣi"],
+        ], { trailing: "" }),
+        word("bn-aksi", "eyes", [["क्षि", "kṣi"]], { trailing: "" }),
+        word("bn-siras", "head", [
           ["शि", "śi"],
           ["रो", "ro"],
-          ["रु", "ru"],
+        ], { trailing: "" }),
+        word("bn-uru", "thighs", [["रु", "ru"]], { trailing: "" }),
+        word("bn-bahave", "arms", [
           ["बा", "bā"],
           ["ह", "ha"],
           ["वे", "ve"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-    ]),
-    group("bn-purusa", "sentence", purusaMeaning, [
-      word(
-        "bn-sahasranamne",
-        "thousand names (countless divine names)",
-        [
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ],
+    ),
+    group(
+      "bn-line-2",
+      "sentence",
+      "salutations to the eternal Puruṣa of a thousand names, sustainer of a thousand crores of yugas",
+      [
+        word("bn-sahasra-3", "thousand", [
           ["स", "sa"],
           ["ह", "ha"],
           ["स्र", "sra"],
-          ["ना", "nā"],
-          ["म्ने", "mne"],
-        ],
-      ),
-      word("bn-purusaya", "cosmic being, Supreme Spirit", [
-        ["पु", "pu"],
-        ["रु", "ru"],
-        ["षा", "ṣā"],
-        ["य", "ya"],
-      ]),
-      word("bn-sasvate", "eternal, unchanging", [
-        ["शा", "śā"],
-        ["श्व", "śva"],
-        ["ते", "te"],
-      ], { lineBreakAfter: true }),
-      word(
-        "bn-sahasrakotiyugadharine",
-        "to the bearer of innumerable aeons (literally “one who holds/ sustains thousands of crores of ages”)",
-        [
+        ], { trailing: "" }),
+        word("bn-namne", "to the names", [
+          ["नाम्", "nām"],
+          ["ने", "ne"],
+        ]),
+        word("bn-purusaya", "to the Puruṣa", [
+          ["पु", "pu"],
+          ["रु", "ru"],
+          ["षा", "ṣā"],
+          ["य", "ya"],
+        ]),
+        word("bn-sasvate", "to the eternal", [
+          ["शा", "śā"],
+          ["श्व", "śva"],
+          ["ते", "te"],
+        ], { lineBreakAfter: true }),
+        word("bn-sahasra-4", "thousand", [
           ["स", "sa"],
           ["ह", "ha"],
           ["स्र", "sra"],
+        ], { trailing: "" }),
+        word("bn-koti", "crore", [
           ["को", "ko"],
           ["टी", "ṭī"],
+        ], { trailing: "" }),
+        word("bn-yuga", "age", [
           ["यु", "yu"],
           ["ग", "ga"],
+        ], { trailing: "" }),
+        word("bn-dharine", "to the sustainer", [
           ["धा", "dhā"],
           ["रि", "ri"],
           ["णे", "ṇe"],
-        ],
-      ),
-      word(
-        "bn-namah",
-        "salutations / I bow",
-        [
+        ]),
+        word("bn-namah", "salutations", [
           ["न", "na"],
           ["मः", "maḥ"],
-        ],
-        { trailing: " ॥" },
-      ),
-    ]),
+        ], { trailing: " ॥" }),
+      ],
+    ),
   ]),
 };
