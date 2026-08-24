@@ -31,262 +31,232 @@ export const isvararpanam: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "Īśvara", meaning: "the Supreme Lord" },
-    { term: "Arpaṇam", meaning: "offering / surrender" },
-    {
-      term: "Brahmaloka",
-      meaning: "highest realm (symbol of the highest spiritual plane)",
-    },
-    {
-      term: "Ālokāloka-parvata",
-      meaning: "cosmic boundary mountain described in Purāṇic cosmology",
-    },
-    { term: "Namo namah", meaning: "salutations again and again" },
-    { term: "Kāyena", meaning: "by the body" },
-    { term: "Vācā", meaning: "by speech" },
-    { term: "Manasā", meaning: "by mind" },
-    { term: "Indriyaiḥ", meaning: "by the senses" },
-    { term: "Buddhyā", meaning: "by intellect" },
-    { term: "Ātmanā", meaning: "by inner self" },
-    { term: "Prakṛti", meaning: "one’s nature" },
-    { term: "Svabhāva", meaning: "natural tendencies" },
-    { term: "Samarpayāmi", meaning: "I offer / I surrender" },
-    { term: "Hariḥ", meaning: "Lord Viṣṇu; remover of sorrow" },
-    { term: "Tat Sat", meaning: "“That is the Eternal Truth”" },
-    {
-      term: "Parameśvara",
-      meaning: "the Supreme Lord (Śiva / Īśvara principle)",
-    },
-    {
-      term: "karomi yadyat",
-      meaning: "whatever I do, each and every action",
-    },
-    { term: "sakalaṃ", meaning: "wholly, entirely" },
+    { term: "ā", meaning: "from / as far as" },
+    { term: "brahma", meaning: "Brahman" },
+    { term: "lokād", meaning: "from the world" },
+    { term: "aśeṣād", meaning: "without remainder" },
+    { term: "ālokāloka", meaning: "Ālokāloka" },
+    { term: "parvatām", meaning: "mountain" },
+    { term: "ye", meaning: "who" },
+    { term: "santi", meaning: "exist" },
+    { term: "brāhmaṇa", meaning: "brāhmaṇas" },
+    { term: "devāḥ", meaning: "gods" },
+    { term: "tebhyaḥ", meaning: "to them" },
+    { term: "nityam", meaning: "always" },
+    { term: "namo / namaḥ", meaning: "salutations" },
+    { term: "kāyena", meaning: "by the body" },
+    { term: "vācā", meaning: "by speech" },
+    { term: "manasā", meaning: "by the mind" },
+    { term: "indriyaiḥ", meaning: "by the senses" },
+    { term: "vā", meaning: "or" },
+    { term: "buddhyā", meaning: "by the intellect" },
+    { term: "ātmanā", meaning: "by the self" },
+    { term: "prakṛteḥ", meaning: "from nature" },
+    { term: "svabhāvāt", meaning: "from own-being" },
+    { term: "karomi", meaning: "I do" },
+    { term: "yad yat", meaning: "whatever" },
+    { term: "sakalam", meaning: "all" },
     { term: "parasmai", meaning: "to the Supreme" },
-    {
-      term: "śrīmannārāyaṇāya iti",
-      meaning: "saying “to Śrīman Nārāyaṇa”",
-    },
-    {
-      term: "tat sarvaṃ śrī-parameśvarārpaṇam astu",
-      meaning: "may all of this be an offering to Śrī Parameśvara",
-    },
+    { term: "śrī", meaning: "Śrī" },
+    { term: "man", meaning: "blessed" },
+    { term: "nārāyaṇāya", meaning: "to Nārāyaṇa" },
+    { term: "iti", meaning: "thus" },
+    { term: "samarpayāmi", meaning: "I offer" },
+    { term: "hariḥ", meaning: "Hari" },
+    { term: "tat", meaning: "that" },
+    { term: "sat", meaning: "truth" },
+    { term: "sarvam", meaning: "all" },
+    { term: "parama", meaning: "supreme" },
+    { term: "īśvara", meaning: "Lord" },
+    { term: "arpaṇam", meaning: "offering" },
+    { term: "astu", meaning: "may it be" },
   ],
-  root: group("ia-verse", "verse", translation, [
-    group("ia-namaskara", "sentence", namaskaraMeaning, [
-      word("ia-a", "", [["आ", "ā"]]),
-      word(
-        "ia-brahmalokad",
-        "highest realm (symbol of the highest spiritual plane)",
-        [
+  root: group("ia-root", "verse", "", [
+    group(
+      "ia-namaskara",
+      "sentence",
+      "from Brahmaloka all the way to Ālokāloka mountain, always salutations to the divine brāhmaṇas who exist there",
+      [
+        word("ia-a", "from / as far as", [["आ", "ā"]]),
+        word("ia-brahma", "Brahman", [
           ["ब्रह्", "brah"],
           ["म", "ma"],
+        ], { trailing: "" }),
+        word("ia-lokad", "from the world", [
           ["लो", "lo"],
           ["काद्", "kād"],
-        ],
-      ),
-      word("ia-asesad", "", [
-        ["अ", "a"],
-        ["शे", "śe"],
-        ["षाद्", "ṣād"],
-      ]),
-      word(
-        "ia-alokalokaparvatam",
-        "cosmic boundary mountain described in Purāṇic cosmology",
-        [
+        ]),
+        word("ia-asesad", "without remainder", [
+          ["अ", "a"],
+          ["शे", "śe"],
+          ["षाद्", "ṣād"],
+        ]),
+        word("ia-alokaloka", "Ālokāloka", [
           ["आ", "ā"],
           ["लो", "lo"],
           ["का", "kā"],
           ["लो", "lo"],
           ["क", "ka"],
+        ], { trailing: "" }),
+        word("ia-parvatam", "mountain", [
           ["पर्", "par"],
           ["व", "va"],
           ["ताम्", "tām"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-      word("ia-ye", "", [["ये", "ye"]]),
-      word("ia-santi", "", [
-        ["सन्", "san"],
-        ["ति", "ti"],
-      ]),
-      word("ia-brahmanadevas", "", [
-        ["ब्राह्", "brāh"],
-        ["म", "ma"],
-        ["ण", "ṇa"],
-        ["दे", "de"],
-        ["वास्", "vās"],
-      ]),
-      word("ia-tebhyo", "", [
-        ["ते", "te"],
-        ["भ्यो", "bhyo"],
-      ]),
-      word("ia-nityam", "", [
-        ["नि", "ni"],
-        ["त्यं", "tyaṃ"],
-      ]),
-      group("ia-namo-namah", "phrase", "salutations again and again", [
-        word("ia-namo", "salutations again and again", [
+        ], { trailing: " ।", lineBreakAfter: true }),
+        word("ia-ye", "who", [["ये", "ye"]]),
+        word("ia-santi", "exist", [
+          ["सन्", "san"],
+          ["ति", "ti"],
+        ]),
+        word("ia-brahmana", "brāhmaṇas", [
+          ["ब्राह्", "brāh"],
+          ["म", "ma"],
+          ["ण", "ṇa"],
+        ], { trailing: "" }),
+        word("ia-devah", "gods", [
+          ["दे", "de"],
+          ["वास्", "vās"],
+        ]),
+        word("ia-tebhyo", "to them", [
+          ["ते", "te"],
+          ["भ्यो", "bhyo"],
+        ]),
+        word("ia-nityam", "always", [
+          ["नि", "ni"],
+          ["त्यं", "tyaṃ"],
+        ]),
+        word("ia-namo", "salutations", [
           ["न", "na"],
           ["मो", "mo"],
         ]),
-        word(
-          "ia-namah",
-          "salutations again and again",
-          [
-            ["न", "na"],
-            ["मः", "maḥ"],
-          ],
-          { trailing: " ॥", lineBreakAfter: true },
-        ),
-      ]),
-    ]),
-    group("ia-narayana", "sentence", narayanaMeaning, [
-      word("ia-kayena", "by the body", [
-        ["का", "kā"],
-        ["ये", "ye"],
-        ["न", "na"],
-      ]),
-      word("ia-vaca", "by speech", [
-        ["वा", "vā"],
-        ["चा", "cā"],
-      ]),
-      word("ia-manasendriyairva", "by mind; by the senses", [
-        ["म", "ma"],
-        ["न", "na"],
-        ["से", "se"],
-        ["न्द्रि", "ndri"],
-        ["यै", "yai"],
-        ["र्वा", "rvā"],
-      ], { lineBreakAfter: true }),
-      word("ia-buddhyatmana", "by intellect; by inner self", [
-        ["बु", "bu"],
-        ["द्ध्या", "ddhyā"],
-        ["त्म", "tma"],
-        ["ना", "nā"],
-      ]),
-      word("ia-va", "", [["वा", "vā"]]),
-      word("ia-prakrteh", "one’s nature", [
-        ["प्र", "pra"],
-        ["कृ", "kṛ"],
-        ["तेः", "teḥ"],
-      ]),
-      word(
-        "ia-svabhavat",
-        "natural tendencies",
-        [
+        word("ia-namah", "salutations", [
+          ["न", "na"],
+          ["मः", "maḥ"],
+        ], { trailing: " ॥", lineBreakAfter: true }),
+      ],
+    ),
+    group(
+      "ia-narayana",
+      "sentence",
+      "whatever I do by body, speech, mind, senses, intellect, self, or by nature and own-being — all that I offer to Śrīman Nārāyaṇa",
+      [
+        word("ia-kayena", "by the body", [
+          ["का", "kā"],
+          ["ये", "ye"],
+          ["न", "na"],
+        ]),
+        word("ia-vaca", "by speech", [
+          ["वा", "vā"],
+          ["चा", "cā"],
+        ]),
+        word("ia-manasa", "by the mind", [
+          ["म", "ma"],
+          ["न", "na"],
+          ["से", "se"],
+        ], { trailing: "" }),
+        word("ia-indriyaih", "by the senses", [
+          ["न्द्रि", "ndri"],
+          ["यैर्", "yair"],
+        ], { trailing: "" }),
+        word("ia-va-1", "or", [["वा", "vā"]], { lineBreakAfter: true }),
+        word("ia-buddhya", "by the intellect", [
+          ["बुद्", "bud"],
+          ["ध्यात्", "dhyāt"],
+        ], { trailing: "" }),
+        word("ia-atmana", "by the self", [
+          ["म", "ma"],
+          ["ना", "nā"],
+        ]),
+        word("ia-va-2", "or", [["वा", "vā"]]),
+        word("ia-prakrteh", "from nature", [
+          ["प्र", "pra"],
+          ["कृ", "kṛ"],
+          ["तेः", "teḥ"],
+        ]),
+        word("ia-svabhavat", "from own-being", [
           ["स्व", "sva"],
           ["भा", "bhā"],
-          ["वा", "vā"],
-          ["त्", "t"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-      group(
-        "ia-karomi-yadyat",
-        "phrase",
-        "whatever I do, each and every action",
-        [
-          word("ia-karomi", "whatever I do, each and every action", [
-            ["क", "ka"],
-            ["रो", "ro"],
-            ["मि", "mi"],
-          ]),
-          word("ia-yadyat", "whatever I do, each and every action", [
-            ["यद्", "yad"],
-            ["यत्", "yat"],
-          ]),
-        ],
-      ),
-      word("ia-sakalam", "wholly, entirely", [
-        ["स", "sa"],
-        ["क", "ka"],
-        ["लं", "laṃ"],
-      ]),
-      word(
-        "ia-parasmai",
-        "to the Supreme",
-        [
+          ["वात्", "vāt"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+        word("ia-karomi", "I do", [
+          ["क", "ka"],
+          ["रो", "ro"],
+          ["मि", "mi"],
+        ]),
+        word("ia-yad", "whatever", [["यद्", "yad"]], { trailing: "" }),
+        word("ia-yat", "whatever", [["यत्", "yat"]]),
+        word("ia-sakalam", "all", [
+          ["स", "sa"],
+          ["क", "ka"],
+          ["लं", "laṃ"],
+        ]),
+        word("ia-parasmai", "to the Supreme", [
           ["प", "pa"],
-          ["र", "ra"],
-          ["स्मै", "smai"],
-        ],
-        { lineBreakAfter: true },
-      ),
-      word(
-        "ia-srimannarayanayeti",
-        "saying “to Śrīman Nārāyaṇa”",
-        [
-          ["श्री", "śrī"],
-          ["म", "ma"],
-          ["न्ना", "nnā"],
+          ["रस्", "ras"],
+          ["मै", "mai"],
+        ], { lineBreakAfter: true }),
+        word("ia-sri-1", "Śrī", [["श्री", "śrī"]], { trailing: "" }),
+        word("ia-man", "blessed", [["मन्", "man"]], { trailing: "" }),
+        word("ia-narayanaya", "to Nārāyaṇa", [
+          ["ना", "nā"],
           ["रा", "rā"],
           ["य", "ya"],
           ["णा", "ṇā"],
+        ], { trailing: "" }),
+        word("ia-iti", "thus", [
           ["ये", "ye"],
           ["ति", "ti"],
-        ],
-      ),
-      word(
-        "ia-samarpayami",
-        "I offer / I surrender",
-        [
+        ]),
+        word("ia-samarpayami", "I offer", [
           ["स", "sa"],
-          ["म", "ma"],
-          ["र्प", "rpa"],
+          ["मर्", "mar"],
+          ["प", "pa"],
           ["या", "yā"],
           ["मि", "mi"],
-        ],
-        { trailing: " ॥", lineBreakAfter: true },
-      ),
-    ]),
-    group("ia-harih-om-tat-sat", "sentence", harihMeaning, [
-      word("ia-harih", "Lord Viṣṇu; remover of sorrow", [
+        ], { trailing: " ॥", lineBreakAfter: true }),
+      ],
+    ),
+    group("ia-harih", "sentence", "Hari, oṃ, that Truth", [
+      word("ia-harih", "Hari", [
         ["ह", "ha"],
         ["रिः", "riḥ"],
       ]),
       word("ia-om", "", [["ॐ", "oṃ"]]),
-      word(
-        "ia-tatsat",
-        "“That is the Eternal Truth”",
-        [
-          ["त", "ta"],
-          ["त्स", "tsa"],
-          ["त्", "t"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
+      word("ia-tat-1", "that", [["तत्", "tat"]], { trailing: "" }),
+      word("ia-sat", "truth", [["सत्", "sat"]], {
+        trailing: " ।",
+        lineBreakAfter: true,
+      }),
     ]),
-    group("ia-final", "sentence", finalMeaning, [
-      group(
-        "ia-offering",
-        "phrase",
-        "may all of this be an offering to Śrī Parameśvara",
-        [
-          word("ia-tatsarvam", "", [
-            ["त", "ta"],
-            ["त्स", "tsa"],
-            ["र्वं", "rvaṃ"],
-          ]),
-          word(
-            "ia-sriparamesvararpanamastu",
-            "the Supreme Lord (Śiva / Īśvara principle)",
-            [
-              ["श्री", "śrī"],
-              ["प", "pa"],
-              ["र", "ra"],
-              ["मे", "me"],
-              ["श्व", "śva"],
-              ["रा", "rā"],
-              ["र्प", "rpa"],
-              ["ण", "ṇa"],
-              ["म", "ma"],
-              ["स्तु", "stu"],
-            ],
-            { trailing: " ॥" },
-          ),
-        ],
-      ),
-    ]),
+    group(
+      "ia-final",
+      "sentence",
+      "may all of this be an offering to Śrī Parameśvara",
+      [
+        word("ia-tat-2", "that", [["तत्", "tat"]], { trailing: "" }),
+        word("ia-sarvam", "all", [
+          ["सर्", "sar"],
+          ["वं", "vaṃ"],
+        ]),
+        word("ia-sri-2", "Śrī", [["श्री", "śrī"]], { trailing: "" }),
+        word("ia-parama", "supreme", [
+          ["प", "pa"],
+          ["र", "ra"],
+          ["मे", "me"],
+        ], { trailing: "" }),
+        word("ia-isvara", "Lord", [
+          ["श्व", "śva"],
+          ["रार्", "rār"],
+        ], { trailing: "" }),
+        word("ia-arpanam", "offering", [
+          ["प", "pa"],
+          ["ण", "ṇa"],
+        ], { trailing: "" }),
+        word("ia-astu", "may it be", [
+          ["मस्", "mas"],
+          ["तु", "tu"],
+        ], { trailing: " ॥" }),
+      ],
+    ),
   ]),
 };
