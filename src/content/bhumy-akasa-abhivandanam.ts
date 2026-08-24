@@ -2,7 +2,7 @@ import { group, word } from "../lib/span";
 import type { Chapter, SpanNode } from "../types";
 
 const heavenEarthMeaning =
-  "The first mantra begins by affirming: “May Heaven (Dyāvā) and Earth (Pṛthivī) remain established in Truth.” This is a Vedic-style declaration that the entire universe is supported by Satya (Truth) and Ṛta (cosmic order). Then we pray: to the Divine forces; for protection; for removal of obstacles; for the strength to follow the path of Dharma. The mantra also asks for Vidya (knowledge) and the removal of Vṛjina (sin, wrong tendencies, inner impurity).";
+  "The first mantra begins by affirming: “May Heaven (Dyāvā) and Earth (Pṛthivī) remain established in Truth.” This is a Vedic-style declaration that the entire universe is supported by Satya (Truth) and Ṛta (cosmic order). Then we pray: to the Divine forces; for protection; for removal of obstacles; for the strength to follow the path of Dharma. The mantra also asks that we may know nourishment (iṣam), the community / settlement (vṛjanam), and that which is life-giving (jīradānum).";
 
 const keshavaMeaning =
   "The next famous verse says: “Just as water falling from the sky ultimately reaches the ocean, all salutations offered to all Devatās ultimately reach Keshava (Viṣṇu).” This is a key Vedantic principle: Even if we worship many forms, the final destination is One Supreme Reality. So every namaskāra, every prayer, every offering is accepted by the Supreme Lord.";
@@ -181,7 +181,11 @@ export const bhumyAkasaAbhivandanam: Chapter = {
     { term: "namo / namaḥ", meaning: "salutations" },
   ],
   root: group("ba-root", "verse", "", [
-    group("ba-rk", "verse", "", [
+    group(
+      "ba-rk",
+      "verse",
+      "May this, O Heaven and Earth, O Father and Mother, be true — which I here address to you two. Be ye the nearest of the gods with your protections; may we know nourishment, the community / settlement, the life-giving.",
+      [
       group(
         "ba-rk-1",
         "sentence",
