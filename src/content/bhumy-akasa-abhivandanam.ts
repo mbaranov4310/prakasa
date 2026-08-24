@@ -141,7 +141,7 @@ export const bhumyAkasaAbhivandanam: Chapter = {
     { term: "avobhiḥ", meaning: "with protections" },
     { term: "vidyāma", meaning: "may we know" },
     { term: "iṣam", meaning: "nourishment" },
-    { term: "vṛjinaṃ", meaning: "sin" },
+    { term: "vṛjanam", meaning: "community / settlement" },
     { term: "jīradānum", meaning: "life-giving" },
     { term: "ākāśāt", meaning: "from the sky" },
     { term: "patitam", meaning: "fallen" },
@@ -269,7 +269,7 @@ export const bhumyAkasaAbhivandanam: Chapter = {
       group(
         "ba-rk-4",
         "sentence",
-        "may we know nourishment, and the life-giving (away from) sin",
+        "may we know nourishment, the community / settlement, the life-giving",
         [
           word("ba-vidyama", "may we know", [
             ["विद्", "vid"],
@@ -279,9 +279,9 @@ export const bhumyAkasaAbhivandanam: Chapter = {
             ["मे", "me"],
             ["षं", "ṣaṃ"],
           ]),
-          word("ba-vrjinam", "sin", [
+          word("ba-vrjanam", "community / settlement", [
             ["वृ", "vṛ"],
-            ["जि", "ji"],
+            ["ज", "ja"],
             ["नं", "naṃ"],
           ]),
           word("ba-jiradanum", "life-giving", [
