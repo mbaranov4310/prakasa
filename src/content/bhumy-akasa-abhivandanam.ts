@@ -28,27 +28,21 @@ function onnamIti(
   options?: { trailing?: string; lineBreakAfter?: boolean },
 ): SpanNode[] {
   return [
-    word(`${id}-onnam`, "", [
-      ["ओ", "o"],
-      ["न्न", "nna"],
-      ["म्", "m"],
+    word(`${id}-onnam`, "oṃ", [
+      ["ओन्", "on"],
+      ["नम्", "nam"],
     ]),
-    word(
-      `${id}-iti`,
-      "",
-      [
-        ["इ", "i"],
-        ["ति", "ti"],
-      ],
-      options,
-    ),
+    word(`${id}-iti`, "thus", [
+      ["इ", "i"],
+      ["ति", "ti"],
+    ], options),
   ];
 }
 
-function kesavam(id: string, options?: { lineBreakAfter?: boolean }): SpanNode {
+function kesavam(id: string, options?: { trailing?: string; lineBreakAfter?: boolean }): SpanNode {
   return word(
     id,
-    "Lord Viṣṇu / Śrī Kṛṣṇa",
+    "to Keśava",
     [
       ["के", "ke"],
       ["श", "śa"],
@@ -58,50 +52,46 @@ function kesavam(id: string, options?: { lineBreakAfter?: boolean }): SpanNode {
   );
 }
 
-function sriKesavam(id: string): SpanNode {
-  return word(id, "Lord Viṣṇu / Śrī Kṛṣṇa", [
-    ["श्री", "śrī"],
-    ["के", "ke"],
-    ["श", "śa"],
-    ["वं", "vaṃ"],
-  ]);
-}
-
-function stutva(id: string): SpanNode {
-  return word(id, "having praised", [
-    ["स्तु", "stu"],
-    ["त्वा", "tvā"],
-  ]);
-}
-
-function devam(id: string): SpanNode {
-  return word(id, "Divine beings / Devatās", [
-    ["दे", "de"],
-    ["वं", "vaṃ"],
-  ]);
-}
-
 function janardanam(
   id: string,
   options?: { trailing?: string; lineBreakAfter?: boolean },
 ): SpanNode {
   return word(
     id,
-    "Lord Viṣṇu, remover of suffering",
+    "Janārdana",
     [
       ["ज", "ja"],
-      ["ना", "nā"],
-      ["र्द", "rda"],
-      ["न", "na"],
-      ["म्", "m"],
+      ["नार्", "nār"],
+      ["द", "da"],
+      ["नम्", "nam"],
     ],
     options,
   );
 }
 
-function sriVasudeva(id: string): SpanNode {
-  return word(id, "Supreme Lord, Śrī Kṛṣṇa", [
-    ["श्री", "śrī"],
+function stutvaDevamJanardanam(
+  id: string,
+  options?: { trailing?: string; lineBreakAfter?: boolean },
+): SpanNode[] {
+  return [
+    word(`${id}-stutva`, "having praised", [
+      ["स्तु", "stu"],
+      ["त्वा", "tvā"],
+    ]),
+    word(`${id}-devam`, "the Lord", [
+      ["दे", "de"],
+      ["वं", "vaṃ"],
+    ]),
+    janardanam(`${id}-janardanam`, options),
+  ];
+}
+
+function sri(id: string): SpanNode {
+  return word(id, "Śrī", [["श्री", "śrī"]], { trailing: "" });
+}
+
+function vasudevaVocative(id: string): SpanNode {
+  return word(id, "O Vāsudeva", [
     ["वा", "vā"],
     ["सु", "su"],
     ["दे", "de"],
@@ -109,21 +99,20 @@ function sriVasudeva(id: string): SpanNode {
   ]);
 }
 
-function namostute(
+function namoAstuTe(
   id: string,
   options?: { trailing?: string; lineBreakAfter?: boolean },
-): SpanNode {
-  return word(
-    id,
-    "salutations unto You",
-    [
+): SpanNode[] {
+  return [
+    word(`${id}-namo`, "salutations", [
       ["न", "na"],
       ["मो", "mo"],
+    ], { trailing: "" }),
+    word(`${id}-astu`, "may there be", [
       ["ऽस्तु", "’stu"],
-      ["ते", "te"],
-    ],
-    options,
-  );
+    ], { trailing: "" }),
+    word(`${id}-te`, "to you", [["ते", "te"]], options),
+  ];
 }
 
 export const bhumyAkasaAbhivandanam: Chapter = {
@@ -134,432 +123,395 @@ export const bhumyAkasaAbhivandanam: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "bhūmi", meaning: "Earth" },
-    { term: "ākāśa", meaning: "Space / Sky / Ether" },
-    { term: "dyāvā", meaning: "Heaven (upper world)" },
-    { term: "pṛthivī", meaning: "Earth (lower world)" },
-    { term: "satya", meaning: "Truth" },
-    { term: "devāḥ", meaning: "Divine beings / Devatās" },
-    { term: "namaskāraḥ", meaning: "salutation, bow" },
-    { term: "Keshava", meaning: "Lord Viṣṇu / Śrī Kṛṣṇa" },
-    { term: "janārdana", meaning: "Lord Viṣṇu, remover of suffering" },
-    { term: "puṇyam", meaning: "spiritual merit" },
-    { term: "tīrtha", meaning: "holy place / pilgrimage" },
-    { term: "phalam", meaning: "fruit/result of spiritual action" },
-    {
-      term: "vāsanā",
-      meaning: "fragrance / subtle presence (here meaning divine permeation)",
-    },
-    { term: "vāsudeva", meaning: "Supreme Lord, Śrī Kṛṣṇa" },
-    {
-      term: "jagat-trayam",
-      meaning: "the three worlds (earth, mid-region, heavens)",
-    },
-    {
-      term: "sarva-bhūta-nivāsaḥ",
-      meaning: "the one who dwells in all beings",
-    },
-    { term: "idaṃ", meaning: "this" },
-    { term: "pitar mātari", meaning: "Father and Mother" },
-    {
-      term: "adhi ho pravevām",
-      meaning: "unto you I speak / call (sandhi-dense form)",
-    },
-    {
-      term: "bhūta-devānām",
-      meaning: "of elemental beings and gods",
-    },
-    {
-      term: "avame avobhiḥ",
-      meaning: "help me with helps; grant protections",
-    },
-    { term: "vidyā me", meaning: "knowledge to me" },
-    { term: "vrajinaṃ", meaning: "sin, vice" },
-    {
-      term: "jīradānum",
-      meaning: "withering away, growing old and falling off",
-    },
-    {
-      term: "ākāśāt patitaṃ toyaṃ",
-      meaning: "water fallen from the sky",
-    },
-    { term: "sāgaram", meaning: "the ocean" },
-    {
-      term: "sarva-deva-namaskāraḥ",
-      meaning: "all salutations to all gods",
-    },
-    {
-      term: "keśavaṃ pratigacchati",
-      meaning: "reach Keśava",
-    },
-    { term: "sarva-vedeṣu", meaning: "in all the Vedas" },
-    {
-      term: "sarva-tīrtheṣu",
-      meaning: "in all sacred waters/holy places",
-    },
+    { term: "idam", meaning: "this" },
+    { term: "dyāvā", meaning: "Heaven" },
+    { term: "pṛthivī", meaning: "Earth" },
+    { term: "satyam", meaning: "truth" },
+    { term: "astu", meaning: "may it be" },
+    { term: "pitar", meaning: "O Father" },
+    { term: "mātar", meaning: "O Mother" },
+    { term: "yadi", meaning: "which / if" },
+    { term: "iha", meaning: "here" },
+    { term: "upa", meaning: "toward" },
+    { term: "bruve", meaning: "I speak" },
+    { term: "vām", meaning: "to you two" },
+    { term: "bhūtam", meaning: "be ye" },
+    { term: "devānām", meaning: "of the gods" },
+    { term: "avame", meaning: "nearest" },
+    { term: "avobhiḥ", meaning: "with protections" },
+    { term: "vidyāma", meaning: "may we know" },
+    { term: "iṣam", meaning: "nourishment" },
+    { term: "vṛjinaṃ", meaning: "sin" },
+    { term: "jīradānum", meaning: "life-giving" },
+    { term: "ākāśāt", meaning: "from the sky" },
+    { term: "patitam", meaning: "fallen" },
+    { term: "toyam", meaning: "water" },
+    { term: "yathā", meaning: "just as" },
+    { term: "gacchati", meaning: "goes" },
+    { term: "sāgaram", meaning: "to the ocean" },
+    { term: "sarva", meaning: "all" },
+    { term: "deva", meaning: "gods" },
+    { term: "namaskāraḥ", meaning: "salutation" },
+    { term: "keśavam", meaning: "to Keśava" },
+    { term: "prati", meaning: "toward" },
+    { term: "śrī", meaning: "Śrī" },
+    { term: "onnam", meaning: "oṃ" },
+    { term: "iti", meaning: "thus" },
+    { term: "vedeṣu", meaning: "in the Vedas" },
+    { term: "yat", meaning: "which" },
+    { term: "puṇyam", meaning: "merit" },
+    { term: "tīrtheṣu", meaning: "in the holy places" },
+    { term: "phalam", meaning: "fruit" },
+    { term: "tat", meaning: "that" },
+    { term: "puruṣaḥ", meaning: "a person" },
+    { term: "āpnoti", meaning: "obtains" },
     { term: "stutvā", meaning: "having praised" },
-    {
-      term: "vāsanāt vāsudevasya",
-      meaning: "by the all-pervading presence of Vāsudeva",
-    },
-    {
-      term: "vāsitam jagat-trayam",
-      meaning: "the three worlds are suffused",
-    },
-    { term: "namo ’stute", meaning: "salutations unto You" },
+    { term: "devam", meaning: "the Lord" },
+    { term: "janārdanam", meaning: "Janārdana" },
+    { term: "vāsanāt", meaning: "from the fragrance / presence" },
+    { term: "vāsudevasya", meaning: "of Vāsudeva" },
+    { term: "vāsitam", meaning: "is suffused" },
+    { term: "te", meaning: "your / to you" },
+    { term: "jagat", meaning: "world" },
+    { term: "trayam", meaning: "the three" },
+    { term: "bhūta", meaning: "beings" },
+    { term: "nivāsaḥ", meaning: "dwelling" },
+    { term: "asi", meaning: "you are" },
+    { term: "vāsudeva", meaning: "O Vāsudeva" },
+    { term: "namo / namaḥ", meaning: "salutations" },
   ],
-  root: group("ba-verse", "verse", translation, [
-    group("ba-heaven-earth", "sentence", heavenEarthMeaning, [
+  root: group("ba-root", "verse", "", [
+    group("ba-rk", "verse", "", [
       group(
-        "ba-satyam-astu",
-        "phrase",
-        "May Heaven (Dyāvā) and Earth (Pṛthivī) remain established in Truth.",
+        "ba-rk-1",
+        "sentence",
+        "may this, O Heaven and Earth, be true",
         [
           word("ba-idam", "this", [
             ["इ", "i"],
             ["दं", "daṃ"],
           ]),
-          word("ba-dyava", "Heaven (upper world)", [
+          word("ba-dyava", "Heaven", [
             ["द्या", "dyā"],
             ["वा", "vā"],
           ]),
-          word("ba-prthivi", "Earth (lower world)", [
+          word("ba-prthivi", "Earth", [
             ["पृ", "pṛ"],
             ["थि", "thi"],
             ["वी", "vī"],
           ]),
-          group("ba-satyam-astu-words", "phrase", "may it be truth / firmness", [
-            word("ba-satyam", "Truth", [
-              ["स", "sa"],
-              ["त्यं", "tyaṃ"],
-            ]),
-            word(
-              "ba-astu",
-              "",
-              [
-                ["अ", "a"],
-                ["स्तु", "stu"],
-              ],
-              { trailing: " ।", lineBreakAfter: true },
-            ),
+          word("ba-satyam", "truth", [
+            ["सत्", "sat"],
+            ["यम्", "yam"],
           ]),
+          word("ba-astu", "may it be", [
+            ["अस्", "as"],
+            ["तु", "tu"],
+          ], { trailing: " ।", lineBreakAfter: true }),
         ],
       ),
-      group("ba-pitar-matari", "phrase", "Father and Mother", [
-        word("ba-pitar-matar-yadi", "Father and Mother", [
-          ["पि", "pi"],
-          ["तर्", "tar"],
-          ["मा", "mā"],
-          ["तर्", "tar"],
-          ["य", "ya"],
-          ["दि", "di"],
-        ]),
-        word(
-          "ba-hopabruvevam",
-          "unto you I speak / call (sandhi-dense form)",
-          [
-            ["हो", "ho"],
-            ["प", "pa"],
+      group(
+        "ba-rk-2",
+        "sentence",
+        "O Father, O Mother, which I here address to you two",
+        [
+          word("ba-pitar", "O Father", [
+            ["पि", "pi"],
+            ["तर्", "tar"],
+          ]),
+          word("ba-matar", "O Mother", [
+            ["मा", "mā"],
+            ["तर्", "tar"],
+          ]),
+          word("ba-yadi", "which / if", [
+            ["य", "ya"],
+            ["दि", "di"],
+          ]),
+          word("ba-iha", "here", [["हो", "ho"]], { trailing: "" }),
+          word("ba-upa", "toward", [["प", "pa"]], { trailing: "" }),
+          word("ba-bruve", "I speak", [
             ["ब्रु", "bru"],
             ["वे", "ve"],
-            ["वा", "vā"],
-            ["म्", "m"],
-          ],
-          { trailing: " ।", lineBreakAfter: true },
-        ),
-      ]),
+          ], { trailing: "" }),
+          word("ba-vam", "to you two", [["वाम्", "vām"]], {
+            trailing: " ।",
+            lineBreakAfter: true,
+          }),
+        ],
+      ),
       group(
-        "ba-avobhih",
-        "phrase",
-        "help me with helps; grant protections",
+        "ba-rk-3",
+        "sentence",
+        "be ye the nearest of the gods with your protections",
         [
-          word("ba-bhutam", "", [
+          word("ba-bhutam", "be ye", [
             ["भू", "bhū"],
             ["तं", "taṃ"],
           ]),
-          word("ba-devanamavame", "Divine beings / Devatās", [
+          word("ba-devanam", "of the gods", [
             ["दे", "de"],
             ["वा", "vā"],
             ["ना", "nā"],
-            ["म", "ma"],
+            ["म्", "m"],
+          ], { trailing: "" }),
+          word("ba-avame", "nearest", [
+            ["अ", "a"],
             ["व", "va"],
             ["मे", "me"],
           ]),
-          word(
-            "ba-avobhih-word",
-            "",
-            [
-              ["अ", "a"],
-              ["वो", "vo"],
-              ["भिः", "bhiḥ"],
-            ],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
+          word("ba-avobhih", "with protections", [
+            ["अ", "a"],
+            ["वो", "vo"],
+            ["भिः", "bhiḥ"],
+          ], { trailing: " ।", lineBreakAfter: true }),
         ],
       ),
       group(
-        "ba-vidya-vrjina",
-        "phrase",
-        "The mantra also asks for Vidya (knowledge) and the removal of Vṛjina (sin, wrong tendencies, inner impurity).",
+        "ba-rk-4",
+        "sentence",
+        "may we know nourishment, and the life-giving (away from) sin",
         [
-        word("ba-vidya", "", [
-          ["वि", "vi"],
-          ["द्या", "dyā"],
-        ]),
-        word("ba-mesam", "", [
-          ["मे", "me"],
-          ["षं", "ṣaṃ"],
-        ]),
-        word("ba-vrjinam", "sin, vice", [
-          ["वृ", "vṛ"],
-          ["जि", "ji"],
-          ["नं", "naṃ"],
-        ]),
-        word(
-          "ba-jiradanum",
-          "withering away, growing old and falling off",
-          [
+          word("ba-vidyama", "may we know", [
+            ["विद्", "vid"],
+            ["या", "yā"],
+          ], { trailing: "" }),
+          word("ba-isam", "nourishment", [
+            ["मे", "me"],
+            ["षं", "ṣaṃ"],
+          ]),
+          word("ba-vrjinam", "sin", [
+            ["वृ", "vṛ"],
+            ["जि", "ji"],
+            ["नं", "naṃ"],
+          ]),
+          word("ba-jiradanum", "life-giving", [
             ["जी", "jī"],
             ["र", "ra"],
             ["दा", "dā"],
-            ["नु", "nu"],
-            ["म्", "m"],
-          ],
-          { trailing: " ॥", lineBreakAfter: true },
-        ),
-      ]),
+            ["नुम्", "num"],
+          ], { trailing: " ॥", lineBreakAfter: true }),
+        ],
+      ),
     ]),
-    group("ba-keshava", "sentence", keshavaMeaning, [
+    group("ba-keshava", "verse", "", [
       group(
-        "ba-akasa-toyam",
-        "phrase",
-        "water fallen from the sky",
+        "ba-keshava-1",
+        "sentence",
+        "just as water fallen from the sky goes to the ocean, all salutations to the gods go to Keśava",
         [
-          word("ba-akasat", "Space / Sky / Ether", [
+          word("ba-akasat", "from the sky", [
             ["आ", "ā"],
             ["का", "kā"],
             ["शात्", "śāt"],
           ]),
-          word("ba-patitam", "", [
+          word("ba-patitam", "fallen", [
             ["प", "pa"],
             ["ति", "ti"],
             ["तं", "taṃ"],
           ]),
-          word("ba-toyam", "", [
+          word("ba-toyam", "water", [
             ["तो", "to"],
             ["यं", "yaṃ"],
           ]),
-        ],
-      ),
-      word("ba-yatha", "", [
-        ["य", "ya"],
-        ["था", "thā"],
-      ]),
-      word("ba-gacchati-1", "", [
-        ["ग", "ga"],
-        ["च्छ", "ccha"],
-        ["ति", "ti"],
-      ]),
-      word(
-        "ba-sagaram",
-        "the ocean",
-        [
-          ["सा", "sā"],
-          ["ग", "ga"],
-          ["र", "ra"],
-          ["म्", "m"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-      group(
-        "ba-sarva-deva-namaskarah",
-        "phrase",
-        "all salutations to all gods",
-        [
-          word("ba-sarvadeva", "Divine beings / Devatās", [
-            ["स", "sa"],
-            ["र्व", "rva"],
+          word("ba-yatha", "just as", [
+            ["य", "ya"],
+            ["था", "thā"],
+          ]),
+          word("ba-gacchati-1", "goes", [
+            ["गच्", "gac"],
+            ["छ", "cha"],
+            ["ति", "ti"],
+          ]),
+          word("ba-sagaram", "to the ocean", [
+            ["सा", "sā"],
+            ["ग", "ga"],
+            ["रम्", "ram"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+          word("ba-sarva-1", "all", [
+            ["सर्", "sar"],
+            ["व", "va"],
+          ], { trailing: "" }),
+          word("ba-deva", "gods", [
             ["दे", "de"],
             ["व", "va"],
           ]),
-          word("ba-namaskarah", "salutation, bow", [
+          word("ba-namaskarah", "salutation", [
             ["न", "na"],
-            ["म", "ma"],
-            ["स्का", "skā"],
+            ["मस्", "mas"],
+            ["का", "kā"],
             ["रः", "raḥ"],
           ]),
-        ],
-      ),
-      group("ba-kesavam-pratigacchati", "phrase", "reach Keśava", [
-        kesavam("ba-kesavam"),
-        word(
-          "ba-pratigacchati",
-          "",
-          [
+          kesavam("ba-kesavam-1"),
+          word("ba-prati-1", "toward", [
             ["प्र", "pra"],
             ["ति", "ti"],
-            ["ग", "ga"],
-            ["च्छ", "ccha"],
+          ], { trailing: "" }),
+          word("ba-gacchati-2", "goes", [
+            ["गच्", "gac"],
+            ["छ", "cha"],
             ["ति", "ti"],
-          ],
-          { trailing: " ॥", lineBreakAfter: true },
-        ),
-      ]),
-      sriKesavam("ba-sri-kesavam"),
-      word("ba-pratigacchatyonnam", "", [
-        ["प्र", "pra"],
-        ["ति", "ti"],
-        ["ग", "ga"],
-        ["च्छ", "ccha"],
-        ["त्यो", "tyo"],
-        ["न्न", "nna"],
-        ["म्", "m"],
-      ]),
-      word(
-        "ba-iti-1",
-        "",
-        [
-          ["इ", "i"],
-          ["ति", "ti"],
-        ],
-        { trailing: " ॥", lineBreakAfter: true },
-      ),
-    ]),
-    group("ba-janardana", "sentence", janardanaMeaning, [
-      word("ba-sarvavedesu", "in all the Vedas", [
-        ["स", "sa"],
-        ["र्व", "rva"],
-        ["वे", "ve"],
-        ["दे", "de"],
-        ["षु", "ṣu"],
-      ]),
-      word(
-        "ba-yatpunyam",
-        "spiritual merit",
-        [
-          ["य", "ya"],
-          ["त्पु", "tpu"],
-          ["ण्यं", "ṇyaṃ"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-      word("ba-sarvatirthesu", "in all sacred waters/holy places", [
-        ["स", "sa"],
-        ["र्व", "rva"],
-        ["ती", "tī"],
-        ["र्थे", "rthe"],
-        ["षु", "ṣu"],
-      ]),
-      word(
-        "ba-yatphalam",
-        "fruit/result of spiritual action",
-        [
-          ["य", "ya"],
-          ["त्फ", "tpha"],
-          ["ल", "la"],
-          ["म्", "m"],
-        ],
-        { trailing: " ।", lineBreakAfter: true },
-      ),
-      word("ba-tatphalam", "fruit/result of spiritual action", [
-        ["त", "ta"],
-        ["त्फ", "tpha"],
-        ["लं", "laṃ"],
-      ]),
-      word(
-        "ba-purusopnoti",
-        "",
-        [
-          ["पु", "pu"],
-          ["रु", "ru"],
-          ["षो", "ṣo"],
-          ["ऽप्नो", "’pno"],
-          ["ति", "ti"],
-        ],
-        { lineBreakAfter: true },
-      ),
-      stutva("ba-stutva-1"),
-      devam("ba-devam-1"),
-      janardanam("ba-janardanam-1", {
-        trailing: " ॥",
-        lineBreakAfter: true,
-      }),
-      stutva("ba-stutva-2"),
-      devam("ba-devam-2"),
-      janardanam("ba-janardanam-2"),
-      ...onnamIti("ba-janardana", {
-        trailing: " ॥",
-        lineBreakAfter: true,
-      }),
-    ]),
-    group("ba-vasudeva", "sentence", vasudevaMeaning, [
-      word(
-        "ba-vasanad-vasudevasya",
-        "by the all-pervading presence of Vāsudeva",
-        [
-          ["वा", "vā"],
-          ["स", "sa"],
-          ["ना", "nā"],
-          ["-", "-"],
-          ["द्वा", "dvā"],
-          ["सु", "su"],
-          ["दे", "de"],
-          ["व", "va"],
-          ["स्य", "sya"],
+          ], { trailing: " ॥", lineBreakAfter: true }),
         ],
       ),
       group(
-        "ba-vasitam-jagattrayam",
-        "phrase",
-        "the three worlds are suffused",
+        "ba-keshava-2",
+        "sentence",
+        "just as water fallen from the sky goes to the ocean, all salutations to the gods go to Keśava",
         [
-          word("ba-vasitam", "", [
+          word("ba-sri-1", "Śrī", [["श्री", "śrī"]], { trailing: "" }),
+          kesavam("ba-kesavam-2"),
+          word("ba-prati-2", "toward", [
+            ["प्र", "pra"],
+            ["ति", "ti"],
+          ], { trailing: "" }),
+          word("ba-gacchati-3", "goes", [
+            ["गच्", "gac"],
+            ["छ", "cha"],
+          ], { trailing: "" }),
+          word("ba-onnam-1", "oṃ", [
+            ["त्योन्", "tyon"],
+            ["नम्", "nam"],
+          ]),
+          word("ba-iti-1", "thus", [
+            ["इ", "i"],
+            ["ति", "ti"],
+          ], { trailing: " ॥", lineBreakAfter: true }),
+        ],
+      ),
+    ]),
+    group("ba-janardana", "verse", "", [
+      group(
+        "ba-janardana-1",
+        "sentence",
+        "whatever merit is in all the Vedas, whatever fruit in all tīrthas, that fruit a person obtains having praised Janārdana",
+        [
+          word("ba-sarva-2", "all", [
+            ["सर्", "sar"],
+            ["व", "va"],
+          ], { trailing: "" }),
+          word("ba-vedesu", "in the Vedas", [
+            ["वे", "ve"],
+            ["दे", "de"],
+            ["षु", "ṣu"],
+          ]),
+          word("ba-yat-1", "which", [["यत्", "yat"]], { trailing: "" }),
+          word("ba-punyam", "merit", [
+            ["पुण्", "puṇ"],
+            ["यं", "yaṃ"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+          word("ba-sarva-3", "all", [
+            ["सर्", "sar"],
+            ["व", "va"],
+          ], { trailing: "" }),
+          word("ba-tirthesu", "in the holy places", [
+            ["तीर्", "tīr"],
+            ["थे", "the"],
+            ["षु", "ṣu"],
+          ]),
+          word("ba-yat-2", "which", [["यत्", "yat"]], { trailing: "" }),
+          word("ba-phalam-1", "fruit", [
+            ["फ", "pha"],
+            ["लम्", "lam"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+          word("ba-tat", "that", [["तत्", "tat"]], { trailing: "" }),
+          word("ba-phalam-2", "fruit", [
+            ["फ", "pha"],
+            ["लं", "laṃ"],
+          ]),
+          word("ba-purusah", "a person", [
+            ["पु", "pu"],
+            ["रु", "ru"],
+            ["षो", "ṣo"],
+          ], { trailing: "" }),
+          word("ba-apnoti", "obtains", [
+            ["ऽप्", "’p"],
+            ["नो", "no"],
+            ["ति", "ti"],
+          ], { lineBreakAfter: true }),
+          ...stutvaDevamJanardanam("ba-j1", {
+            trailing: " ॥",
+            lineBreakAfter: true,
+          }),
+        ],
+      ),
+      group(
+        "ba-janardana-2",
+        "sentence",
+        "whatever merit is in all the Vedas, whatever fruit in all tīrthas, that fruit a person obtains having praised Janārdana",
+        [
+          ...stutvaDevamJanardanam("ba-j2"),
+          ...onnamIti("ba-janardana", {
+            trailing: " ॥",
+            lineBreakAfter: true,
+          }),
+        ],
+      ),
+    ]),
+    group("ba-vasudeva", "verse", "", [
+      group(
+        "ba-vasudeva-1",
+        "sentence",
+        "by the presence of Vāsudeva your three worlds are suffused; you are the dwelling of all beings; O Śrī Vāsudeva, salutations to you",
+        [
+          word("ba-vasanat", "from the fragrance / presence", [
+            ["वा", "vā"],
+            ["स", "sa"],
+            ["ना", "nā"],
+          ], { trailing: "" }),
+          word("ba-vasudevasya", "of Vāsudeva", [
+            ["द्वा", "dvā"],
+            ["सु", "su"],
+            ["दे", "de"],
+            ["व", "va"],
+            ["स्य", "sya"],
+          ]),
+          word("ba-vasitam", "is suffused", [
             ["वा", "vā"],
             ["सि", "si"],
             ["तं", "taṃ"],
           ]),
-          word("ba-te", "", [["ते", "te"]]),
-          word(
-            "ba-jagattrayam",
-            "the three worlds (earth, mid-region, heavens)",
-            [
-              ["ज", "ja"],
-              ["ग", "ga"],
-              ["त्त्र", "ttra"],
-              ["य", "ya"],
-              ["म्", "m"],
-            ],
-            { trailing: " ।", lineBreakAfter: true },
-          ),
-        ],
-      ),
-      group(
-        "ba-sarvabhuta-nivasah",
-        "phrase",
-        "the one who dwells in all beings",
-        [
-          word("ba-sarvabhuta", "", [
-            ["स", "sa"],
-            ["र्व", "rva"],
+          word("ba-te-1", "your / to you", [["ते", "te"]]),
+          word("ba-jagat", "world", [
+            ["ज", "ja"],
+            ["गत्", "gat"],
+          ], { trailing: "" }),
+          word("ba-trayam", "the three", [
+            ["त्र", "tra"],
+            ["यम्", "yam"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+          word("ba-sarva-4", "all", [
+            ["सर्", "sar"],
+            ["व", "va"],
+          ], { trailing: "" }),
+          word("ba-bhuta", "beings", [
             ["भू", "bhū"],
             ["त", "ta"],
           ]),
-          word("ba-nivasosi", "", [
+          word("ba-nivasah", "dwelling", [
             ["नि", "ni"],
             ["वा", "vā"],
             ["सो", "so"],
-            ["ऽसि", "’si"],
-          ]),
+          ], { trailing: "" }),
+          word("ba-asi", "you are", [["ऽसि", "’si"]]),
+          sri("ba-sri-2"),
+          vasudevaVocative("ba-vasudeva-voc-1"),
+          ...namoAstuTe("ba-n1", {
+            trailing: " ॥",
+            lineBreakAfter: true,
+          }),
         ],
       ),
-      sriVasudeva("ba-sri-vasudeva-1"),
-      namostute("ba-namostute-1", {
-        trailing: " ॥",
-        lineBreakAfter: true,
-      }),
-      sriVasudeva("ba-sri-vasudeva-2"),
-      namostute("ba-namostute-2"),
-      ...onnamIti("ba-vasudeva", { trailing: " ॥" }),
+      group(
+        "ba-vasudeva-2",
+        "sentence",
+        "by the presence of Vāsudeva your three worlds are suffused; you are the dwelling of all beings; O Śrī Vāsudeva, salutations to you",
+        [
+          sri("ba-sri-3"),
+          vasudevaVocative("ba-vasudeva-voc-2"),
+          ...namoAstuTe("ba-n2"),
+          ...onnamIti("ba-vasudeva", { trailing: " ॥" }),
+        ],
+      ),
     ]),
   ]),
 };
