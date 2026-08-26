@@ -27,19 +27,19 @@ Kārtikeya is already encoded — skip it.
 
 ## Vedic / cosmic
 
-- [ ] Indra (`indra`)
-- [ ] Agni (`agni`)
-- [ ] Vāyu (`vayu`)
-- [ ] Varuṇa (`varuna`)
-- [ ] Soma (`soma`)
-- [ ] Candra (`candra`)
-- [ ] Uṣas (`usas`)
+- [~] Indra (`indra`)
+- [~] Agni (`agni`)
+- [~] Vāyu (`vayu`)
+- [~] Varuṇa (`varuna`)
+- [~] Soma (`soma`)
+- [~] Candra (`candra`)
+- [~] Uṣas (`usas`)
 
 ## Sacred beings / associated
 
-- [ ] Gaṅgā (`ganga`)
-- [ ] Nandī (`nandi`)
-- [ ] Garuḍa (`garuda`)
-- [ ] Nāga / Ananta (Śeṣa) (`naga`)
-- [ ] Dhanvantari (`dhanvantari`)
-- [ ] Kubera (`kubera`)
+- [~] Gaṅgā (`ganga`)
+- [~] Nandī (`nandi`)
+- [~] Garuḍa (`garuda`)
+- [~] Nāga / Ananta (Śeṣa) (`naga`)
+- [~] Dhanvantari (`dhanvantari`)
+- [~] Kubera (`kubera`)

@@ -15,7 +15,6 @@ export function Library() {
       <h1 className="is-latin">Prakāśa</h1>
       <ul className="book-grid">
         {books.map((book) => {
-          const ready = book.chapters.filter((chapter) => chapter.status === "ready").length;
           const title = navLang === "sanskrit" ? book.titleDev : book.titleEn;
           return (
             <li key={book.id}>
@@ -25,9 +24,6 @@ export function Library() {
               >
                 <span className={`book-title ${navLang === "sanskrit" ? "is-deva" : "is-latin"}`}>
                   {title}
-                </span>
-                <span className="book-count">
-                  {ready} {ready === 1 ? "mantra" : "mantras"} ready
                 </span>
               </button>
             </li>

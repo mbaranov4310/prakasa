@@ -291,14 +291,14 @@ export const gayatriAvahanam: Chapter = {
       ],
     ),
     group(
-      "ga-ojas",
+      "ga-ojas-sentence",
       "sentence",
-      "You are ojas, you are might, you are strength. You are brilliance, you are the abode/name of the gods. You are the all, all-life, everything, the overlord of all life.",
+      "You are vigor, you are might, you are strength. You are brilliance, you are the abode/name of the gods. You are the all, all-life, everything, the overlord of all life.",
       [
         group(
           "ga-ojas-line",
           "phrase",
-          "You are ojas, you are might, you are strength",
+          "You are vigor, you are might, you are strength",
           [
             word("ga-ojas", "vigor", [
               ["ओ", "o"],
