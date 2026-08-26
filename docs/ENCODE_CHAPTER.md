@@ -24,9 +24,9 @@ The second pass is what the site actually reflects: every ready chapter was re-g
 
 ---
 
-## Next collection: nitya maṅgala ślokas
+## Next collection: devatā namaskāra
 
-Short one-śloka greetings to common gods. Library book `nitya-mangala-slokas`. Finding the verse is a separate stage; see `docs/devata-stuti/WORKFLOW.md`.
+Short one-śloka greetings to common gods. Library book `devata-namaskara`. Finding the verse is a separate stage; see `docs/devata-stuti/WORKFLOW.md`.
 
 There is no base document. Encode from the approved package in `docs/devata-stuti/findings/` (Devanagari, IAST, glosses, translation already reviewed). Do not silently rewrite them.
 

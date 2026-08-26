@@ -1,4 +1,4 @@
-# Find queue — nitya maṅgala ślokas
+# Find queue — devatā namaskāra
 
 Shared work list for Stage 1 (`docs/devata-stuti/WORKFLOW.md`). One deity per agent. Do not encode.
 
@@ -27,19 +27,19 @@ Kārtikeya is already encoded — skip it.
 
 ## Vedic / cosmic
 
-- [~] Indra (`indra`)
-- [~] Agni (`agni`)
-- [~] Vāyu (`vayu`)
-- [~] Varuṇa (`varuna`)
-- [~] Soma (`soma`)
-- [~] Candra (`candra`)
-- [~] Uṣas (`usas`)
+- [x] Indra (`indra`)
+- [x] Agni (`agni`)
+- [x] Vāyu (`vayu`)
+- [x] Varuṇa (`varuna`)
+- [x] Soma (`soma`)
+- [x] Candra (`candra`)
+- [x] Uṣas (`usas`)
 
 ## Sacred beings / associated
 
-- [~] Gaṅgā (`ganga`)
-- [~] Nandī (`nandi`)
-- [~] Garuḍa (`garuda`)
-- [~] Nāga / Ananta (Śeṣa) (`naga`)
-- [~] Dhanvantari (`dhanvantari`)
-- [~] Kubera (`kubera`)
+- [x] Gaṅgā (`ganga`)
+- [x] Nandī (`nandi`)
+- [x] Garuḍa (`garuda`)
+- [x] Nāga / Ananta (Śeṣa) (`naga`)
+- [x] Dhanvantari (`dhanvantari`)
+- [x] Kubera (`kubera`)

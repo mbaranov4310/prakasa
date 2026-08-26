@@ -5,7 +5,7 @@ Status is research, not the live site. No chapter is wired until a verse is chos
 **Live snag list:** `docs/devata-stuti/FIND_QUEUE.md`  
 **Packages:** `docs/devata-stuti/findings/<id>.md`
 
-Working book id: `nitya-mangala-slokas`. Titles: नित्य मङ्गल श्लोकाः / nitya maṅgala ślokāḥ / Nitya maṅgala ślokas.
+Working book id: `devata-namaskara`. Titles: देवता नमस्कारः / devatā namaskāraḥ / Devatā namaskāra.
 
 ## Deities
 

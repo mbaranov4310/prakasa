@@ -1,8 +1,8 @@
-# Nitya maṅgala ślokas
+# Devatā namaskāra
 
 Short greetings people say to each god — home, school, temple walk. Not Vedic, not immutable. Village and region vary.
 
-Library book: **नित्य मङ्गल श्लोकाः** / `nitya-mangala-slokas`.
+Library book: **देवता नमस्कारः** / `devata-namaskara`.
 
 **Find first. Encode only after the human has audited the package.** The find file should already contain Sanskrit, IAST, word glosses, and a natural translation — enough to review before anything is wired into Prakāśa. Encoding format: `docs/ENCODE_CHAPTER.md`.
 
@@ -116,12 +116,12 @@ Do not encode. Do not edit any other file.
 Follow `docs/ENCODE_CHAPTER.md`. Wire the approved recension and glosses; do not silently rewrite them.
 
 - Files: `src/content/nitya-mangala-slokas/`
-- One deity = one chapter in the `nitya-mangala-slokas` book
+- One deity = one chapter in the `devata-namaskara` book
 - Split on how the verse is recited and understood, not on dictionary convenience
 ```
 Work in /Users/max/Desktop/projects/prakasa.
 Follow docs/ENCODE_CHAPTER.md and docs/devata-stuti/WORKFLOW.md stage 2.
 Encode <deity> — <first pāda>
-Book: nitya-mangala-slokas
+Book: devata-namaskara
 Use the approved package in docs/devata-stuti/findings/<id>.md
 ```

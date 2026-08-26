@@ -37,6 +37,17 @@ import { sarasvati } from "./nitya-mangala-slokas/sarasvati";
 import { siva } from "./nitya-mangala-slokas/siva";
 import { surya } from "./nitya-mangala-slokas/surya";
 import { visnu } from "./nitya-mangala-slokas/visnu";
+import { agni } from "./nitya-mangala-slokas/agni";
+import { candra } from "./nitya-mangala-slokas/candra";
+import { dhanvantari } from "./nitya-mangala-slokas/dhanvantari";
+import { ganga } from "./nitya-mangala-slokas/ganga";
+import { garuda } from "./nitya-mangala-slokas/garuda";
+import { indra } from "./nitya-mangala-slokas/indra";
+import { kubera } from "./nitya-mangala-slokas/kubera";
+import { naga } from "./nitya-mangala-slokas/naga";
+import { nandi } from "./nitya-mangala-slokas/nandi";
+import { varuna } from "./nitya-mangala-slokas/varuna";
+import { vayu } from "./nitya-mangala-slokas/vayu";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -92,11 +103,11 @@ export const books: Book[] = [
     ],
   },
   {
-    id: "nitya-mangala-slokas",
-    titleDev: "नित्य मङ्गल श्लोकाः",
-    titleIast: "nitya maṅgala ślokāḥ",
-    titleEn: "Nitya maṅgala ślokas",
-    blurb: "Short daily verses: greet each deity, word by word.",
+    id: "devata-namaskara",
+    titleDev: "देवता नमस्कारः",
+    titleIast: "devatā namaskāraḥ",
+    titleEn: "Devatā namaskāra",
+    blurb: "Short salutations to each deity, word by word.",
     chapters: [
       ganesa,
       siva,
@@ -112,11 +123,25 @@ export const books: Book[] = [
       surya,
       sani,
       brahma,
+      indra,
+      agni,
+      vayu,
+      varuna,
+      comingSoon("soma", "सोमः", "somaḥ", "Soma"),
+      candra,
+      comingSoon("usas", "उषस्", "uṣas", "Uṣas"),
+      ganga,
+      nandi,
+      garuda,
+      naga,
+      dhanvantari,
+      kubera,
     ],
   },
 ];
 
 export function getBook(bookId: string): Book | undefined {
+  if (bookId === "nitya-mangala-slokas") bookId = "devata-namaskara";
   return books.find((book) => book.id === bookId);
 }
 
