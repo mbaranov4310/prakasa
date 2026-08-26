@@ -1,67 +1,54 @@
-# Encode one Sandhyāvandana chapter
+# Encode a chapter
 
 Work in `/Users/max/Desktop/projects/prakasa`.
 
-This file is the frozen process for turning one PDF chapter into website content. **One chapter per chat.** Do not encode the rest of the book in the same conversation.
-
-The human reviews on the **live site** after several chapters are up, not between each chapter. When you finish encoding, commit, push, and publish Pages yourself.
+This is the living process for turning a recitation into Prakāśa content. Sandhyāvandana is done (inventory below). The same loop continues for the next collection.
 
 ---
 
-## Paste this into a new chat
+## The loop
 
-Copy from the next heading through the end of “Publish.” Then add one line: `Do Chapter N — <title>` (for example `Do Chapter 2 — आचमनम्`).
+Word-by-word and phrase-by-phrase, by hand. Traditional commentaries first when they exist (for the Vedic chapters: Sāyaṇa, Bhaṭṭabhāskara, pada-pāṭha). The agent searches, proposes readings and glosses, and lists uncertainties. The human reviews that research and corrects it. Then encode.
 
-### Task
+Do not dump a finished TypeScript file and call it done. The review happens on the *meanings* before they are wired in.
 
-Encode **one** Sandhyāvandana chapter into Prakāśa’s content format. Follow this file (`docs/ENCODE_CHAPTER.md`) exactly. Sacred recitation text: fidelity over cleverness.
+**One chapter per chat** unless the human says otherwise.
 
-When the chapter is encoded, **commit it, push `main`, and deploy GitHub Pages** so it is on https://mbaranov4310.github.io/prakasa/ without waiting for the human to say “commit.”
+---
 
-### Sources
+## What changed after the first pass
 
-- **Source of truth:** `data/sandhya_content.pdf` (meanings, glossary, word breaks, the Sanskrit as this book recites it).
-- **Display / fallback glosses:** `data/nice_formating.pdf` (syllable stacking for Devanagari + IAST overlay; word glossary used only when content has no gloss for that word).
-- If the two PDFs **disagree** on wording, sandhi, or a word’s translation, **content wins**.
-- If content has **no** translation for a recitation word and the nicer PDF glossary does, **copy the nicer gloss verbatim**. Do not invent the rest.
+Early Sandhyāvandana chapters were transcribed from two local PDFs (`data/sandhya_content.pdf` for the book’s recitation and English, `data/nice_formating.pdf` for syllable stacking). That first pass copied the book’s translations verbatim.
 
-### How to read the PDFs (do not install a PDF library)
+The second pass is what the site actually reflects: every ready chapter was re-glossed at word and phrase level from traditional bhāṣyas and pada-pāṭha, with the book kept only as the recitation wording (Taittirīya forms, *Ogm suvah*, and so on). Do not revert to “copy the PDF English.” The PDFs are not published and are not the gloss source of truth.
 
-The previous encoding chats could read these files with Cursor’s **Read** tool. Do **not** install poppler, `pdftotext`, PyMuPDF, pdfminer, or any other PDF reader.
+---
 
-Use Read on the absolute paths:
+## Next collection: nitya maṅgala ślokas
 
-- `/Users/max/Desktop/projects/prakasa/data/sandhya_content.pdf`
-- `/Users/max/Desktop/projects/prakasa/data/nice_formating.pdf`
+Short one-śloka greetings to common gods. Library book `nitya-mangala-slokas`. Finding the verse is a separate stage; see `docs/devata-stuti/WORKFLOW.md`.
 
-That tool already understands PDFs. It returns extracted text with page markers like `-- 4 of 113 --`.
+There is no base document. Encode from the approved package in `docs/devata-stuti/findings/` (Devanagari, IAST, glosses, translation already reviewed). Do not silently rewrite them.
 
-To stay on one chapter, pass `offset` and `limit` so you only pull those pages (see the inventory below). Example: Chapter 2 is pages 4–8 of the content PDF, so start near the `-- 4 of 113 --` marker and stop after `-- 8 of 113 --`.
+Fewer of these texts are Vedic ṛks, so Sāyaṇa and Bhaṭṭabhāskara often will not apply. Use whichever traditional commentaries belong to that corpus. More recensions exist; pick a coherent one, note the others as uncertainties, and do not treat a single printed page as law. Adherence to one “ground truth” recension is slightly less important than it was for Sandhyāvandana — still do not invent, still do not silently mix recensions.
 
-**The extract is hostile.** Devanagari often comes out wrong (broken conjuncts, `ि`/`व` swaps, smashed visargas). Use it to find the right page and the English translation/glossary, then reconstruct correct Devanagari from:
+---
 
-1. The same Read output’s less-garbled lines
-2. `nice_formating.pdf` for that chapter (usually a clean Devanagari page, then an overlay page, then translation)
-3. The content PDF’s hyphenated IAST (`ke-śa-vā-ya`), which is more reliable than the mangled Devanagari dump
+## Hard rules (still)
 
-Do not treat the raw extract as the mantra string you encode. Never “fix” it to a textbook edition; fix only OCR garbage so it matches what the PDF page actually shows.
+1. Encode **meanings of the recitation only**. Omit ritual stage directions (sip water, touch limbs, hold the nose, and so on).
+2. Skip saṅkalpa and personal-name / gotra / pravara formulas. Leave those coming soon.
+3. One library card per unique recitation. Do not add another card when a later chapter only repeats an earlier mantra. If a chapter mixes a repeat with new recitation, encode only the new part.
+4. Split sandhi and compounds when pada-pāṭha or the commentary treats the pieces as separate words. Do not split only because a dictionary could.
+5. Sacred recitation: fidelity over cleverness. Fix OCR and encoding garbage; do not “improve” the mantra to a textbook edition the human did not choose.
+6. Do not invent remaining gaps. Empty gloss on a particle is better than a guess. Prefer a listed uncertainty.
+7. Touch only that chapter’s content module, `src/content/library.ts`, and this file if the inventory needs a status change. No drive-by refactors.
 
-If Read on the `.pdf` path works, you are done. Shell conversion to images or extra packages is a last resort only if Read returns an error (file not found), not because the Sanskrit looks messy.
+---
 
-### Hard rules
+## How to encode
 
-1. Copy chapter translations **verbatim** from the content PDF (the meaning page). Do not paraphrase, polish, or add scholarship.
-2. Word glosses: content glossary first. If a recitation word has no content gloss, copy the nicer PDF’s glossary line for that word. If both define it and they disagree, keep the content gloss. Do not invent remaining gaps (particles, unlisted words stay empty).
-3. Do not “correct” sandhi or spelling to a textbook form. Recitation forms in this book (for example *Ogm suvah*) stay as written.
-4. Do not split a compound unless the content PDF already treats the pieces as separate glossary entries or separate words on the Sanskrit page. (`भूतपिशाचाः` stayed one word in v0 for this reason.)
-5. Omit ritual stage directions (sip water, touch limbs, hold the nose, and so on). Encode **meanings of the recitation only**.
-6. Skip saṅkalpa chapters (and saṅkalpa sentences bundled into other chapters). Leave them coming soon; do not encode personal name / gotra / japa-oath formulas.
-7. The content PDF is **ritual order**, not a list of unique texts. Ācamana, prāṇāyāma, and other repeats get **one** library card. Do not add another card when the book says “repeat Chapter N.” If a later PDF chapter mixes a repeat with a **new** mantra, encode only the new recitation (Chapter 11 → sūryopasthāna only; Chapter 12 → tarpaṇa only; skip a second ācamana).
-8. Touch only that chapter’s content module, `src/content/library.ts`, and this status table if you mark the chapter ready. No drive-by refactors.
-
-### How to encode
-
-Read an existing ready file first and match it:
+Read a ready file first and match the span tree:
 
 - `src/content/guru-namaskara.ts` (shallow)
 - `src/content/sarira-suddhi.ts` (word → phrase → sentence → verse)
@@ -70,27 +57,27 @@ Read an existing ready file first and match it:
 Use `word()` and `group()` from `src/lib/span.ts`.
 
 - **word:** Devanagari + IAST syllables as pairs, glossary meaning on the leaf.
-- **group:** `phrase` / `sentence` / `verse` with the PDF’s English for that span.
-- `trailing` for `।` `॥` `!` ; `lineBreakAfter: true` where the PDF line-breaks.
+- **group:** `phrase` / `sentence` / `verse` with the agreed English for that span.
+- `trailing` for `।` `॥` `!` ; `lineBreakAfter: true` at recitation line breaks.
 - `source: "curated"` (already set by the helpers).
-- Syllable pairs should match `nice_formating.pdf` overlay when that chapter has one; otherwise use the content PDF’s hyphenation (`gu-ru-bhyo`).
+- Syllable pairs should be recitable, not etymological fragments.
 
-Wire it in `src/content/library.ts`: replace the `comingSoon(...)` placeholder (or add the chapter in book order if it is not listed yet). Keep book order the same as the content PDF. Mark this chapter **ready** in the inventory table below.
+Wire it in `src/content/library.ts` in book order. Replace a `comingSoon(...)` placeholder when one exists.
 
-### When you finish (review block)
+---
+
+## When you finish (review block)
 
 Paste a review block, not a dump of the TypeScript:
 
 1. **Devanagari** — all leaf `dev` strings joined in reading order, with dandas.
 2. **IAST** — all leaf `iast` strings joined.
-3. **Glossary** — every PDF glossary line, marked used / unused. List any encoded word that has no PDF gloss.
-4. **Translation** — the `chapter.translation` string (must be the PDF’s, not a rewrite).
-5. **Uncertainties** — anything the PDF was unclear on. Prefer a listed uncertainty over guessing.
-6. **Live URL** — confirm https://mbaranov4310.github.io/prakasa/ was updated.
+3. **Glossary** — every encoded word gloss. Flag empties and any reading that is a proposal, not a commentary citation.
+4. **Translation** — the `chapter.translation` string.
+5. **Uncertainties** — recension choices, commentary silence, splits you are unsure of. Prefer a listed uncertainty over guessing.
+6. **Sources used** — which recension, which bhāṣya or other commentary, what you searched.
 
-### Publish
-
-Do this in the same chat after the files are written. Do not wait for the human to approve the commit.
+Do not commit, push, or publish until the human has reviewed the proposals. When they ask to publish:
 
 Do **not** commit `data/*.pdf` (gitignored, personal details). Do not commit `node_modules` or `dist`.
 
@@ -98,7 +85,7 @@ Do **not** commit `data/*.pdf` (gitignored, personal details). Do not commit `no
 git add src/content src/content/library.ts docs/ENCODE_CHAPTER.md
 git status
 git commit -m "$(cat <<'EOF'
-Add Sandhyāvandana chapter N (<title>) to the reader.
+Gloss <title> word by word.
 
 EOF
 )"
@@ -107,46 +94,46 @@ npm run build
 npx --yes gh-pages -d dist
 ```
 
-Use a commit message that names the chapter. If `git push` or `gh-pages` needs extra permissions (`all`), request them. GitHub Pages is the `gh-pages` branch of `mbaranov4310/prakasa` (not GitHub Actions).
+Name the chapter in the commit message. GitHub Pages is the `gh-pages` branch of `mbaranov4310/prakasa` (not GitHub Actions). Live site: https://mbaranov4310.github.io/prakasa/
 
-Then stop. Start a **new chat** for the next chapter. Do not encode another chapter in this conversation.
+Then stop. Start a **new chat** for the next chapter.
 
 ---
 
-## Chapter inventory
+## Sandhyāvandana inventory
 
-Page numbers are `sandhya_content.pdf` (`N of 113`). Status is the website, not the PDF.
+Status is the website (`src/content/library.ts`), not the old PDF table of contents.
 
-| Ch | Pages | Title | Status |
-| --- | --- | --- | --- |
-| 1a | 1–3 | ॐ श्री गुरुभ्यो नमः | ready (`guru-namaskara`) |
-| 1b | 1–3 | शरीर-शुद्धिः | ready (`sarira-suddhi`) |
-| 2 | 4–8 | आचमनम् | ready (`acamana`) |
-| 3 | 9–11 | भूतोच्छाटनम् | ready (`bhutocchatanam`) |
-| 4 | 12–15 | प्राणायामः | ready (`pranayama`) |
-| 5 | 16–22 | संकल्पः | skipped (coming soon on the site; do not encode) |
-| 6 | 23–25 | मार्जनः | ready (`marjana`) |
-| 7 | 26–28 | प्रातः काल मन्त्राचमनः | ready (`pratah-mantracamana`) |
-| 8 | 29–31 | द्वितीय मार्जनः | ready (`dvitiya-marjana`) |
-| 9 | 32–34 | पुनः मार्जनः | ready (`punah-marjana`) |
-| 10 | 35–37 | अघमर्षण मन्त्रः | ready (`aghamarsana`) |
-| 11 | 38–41 | सूर्योपस्थानम् | ready (`suryopasthana`; skip repeated prāṇāyāma + saṅkalpa vākya) |
-| 12 | 42–44 | सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`; no second ācamana card) |
-| 13 | 45–48 | गायत्री आवाहनम् | ready (`gayatri-avahanam`) |
-| 14 | 49–53 | गायत्री-आवाहन-न्यासः | ready (`gayatri-avahana-nyasa`) |
-| 15 | 54 | आचमनम् | skip (repeat of Ch 2; no extra card) |
-| 16 | 55–57 | गायत्री जप संकल्पः | skipped (saṅkalpa; coming soon) |
-| 17 | 58–62 | करन्यासः एवं अङ्गन्यासः | ready (`karanyasa`) |
-| 18 | 63–64 | ध्यानम् | ready (`dhyanam`) |
-| 19 | 65–67 | मुद्रा प्रदर्शनम् | ready (`mudra-pradarsanam`) |
-| 20 | 68–70 | गायत्री मन्त्रः | ready (`gayatri-mantra`) |
-| 21 | 71–73 | अष्ट-मुद्रा प्रदर्शनम् | ready (`asta-mudra`; skip repeated nyāsa/dhyāna) |
-| 22 | 74–78 | मित्र सूक्तम् | ready (`mitra-sukta`; skip repeat ācamana) |
-| 23 | 79–82 | दिग्देवता नमस्कारः | ready (`digdevata-namaskara`) |
-| 24 | 83–87 | मुनि नमस्कारः, सन्ध्यादेवता नमस्कारः | ready (`muni-namaskara`) |
-| 25 | 88–91 | प्रणामः | ready (`pranama`) |
-| 26 | 92–94 | गायत्री उद्वासनम् | ready (`gayatri-udvasanam`) |
-| 27 | 95–98 | भगवन्नमस्कारः | ready (`bhagavan-namaskara`) |
-| 28 | 99–104 | भूम्याकाशाभिवन्दनम् | ready (`bhumy-akasa-abhivandanam`) |
-| 29 | 105–108 | अभिवादः | skipped (coming soon on the site; personal name / pravara) |
-| 30 | 109–113 | ईश्वरार्पणम् | ready (`isvararpanam`) |
+| Ch | Title | Status |
+| --- | --- | --- |
+| 1a | ॐ श्री गुरुभ्यो नमः | ready (`guru-namaskara`) |
+| 1b | शरीर-शुद्धिः | ready (`sarira-suddhi`) |
+| 2 | आचमनम् | ready (`acamana`) |
+| 3 | भूतोच्छाटनम् | ready (`bhutocchatanam`) |
+| 4 | प्राणायामः | ready (`pranayama`) |
+| 5 | संकल्पः | skipped (coming soon; personal formula) |
+| 6 | मार्जनः | ready (`marjana`) |
+| 7 | प्रातः काल मन्त्राचमनः | ready (`pratah-mantracamana`) |
+| 8 | द्वितीय मार्जनः | ready (`dvitiya-marjana`) |
+| 9 | पुनः मार्जनः | ready (`punah-marjana`) |
+| 10 | अघमर्षण मन्त्रः | ready (`aghamarsana`) |
+| 11 | सूर्योपस्थानम् | ready (`suryopasthana`; no second prāṇāyāma card) |
+| 12 | सन्ध्याङ्ग तर्पणम् | ready (`sandhyanga-tarpana`; no second ācamana card) |
+| 13 | गायत्री आवाहनम् | ready (`gayatri-avahanam`) |
+| 14 | गायत्री-आवाहन-न्यासः | ready (`gayatri-avahana-nyasa`) |
+| 15 | आचमनम् | skip (repeat of Ch 2) |
+| 16 | गायत्री जप संकल्पः | skipped (saṅkalpa; coming soon) |
+| 17 | करन्यासः एवं अङ्गन्यासः | ready (`karanyasa`) |
+| 18 | ध्यानम् | ready (`dhyanam`) |
+| 19 | मुद्रा प्रदर्शनम् | ready (`mudra-pradarsanam`) |
+| 20 | गायत्री मन्त्रः | dropped (duplicate card; japa is the same recitation) |
+| 21 | अष्ट-मुद्रा प्रदर्शनम् | encoded in `asta-mudra.ts`, parked coming soon in the library |
+| 22 | मित्र सूक्तम् | ready (`mitra-sukta`; no second ācamana card) |
+| 23 | दिग्देवता नमस्कारः | ready (`digdevata-namaskara`) |
+| 24 | मुनि नमस्कारः, सन्ध्यादेवता नमस्कारः | ready (`muni-namaskara`) |
+| 25 | प्रणामः | ready (`pranama`) |
+| 26 | गायत्री उद्वासनम् | ready (`gayatri-udvasanam`) |
+| 27 | भगवन्नमस्कारः | ready (`bhagavan-namaskara`) |
+| 28 | भूम्याकाशाभिवन्दनम् | ready (`bhumy-akasa-abhivandanam`) |
+| 29 | अभिवादः | skipped (coming soon; personal name / pravara) |
+| 30 | ईश्वरार्पणम् | ready (`isvararpanam`) |

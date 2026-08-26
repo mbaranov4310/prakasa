@@ -23,6 +23,7 @@ import { punahMarjana } from "./punah-marjana";
 import { sandhyangaTarpana } from "./sandhyanga-tarpana";
 import { sariraSuddhi } from "./sarira-suddhi";
 import { suryopasthana } from "./suryopasthana";
+import { kartikeya } from "./nitya-mangala-slokas/kartikeya";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -75,6 +76,29 @@ export const books: Book[] = [
       bhumyAkasaAbhivandanam,
       comingSoon("abhivada", "अभिवादः", "abhivādaḥ", "Abhivāda"),
       isvararpanam,
+    ],
+  },
+  {
+    id: "nitya-mangala-slokas",
+    titleDev: "नित्य मङ्गल श्लोकाः",
+    titleIast: "nitya maṅgala ślokāḥ",
+    titleEn: "Nitya maṅgala ślokas",
+    blurb: "Short daily verses: greet each deity, word by word.",
+    chapters: [
+      comingSoon("ganesa", "गणेशः", "gaṇeśaḥ", "Gaṇeśa"),
+      comingSoon("siva", "शिवः", "śivaḥ", "Śiva"),
+      comingSoon("parvati", "पार्वती", "pārvatī", "Pārvatī"),
+      comingSoon("visnu", "विष्णुः", "viṣṇuḥ", "Viṣṇu"),
+      comingSoon("laksmi", "लक्ष्मी", "lakṣmī", "Lakṣmī"),
+      comingSoon("sarasvati", "सरस्वती", "sarasvatī", "Sarasvatī"),
+      comingSoon("durga", "दुर्गा", "durgā", "Durgā"),
+      comingSoon("krsna", "कृष्णः", "kṛṣṇaḥ", "Kṛṣṇa"),
+      comingSoon("rama", "रामः", "rāmaḥ", "Rāma"),
+      comingSoon("hanuman", "हनुमान्", "hanumān", "Hanumān"),
+      kartikeya,
+      comingSoon("surya", "सूर्यः", "sūryaḥ", "Sūrya"),
+      comingSoon("sani", "शनिः", "śaniḥ", "Śani"),
+      comingSoon("brahma", "ब्रह्मा", "brahmā", "Brahmā"),
     ],
   },
 ];
