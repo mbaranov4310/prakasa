@@ -23,7 +23,20 @@ import { punahMarjana } from "./punah-marjana";
 import { sandhyangaTarpana } from "./sandhyanga-tarpana";
 import { sariraSuddhi } from "./sarira-suddhi";
 import { suryopasthana } from "./suryopasthana";
+import { brahma } from "./nitya-mangala-slokas/brahma";
+import { durga } from "./nitya-mangala-slokas/durga";
+import { ganesa } from "./nitya-mangala-slokas/ganesa";
+import { hanuman } from "./nitya-mangala-slokas/hanuman";
 import { kartikeya } from "./nitya-mangala-slokas/kartikeya";
+import { krsna } from "./nitya-mangala-slokas/krsna";
+import { laksmi } from "./nitya-mangala-slokas/laksmi";
+import { parvati } from "./nitya-mangala-slokas/parvati";
+import { rama } from "./nitya-mangala-slokas/rama";
+import { sani } from "./nitya-mangala-slokas/sani";
+import { sarasvati } from "./nitya-mangala-slokas/sarasvati";
+import { siva } from "./nitya-mangala-slokas/siva";
+import { surya } from "./nitya-mangala-slokas/surya";
+import { visnu } from "./nitya-mangala-slokas/visnu";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -85,20 +98,20 @@ export const books: Book[] = [
     titleEn: "Nitya maṅgala ślokas",
     blurb: "Short daily verses: greet each deity, word by word.",
     chapters: [
-      comingSoon("ganesa", "गणेशः", "gaṇeśaḥ", "Gaṇeśa"),
-      comingSoon("siva", "शिवः", "śivaḥ", "Śiva"),
-      comingSoon("parvati", "पार्वती", "pārvatī", "Pārvatī"),
-      comingSoon("visnu", "विष्णुः", "viṣṇuḥ", "Viṣṇu"),
-      comingSoon("laksmi", "लक्ष्मी", "lakṣmī", "Lakṣmī"),
-      comingSoon("sarasvati", "सरस्वती", "sarasvatī", "Sarasvatī"),
-      comingSoon("durga", "दुर्गा", "durgā", "Durgā"),
-      comingSoon("krsna", "कृष्णः", "kṛṣṇaḥ", "Kṛṣṇa"),
-      comingSoon("rama", "रामः", "rāmaḥ", "Rāma"),
-      comingSoon("hanuman", "हनुमान्", "hanumān", "Hanumān"),
+      ganesa,
+      siva,
+      parvati,
+      visnu,
+      laksmi,
+      sarasvati,
+      durga,
+      krsna,
+      rama,
+      hanuman,
       kartikeya,
-      comingSoon("surya", "सूर्यः", "sūryaḥ", "Sūrya"),
-      comingSoon("sani", "शनिः", "śaniḥ", "Śani"),
-      comingSoon("brahma", "ब्रह्मा", "brahmā", "Brahmā"),
+      surya,
+      sani,
+      brahma,
     ],
   },
 ];
