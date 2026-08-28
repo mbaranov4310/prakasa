@@ -18,14 +18,24 @@ Padaccheda: not attested as a separate traditional sandhi-text; proposed from G�
 वात-आत्मजं | वानर-यूथ-मुख्यं | श्री-राम-दूतं | शरणं | प्रपद्ये ॥
 
 Word gloss:
-- मनोजवम् — whose speed is that of the mind (मनस् + जव; acc. sg.)
-- मारुततुल्यवेगम् — whose speed equals the wind / Marut (मारुत + तुल्य + वेग; acc. sg.)
-- जितेन्द्रियम् — who has conquered the senses (जित + इन्द्रिय; acc. sg.)
-- बुद्धिमताम् — of those possessed of buddhi (gen. pl. of बुद्धिमान्)
+- मनस् — mind
+- जवम् — speed
+- मारुत — wind / Marut
+- तुल्य — equal
+- वेगम् — speed
+- जित — conquered
+- इन्द्रियम् — senses
+- बुद्धि — buddhi / intellect
+- मताम् — of those possessed of (gen. pl.)
 - वरिष्ठम् — foremost, most excellent (acc. sg.)
-- वातात्मजम् — son of Vāta / Vāyu (वात + आत्मज; acc. sg.)
-- वानरयूथमुख्यम् — chief of the vānara host (वानर + यूथ + मुख्य; acc. sg.)
-- श्रीरामदूतम् — messenger of Śrī Rāma (acc. sg.)
+- वात — Vāta / Vāyu
+- आत्मजम् — son
+- वानर — vānara
+- यूथ — host
+- मुख्यम् — chief
+- श्री — Śrī
+- राम — Rāma
+- दूतम् — messenger
 - शरणम् — refuge
 - प्रपद्ये — I take refuge (1st sg. present, प्र-पद्)
 

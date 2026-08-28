@@ -13,11 +13,16 @@ export const krsna: Chapter = {
   translation,
   glossary: [
     { term: "kṛṣṇāya", meaning: "to Kṛṣṇa" },
-    { term: "vāsudevāya", meaning: "to Vāsudeva (son of Vasudeva)" },
-    { term: "devakīnandanāya", meaning: "to the son / delight of Devakī" },
+    { term: "vāsu", meaning: "Vasudeva" },
+    { term: "devāya", meaning: "to the son / to the lord" },
+    { term: "devakī", meaning: "Devakī" },
+    { term: "nandanāya", meaning: "to the son / delight" },
     { term: "ca", meaning: "and" },
-    { term: "nandagopakumārāya", meaning: "to the boy of the cowherd Nanda" },
-    { term: "govindāya", meaning: "to Govinda" },
+    { term: "nanda", meaning: "Nanda" },
+    { term: "gopa", meaning: "cowherd" },
+    { term: "kumārāya", meaning: "to the boy" },
+    { term: "go", meaning: "cows" },
+    { term: "vindāya", meaning: "to the finder / protector" },
     { term: "namaḥ", meaning: "salutations, again and again" },
   ],
   root: group("kr-verse", "verse", translation, [
@@ -31,12 +36,13 @@ export const krsna: Chapter = {
           ["ष्णा", "ṣṇā"],
           ["य", "ya"],
         ]),
-        word("kr-vasudevaya", "to Vāsudeva (son of Vasudeva)", [
-          ["वा", "vā"],
-          ["सु", "su"],
-          ["दे", "de"],
-          ["वा", "vā"],
-          ["य", "ya"],
+        group("kr-vasudeva", "phrase", "to Vāsudeva (son of Vasudeva)", [
+          word("kr-vasu", "Vasudeva", [["वा", "vā"], ["सु", "su"]], { trailing: "" }),
+          word("kr-devaya", "to the son / to the lord", [
+            ["दे", "de"],
+            ["वा", "vā"],
+            ["य", "ya"],
+          ]),
         ]),
         group("kr-devaki", "phrase", "to the son / delight of Devakī", [
           word("kr-devaki-n", "Devakī", [
@@ -72,11 +78,13 @@ export const krsna: Chapter = {
             ["य", "ya"],
           ]),
         ]),
-        word("kr-govindaya", "to Govinda", [
-          ["गो", "go"],
-          ["वि", "vi"],
-          ["न्दा", "ndā"],
-          ["य", "ya"],
+        group("kr-govinda", "phrase", "to Govinda", [
+          word("kr-go", "cows", [["गो", "go"]], { trailing: "" }),
+          word("kr-vindaya", "to the finder / protector", [
+            ["वि", "vi"],
+            ["न्दा", "ndā"],
+            ["य", "ya"],
+          ]),
         ]),
         word("kr-namo", "salutations", [["न", "na"], ["मो", "mo"]]),
         word("kr-namah", "again and again", [["न", "na"], ["मः", "maḥ"]], {

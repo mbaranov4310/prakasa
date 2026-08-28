@@ -12,11 +12,15 @@ export const durga: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "sarvamaṅgalamāṅgalye", meaning: "O you who are the auspiciousness of all that is auspicious" },
+    { term: "sarva", meaning: "all / every" },
+    { term: "maṅgala", meaning: "auspicious thing" },
+    { term: "māṅgalye", meaning: "O you who are the auspiciousness" },
     { term: "śive", meaning: "O Śivā / O auspicious one" },
-    { term: "sarvārthasādhike", meaning: "O you who accomplish all aims" },
+    { term: "artha", meaning: "aim / human aim" },
+    { term: "sādhike", meaning: "O accomplisher" },
     { term: "śaraṇye", meaning: "O you who are fit to take refuge in" },
-    { term: "tryambake", meaning: "O three-eyed one" },
+    { term: "tri", meaning: "three" },
+    { term: "ambake", meaning: "O you with eyes" },
     { term: "gauri", meaning: "O Gaurī" },
     { term: "nārāyaṇi", meaning: "O Nārāyaṇī" },
     { term: "namaḥ", meaning: "salutation" },
@@ -29,25 +33,33 @@ export const durga: Chapter = {
       "phrase",
       "O you who are the auspiciousness of every auspicious thing, O Śivā, O accomplisher of every aim",
       [
-        word("du-sarvamangala", "O you who are the auspiciousness of all that is auspicious", [
-          ["स", "sa"],
-          ["र्व", "rva"],
-          ["मङ्", "maṅ"],
-          ["ग", "ga"],
-          ["ल", "la"],
-          ["माङ्", "māṅ"],
-          ["ग", "ga"],
-          ["ल्ये", "lye"],
+        group("du-auspicious", "phrase", "O you who are the auspiciousness of all that is auspicious", [
+          word("du-sarva1", "all / every", [["स", "sa"], ["र्व", "rva"]], {
+            trailing: "",
+          }),
+          word("du-mangala", "auspicious thing", [
+            ["मङ्", "maṅ"],
+            ["ग", "ga"],
+            ["ल", "la"],
+          ], { trailing: "" }),
+          word("du-mangalye", "O you who are the auspiciousness", [
+            ["माङ्", "māṅ"],
+            ["ग", "ga"],
+            ["ल्ये", "lye"],
+          ]),
         ]),
         word("du-sive", "O Śivā / O auspicious one", [["शि", "śi"], ["वे", "ve"]]),
-        word("du-sarvartha", "O you who accomplish all aims", [
-          ["स", "sa"],
-          ["र्वा", "rvā"],
-          ["र्थ", "rtha"],
-          ["सा", "sā"],
-          ["धि", "dhi"],
-          ["के", "ke"],
-        ], { trailing: " ।", lineBreakAfter: true }),
+        group("du-aims", "phrase", "O you who accomplish all aims", [
+          word("du-sarva2", "all / every", [["स", "sa"], ["र्वा", "rvā"]], {
+            trailing: "",
+          }),
+          word("du-artha", "aim / human aim", [["र्थ", "rtha"]], { trailing: "" }),
+          word("du-sadhike", "O accomplisher", [
+            ["सा", "sā"],
+            ["धि", "dhi"],
+            ["के", "ke"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+        ]),
       ],
     ),
     group(
@@ -60,10 +72,12 @@ export const durga: Chapter = {
           ["र", "ra"],
           ["ण्ये", "ṇye"],
         ]),
-        word("du-tryambake", "O three-eyed one", [
-          ["त्र्य", "trya"],
-          ["म्ब", "mba"],
-          ["के", "ke"],
+        group("du-three-eyed", "phrase", "O three-eyed one", [
+          word("du-tri", "three", [["त्र्य", "trya"]], { trailing: "" }),
+          word("du-ambake", "O you with eyes", [
+            ["म्ब", "mba"],
+            ["के", "ke"],
+          ]),
         ]),
         word("du-gauri", "O Gaurī", [["गौ", "gau"], ["रि", "ri"]]),
         word("du-narayani", "O Nārāyaṇī", [

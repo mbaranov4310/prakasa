@@ -17,11 +17,15 @@ Padaccheda: not attested as pada-pāṭha in the Purāṇa. Proposed from bāla-
 सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके शरण्ये त्र्यम्बके गौरि नारायणि नमः अस्तु ते
 
 Word gloss:
-- सर्वमङ्गलमाङ्गल्ये — O you who are the auspiciousness (māṅgalya) of all that is auspicious (sarva-maṅgala) (vocative)
+- सर्व — all / every
+- मङ्गल — auspicious thing
+- माङ्गल्ये — O you who are the auspiciousness
 - शिवे — O Śivā / O auspicious one (vocative; Gita Press: कल्याणदायिनी शिवा)
-- सर्वार्थसाधिके — O you who accomplish all aims (the puruṣārthas) (vocative)
+- अर्थ — aim / human aim (the puruṣārthas)
+- साधिके — O accomplisher
 - शरण्ये — O you who are fit to take refuge in / refuge of those who come (vocative; Gita Press: शरणागतवत्सला)
-- त्र्यम्बके — O three-eyed one (vocative of tryambakā; Gita Press: तीन नेत्रों वाली)
+- त्रि — three
+- अम्बके — O you with eyes (Gita Press: तीन नेत्रों वाली)
 - गौरि — O Gaurī (vocative; fair / radiant)
 - नारायणि — O Nārāyaṇī (vocative; the Devī of this stuti)
 - नमः — salutation

@@ -20,11 +20,16 @@ Padaccheda: Gauḍīya anvaya (Vedabase SB 1.8.21) splits: कृष्णाय
 
 Word gloss:
 - कृष्णाय — to Kṛṣṇa
-- वासुदेवाय — to Vāsudeva (son of Vasudeva)
-- देवकी-नन्दनाय — to the son / delight of Devakī
+- वासु — Vasudeva
+- देवाय — to the son / to the lord
+- देवकी — Devakī
+- नन्दनाय — to the son / delight
 - च — and
-- नन्द-गोप-कुमाराय — to the boy of the cowherd Nanda (Gauḍīya anvaya: to the son of Nanda and the gopas)
-- गोविन्दाय — to Govinda (protector of cows; Gauḍīya: who enlivens the cows and the senses)
+- नन्द — Nanda
+- गोप — cowherd
+- कुमाराय — to the boy
+- गो — cows
+- विन्दाय — to the finder / protector
 - नमः नमः — salutations, again and again (`नमो नमः` by sandhi)
 
 Translation: “Again and again I bow to Kṛṣṇa, son of Vasudeva, joy of Devakī, child of the cowherd Nanda — to Govinda.”
