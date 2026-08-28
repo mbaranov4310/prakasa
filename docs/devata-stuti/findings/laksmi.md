@@ -18,11 +18,17 @@ Word gloss:
 - नमः — salutation, bow
 - ते — to you
 - अस्तु — let there be
-- महामाये — O great Māyā (vocative of महामाया)
-- श्रीपीठे — O you who dwell on the seat of Śrī (vocative of श्रीपीठा)
-- सुरपूजिते — O you worshipped by the gods (vocative)
-- शङ्खचक्रगदाहस्ते — O you who hold conch, discus, and mace (vocative)
-- महालक्ष्मि — O Mahālakṣmī (vocative of महालक्ष्मी; short *i*)
+- महा — great
+- माये — O Māyā
+- श्री — Śrī
+- पीठे — O you on the seat
+- सुर — of the gods
+- पूजिते — O worshipped one
+- शङ्ख — conch
+- चक्र — discus
+- गदा — mace
+- हस्ते — O you who hold in hand
+- लक्ष्मि — O Lakṣmī
 - नमोऽस्तु ते — let there be salutation to you
 
 Translation: “Salutations to you, O Mahāmāyā, who dwell on the seat of Śrī and are worshipped by the gods. O Mahālakṣmī, who hold conch, discus, and mace — salutations to you.”
