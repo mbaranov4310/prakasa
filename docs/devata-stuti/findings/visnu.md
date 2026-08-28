@@ -30,22 +30,38 @@ Padaccheda: not attested as a traditional padapāṭha of a mūla; proposed from
 ```
 
 Word gloss:
-- शान्ताकारम् — of peaceful form
-- भुजगशयनम् — reclining on a serpent (Śeṣa)
-- पद्मनाभम् — lotus-naveled
-- सुरेशम् — lord of the gods
-- विश्वाधारम् — support of the universe
-- गगनसदृशम् — like the sky (all-pervading)
-- मेघवर्णम् — cloud-hued
-- शुभाङ्गम् — of auspicious limbs
-- लक्ष्मीकान्तम् — beloved of Lakṣmī
-- कमलनयनम् — lotus-eyed
+- शान्त — peaceful
+- आकारम् — form
+- भुजग — serpent
+- शयनम् — reclining
+- पद्म — lotus
+- नाभम् — navel
+- सुर — of the gods
+- ईशम् — lord
+- विश्व — universe
+- आधारम् — support
+- गगन — sky
+- सदृशम् — like / resembling
+- मेघ — cloud
+- वर्णम् — hue / colour
+- शुभ — auspicious
+- अङ्गम् — limbs
+- लक्ष्मी — Lakṣmī
+- कान्तम् — beloved
+- कमल — lotus
+- नयनम् — eyes
 - योगिभिः — by yogis
-- ध्यानगम्यम् — attainable through meditation
+- ध्यान — meditation
+- गम्यम् — attainable / reached
 - वन्दे — I bow
 - विष्णुम् — Viṣṇu
-- भवभयहरम् — who removes the fear of worldly existence
-- सर्वलोकैकनाथम् — the one Lord of all worlds
+- भव — worldly existence
+- भय — fear
+- हरम् — who removes
+- सर्व — all
+- लोक — worlds
+- एक — one
+- नाथम् — lord
 
 Translation: “I bow to Viṣṇu — of peaceful form, reclining on the serpent, lotus-naveled, lord of the gods; support of the universe, vast as the sky, cloud-hued, of auspicious limbs; beloved of Lakṣmī, lotus-eyed, reached by yogis in meditation; remover of the fear of worldly existence, the one Lord of all the worlds.”
 
