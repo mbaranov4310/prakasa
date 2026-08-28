@@ -14,7 +14,7 @@ export const siva: Chapter = {
   glossary: [
     { term: "karpūragauram", meaning: "camphor-white" },
     { term: "karuṇāvatāram", meaning: "the embodiment of compassion" },
-    { term: "saṃsārasāram", meaning: "the essence of the world" },
+    { term: "saṃsārasāram", meaning: "the essence of the world (here: worldly existence)" },
     { term: "bhujagendrahāram", meaning: "wearing the king of serpents as a garland" },
     { term: "sadā", meaning: "always" },
     { term: "vasantam", meaning: "dwelling" },
@@ -34,7 +34,7 @@ export const siva: Chapter = {
         word("si-avataram", "embodiment", [["व", "va"], ["ता", "tā"], ["रं", "raṃ"]]),
       ]),
       group("si-essence", "phrase", "the essence of the world", [
-        word("si-samsara", "the world", [["सं", "saṃ"], ["सा", "sā"], ["र", "ra"]], { trailing: "" }),
+        word("si-samsara", "the world (here: worldly existence)", [["सं", "saṃ"], ["सा", "sā"], ["र", "ra"]], { trailing: "" }),
         word("si-saram", "essence", [["सा", "sā"], ["रं", "raṃ"]]),
       ]),
       group("si-garland", "phrase", "wearing the king of serpents as a garland", [

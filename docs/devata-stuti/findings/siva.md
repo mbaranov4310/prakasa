@@ -26,7 +26,7 @@ Padaccheda: not attested as a traditional pāṭhaśālā split; proposed:
 Word gloss:
 - कर्पूर-गौरं — camphor-white (fair/luminous as camphor)
 - करुणा-अवतारं — the embodiment / descent of compassion
-- संसार-सारं — the essence of the world (saṃsāra)
+- संसार-सारं — the essence of the world (here: worldly existence)
 - भुजग-इन्द्र-हारम् — wearing the king of serpents as a garland
 - सदा — always
 - वसन्तं — dwelling (acc., agreeing with भवं)
