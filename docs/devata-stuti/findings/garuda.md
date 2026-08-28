@@ -17,13 +17,19 @@ Padaccheda: no traditional padapāṭha found. Nitya-pārāyaṇa prints and Tam
 कुङ्कुम-अङ्कित-वर्णाय कुन्द-इन्दु-धवलाय च । विष्णु-वाह नमः तुभ्यम् पक्षि-राजाय ते नमः ॥
 
 Word gloss:
-- कुङ्कुमाङ्कितवर्णाय (कुङ्कुम + अङ्कित + वर्णाय) — to the one whose colour is marked / tinged with kuṅkuma (vermilion)
-- कुन्देन्दुधवलाय (कुन्द + इन्दु + धवलाय) — to the one who is white as kunda-blossom and the moon
+- कुङ्कुम — kuṅkuma / vermilion
+- अङ्कित — marked
+- वर्णाय — to the one whose colour
+- कुन्द — white jasmine
+- इन्दु — moon
+- धवलाय — to the white one
 - च — and
-- विष्णुवाह — O bearer / vehicle of Viṣṇu (vocative)
+- विष्णु — Viṣṇu
+- वाह — O bearer / vehicle
 - नमः — salutation
 - तुभ्यम् — to you
-- पक्षिराजाय — to the king of birds
+- पक्षि — birds
+- राजाय — to the king
 - ते — to you
 - नमः — salutation
 

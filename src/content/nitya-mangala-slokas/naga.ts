@@ -15,11 +15,14 @@ export const naga: Chapter = {
     { term: "anantam", meaning: "Ananta" },
     { term: "vāsukim", meaning: "Vāsuki" },
     { term: "śeṣam", meaning: "Śeṣa" },
-    { term: "padmanābham", meaning: "Padmanābha (a nāga name)" },
+    { term: "padma", meaning: "lotus" },
+    { term: "nābham", meaning: "navel" },
     { term: "ca", meaning: "and" },
     { term: "kambalam", meaning: "Kambala" },
-    { term: "śaṅkhapālam", meaning: "Śaṅkhapāla" },
-    { term: "dhṛtarāṣṭram", meaning: "Dhṛtarāṣṭra (the nāga)" },
+    { term: "śaṅkha", meaning: "conch" },
+    { term: "pālam", meaning: "protector" },
+    { term: "dhṛta", meaning: "held" },
+    { term: "rāṣṭram", meaning: "kingdom" },
     { term: "takṣakam", meaning: "Takṣaka" },
     { term: "kāliyam", meaning: "Kāliya" },
     { term: "tathā", meaning: "and / likewise" },
@@ -37,11 +40,12 @@ export const naga: Chapter = {
         ["किं", "kiṃ"],
       ]),
       word("ng-sesam", "Śeṣa", [["शे", "śe"], ["षं", "ṣaṃ"]]),
-      word("ng-padmanabham", "Padmanābha (a nāga name)", [
-        ["प", "pa"],
-        ["द्म", "dma"],
-        ["ना", "nā"],
-        ["भं", "bhaṃ"],
+      group("ng-padmanabha", "phrase", "Padmanābha (a nāga name)", [
+        word("ng-padma", "lotus", [["प", "pa"], ["द्म", "dma"]], { trailing: "" }),
+        word("ng-nabham", "navel", [
+          ["ना", "nā"],
+          ["भं", "bhaṃ"],
+        ]),
       ]),
       word("ng-ca", "and", [["च", "ca"]]),
       word("ng-kambalam", "Kambala", [
@@ -51,17 +55,19 @@ export const naga: Chapter = {
       ], { trailing: " ।", lineBreakAfter: true }),
     ]),
     group("ng-pada34", "phrase", "Śaṅkhapāla, Dhṛtarāṣṭra, Takṣaka, and likewise Kāliya", [
-      word("ng-sankhapalam", "Śaṅkhapāla", [
-        ["शङ्", "śaṅ"],
-        ["ख", "kha"],
-        ["पा", "pā"],
-        ["लं", "laṃ"],
+      group("ng-sankhapala", "phrase", "Śaṅkhapāla", [
+        word("ng-sankha", "conch", [["शङ्", "śaṅ"], ["ख", "kha"]], { trailing: "" }),
+        word("ng-palam", "protector", [
+          ["पा", "pā"],
+          ["लं", "laṃ"],
+        ]),
       ]),
-      word("ng-dhrtarastram", "Dhṛtarāṣṭra (the nāga)", [
-        ["धृ", "dhṛ"],
-        ["त", "ta"],
-        ["रा", "rā"],
-        ["ष्ट्रं", "ṣṭraṃ"],
+      group("ng-dhrtarastra", "phrase", "Dhṛtarāṣṭra (the nāga)", [
+        word("ng-dhrta", "held", [["धृ", "dhṛ"], ["त", "ta"]], { trailing: "" }),
+        word("ng-rastram", "kingdom", [
+          ["रा", "rā"],
+          ["ष्ट्रं", "ṣṭraṃ"],
+        ]),
       ]),
       word("ng-taksakam", "Takṣaka", [
         ["त", "ta"],

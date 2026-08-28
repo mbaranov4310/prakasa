@@ -17,13 +17,18 @@ Padaccheda: no traditional padapāṭha found. Grammar of the anuṣṭubh is da
 धन-अध्यक्षाय देवाय नर-यान-उपवेशिने । नमः ते राज-राजाय कुबेराय महा-आत्मने ॥
 
 Word gloss:
-- धनाध्यक्षाय (धन + अध्यक्षाय) — to the overseer / superintendent of wealth
+- धन — wealth
+- अध्यक्षाय — to the overseer
 - देवाय — to the god
-- नरयानोपवेशिने (नर + यान + उपवेशिने) — to him seated on a human-vehicle (Kubera’s traditional vāhana is नरवाहन, a palanquin / mount borne by men)
+- नर — human
+- यान — vehicle
+- उपवेशिने — to him seated
 - नमस्ते (नमः + ते) — salutation to you
-- राजराजाय (राजन् + राजाय) — to the king of kings (a standing name of Kubera)
+- राजन् — king
+- राजाय — to the king
 - कुबेराय — to Kubera
-- महात्मने (महा + आत्मने) — to the great-souled one
+- महा — great
+- आत्मने — to the soul / self
 
 Translation: “Salutation to the god who oversees wealth, seated on a human-borne vehicle; salutation to you, king of kings, the great-souled Kubera.”
 

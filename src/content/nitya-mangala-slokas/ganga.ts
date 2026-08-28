@@ -12,10 +12,17 @@ export const ganga: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "viṣṇupādābjasambhūte", meaning: "O you born from Viṣṇu’s lotus-feet" },
+    { term: "viṣṇu", meaning: "Viṣṇu" },
+    { term: "pāda", meaning: "feet" },
+    { term: "abja", meaning: "lotus" },
+    { term: "sambhūte", meaning: "O you born from" },
     { term: "gaṅge", meaning: "O Gaṅgā" },
-    { term: "tripathagāmini", meaning: "O you who course the three paths" },
-    { term: "dharmadraveti", meaning: "as dharma in liquid form" },
+    { term: "tri", meaning: "three" },
+    { term: "patha", meaning: "paths" },
+    { term: "gāmini", meaning: "O you who course" },
+    { term: "dharma", meaning: "dharma" },
+    { term: "drava", meaning: "liquid" },
+    { term: "iti", meaning: "as / thus" },
     { term: "vikhyāte", meaning: "O you who are famed" },
     { term: "pāpam", meaning: "sin" },
     { term: "me", meaning: "my" },
@@ -24,33 +31,32 @@ export const ganga: Chapter = {
   ],
   root: group("gg-verse", "verse", translation, [
     group("gg-pada12", "phrase", "O Gaṅgā, born from Viṣṇu’s lotus-feet, who courses the three paths", [
-      word("gg-visnupada", "O you born from Viṣṇu’s lotus-feet", [
-        ["वि", "vi"],
-        ["ष्णु", "ṣṇu"],
-        ["पा", "pā"],
-        ["दा", "dā"],
-        ["ब्ज", "bja"],
-        ["सम्", "sam"],
-        ["भू", "bhū"],
-        ["ते", "te"],
+      group("gg-born", "phrase", "O you born from Viṣṇu’s lotus-feet", [
+        word("gg-visnu", "Viṣṇu", [["वि", "vi"], ["ष्णु", "ṣṇu"]], { trailing: "" }),
+        word("gg-pada", "feet", [["पा", "pā"], ["दा", "dā"]], { trailing: "" }),
+        word("gg-abja", "lotus", [["ब्ज", "bja"]], { trailing: "" }),
+        word("gg-sambhute", "O you born from", [
+          ["सम्", "sam"],
+          ["भू", "bhū"],
+          ["ते", "te"],
+        ]),
       ]),
       word("gg-gange", "O Gaṅgā", [["गङ्", "gaṅ"], ["गे", "ge"]]),
-      word("gg-tripatha", "O you who course the three paths", [
-        ["त्रि", "tri"],
-        ["प", "pa"],
-        ["थ", "tha"],
-        ["गा", "gā"],
-        ["मि", "mi"],
-        ["नि", "ni"],
-      ], { trailing: " ।", lineBreakAfter: true }),
+      group("gg-paths", "phrase", "O you who course the three paths", [
+        word("gg-tri", "three", [["त्रि", "tri"]], { trailing: "" }),
+        word("gg-patha", "paths", [["प", "pa"], ["थ", "tha"]], { trailing: "" }),
+        word("gg-gamini", "O you who course", [
+          ["गा", "gā"],
+          ["मि", "mi"],
+          ["नि", "ni"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
     ]),
     group("gg-pada34", "phrase", "famed as dharma in liquid form — take away my sin, O Jāhnavī", [
-      word("gg-dharmadrava", "as dharma in liquid form", [
-        ["ध", "dha"],
-        ["र्म", "rma"],
-        ["द्र", "dra"],
-        ["वे", "ve"],
-        ["ति", "ti"],
+      group("gg-liquid", "phrase", "as dharma in liquid form", [
+        word("gg-dharma", "dharma", [["ध", "dha"], ["र्म", "rma"]], { trailing: "" }),
+        word("gg-drava", "liquid", [["द्र", "dra"], ["वे", "ve"]], { trailing: "" }),
+        word("gg-iti", "as / thus", [["ति", "ti"]]),
       ]),
       word("gg-vikhyate", "O you who are famed", [
         ["वि", "vi"],

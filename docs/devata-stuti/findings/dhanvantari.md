@@ -25,18 +25,40 @@ Word gloss:
 - चक्रं — discus (acc.)
 - जलौकां — leech (acc. of जलौका; Ayurvedic raktamokṣaṇa)
 - दधत् — holding
-- अमृतघटं (अमृत + घटम्) — the pot of nectar
-- चारुदोर्भिः (चारु + दोर्भिः) — with beautiful arms
+- अमृत — nectar
+- घटं — pot
+- चारु — beautiful
+- दोर्भिः — with arms
 - चतुर्भिः — with four
-- सूक्ष्मस्वच्छातिहृद्यांशुक (सूक्ष्म + स्वच्छ + अति + हृद्य + अंशुक) — a fine, pure, most charming cloth (on the diadem)
-- परिविलसन्मौलिम् (परि + विलसत् + मौलिम्) — whose diadem is shining all around
-- अम्भोजनेत्रम् (अम्भोज + नेत्रम्) — lotus-eyed
-- कालाम्भोदोज्ज्वलाङ्गं (काल + अम्भोद + उज्ज्वल + अङ्गम्) — whose body gleams like a dark rain-cloud
-- कटितटविलसच्चारुपीताम्बराढ्यम् (कटि + तट + विलसत् + चारु + पीताम्बर + आढ्यम्) — whose hip is adorned with a beautiful yellow garment
+- सूक्ष्म — fine
+- स्वच्छ — pure
+- अति — most / very
+- हृद्य — charming
+- अंशुक — cloth
+- परि — all around
+- विलसत् — shining
+- मौलिम् — diadem
+- अम्भोज — lotus
+- नेत्रम् — eyes
+- काल — dark
+- अम्भोद — rain-cloud
+- उज्ज्वल — gleaming
+- अङ्गम् — body / limbs
+- कटि — hip
+- तट — slope / region
+- पीत — yellow
+- अम्बर — garment
+- आढ्यम् — adorned with
 - वन्दे — I bow
 - धन्वन्तरिं — to Dhanvantari
 - तं — that one
-- निखिलगदवनप्रौढदावाग्निलीलम् (निखिल + गद + वन + प्रौढ + दावाग्नि + लीलम्) — whose sport is a mighty forest-fire to the entire forest of diseases
+- निखिल — entire
+- गद — disease
+- वन — forest
+- प्रौढ — mighty
+- दाव — forest-fire
+- अग्नि — fire
+- लीलम् — play / sport
 
 Translation: “I bow to that Dhanvantari who holds, in his four beautiful arms, the conch, the discus, a leech, and the pot of nectar; whose diadem shines with a fine, pure, lovely cloth, whose eyes are lotuses; whose body gleams like a dark rain-cloud, whose hips are adorned with a beautiful yellow garment; whose play is a raging wildfire that burns down the whole forest of diseases.”
 

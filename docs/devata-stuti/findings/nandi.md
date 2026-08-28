@@ -19,10 +19,17 @@ Padaccheda: no traditional padapāṭha found. The verse is printed as one anu�
 नन्दि-केश महा-भाग शिव-ध्यान-परायण । गौरी-शङ्कर-सेवार्थम् अनुज्ञाम् दातुम् अर्हसि ॥
 
 Word gloss:
-- नन्दिकेश (नन्दि + ईश) — O Nandikeśa (Nandi as lord / lord of the Nandis)
-- महाभाग (महा + भाग) — O highly distinguished / fortunate one
-- शिवध्यानपरायण (शिव + ध्यान + परायण) — (you) whose whole bent is meditation on Śiva
-- गौरीशङ्करसेवार्थम् (गौरी + शङ्कर + सेवार्थम्) — for the sake of serving Gaurī-Śaṅkara
+- नन्दि — Nandi
+- केश / ईश — O lord
+- महा — great
+- भाग — distinguished / fortunate (vocative)
+- शिव — Śiva
+- ध्यान — meditation
+- परायण — ever intent on
+- गौरी — Gaurī
+- शङ्कर — Śaṅkara
+- सेवा — service
+- अर्थम् — for the sake of
 - अनुज्ञाम् — permission / leave
 - दातुम् — to give
 - अर्हसि — you ought; be pleased to (2sg of अर्ह्)

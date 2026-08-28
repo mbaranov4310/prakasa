@@ -21,10 +21,17 @@ Padaccheda: no traditional padapāṭha found. Proposed from grammar (all five -
 विष्णु-पाद-अब्ज-सम्भूते गङ्गे त्रि-पथ-गामिनि । धर्म-द्रव इति विख्याते पापं मे हर जाह्नवि ॥
 
 Word gloss:
-- विष्णुपादाब्जसम्भूते (विष्णु + पाद + अब्ज + सम्भूते) — O you born from Viṣṇu’s lotus-feet
+- विष्णु — Viṣṇu
+- पाद — feet
+- अब्ज — lotus
+- सम्भूते — O you born from
 - गङ्गे — O Gaṅgā
-- त्रिपथगामिनि (त्रि + पथ + गामिनि) — O you who course the three paths (svarga–pṛthivī–pātāla)
-- धर्मद्रवेति (धर्म-द्रव + इति) — as “dharma in liquid form”
+- त्रि — three
+- पथ — paths
+- गामिनि — O you who course
+- धर्म — dharma
+- द्रव — liquid
+- इति — as / thus
 - विख्याते — O you who are famed
 - पापम् — sin
 - मे — my

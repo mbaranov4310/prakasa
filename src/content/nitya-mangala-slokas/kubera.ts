@@ -12,14 +12,19 @@ export const kubera: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "dhanādhyakṣāya", meaning: "to the overseer of wealth" },
+    { term: "dhana", meaning: "wealth" },
+    { term: "adhyakṣāya", meaning: "to the overseer" },
     { term: "devāya", meaning: "to the god" },
-    { term: "narayānopaveśine", meaning: "to him seated on a human-vehicle" },
+    { term: "nara", meaning: "human" },
+    { term: "yāna", meaning: "vehicle" },
+    { term: "upaveśine", meaning: "to him seated" },
     { term: "namaḥ", meaning: "salutation" },
     { term: "te", meaning: "to you" },
-    { term: "rājarājāya", meaning: "to the king of kings" },
+    { term: "rāja", meaning: "king" },
+    { term: "rājāya", meaning: "to the king" },
     { term: "kuberāya", meaning: "to Kubera" },
-    { term: "mahātmane", meaning: "to the great-souled one" },
+    { term: "mahā", meaning: "great" },
+    { term: "ātmane", meaning: "to the soul / self" },
   ],
   root: group("ku-verse", "verse", translation, [
     group("ku-pada12", "phrase", "to the god who oversees wealth, seated on a human-vehicle", [
@@ -32,16 +37,16 @@ export const kubera: Chapter = {
         ]),
       ]),
       word("ku-devaya", "to the god", [["दे", "de"], ["वा", "vā"], ["य", "ya"]]),
-      word("ku-narayana", "to him seated on a human-vehicle", [
-        ["न", "na"],
-        ["र", "ra"],
-        ["या", "yā"],
-        ["नो", "no"],
-        ["प", "pa"],
-        ["वे", "ve"],
-        ["शि", "śi"],
-        ["ने", "ne"],
-      ], { trailing: " ।", lineBreakAfter: true }),
+      group("ku-vehicle", "phrase", "to him seated on a human-vehicle", [
+        word("ku-nara", "human", [["न", "na"], ["र", "ra"]], { trailing: "" }),
+        word("ku-yana", "vehicle", [["या", "yā"], ["नो", "no"]], { trailing: "" }),
+        word("ku-upavesine", "to him seated", [
+          ["प", "pa"],
+          ["वे", "ve"],
+          ["शि", "śi"],
+          ["ने", "ne"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
     ]),
     group("ku-pada34", "phrase", "salutation to you, king of kings, the great-souled Kubera", [
       word("ku-namaste", "salutation to you", [
@@ -59,12 +64,12 @@ export const kubera: Chapter = {
         ["रा", "rā"],
         ["य", "ya"],
       ]),
-      word("ku-mahatmane", "to the great-souled one", [
-        ["म", "ma"],
-        ["हा", "hā"],
-        ["त्म", "tma"],
-        ["ने", "ne"],
-      ], { trailing: " ॥" }),
+      group("ku-soul", "phrase", "to the great-souled one", [
+        word("ku-maha", "great", [["म", "ma"], ["हा", "hā"]], { trailing: "" }),
+        word("ku-atmane", "to the soul / self", [["त्म", "tma"], ["ने", "ne"]], {
+          trailing: " ॥",
+        }),
+      ]),
     ]),
   ]),
 };

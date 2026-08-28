@@ -22,11 +22,14 @@ Word gloss:
 - अनन्तम् — Ananta (the endless one; accusative)
 - वासुकिम् — Vāsuki (accusative)
 - शेषम् — Śeṣa (accusative)
-- पद्मनाभम् — Padmanābha (here a *nāga* name, not Viṣṇu; accusative)
+- पद्म — lotus
+- नाभम् — navel (here the nāga Padmanābha)
 - च — and
 - कम्बलम् — Kambala (accusative)
-- शङ्खपालम् — Śaṅkhapāla (accusative)
-- धृतराष्ट्रम् — Dhṛtarāṣṭra (the nāga, not the Kuru king; accusative)
+- शङ्ख — conch
+- पालम् — protector (here the nāga Śaṅkhapāla)
+- धृत — held
+- राष्ट्रम् — kingdom (here the nāga Dhṛtarāṣṭra)
 - तक्षकम् — Takṣaka (accusative)
 - कालियम् — Kāliya (accusative)
 - तथा — and / likewise
