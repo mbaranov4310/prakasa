@@ -14,12 +14,19 @@ export const varuna: Chapter = {
   glossary: [
     { term: "namaḥ", meaning: "salutation" },
     { term: "te", meaning: "to you" },
-    { term: "sphaṭikaprabhāya", meaning: "to the one whose radiance is like crystal" },
-    { term: "suśvetahārāya", meaning: "to the one with a very white garland" },
-    { term: "sumaṅgalāya", meaning: "to the highly auspicious one" },
-    { term: "supāśahastāya", meaning: "to the one who holds a noose" },
-    { term: "jhaṣāsanāya", meaning: "to the one whose seat is a jhaṣa" },
-    { term: "jalādhināthāya", meaning: "to the overlord of the waters" },
+    { term: "sphaṭika", meaning: "crystal" },
+    { term: "prabhāya", meaning: "to the one whose radiance" },
+    { term: "su", meaning: "very / good" },
+    { term: "śveta", meaning: "white" },
+    { term: "hārāya", meaning: "to the one with a garland" },
+    { term: "maṅgalāya", meaning: "to the auspicious one" },
+    { term: "pāśa", meaning: "noose" },
+    { term: "hastāya", meaning: "to the one who holds in hand" },
+    { term: "jhaṣa", meaning: "jhaṣa / sea-creature" },
+    { term: "āsanāya", meaning: "to the one whose seat" },
+    { term: "jala", meaning: "waters" },
+    { term: "adhi", meaning: "over" },
+    { term: "nāthāya", meaning: "to the lord" },
   ],
   root: group("vr-verse", "verse", translation, [
     group(
@@ -33,29 +40,36 @@ export const varuna: Chapter = {
           ["म", "ma"],
           ["स्ते", "ste"],
         ]),
-        word("vr-sphatika", "crystal-radiant", [
-          ["स्फ", "spha"],
-          ["टि", "ṭi"],
-          ["क", "ka"],
-          ["प्र", "pra"],
-          ["भा", "bhā"],
-          ["य", "ya"],
+        group("vr-crystal", "phrase", "to the one whose radiance is like crystal", [
+          word("vr-sphatika-w", "crystal", [
+            ["स्फ", "spha"],
+            ["टि", "ṭi"],
+            ["क", "ka"],
+          ], { trailing: "" }),
+          word("vr-prabhaya", "to the one whose radiance", [
+            ["प्र", "pra"],
+            ["भा", "bhā"],
+            ["य", "ya"],
+          ]),
         ]),
-        word("vr-susveta", "with a very white garland", [
-          ["सु", "su"],
-          ["श्वे", "śve"],
-          ["त", "ta"],
-          ["हा", "hā"],
-          ["रा", "rā"],
-          ["य", "ya"],
+        group("vr-garland", "phrase", "to the one with a very white garland", [
+          word("vr-su1", "very / good", [["सु", "su"]], { trailing: "" }),
+          word("vr-sveta", "white", [["श्वे", "śve"], ["त", "ta"]], { trailing: "" }),
+          word("vr-haraya", "to the one with a garland", [
+            ["हा", "hā"],
+            ["रा", "rā"],
+            ["य", "ya"],
+          ]),
         ]),
-        word("vr-sumangalaya", "to the highly auspicious one", [
-          ["सु", "su"],
-          ["मङ्", "maṅ"],
-          ["ग", "ga"],
-          ["ला", "lā"],
-          ["य", "ya"],
-        ], { trailing: " ।", lineBreakAfter: true }),
+        group("vr-auspicious", "phrase", "to the highly auspicious one", [
+          word("vr-su2", "very / good", [["सु", "su"]], { trailing: "" }),
+          word("vr-mangalaya", "to the auspicious one", [
+            ["मङ्", "maṅ"],
+            ["ग", "ga"],
+            ["ला", "lā"],
+            ["य", "ya"],
+          ], { trailing: " ।", lineBreakAfter: true }),
+        ]),
       ],
     ),
     group(
@@ -63,28 +77,33 @@ export const varuna: Chapter = {
       "phrase",
       "who holds the noose, whose seat is the sea-creature, overlord of the waters — salutation",
       [
-        word("vr-supasa", "who holds a noose", [
-          ["सु", "su"],
-          ["पा", "pā"],
-          ["श", "śa"],
-          ["ह", "ha"],
-          ["स्ता", "stā"],
-          ["य", "ya"],
+        group("vr-noose", "phrase", "to the one who holds a noose", [
+          word("vr-su3", "very / good", [["सु", "su"]], { trailing: "" }),
+          word("vr-pasa", "noose", [["पा", "pā"], ["श", "śa"]], { trailing: "" }),
+          word("vr-hastaya", "to the one who holds in hand", [
+            ["ह", "ha"],
+            ["स्ता", "stā"],
+            ["य", "ya"],
+          ]),
         ]),
-        word("vr-jhasa", "whose seat is a jhaṣa", [
-          ["झ", "jha"],
-          ["षा", "ṣā"],
-          ["स", "sa"],
-          ["ना", "nā"],
-          ["य", "ya"],
+        group("vr-seat", "phrase", "to the one whose seat is a jhaṣa", [
+          word("vr-jhasa-w", "jhaṣa / sea-creature", [["झ", "jha"], ["षा", "ṣā"]], {
+            trailing: "",
+          }),
+          word("vr-asanaya", "to the one whose seat", [
+            ["स", "sa"],
+            ["ना", "nā"],
+            ["य", "ya"],
+          ]),
         ]),
-        word("vr-jaladhi", "to the overlord of the waters", [
-          ["ज", "ja"],
-          ["ला", "lā"],
-          ["धि", "dhi"],
-          ["ना", "nā"],
-          ["था", "thā"],
-          ["य", "ya"],
+        group("vr-waters", "phrase", "to the overlord of the waters", [
+          word("vr-jala", "waters", [["ज", "ja"], ["ला", "lā"]], { trailing: "" }),
+          word("vr-adhi", "over", [["धि", "dhi"]], { trailing: "" }),
+          word("vr-nathaya", "to the lord", [
+            ["ना", "nā"],
+            ["था", "thā"],
+            ["य", "ya"],
+          ]),
         ]),
         word("vr-namo2", "salutation", [["न", "na"], ["मो", "mo"]]),
         word("vr-namaste2", "salutation to you", [

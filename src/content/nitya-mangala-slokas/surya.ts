@@ -12,14 +12,22 @@ export const surya: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "japākusumasaṅkāśam", meaning: "resembling the japā flower" },
-    { term: "kāśyapeyam", meaning: "son / descendant of Kaśyapa" },
-    { term: "mahādyutim", meaning: "of great brilliance" },
-    { term: "tamo'rim", meaning: "enemy of darkness" },
-    { term: "sarvapāpaghnam", meaning: "destroyer of all sins" },
+    { term: "japā", meaning: "japā (red hibiscus)" },
+    { term: "kusuma", meaning: "flower" },
+    { term: "saṅkāśam", meaning: "resembling" },
+    { term: "kāśyapa", meaning: "Kaśyapa" },
+    { term: "eyam", meaning: "son / descendant" },
+    { term: "mahā", meaning: "great" },
+    { term: "dyutim", meaning: "brilliance" },
+    { term: "tamas", meaning: "darkness" },
+    { term: "arim", meaning: "enemy" },
+    { term: "sarva", meaning: "all" },
+    { term: "pāpa", meaning: "sin" },
+    { term: "ghnam", meaning: "destroyer" },
     { term: "praṇataḥ", meaning: "bowed" },
     { term: "asmi", meaning: "I am" },
-    { term: "divākaram", meaning: "to Divākara, the day-maker" },
+    { term: "divā", meaning: "day" },
+    { term: "karam", meaning: "maker" },
   ],
   root: group("su-verse", "verse", translation, [
     group(
@@ -42,11 +50,13 @@ export const surya: Chapter = {
             ["शं", "śaṃ"],
           ]),
         ]),
-        word("su-kasyapeyam", "son / descendant of Kaśyapa", [
-          ["का", "kā"],
-          ["श्य", "śya"],
-          ["पे", "pe"],
-          ["यं", "yaṃ"],
+        group("su-kasyapa", "phrase", "son / descendant of Kaśyapa", [
+          word("su-kasyapa-w", "Kaśyapa", [
+            ["का", "kā"],
+            ["श्य", "śya"],
+            ["पे", "pe"],
+          ], { trailing: "" }),
+          word("su-eyam", "son / descendant", [["यं", "yaṃ"]]),
         ]),
         group("su-brilliance", "phrase", "of great brilliance", [
           word("su-maha", "great", [["म", "ma"], ["हा", "hā"]], { trailing: "" }),
@@ -77,12 +87,12 @@ export const surya: Chapter = {
           ["तो", "to"],
         ], { trailing: "" }),
         word("su-asmi", "I am", [["ऽस्मि", "’smi"]]),
-        word("su-divakaram", "to Divākara, the day-maker", [
-          ["दि", "di"],
-          ["वा", "vā"],
-          ["क", "ka"],
-          ["रम्", "ram"],
-        ], { trailing: " ॥" }),
+        group("su-divakara", "phrase", "to Divākara, the day-maker", [
+          word("su-diva", "day", [["दि", "di"], ["वा", "vā"]], { trailing: "" }),
+          word("su-karam", "maker", [["क", "ka"], ["रम्", "ram"]], {
+            trailing: " ॥",
+          }),
+        ]),
       ],
     ),
   ]),

@@ -18,12 +18,19 @@ Padaccheda: no traditional padapāṭha found. Proposed from the dative vocative
 
 Word gloss:
 - नमो नमस्ते (नमः + नमः + ते) — salutation again and again to you
-- स्फटिकप्रभाय — to the one whose radiance is like crystal
-- सुश्वेतहाराय — to the one with a very white garland / necklace
-- सुमङ्गलाय — to the highly auspicious one
-- सुपाशहस्ताय — to the one who holds a noose well in the hand
-- झषासनाय — to the one whose seat is a jhaṣa (fish / sea-creature)
-- जलाधिनाथाय — to the overlord of the waters
+- स्फटिक — crystal
+- प्रभाय — to the one whose radiance
+- सु — very / good
+- श्वेत — white
+- हाराय — to the one with a garland
+- मङ्गलाय — to the auspicious one
+- पाश — noose
+- हस्ताय — to the one who holds in hand
+- झष — jhaṣa / sea-creature
+- आसनाय — to the one whose seat
+- जल — waters
+- अधि — over
+- नाथाय — to the lord
 - नमो नमस्ते — salutation again to you
 
 Translation: “Salutation again and again to you, crystal-radiant, wearing a pure-white garland, highly auspicious; salutation to you who holds the noose, whose seat is the sea-creature, overlord of the waters.”

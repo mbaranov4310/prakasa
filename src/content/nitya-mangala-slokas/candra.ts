@@ -12,36 +12,43 @@ export const candra: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "dadhiśaṅkhatuṣārābham", meaning: "of appearance like curd, a conch, and frost" },
-    { term: "kṣīrodārṇavasambhavam", meaning: "born from the ocean of milk" },
+    { term: "dadhi", meaning: "curd" },
+    { term: "śaṅkha", meaning: "conch" },
+    { term: "tuṣāra", meaning: "frost / snow" },
+    { term: "ābham", meaning: "of appearance like" },
+    { term: "kṣīra", meaning: "milk" },
+    { term: "uda", meaning: "water" },
+    { term: "arṇava", meaning: "ocean" },
+    { term: "sambhavam", meaning: "born from" },
     { term: "namāmi", meaning: "I bow" },
     { term: "śaśinam", meaning: "to Śaśin" },
     { term: "somam", meaning: "to Soma as the Moon" },
     { term: "śambhoḥ", meaning: "of Śambhu" },
-    { term: "mukuṭabhūṣaṇam", meaning: "the crest-ornament" },
+    { term: "mukuṭa", meaning: "crest / crown" },
+    { term: "bhūṣaṇam", meaning: "ornament" },
   ],
   root: group("cn-verse", "verse", translation, [
     group("cn-pada12", "phrase", "lustre of curd, conch, and frost; born from the ocean of milk", [
-      word("cn-dadhi", "of appearance like curd, conch, and frost", [
-        ["द", "da"],
-        ["धि", "dhi"],
-        ["शङ्", "śaṅ"],
-        ["ख", "kha"],
-        ["तु", "tu"],
-        ["षा", "ṣā"],
-        ["रा", "rā"],
-        ["भं", "bhaṃ"],
+      group("cn-lustre", "phrase", "of appearance like curd, conch, and frost", [
+        word("cn-dadhi-w", "curd", [["द", "da"], ["धि", "dhi"]], { trailing: "" }),
+        word("cn-sankha", "conch", [["शङ्", "śaṅ"], ["ख", "kha"]], { trailing: "" }),
+        word("cn-tusara", "frost / snow", [
+          ["तु", "tu"],
+          ["षा", "ṣā"],
+          ["रा", "rā"],
+        ], { trailing: "" }),
+        word("cn-abham", "of appearance like", [["भं", "bhaṃ"]]),
       ]),
-      word("cn-ksiroda", "born from the ocean of milk", [
-        ["क्षी", "kṣī"],
-        ["रो", "ro"],
-        ["दा", "dā"],
-        ["र्ण", "rṇa"],
-        ["व", "va"],
-        ["सम्", "sam"],
-        ["भ", "bha"],
-        ["वम्", "vam"],
-      ], { trailing: " ।", lineBreakAfter: true }),
+      group("cn-born", "phrase", "born from the ocean of milk", [
+        word("cn-ksira", "milk", [["क्षी", "kṣī"], ["रो", "ro"]], { trailing: "" }),
+        word("cn-uda", "water", [["दा", "dā"]], { trailing: "" }),
+        word("cn-arnava", "ocean", [["र्ण", "rṇa"], ["व", "va"]], { trailing: "" }),
+        word("cn-sambhavam", "born from", [
+          ["सम्", "sam"],
+          ["भ", "bha"],
+          ["वम्", "vam"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
     ]),
     group("cn-pada34", "phrase", "I bow to Śaśin, Soma, ornament of Śambhu’s crown", [
       word("cn-namami", "I bow", [["न", "na"], ["मा", "mā"], ["मि", "mi"]]),
@@ -50,14 +57,18 @@ export const candra: Chapter = {
       word("cn-sambhoh", "of Śambhu", [["शम्", "śam"], ["भोर्", "bhor"]], {
         trailing: "",
       }),
-      word("cn-mukuta", "crest-ornament", [
-        ["मु", "mu"],
-        ["कु", "ku"],
-        ["ट", "ṭa"],
-        ["भू", "bhū"],
-        ["ष", "ṣa"],
-        ["णम्", "ṇam"],
-      ], { trailing: " ॥" }),
+      group("cn-crest", "phrase", "the crest-ornament", [
+        word("cn-mukuta-w", "crest / crown", [
+          ["मु", "mu"],
+          ["कु", "ku"],
+          ["ट", "ṭa"],
+        ], { trailing: "" }),
+        word("cn-bhusanam", "ornament", [
+          ["भू", "bhū"],
+          ["ष", "ṣa"],
+          ["णम्", "ṇam"],
+        ], { trailing: " ॥" }),
+      ]),
     ]),
   ]),
 };

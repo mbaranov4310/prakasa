@@ -16,14 +16,22 @@ IAST:
 Padaccheda: not attested as a split recitation (printed as compounds). Proposed: नीलांजन-समाभासम् रवि-पुत्रम् यम-अग्रजम् । छाया-मार्तण्ड-संभूतम् तम् नमामि शनैश्चरम् ॥
 
 Word gloss:
-- नीलांजन — blue-black collyrium (añjana / kājal); orthographic twin of नीलाञ्जन
-- समाभासम् — of like appearance / lustre (acc.)
-- रविपुत्रम् — son of Ravi (the Sun)
-- यमाग्रजम् — elder brother of Yama
-- छायामार्तण्डसंभूतम् — born of Chāyā and Mārtaṇḍa (the Sun)
+- नील — blue-black
+- अंजन / अञ्जन — collyrium (kājal); orthographic twin नीलाञ्जन
+- सम — like / equal
+- आभासम् — appearance / lustre (acc.)
+- रवि — Ravi (the Sun)
+- पुत्रम् — son
+- यम — Yama
+- अग्र — first / elder
+- जम् — born
+- छाया — Chāyā
+- मार्तण्ड — Mārtaṇḍa (the Sun)
+- संभूतम् — born of
 - तम् — that one
 - नमामि — I bow
-- शनैश्चरम् — to Śanaiścara, “the slow-mover”
+- शनैः — slowly
+- चरम् — who moves
 
 Translation: “I bow to Śanaiścara, who has the lustre of blue-black collyrium, son of the Sun, elder brother of Yama, born of Chāyā and Mārtaṇḍa.”
 

@@ -17,14 +17,22 @@ Padaccheda: not attested as a traditional pada-pāṭha; proposed from the usual
 जपाकुसुम-सङ्काशम् काश्यपेयम् महा-द्युतिम् तमः-अरिम् सर्व-पाप-घ्नम् प्रणतः अस्मि दिवाकरम्
 
 Word gloss:
-- जपाकुसुमसङ्काशम् — resembling the japā flower (red hibiscus; Hindi गुड़हल, Marathi जास्वंद)
-- काश्यपेयम् — son / descendant of Kaśyapa
-- महाद्युतिम् — of great brilliance
-- तमोऽरिम् (तमः + अरिम्) — enemy of darkness
-- सर्वपापघ्नम् — destroyer of all sins
+- जपा — japā (red hibiscus)
+- कुसुम — flower
+- सङ्काशम् — resembling
+- काश्यप — Kaśyapa
+- एयम् — son / descendant
+- महा — great
+- द्युतिम् — brilliance
+- तमः — darkness
+- अरिम् — enemy
+- सर्व — all
+- पाप — sin
+- घ्नम् — destroyer
 - प्रणतः — bowed
 - अस्मि — I am
-- दिवाकरम् — to Divākara, the day-maker
+- दिवा — day
+- करम् — maker
 
 Translation: “I bow to Divākara, who resembles the red japā flower, son of Kaśyapa, of great brilliance, enemy of darkness, destroyer of all sins.”
 

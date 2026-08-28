@@ -13,37 +13,46 @@ export const agni: Chapter = {
   translation,
   glossary: [
     { term: "agnim", meaning: "Agni" },
-    { term: "prajvalitam", meaning: "blazing / kindled" },
+    { term: "pra", meaning: "forth / well" },
+    { term: "jvalitam", meaning: "blazing / kindled" },
     { term: "vande", meaning: "I bow" },
-    { term: "jātavedam", meaning: "Jātavedas" },
-    { term: "hutāśanam", meaning: "eater of the offering" },
-    { term: "suvarṇavarṇam", meaning: "golden-coloured" },
+    { term: "jāta", meaning: "born" },
+    { term: "vedam", meaning: "who knows" },
+    { term: "huta", meaning: "the offering" },
+    { term: "aśanam", meaning: "eater" },
+    { term: "suvarṇa", meaning: "gold" },
+    { term: "varṇam", meaning: "colour" },
     { term: "amalam", meaning: "stainless / pure" },
-    { term: "samiddham", meaning: "well-kindled" },
-    { term: "viśvatomukham", meaning: "facing all directions" },
+    { term: "sam", meaning: "well / thoroughly" },
+    { term: "iddham", meaning: "kindled" },
+    { term: "viśvataḥ", meaning: "on every side" },
+    { term: "mukham", meaning: "face" },
   ],
   root: group("ag-verse", "verse", translation, [
     group("ag-pada12", "phrase", "I bow to blazing Agni, Jātavedas, eater of the offering", [
       word("ag-agnim", "Agni", [["अ", "a"], ["ग्निं", "gniṃ"]]),
-      word("ag-prajvalitam", "blazing / kindled", [
-        ["प्र", "pra"],
-        ["ज्व", "jva"],
-        ["लि", "li"],
-        ["तं", "taṃ"],
+      group("ag-blazing", "phrase", "blazing / kindled", [
+        word("ag-pra", "forth / well", [["प्र", "pra"]], { trailing: "" }),
+        word("ag-jvalitam", "blazing / kindled", [
+          ["ज्व", "jva"],
+          ["लि", "li"],
+          ["तं", "taṃ"],
+        ]),
       ]),
       word("ag-vande", "I bow", [["व", "va"], ["न्दे", "nde"]]),
-      word("ag-jatavedam", "Jātavedas", [
-        ["जा", "jā"],
-        ["त", "ta"],
-        ["वे", "ve"],
-        ["दं", "daṃ"],
+      group("ag-jatavedas", "phrase", "Jātavedas", [
+        word("ag-jata", "born", [["जा", "jā"], ["त", "ta"]], { trailing: "" }),
+        word("ag-vedam", "who knows", [["वे", "ve"], ["दं", "daṃ"]]),
       ]),
-      word("ag-hutasanam", "eater of the offering", [
-        ["हु", "hu"],
-        ["ता", "tā"],
-        ["श", "śa"],
-        ["नम्", "nam"],
-      ], { trailing: " ।", lineBreakAfter: true }),
+      group("ag-offering", "phrase", "eater of the offering", [
+        word("ag-huta", "the offering", [["हु", "hu"], ["ता", "tā"]], {
+          trailing: "",
+        }),
+        word("ag-asanam", "eater", [
+          ["श", "śa"],
+          ["नम्", "nam"],
+        ], { trailing: " ।", lineBreakAfter: true }),
+      ]),
     ]),
     group("ag-pada34", "phrase", "golden-coloured, pure, well-kindled, facing every direction", [
       group("ag-gold", "phrase", "golden-coloured", [
@@ -60,18 +69,22 @@ export const agni: Chapter = {
         ["म", "ma"],
         ["लं", "laṃ"],
       ]),
-      word("ag-samiddham", "well-kindled", [
-        ["स", "sa"],
-        ["मि", "mi"],
-        ["द्धं", "ddhaṃ"],
+      group("ag-kindled", "phrase", "well-kindled", [
+        word("ag-sam", "well / thoroughly", [["स", "sa"], ["मि", "mi"]], {
+          trailing: "",
+        }),
+        word("ag-iddham", "kindled", [["द्धं", "ddhaṃ"]]),
       ]),
-      word("ag-visvatomukham", "facing all directions", [
-        ["वि", "vi"],
-        ["श्व", "śva"],
-        ["तो", "to"],
-        ["मु", "mu"],
-        ["खम्", "kham"],
-      ], { trailing: " ॥" }),
+      group("ag-faces", "phrase", "facing all directions", [
+        word("ag-visvatah", "on every side", [
+          ["वि", "vi"],
+          ["श्व", "śva"],
+          ["तो", "to"],
+        ], { trailing: "" }),
+        word("ag-mukham", "face", [["मु", "mu"], ["खम्", "kham"]], {
+          trailing: " ॥",
+        }),
+      ]),
     ]),
   ]),
 };

@@ -12,11 +12,13 @@ export const kartikeya: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "ṣaḍānanam", meaning: "the six-faced one (Ṣaṇmukha)" },
+    { term: "ṣaḍ", meaning: "six" },
+    { term: "ānanam", meaning: "face" },
     { term: "kuṅkuma", meaning: "kuṅkuma / vermilion" },
     { term: "rakta", meaning: "red" },
     { term: "varṇam", meaning: "color / complexion" },
-    { term: "mahāmatim", meaning: "of great wisdom" },
+    { term: "mahā", meaning: "great" },
+    { term: "matim", meaning: "wisdom" },
     { term: "divya", meaning: "divine" },
     { term: "mayūra", meaning: "peacock" },
     { term: "vāhanam", meaning: "mount" },
@@ -41,11 +43,9 @@ export const kartikeya: Chapter = {
         "phrase",
         "the six-faced one, red as kuṅkuma, of great wisdom, whose mount is the divine peacock",
         [
-          word("k-sadanana", "the six-faced one (Ṣaṇmukha)", [
-            ["ष", "ṣa"],
-            ["डा", "ḍā"],
-            ["न", "na"],
-            ["नं", "naṃ"],
+          group("k-faces", "phrase", "the six-faced one (Ṣaṇmukha)", [
+            word("k-sad", "six", [["ष", "ṣa"], ["डा", "ḍā"]], { trailing: "" }),
+            word("k-ananam", "face", [["न", "na"], ["नं", "naṃ"]]),
           ]),
           group("k-color", "phrase", "red as kuṅkuma in complexion", [
             word(
@@ -64,11 +64,9 @@ export const kartikeya: Chapter = {
               ["र्णं", "rṇaṃ"],
             ]),
           ]),
-          word("k-mahamatim", "of great wisdom", [
-            ["म", "ma"],
-            ["हा", "hā"],
-            ["म", "ma"],
-            ["तिं", "tiṃ"],
+          group("k-wisdom", "phrase", "of great wisdom", [
+            word("k-maha", "great", [["म", "ma"], ["हा", "hā"]], { trailing: "" }),
+            word("k-matim", "wisdom", [["म", "ma"], ["तिं", "tiṃ"]]),
           ]),
           group("k-mount", "phrase", "whose mount is the divine peacock", [
             word("k-divya", "divine", [["दि", "di"], ["व्य", "vya"]], {

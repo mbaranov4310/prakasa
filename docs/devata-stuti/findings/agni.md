@@ -18,14 +18,20 @@ Padaccheda: no traditional padapāṭha found. Paddhati prints treat it as one a
 
 Word gloss:
 - अग्निम् — Agni (accusative)
-- प्रज्वलितम् — blazing / kindled
+- प्र — forth / well
+- ज्वलितम् — blazing / kindled
 - वन्दे — I bow to / I praise
-- जातवेदम् — Jātavedas (traditional epithet: knower of all that is born; accusative of जातवेदस्)
-- हुताशनम् — Hutāśana, eater of the offering (हुत + अशन)
-- सुवर्णवर्णम् — golden-coloured
+- जात — born
+- वेदम् — who knows (Jātavedas)
+- हुत — the offering
+- अशनम् — eater
+- सुवर्ण — gold
+- वर्णम् — colour
 - अमलम् — stainless / pure
-- समिद्धम् — well-kindled (सम् + इद्ध, from √इन्ध्)
-- विश्वतोमुखम् — facing all directions / whose face is everywhere
+- सम् — well / thoroughly
+- इद्धम् — kindled
+- विश्वतः — on every side
+- मुखम् — face
 
 Translation: “I bow to blazing Agni, Jātavedas, eater of the offering — golden-coloured, pure, well-kindled, facing every direction.”
 

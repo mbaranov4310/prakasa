@@ -17,13 +17,20 @@ Padaccheda: not attested as a traditional pada-pāṭha; proposed from the usual
 दधि-शङ्ख-तुषार-आभम् क्षीर-उद-अर्णव-सम्भवम् । नमामि शशिनम् सोमम् शम्भोः मुकुट-भूषणम् ॥
 
 Word gloss:
-- दधिशङ्खतुषाराभम् (दधि + शङ्ख + तुषार + आभम्) — of appearance like curd, a conch, and frost / snow
-- क्षीरोदार्णवसम्भवम् (क्षीर + उद + अर्णव + सम्भवम्) — born from the ocean of milk
+- दधि — curd
+- शङ्ख — conch
+- तुषार — frost / snow
+- आभम् — of appearance like
+- क्षीर — milk
+- उद — water
+- अर्णव — ocean
+- सम्भवम् — born from
 - नमामि — I bow
 - शशिनम् — to Śaśin (the hare-marked Moon)
 - सोमम् — to Soma here as the Moon, not the Vedic plant-deity
 - शम्भोः — of Śambhu (Śiva)
-- मुकुटभूषणम् — the crest-ornament
+- मुकुट — crest / crown
+- भूषणम् — ornament
 
 Translation: “I bow to Śaśin, Soma, who has the lustre of curd, conch, and frost, born from the ocean of milk, the ornament of Śambhu’s crown.”
 

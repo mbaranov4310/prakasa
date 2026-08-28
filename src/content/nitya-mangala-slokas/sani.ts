@@ -12,14 +12,22 @@ export const sani: Chapter = {
   status: "ready",
   translation,
   glossary: [
-    { term: "nīlāṃjana", meaning: "blue-black collyrium" },
-    { term: "samābhāsam", meaning: "of like appearance / lustre" },
-    { term: "raviputram", meaning: "son of Ravi (the Sun)" },
-    { term: "yamāgrajam", meaning: "elder brother of Yama" },
-    { term: "chāyāmārtaṇḍasaṃbhūtam", meaning: "born of Chāyā and Mārtaṇḍa" },
+    { term: "nīla", meaning: "blue-black" },
+    { term: "añjana", meaning: "collyrium" },
+    { term: "sama", meaning: "like / equal" },
+    { term: "ābhāsam", meaning: "appearance / lustre" },
+    { term: "ravi", meaning: "Ravi (the Sun)" },
+    { term: "putram", meaning: "son" },
+    { term: "yama", meaning: "Yama" },
+    { term: "agra", meaning: "first / elder" },
+    { term: "jam", meaning: "born" },
+    { term: "chāyā", meaning: "Chāyā" },
+    { term: "mārtaṇḍa", meaning: "Mārtaṇḍa (the Sun)" },
+    { term: "sambhūtam", meaning: "born of" },
     { term: "tam", meaning: "that one" },
     { term: "namāmi", meaning: "I bow" },
-    { term: "śanaiścaram", meaning: "to Śanaiścara, the slow-mover" },
+    { term: "śanaiḥ", meaning: "slowly" },
+    { term: "caram", meaning: "who moves" },
   ],
   root: group("sa-verse", "verse", translation, [
     group(
@@ -28,17 +36,22 @@ export const sani: Chapter = {
       "of the lustre of blue-black collyrium, son of the Sun, elder brother of Yama",
       [
         group("sa-lustre", "phrase", "of like appearance to blue-black collyrium", [
-          word("sa-nilanjana", "blue-black collyrium", [
-            ["नी", "nī"],
-            ["लां", "lāṃ"],
-            ["ज", "ja"],
-            ["न", "na"],
-          ], { trailing: "" }),
-          word("sa-samabhasam", "of like appearance / lustre", [
-            ["स", "sa"],
-            ["मा", "mā"],
-            ["भा", "bhā"],
-            ["सं", "saṃ"],
+          group("sa-collyrium", "phrase", "blue-black collyrium", [
+            word("sa-nila", "blue-black", [["नी", "nī"], ["लां", "lāṃ"]], {
+              trailing: "",
+            }),
+            word("sa-anjana", "collyrium", [["ज", "ja"], ["न", "na"]], {
+              trailing: "",
+            }),
+          ]),
+          group("sa-like", "phrase", "of like appearance / lustre", [
+            word("sa-sama", "like / equal", [["स", "sa"], ["मा", "mā"]], {
+              trailing: "",
+            }),
+            word("sa-abhasam", "appearance / lustre", [
+              ["भा", "bhā"],
+              ["सं", "saṃ"],
+            ]),
           ]),
         ]),
         group("sa-son", "phrase", "son of Ravi", [
@@ -49,10 +62,11 @@ export const sani: Chapter = {
         ]),
         group("sa-yama", "phrase", "elder brother of Yama", [
           word("sa-yama-w", "Yama", [["य", "ya"], ["मा", "mā"]], { trailing: "" }),
-          word("sa-agrajam", "elder brother", [
-            ["ग्र", "gra"],
-            ["जम्", "jam"],
-          ], { trailing: " ।", lineBreakAfter: true }),
+          word("sa-agra", "first / elder", [["ग्र", "gra"]], { trailing: "" }),
+          word("sa-jam", "born", [["जम्", "jam"]], {
+            trailing: " ।",
+            lineBreakAfter: true,
+          }),
         ]),
       ],
     ),
@@ -76,12 +90,14 @@ export const sani: Chapter = {
         ]),
         word("sa-tam", "that one", [["तं", "taṃ"]]),
         word("sa-namami", "I bow", [["न", "na"], ["मा", "mā"], ["मि", "mi"]]),
-        word("sa-sanaiscaram", "to Śanaiścara, the slow-mover", [
-          ["श", "śa"],
-          ["नै", "nai"],
-          ["श्च", "śca"],
-          ["रम्", "ram"],
-        ], { trailing: " ॥" }),
+        group("sa-slow", "phrase", "to Śanaiścara, the slow-mover", [
+          word("sa-sanaih", "slowly", [
+            ["श", "śa"],
+            ["नै", "nai"],
+            ["श्च", "śca"],
+          ], { trailing: "" }),
+          word("sa-caram", "who moves", [["रम्", "ram"]], { trailing: " ॥" }),
+        ]),
       ],
     ),
   ]),
