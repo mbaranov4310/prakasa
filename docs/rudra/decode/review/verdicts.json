@@ -1,0 +1,1092 @@
+{
+  "BRHDevanagariExtra:U+0020": {
+    "font": "BRHDevanagariExtra",
+    "cp": 32,
+    "ch": " ",
+    "guess": " ",
+    "status": "ok",
+    "unicode": " ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0028": {
+    "font": "BRHDevanagariExtra",
+    "cp": 40,
+    "ch": "(",
+    "guess": "(",
+    "status": "ok",
+    "unicode": "(",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0029": {
+    "font": "BRHDevanagariExtra",
+    "cp": 41,
+    "ch": ")",
+    "guess": ")",
+    "status": "ok",
+    "unicode": ")",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+002C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 44,
+    "ch": ",",
+    "guess": ",",
+    "status": "ok",
+    "unicode": ",",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+002D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 45,
+    "ch": "-",
+    "guess": "-",
+    "status": "ok",
+    "unicode": "-",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+002E": {
+    "font": "BRHDevanagariExtra",
+    "cp": 46,
+    "ch": ".",
+    "guess": ".",
+    "status": "ok",
+    "unicode": ".",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0041": {
+    "font": "BRHDevanagariExtra",
+    "cp": 65,
+    "ch": "A",
+    "guess": "अ",
+    "status": "ok",
+    "unicode": "अ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0043": {
+    "font": "BRHDevanagariExtra",
+    "cp": 67,
+    "ch": "C",
+    "guess": "इ",
+    "status": "ok",
+    "unicode": "इ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0044": {
+    "font": "BRHDevanagariExtra",
+    "cp": 68,
+    "ch": "D",
+    "guess": "ई",
+    "status": "ok",
+    "unicode": "ई",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0045": {
+    "font": "BRHDevanagariExtra",
+    "cp": 69,
+    "ch": "E",
+    "guess": "उ",
+    "status": "ok",
+    "unicode": "उ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0046": {
+    "font": "BRHDevanagariExtra",
+    "cp": 70,
+    "ch": "F",
+    "guess": "ऊ",
+    "status": "ok",
+    "unicode": "ऊ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0047": {
+    "font": "BRHDevanagariExtra",
+    "cp": 71,
+    "ch": "G",
+    "guess": "ऋ",
+    "status": "wrong",
+    "unicode": "ऋ",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+004C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 76,
+    "ch": "L",
+    "guess": "ए",
+    "status": "ok",
+    "unicode": "ए",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+004D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 77,
+    "ch": "M",
+    "guess": "क्",
+    "status": "ok",
+    "unicode": "क्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+004E": {
+    "font": "BRHDevanagariExtra",
+    "cp": 78,
+    "ch": "N",
+    "guess": "छ्",
+    "status": "ok",
+    "unicode": "छ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+004F": {
+    "font": "BRHDevanagariExtra",
+    "cp": 79,
+    "ch": "O",
+    "guess": "ट्",
+    "status": "ok",
+    "unicode": "ट्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0050": {
+    "font": "BRHDevanagariExtra",
+    "cp": 80,
+    "ch": "P",
+    "guess": "ठ्",
+    "status": "ok",
+    "unicode": "ठ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0051": {
+    "font": "BRHDevanagariExtra",
+    "cp": 81,
+    "ch": "Q",
+    "guess": "ड",
+    "status": "ok",
+    "unicode": "ड",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+0052": {
+    "font": "BRHDevanagariExtra",
+    "cp": 82,
+    "ch": "R",
+    "guess": "ढ्",
+    "status": "ok",
+    "unicode": "ढ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0053": {
+    "font": "BRHDevanagariExtra",
+    "cp": 83,
+    "ch": "S",
+    "guess": "द",
+    "status": "ok",
+    "unicode": "द",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+0054": {
+    "font": "BRHDevanagariExtra",
+    "cp": 84,
+    "ch": "T",
+    "guess": "फ्",
+    "status": "ok",
+    "unicode": "फ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0055": {
+    "font": "BRHDevanagariExtra",
+    "cp": 85,
+    "ch": "U",
+    "guess": "र",
+    "status": "ok",
+    "unicode": "र",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+0057": {
+    "font": "BRHDevanagariExtra",
+    "cp": 87,
+    "ch": "W",
+    "guess": "ह",
+    "status": "ok",
+    "unicode": "ह",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+0059": {
+    "font": "BRHDevanagariExtra",
+    "cp": 89,
+    "ch": "Y",
+    "guess": "क्",
+    "status": "ok",
+    "unicode": "क्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+005A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 90,
+    "ch": "Z",
+    "guess": "ख्",
+    "status": "ok",
+    "unicode": "ख्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+005B": {
+    "font": "BRHDevanagariExtra",
+    "cp": 91,
+    "ch": "[",
+    "guess": "[",
+    "status": "ok",
+    "unicode": "[",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+005D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 93,
+    "ch": "]",
+    "guess": "]",
+    "status": "ok",
+    "unicode": "]",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0061": {
+    "font": "BRHDevanagariExtra",
+    "cp": 97,
+    "ch": "a",
+    "guess": "ग्",
+    "status": "ok",
+    "unicode": "ग्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0062": {
+    "font": "BRHDevanagariExtra",
+    "cp": 98,
+    "ch": "b",
+    "guess": "घ्",
+    "status": "ok",
+    "unicode": "घ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0063": {
+    "font": "BRHDevanagariExtra",
+    "cp": 99,
+    "ch": "c",
+    "guess": "च्",
+    "status": "ok",
+    "unicode": "च्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0065": {
+    "font": "BRHDevanagariExtra",
+    "cp": 101,
+    "ch": "e",
+    "guess": "ज्",
+    "status": "ok",
+    "unicode": "ज्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0067": {
+    "font": "BRHDevanagariExtra",
+    "cp": 103,
+    "ch": "g",
+    "guess": "ञ्",
+    "status": "ok",
+    "unicode": "ञ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0068": {
+    "font": "BRHDevanagariExtra",
+    "cp": 104,
+    "ch": "h",
+    "guess": "ण्",
+    "status": "ok",
+    "unicode": "ण्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0069": {
+    "font": "BRHDevanagariExtra",
+    "cp": 105,
+    "ch": "i",
+    "guess": "त्",
+    "status": "ok",
+    "unicode": "त्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+006A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 106,
+    "ch": "j",
+    "guess": "थ्",
+    "status": "ok",
+    "unicode": "थ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+006B": {
+    "font": "BRHDevanagariExtra",
+    "cp": 107,
+    "ch": "k",
+    "guess": "ध्",
+    "status": "ok",
+    "unicode": "ध्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+006C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 108,
+    "ch": "l",
+    "guess": "न्",
+    "status": "ok",
+    "unicode": "न्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+006D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 109,
+    "ch": "m",
+    "guess": "प्",
+    "status": "ok",
+    "unicode": "प्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+006F": {
+    "font": "BRHDevanagariExtra",
+    "cp": 111,
+    "ch": "o",
+    "guess": "ब्",
+    "status": "ok",
+    "unicode": "ब्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0070": {
+    "font": "BRHDevanagariExtra",
+    "cp": 112,
+    "ch": "p",
+    "guess": "भ्",
+    "status": "ok",
+    "unicode": "भ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0071": {
+    "font": "BRHDevanagariExtra",
+    "cp": 113,
+    "ch": "q",
+    "guess": "म्",
+    "status": "ok",
+    "unicode": "म्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0072": {
+    "font": "BRHDevanagariExtra",
+    "cp": 114,
+    "ch": "r",
+    "guess": "य्",
+    "status": "ok",
+    "unicode": "य्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0073": {
+    "font": "BRHDevanagariExtra",
+    "cp": 115,
+    "ch": "s",
+    "guess": "ल्",
+    "status": "ok",
+    "unicode": "ल्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0075": {
+    "font": "BRHDevanagariExtra",
+    "cp": 117,
+    "ch": "u",
+    "guess": "व्",
+    "status": "ok",
+    "unicode": "व्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0077": {
+    "font": "BRHDevanagariExtra",
+    "cp": 119,
+    "ch": "w",
+    "guess": "ष्",
+    "status": "ok",
+    "unicode": "ष्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0078": {
+    "font": "BRHDevanagariExtra",
+    "cp": 120,
+    "ch": "x",
+    "guess": "स्",
+    "status": "ok",
+    "unicode": "स्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+007A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 122,
+    "ch": "z",
+    "guess": "श्",
+    "status": "ok",
+    "unicode": "श्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+007C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 124,
+    "ch": "|",
+    "guess": "।",
+    "status": "ok",
+    "unicode": "।",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 161,
+    "ch": "¡",
+    "guess": "",
+    "status": "wrong",
+    "unicode": "",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00A2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 162,
+    "ch": "¢",
+    "guess": "क्र्",
+    "status": "ok",
+    "unicode": "क्र्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 163,
+    "ch": "£",
+    "guess": "क्त्",
+    "status": "ok",
+    "unicode": "क्त्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 164,
+    "ch": "¤",
+    "guess": "क्ष्",
+    "status": "ok",
+    "unicode": "क्ष्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 165,
+    "ch": "¥",
+    "guess": "ज्ञ्",
+    "status": "ok",
+    "unicode": "ज्ञ्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 166,
+    "ch": "¦",
+    "guess": "त्त्न्",
+    "status": "wrong",
+    "unicode": "त्त्न्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00A7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 167,
+    "ch": "§",
+    "guess": "त्र्",
+    "status": "ok",
+    "unicode": "त्र्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00A8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 168,
+    "ch": "¨",
+    "guess": "त्त्",
+    "status": "ok",
+    "unicode": "त्त्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00AE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 174,
+    "ch": "®",
+    "guess": "द्ध्",
+    "status": "ok",
+    "unicode": "द्ध्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B0": {
+    "font": "BRHDevanagariExtra",
+    "cp": 176,
+    "ch": "°",
+    "guess": "द्भ्",
+    "status": "wrong",
+    "unicode": "द्भ्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00B1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 177,
+    "ch": "±",
+    "guess": "द्य्",
+    "status": "ok",
+    "unicode": "द्य्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 178,
+    "ch": "²",
+    "guess": "द्व्",
+    "status": "ok",
+    "unicode": "द्व्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 179,
+    "ch": "³",
+    "guess": "न्न्",
+    "status": "wrong",
+    "unicode": "न्न्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 180,
+    "ch": "´",
+    "guess": "श्र्",
+    "status": "ok",
+    "unicode": "श्र्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 181,
+    "ch": "µ",
+    "guess": "श्व्",
+    "status": "ok",
+    "unicode": "श्व्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 182,
+    "ch": "¶",
+    "guess": "श्च्",
+    "status": "ok",
+    "unicode": "श्च्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00B8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 184,
+    "ch": "¸",
+    "guess": "ष्ठ्",
+    "status": "wrong",
+    "unicode": "ष्ठ्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00B9": {
+    "font": "BRHDevanagariExtra",
+    "cp": 185,
+    "ch": "¹",
+    "guess": "ष्ट्",
+    "status": "ok",
+    "unicode": "ष्ट्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00BA": {
+    "font": "BRHDevanagariExtra",
+    "cp": 186,
+    "ch": "º",
+    "guess": "ह्ण्",
+    "status": "wrong",
+    "unicode": "ह्ण्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00BD": {
+    "font": "BRHDevanagariExtra",
+    "cp": 189,
+    "ch": "½",
+    "guess": "ह्य्",
+    "status": "ok",
+    "unicode": "ह्य्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00BE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 190,
+    "ch": "¾",
+    "guess": "ह्र्",
+    "status": "ok",
+    "unicode": "ह्र्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00C0": {
+    "font": "BRHDevanagariExtra",
+    "cp": 192,
+    "ch": "À",
+    "guess": "ह्व्",
+    "status": "ok",
+    "unicode": "ह्व्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00C2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 194,
+    "ch": "Â",
+    "guess": "रु",
+    "status": "ok",
+    "unicode": "रु",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00C3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 195,
+    "ch": "Ã",
+    "guess": "रू",
+    "status": "ok",
+    "unicode": "रू",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00C5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 197,
+    "ch": "Å",
+    "guess": "ऽ",
+    "status": "ok",
+    "unicode": "ऽ",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00C6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 198,
+    "ch": "Æ",
+    "guess": "ँ",
+    "status": "wrong",
+    "unicode": "ँ",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00C7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 199,
+    "ch": "Ç",
+    "guess": "ं",
+    "status": "ok",
+    "unicode": "ं",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00C8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 200,
+    "ch": "È",
+    "guess": "ः",
+    "status": "ok",
+    "unicode": "ः",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00C9": {
+    "font": "BRHDevanagariExtra",
+    "cp": 201,
+    "ch": "É",
+    "guess": "ा",
+    "status": "ok",
+    "unicode": "ा",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00CB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 203,
+    "ch": "Ë",
+    "guess": "ि",
+    "status": "ok",
+    "unicode": "ि",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00CC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 204,
+    "ch": "Ì",
+    "guess": "ि",
+    "status": "ok",
+    "unicode": "ि",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00CD": {
+    "font": "BRHDevanagariExtra",
+    "cp": 205,
+    "ch": "Í",
+    "guess": "ि",
+    "status": "ok",
+    "unicode": "ि",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00CE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 206,
+    "ch": "Î",
+    "guess": "ि",
+    "status": "wrong",
+    "unicode": "ि",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00CF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 207,
+    "ch": "Ï",
+    "guess": "ी",
+    "status": "ok",
+    "unicode": "ी",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00D1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 209,
+    "ch": "Ñ",
+    "guess": "ु",
+    "status": "ok",
+    "unicode": "ु",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00D2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 210,
+    "ch": "Ò",
+    "guess": "ु",
+    "status": "ok",
+    "unicode": "ु",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00D3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 211,
+    "ch": "Ó",
+    "guess": "ु",
+    "status": "wrong",
+    "unicode": "ु",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00D4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 212,
+    "ch": "Ô",
+    "guess": "ू",
+    "status": "ok",
+    "unicode": "ू",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00D5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 213,
+    "ch": "Õ",
+    "guess": "ू",
+    "status": "wrong",
+    "unicode": "ू",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00D7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 215,
+    "ch": "×",
+    "guess": "ृ",
+    "status": "ok",
+    "unicode": "ृ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00D8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 216,
+    "ch": "Ø",
+    "guess": "ृ",
+    "status": "wrong",
+    "unicode": "ृ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00E5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 229,
+    "ch": "å",
+    "guess": "े",
+    "status": "ok",
+    "unicode": "े",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00E6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 230,
+    "ch": "æ",
+    "guess": "ै",
+    "status": "ok",
+    "unicode": "ै",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00E7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 231,
+    "ch": "ç",
+    "guess": "्",
+    "status": "ok",
+    "unicode": "्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00E8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 232,
+    "ch": "è",
+    "guess": "्",
+    "status": "ok",
+    "unicode": "्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00EB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 235,
+    "ch": "ë",
+    "guess": "्र",
+    "status": "ok",
+    "unicode": "्र",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00EC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 236,
+    "ch": "ì",
+    "guess": "्र",
+    "status": "ok",
+    "unicode": "्र",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00EF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 239,
+    "ch": "ï",
+    "guess": "र्",
+    "status": "ok",
+    "unicode": "र्",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00F2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 242,
+    "ch": "ò",
+    "guess": "ꣳ",
+    "status": "wrong",
+    "unicode": "ꣳ",
+    "note": "spacing Vedic ṃ (U+A8F3); not combining ँ. Isolated is the inline double-bowl.",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+00F3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 243,
+    "ch": "ó",
+    "guess": "ꣳ",
+    "status": "wrong",
+    "unicode": "ꣳ",
+    "note": "same ꣳ as ò; crescent+bindu, almost always stored as óè. Diamond ं is Ç.",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00FB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 251,
+    "ch": "û",
+    "guess": "",
+    "status": "ok",
+    "unicode": "",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00FC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 252,
+    "ch": "ü",
+    "guess": "ा",
+    "status": "ok",
+    "unicode": "ा",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00FE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 254,
+    "ch": "þ",
+    "guess": "॑",
+    "status": "ok",
+    "unicode": "॑",
+    "note": "",
+    "ambiguous": true
+  },
+  "BRHDevanagariExtra:U+00FF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 255,
+    "ch": "ÿ",
+    "guess": "॒",
+    "status": "ok",
+    "unicode": "॒",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0160": {
+    "font": "BRHDevanagariExtra",
+    "cp": 352,
+    "ch": "Š",
+    "guess": "च्च्",
+    "status": "ok",
+    "unicode": "च्च्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0161": {
+    "font": "BRHDevanagariExtra",
+    "cp": 353,
+    "ch": "š",
+    "guess": "ट्य्",
+    "status": "ok",
+    "unicode": "ट्य्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+0192": {
+    "font": "BRHDevanagariExtra",
+    "cp": 402,
+    "ch": "ƒ",
+    "guess": "ङ्क्",
+    "status": "ok",
+    "unicode": "ङ्क्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+2026": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8230,
+    "ch": "…",
+    "guess": "ङ्ग्",
+    "status": "ok",
+    "unicode": "ङ्ग्",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+2039": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8249,
+    "ch": "‹",
+    "guess": "ज्ज",
+    "status": "ok",
+    "unicode": "ज्ज",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHDevanagariExtra:U+2122": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8482,
+    "ch": "™",
+    "guess": "हृ",
+    "status": "ok",
+    "unicode": "हृ",
+    "note": "",
+    "ambiguous": false
+  },
+  "BRHMalayalamExtra:U+2013": {
+    "font": "BRHMalayalamExtra",
+    "cp": 8211,
+    "ch": "–",
+    "guess": "॑",
+    "status": "ok",
+    "unicode": "॑",
+    "note": "",
+    "ambiguous": true
+  }
+}

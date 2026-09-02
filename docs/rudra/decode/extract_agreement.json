@@ -1,0 +1,303 @@
+{
+  "notes": [
+    {
+      "pdf": "namakam",
+      "page": 5,
+      "font": "BRHMalayalamExtra",
+      "kind": "en-dash-overlap",
+      "pypdf_dashes": 82,
+      "mupdf_dashes": 81
+    },
+    {
+      "pdf": "namakam",
+      "page": 6,
+      "font": "BRHMalayalamExtra",
+      "kind": "en-dash-overlap",
+      "pypdf_dashes": 79,
+      "mupdf_dashes": 78
+    },
+    {
+      "pdf": "namakam",
+      "page": 34,
+      "font": "BRHMalayalamExtra",
+      "kind": "en-dash-overlap",
+      "pypdf_dashes": 77,
+      "mupdf_dashes": 76
+    },
+    {
+      "pdf": "namakam",
+      "page": 37,
+      "font": "NirmalaUI-Bold",
+      "kind": "mismatch",
+      "pypdf_len": 281,
+      "mupdf_len": 280,
+      "fatal": false,
+      "note": "identity font; JSONL uses mupdf"
+    },
+    {
+      "pdf": "camakam",
+      "page": 49,
+      "font": "NirmalaUI-Bold",
+      "kind": "mismatch",
+      "pypdf_len": 281,
+      "mupdf_len": 280,
+      "fatal": false,
+      "note": "identity font; JSONL uses mupdf"
+    }
+  ],
+  "fatal": [],
+  "fonts": [
+    {
+      "pdf": "namakam",
+      "xref": 9,
+      "name": "BCDEEE+Calibri",
+      "norm": "Calibri",
+      "ext": "ttf",
+      "bytes": 83164,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDEEE_Calibri.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 11,
+      "name": "BCDFEE+BRHDevanagariExtra",
+      "norm": "BRHDevanagariExtra",
+      "ext": "ttf",
+      "bytes": 22196,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 13,
+      "name": "BCDGEE+BRHMalayalamExtra",
+      "norm": "BRHMalayalamExtra",
+      "ext": "ttf",
+      "bytes": 4180,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDGEE_BRHMalayalamExtra.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 18,
+      "name": "BCDHEE+Calibri-Bold",
+      "norm": "Calibri-Bold",
+      "ext": "ttf",
+      "bytes": 92456,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDHEE_Calibri-Bold.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 20,
+      "name": "Arial-BoldMT",
+      "norm": "Arial-BoldMT",
+      "ext": "ttf",
+      "bytes": 87088,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/Arial-BoldMT.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 30,
+      "name": "ArialMT",
+      "norm": "ArialMT",
+      "ext": "ttf",
+      "bytes": 98524,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/ArialMT.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 37,
+      "name": "BCDIEE+Cambria-Bold",
+      "norm": "Cambria-Bold",
+      "ext": "ttf",
+      "bytes": 48780,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDIEE_Cambria-Bold.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 44,
+      "name": "BCDJEE+BRHDevanagari",
+      "norm": "BRHDevanagari",
+      "ext": "ttf",
+      "bytes": 8312,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 48,
+      "name": "BCDKEE+BRHDevanagariExtra",
+      "norm": "BRHDevanagariExtra",
+      "ext": "ttf",
+      "bytes": 22196,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDKEE_BRHDevanagariExtra.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 57,
+      "name": "BCDLEE+BRHMalayalamExtra",
+      "norm": "BRHMalayalamExtra",
+      "ext": "ttf",
+      "bytes": 4180,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDLEE_BRHMalayalamExtra.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 65,
+      "name": "BCDMEE+LucidaHandwriting-Italic",
+      "norm": "LucidaHandwriting-Italic",
+      "ext": "ttf",
+      "bytes": 14332,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDMEE_LucidaHandwriting-Italic.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 123,
+      "name": "BCDNEE+NirmalaUI-Bold",
+      "norm": "NirmalaUI-Bold",
+      "ext": "ttf",
+      "bytes": 77220,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDNEE_NirmalaUI-Bold.ttf"
+    },
+    {
+      "pdf": "namakam",
+      "xref": 132,
+      "name": "BCDOEE+Wingdings-Regular",
+      "norm": "Wingdings-Regular",
+      "ext": "ttf",
+      "bytes": 14412,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDOEE_Wingdings-Regular.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 9,
+      "name": "BCDEEE+Calibri",
+      "norm": "Calibri",
+      "ext": "ttf",
+      "bytes": 83164,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDEEE_Calibri.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 11,
+      "name": "BCDFEE+BRHDevanagariExtra",
+      "norm": "BRHDevanagariExtra",
+      "ext": "ttf",
+      "bytes": 22100,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDFEE_BRHDevanagariExtra.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 13,
+      "name": "BCDGEE+BRHMalayalamExtra",
+      "norm": "BRHMalayalamExtra",
+      "ext": "ttf",
+      "bytes": 4180,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDGEE_BRHMalayalamExtra.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 18,
+      "name": "BCDHEE+Calibri-Bold",
+      "norm": "Calibri-Bold",
+      "ext": "ttf",
+      "bytes": 92456,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDHEE_Calibri-Bold.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 20,
+      "name": "Arial-BoldMT",
+      "norm": "Arial-BoldMT",
+      "ext": "ttf",
+      "bytes": 87016,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/Arial-BoldMT.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 30,
+      "name": "ArialMT",
+      "norm": "ArialMT",
+      "ext": "ttf",
+      "bytes": 101104,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/ArialMT.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 37,
+      "name": "BCDIEE+Cambria-Bold",
+      "norm": "Cambria-Bold",
+      "ext": "ttf",
+      "bytes": 48780,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDIEE_Cambria-Bold.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 45,
+      "name": "BCDJEE+BRHDevanagariRN",
+      "norm": "BRHDevanagariRN",
+      "ext": "ttf",
+      "bytes": 8200,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 47,
+      "name": "BCDKEE+BRHDevanagari",
+      "norm": "BRHDevanagari",
+      "ext": "ttf",
+      "bytes": 5340,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDKEE_BRHDevanagari.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 51,
+      "name": "BCDLEE+BRHDevanagariExtra",
+      "norm": "BRHDevanagariExtra",
+      "ext": "ttf",
+      "bytes": 22100,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDLEE_BRHDevanagariExtra.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 58,
+      "name": "BCDMEE+LucidaHandwriting-Italic",
+      "norm": "LucidaHandwriting-Italic",
+      "ext": "ttf",
+      "bytes": 14332,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDMEE_LucidaHandwriting-Italic.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 122,
+      "name": "BCDNEE+BRHMalayalamExtra",
+      "norm": "BRHMalayalamExtra",
+      "ext": "ttf",
+      "bytes": 4180,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDNEE_BRHMalayalamExtra.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 146,
+      "name": "BCDOEE+Latha,Bold",
+      "norm": "Latha,Bold",
+      "ext": "ttf",
+      "bytes": 8984,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDOEE_Latha,Bold.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 155,
+      "name": "BCDPEE+NirmalaUI-Bold",
+      "norm": "NirmalaUI-Bold",
+      "ext": "ttf",
+      "bytes": 77220,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDPEE_NirmalaUI-Bold.ttf"
+    },
+    {
+      "pdf": "camakam",
+      "xref": 164,
+      "name": "BCEAEE+Wingdings-Regular",
+      "norm": "Wingdings-Regular",
+      "ext": "ttf",
+      "bytes": 14412,
+      "path": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCEAEE_Wingdings-Regular.ttf"
+    }
+  ]
+}

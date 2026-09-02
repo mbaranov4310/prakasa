@@ -1,0 +1,248 @@
+{
+  "catalog": {
+    "named": 174,
+    "unknown_keys": 0,
+    "keys": 174
+  },
+  "files": {
+    "namakam": {
+      "jsonl_unknown": 0,
+      "unknown_chars": 0,
+      "path": "docs/rudra/decode/out/namakam.txt",
+      "chars": 40015
+    },
+    "camakam": {
+      "jsonl_unknown": 0,
+      "unknown_chars": 0,
+      "path": "docs/rudra/decode/out/camakam.txt",
+      "chars": 53304
+    }
+  },
+  "unmapped_keys": [],
+  "invertibility_collisions": [
+    {
+      "unicode": " ",
+      "sources": [
+        "BRHDevanagariExtra:U+0020",
+        "BRHDevanagari:U+0020",
+        "BRHMalayalamExtra:U+0020",
+        "BRHDevanagariRN:U+0020"
+      ]
+    },
+    {
+      "unicode": "(",
+      "sources": [
+        "BRHDevanagariExtra:U+0028",
+        "BRHDevanagari:U+0028",
+        "BRHDevanagariRN:U+0028"
+      ]
+    },
+    {
+      "unicode": ")",
+      "sources": [
+        "BRHDevanagariExtra:U+0029",
+        "BRHDevanagari:U+0029",
+        "BRHDevanagariRN:U+0029"
+      ]
+    },
+    {
+      "unicode": "-",
+      "sources": [
+        "BRHDevanagariExtra:U+002D",
+        "BRHDevanagari:U+002D",
+        "BRHDevanagariRN:U+002D"
+      ]
+    },
+    {
+      "unicode": "ः",
+      "sources": [
+        "BRHDevanagariExtra:U+00C8",
+        "BRHDevanagari:U+00C8",
+        "BRHDevanagariRN:U+00C8"
+      ]
+    },
+    {
+      "unicode": "क्",
+      "sources": [
+        "BRHDevanagariExtra:U+004D",
+        "BRHDevanagariExtra:U+0059",
+        "BRHDevanagari:U+0059",
+        "BRHDevanagari:U+004D",
+        "BRHDevanagariRN:U+0059",
+        "BRHDevanagariRN:U+004D"
+      ]
+    },
+    {
+      "unicode": "च्",
+      "sources": [
+        "BRHDevanagariExtra:U+0063",
+        "BRHDevanagari:U+0063",
+        "BRHDevanagariRN:U+0063"
+      ]
+    },
+    {
+      "unicode": "ञ्",
+      "sources": [
+        "BRHDevanagariExtra:U+0067",
+        "BRHDevanagari:U+0067"
+      ]
+    },
+    {
+      "unicode": "ठ्",
+      "sources": [
+        "BRHDevanagariExtra:U+0050",
+        "BRHDevanagari:U+0050",
+        "BRHDevanagariRN:U+0050"
+      ]
+    },
+    {
+      "unicode": "ड",
+      "sources": [
+        "BRHDevanagariExtra:U+0051",
+        "BRHDevanagari:U+0051",
+        "BRHDevanagariRN:U+0051"
+      ]
+    },
+    {
+      "unicode": "ण्",
+      "sources": [
+        "BRHDevanagariExtra:U+0068",
+        "BRHDevanagari:U+0068",
+        "BRHDevanagariRN:U+0068"
+      ]
+    },
+    {
+      "unicode": "त्",
+      "sources": [
+        "BRHDevanagariExtra:U+0069",
+        "BRHDevanagari:U+0069",
+        "BRHDevanagariRN:U+0069"
+      ]
+    },
+    {
+      "unicode": "थ्",
+      "sources": [
+        "BRHDevanagariExtra:U+006A",
+        "BRHDevanagari:U+006A",
+        "BRHDevanagariRN:U+006A"
+      ]
+    },
+    {
+      "unicode": "द",
+      "sources": [
+        "BRHDevanagariExtra:U+0053",
+        "BRHDevanagari:U+0053",
+        "BRHDevanagariRN:U+0053"
+      ]
+    },
+    {
+      "unicode": "द्ध्",
+      "sources": [
+        "BRHDevanagariExtra:U+00AE",
+        "BRHDevanagari:U+00AE"
+      ]
+    },
+    {
+      "unicode": "द्य्",
+      "sources": [
+        "BRHDevanagariExtra:U+00B1",
+        "BRHDevanagari:U+00B1"
+      ]
+    },
+    {
+      "unicode": "न्",
+      "sources": [
+        "BRHDevanagariExtra:U+006C",
+        "BRHDevanagari:U+006C",
+        "BRHDevanagariRN:U+006C"
+      ]
+    },
+    {
+      "unicode": "प्",
+      "sources": [
+        "BRHDevanagariExtra:U+006D",
+        "BRHDevanagari:U+006D",
+        "BRHDevanagariRN:U+006D"
+      ]
+    },
+    {
+      "unicode": "म्",
+      "sources": [
+        "BRHDevanagariExtra:U+0071",
+        "BRHDevanagari:U+0071",
+        "BRHDevanagariRN:U+0071"
+      ]
+    },
+    {
+      "unicode": "य्",
+      "sources": [
+        "BRHDevanagariExtra:U+0072",
+        "BRHDevanagari:U+0072",
+        "BRHDevanagariRN:U+0072"
+      ]
+    },
+    {
+      "unicode": "व्",
+      "sources": [
+        "BRHDevanagariExtra:U+0075",
+        "BRHDevanagari:U+0075",
+        "BRHDevanagariRN:U+0075"
+      ]
+    },
+    {
+      "unicode": "श्",
+      "sources": [
+        "BRHDevanagariExtra:U+007A",
+        "BRHDevanagari:U+007A",
+        "BRHDevanagariRN:U+007A"
+      ]
+    },
+    {
+      "unicode": "स्",
+      "sources": [
+        "BRHDevanagariExtra:U+0078",
+        "BRHDevanagari:U+0078",
+        "BRHDevanagariRN:U+0078"
+      ]
+    },
+    {
+      "unicode": "ह",
+      "sources": [
+        "BRHDevanagariExtra:U+0057",
+        "BRHDevanagari:U+0057",
+        "BRHDevanagariRN:U+0057"
+      ]
+    },
+    {
+      "unicode": "ा",
+      "sources": [
+        "BRHDevanagariExtra:U+00C9",
+        "BRHDevanagariExtra:U+00FC",
+        "BRHDevanagari:U+00C9",
+        "BRHDevanagari:U+00FC",
+        "BRHDevanagariRN:U+00C9",
+        "BRHDevanagariRN:U+00FC"
+      ]
+    },
+    {
+      "unicode": "े",
+      "sources": [
+        "BRHDevanagariExtra:U+00E5",
+        "BRHDevanagari:U+00E5",
+        "BRHDevanagariRN:U+00E5"
+      ]
+    },
+    {
+      "unicode": "॑",
+      "sources": [
+        "BRHMalayalamExtra:U+2013",
+        "BRHDevanagariExtra:U+00FE"
+      ]
+    }
+  ],
+  "rerun": [
+    "python3 scripts/rudra-decode/extract.py",
+    "python3 scripts/rudra-decode/catalog.py",
+    "python3 scripts/rudra-decode/apply.py"
+  ]
+}

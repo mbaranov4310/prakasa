@@ -138,7 +138,30 @@ export const books: Book[] = [
       kubera,
     ],
   },
+  {
+    id: "rudra-namakam-chamakam",
+    titleDev: "रुद्रः — नमकं चमकम्",
+    titleIast: "rudraḥ — namakaṃ camakam",
+    titleEn: "Rudra namakam camakam",
+    blurb: "Taittirīya Saṃhitā 4.5 and 4.7, word by word from the pada-pāṭha.",
+    chapters: rudraComingSoon(),
+  },
 ];
+
+function rudraComingSoon(): Book["chapters"] {
+  const digits = ["१", "२", "३", "४", "५", "६", "७", "८", "९", "१०", "११"];
+  const namakam = digits.map((digit, index) => {
+    const n = index + 1;
+    const id = `namakam-${String(n).padStart(2, "0")}`;
+    return comingSoon(id, `नमकम् ${digit}`, `namakam ${n}`, `Namakam ${n}`);
+  });
+  const chamakam = digits.map((digit, index) => {
+    const n = index + 1;
+    const id = `chamakam-${String(n).padStart(2, "0")}`;
+    return comingSoon(id, `चमकम् ${digit}`, `camakam ${n}`, `Camakam ${n}`);
+  });
+  return [...namakam, ...chamakam];
+}
 
 export function getBook(bookId: string): Book | undefined {
   if (bookId === "nitya-mangala-slokas") bookId = "devata-namaskara";

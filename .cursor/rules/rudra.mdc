@@ -1,0 +1,20 @@
+---
+description: Rudra namakam/camakam — decode the VedaVMS PDFs via a Baraha glyph catalog, not by eye-copy
+alwaysApply: true
+---
+
+# Prakāśa collections
+
+Sandhyāvandana and devatā namaskāra are in the library. Current collection is **Rudra namakam / camakam**.
+
+**Current phase: glyph decode.** Do not transcribe anuvākas by eye. Do not encode TypeScript. Do not build Stage 1 tables (IAST, drop `इति`, slices). Those are downstream of a literal Unicode dump.
+
+- Plan: `docs/rudra/ENCODE.md`
+- Decoder: `scripts/rudra-decode/`
+- Output: `docs/rudra/decode/` (spans JSONL, catalog, `out/*.txt`, `REPORT.md`)
+- Eye-copy (not a source): `docs/rudra/archive-eye-copy/`
+- PDFs (gitignored): `data/TS 4.5 Sanskrit Pada Paatam with Vaakyam.pdf` (namakam), `data/TS 4.7 Sanskrit Pada Paatam with Vaakyam.pdf` (camakam)
+
+Re-run: `python3 scripts/rudra-decode/extract.py` then catalog/apply as in `docs/rudra/decode/REPORT.md`.
+
+This is a font decode of those two PDFs. Keep svaras. Include camakam 12–15 in the dump. No meanings. No Prakāśa TypeScript until a later phase after the dump exists and has been used.

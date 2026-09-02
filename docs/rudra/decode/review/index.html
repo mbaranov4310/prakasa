@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rudra Baraha glyph review</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; color: #111; }
+  h1 { font-size: 1.3rem; }
+  .hint { background: #f4f4f0; padding: 0.8rem 1rem; border-radius: 6px; font-size: 0.95rem; }
+  .stats { margin: 1rem 0; }
+  .card { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; margin: 1.2rem 0; break-inside: avoid; }
+  .card.ambig { border-color: #b45309; background: #fffbeb; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 0.4rem; font-family: ui-monospace, monospace; }
+  .guess { font-size: 1.6rem; margin: 0.3rem 0; }
+  .empty { color: #888; font-size: 1rem; }
+  .flag { display: inline-block; background: #b45309; color: #fff; font-size: 0.75rem; padding: 0.1rem 0.4rem; border-radius: 4px; }
+  .row { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; }
+  .row img { background: #fff; border: 1px solid #ddd; }
+  .glyph { width: 140px; height: 140px; object-fit: contain; }
+  .sheet { max-width: 720px; height: auto; }
+  .key { color: #555; font-size: 0.85rem; }
+  nav a { margin-right: 0.8rem; }
+</style>
+</head>
+<body>
+<h1>Baraha glyph review (Extra + Malayalam tick)</h1>
+<p class="hint">
+  You are naming <strong>marks</strong>, not reading the Rudram.
+  Edit <code>verdicts.json</code>: set <code>status</code> to
+  <code>ok</code>, <code>wrong</code>, or <code>unsure</code>.
+  If wrong, put the Unicode piece you actually see in <code>unicode</code>.
+  Then re-run <code>python3 scripts/rudra-decode/build_review.py</code> —
+  <code>ok</code> and <code>wrong</code> cards leave this page (they stay in the JSON as gold).
+  Only pending / unsure remain here.
+</p>
+<p class="stats">0 still open (95 ok + 14 wrong hidden), 0 flagged ambiguous. All 109 verdicts stay in <code>docs/rudra/decode/review/verdicts.json</code>.</p>
+<nav></nav>
+</body></html>

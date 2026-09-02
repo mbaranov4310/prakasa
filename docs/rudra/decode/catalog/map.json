@@ -1,0 +1,3308 @@
+{
+  "BRHDevanagari:U+0020": {
+    "font": "BRHDevanagari",
+    "cp": 32,
+    "ch": " ",
+    "unicode": " ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0020.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+0028": {
+    "font": "BRHDevanagari",
+    "cp": 40,
+    "ch": "(",
+    "unicode": "(",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0028.png",
+    "auto_best": {
+      "mse": 605.0,
+      "label": "(",
+      "s": "("
+    },
+    "auto_second": {
+      "mse": 2564.1,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagari:U+0029": {
+    "font": "BRHDevanagari",
+    "cp": 41,
+    "ch": ")",
+    "unicode": ")",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0029.png",
+    "auto_best": {
+      "mse": 610.4,
+      "label": ")",
+      "s": ")"
+    },
+    "auto_second": {
+      "mse": 3437.8,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagari:U+002D": {
+    "font": "BRHDevanagari",
+    "cp": 45,
+    "ch": "-",
+    "unicode": "-",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+002D.png",
+    "auto_best": {
+      "mse": 2975.5,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 3233.5,
+      "label": "–",
+      "s": "–"
+    }
+  },
+  "BRHDevanagari:U+004D": {
+    "font": "BRHDevanagari",
+    "cp": 77,
+    "ch": "M",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+004D.png",
+    "auto_best": {
+      "mse": 7076.6,
+      "label": "बः",
+      "s": "बः"
+    },
+    "auto_second": {
+      "mse": 7388.6,
+      "label": "तः",
+      "s": "तः"
+    }
+  },
+  "BRHDevanagari:U+0050": {
+    "font": "BRHDevanagari",
+    "cp": 80,
+    "ch": "P",
+    "unicode": "ठ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0050.png",
+    "auto_best": {
+      "mse": 4901.4,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 7096.7,
+      "label": "U+0920",
+      "s": "ठ"
+    }
+  },
+  "BRHDevanagari:U+0051": {
+    "font": "BRHDevanagari",
+    "cp": 81,
+    "ch": "Q",
+    "unicode": "ड",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0051.png",
+    "auto_best": {
+      "mse": 4160.4,
+      "label": "U+0921",
+      "s": "ड"
+    },
+    "auto_second": {
+      "mse": 5340.9,
+      "label": "U+0922",
+      "s": "ढ"
+    }
+  },
+  "BRHDevanagari:U+0053": {
+    "font": "BRHDevanagari",
+    "cp": 83,
+    "ch": "S",
+    "unicode": "द",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0053.png",
+    "auto_best": {
+      "mse": 3517.0,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 5691.0,
+      "label": "U+0929",
+      "s": "ऩ"
+    }
+  },
+  "BRHDevanagari:U+0057": {
+    "font": "BRHDevanagari",
+    "cp": 87,
+    "ch": "W",
+    "unicode": "ह",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0057.png",
+    "auto_best": {
+      "mse": 6810.9,
+      "label": "U+097E",
+      "s": "ॾ"
+    },
+    "auto_second": {
+      "mse": 6867.1,
+      "label": "U+0939",
+      "s": "ह"
+    }
+  },
+  "BRHDevanagari:U+0059": {
+    "font": "BRHDevanagari",
+    "cp": 89,
+    "ch": "Y",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0059.png",
+    "auto_best": {
+      "mse": 7200.5,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 7306.8,
+      "label": "U+092C",
+      "s": "ब"
+    }
+  },
+  "BRHDevanagari:U+0063": {
+    "font": "BRHDevanagari",
+    "cp": 99,
+    "ch": "c",
+    "unicode": "च्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0063.png",
+    "auto_best": {
+      "mse": 9244.9,
+      "label": "U+090A",
+      "s": "ऊ"
+    },
+    "auto_second": {
+      "mse": 9476.3,
+      "label": "U+092B",
+      "s": "फ"
+    }
+  },
+  "BRHDevanagari:U+0067": {
+    "font": "BRHDevanagari",
+    "cp": 103,
+    "ch": "g",
+    "unicode": "ञ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0067.png",
+    "auto_best": {
+      "mse": 10286.2,
+      "label": "U+0919",
+      "s": "ङ"
+    },
+    "auto_second": {
+      "mse": 10329.3,
+      "label": "U+090A",
+      "s": "ऊ"
+    }
+  },
+  "BRHDevanagari:U+0068": {
+    "font": "BRHDevanagari",
+    "cp": 104,
+    "ch": "h",
+    "unicode": "ण्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0068.png",
+    "auto_best": {
+      "mse": 9113.5,
+      "label": "U+092A",
+      "s": "प"
+    },
+    "auto_second": {
+      "mse": 9410.9,
+      "label": "U+0918",
+      "s": "घ"
+    }
+  },
+  "BRHDevanagari:U+0069": {
+    "font": "BRHDevanagari",
+    "cp": 105,
+    "ch": "i",
+    "unicode": "त्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0069.png",
+    "auto_best": {
+      "mse": 5524.8,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 6006.4,
+      "label": "U+0968",
+      "s": "२"
+    }
+  },
+  "BRHDevanagari:U+006A": {
+    "font": "BRHDevanagari",
+    "cp": 106,
+    "ch": "j",
+    "unicode": "थ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+006A.png",
+    "auto_best": {
+      "mse": 9125.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 11468.7,
+      "label": "U+0944",
+      "s": "ॄ"
+    }
+  },
+  "BRHDevanagari:U+006C": {
+    "font": "BRHDevanagari",
+    "cp": 108,
+    "ch": "l",
+    "unicode": "न्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+006C.png",
+    "auto_best": {
+      "mse": 11361.3,
+      "label": "U+097D",
+      "s": "ॽ"
+    },
+    "auto_second": {
+      "mse": 11604.6,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagari:U+006D": {
+    "font": "BRHDevanagari",
+    "cp": 109,
+    "ch": "m",
+    "unicode": "प्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+006D.png",
+    "auto_best": {
+      "mse": 10769.8,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 11266.3,
+      "label": "U+0917",
+      "s": "ग"
+    }
+  },
+  "BRHDevanagari:U+0071": {
+    "font": "BRHDevanagari",
+    "cp": 113,
+    "ch": "q",
+    "unicode": "म्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0071.png",
+    "auto_best": {
+      "mse": 8124.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 10687.1,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagari:U+0072": {
+    "font": "BRHDevanagari",
+    "cp": 114,
+    "ch": "r",
+    "unicode": "य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0072.png",
+    "auto_best": {
+      "mse": 7306.9,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 10335.1,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagari:U+0075": {
+    "font": "BRHDevanagari",
+    "cp": 117,
+    "ch": "u",
+    "unicode": "व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0075.png",
+    "auto_best": {
+      "mse": 8649.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 9359.4,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagari:U+0078": {
+    "font": "BRHDevanagari",
+    "cp": 120,
+    "ch": "x",
+    "unicode": "स्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+0078.png",
+    "auto_best": {
+      "mse": 8073.1,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 9410.4,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagari:U+007A": {
+    "font": "BRHDevanagari",
+    "cp": 122,
+    "ch": "z",
+    "unicode": "श्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+007A.png",
+    "auto_best": {
+      "mse": 7029.2,
+      "label": "U+0907",
+      "s": "इ"
+    },
+    "auto_second": {
+      "mse": 7588.4,
+      "label": "U+095C",
+      "s": "ड़"
+    }
+  },
+  "BRHDevanagari:U+00AE": {
+    "font": "BRHDevanagari",
+    "cp": 174,
+    "ch": "®",
+    "unicode": "द्ध्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00AE.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00B1": {
+    "font": "BRHDevanagari",
+    "cp": 177,
+    "ch": "±",
+    "unicode": "द्य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00B1.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00C8": {
+    "font": "BRHDevanagari",
+    "cp": 200,
+    "ch": "È",
+    "unicode": "ः",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00C8.png",
+    "auto_best": {
+      "mse": 462.3,
+      "label": "U+0903",
+      "s": "ः"
+    },
+    "auto_second": {
+      "mse": 3715.7,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagari:U+00C9": {
+    "font": "BRHDevanagari",
+    "cp": 201,
+    "ch": "É",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00C9.png",
+    "auto_best": {
+      "mse": 3569.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 3833.0,
+      "label": "[",
+      "s": "["
+    }
+  },
+  "BRHDevanagari:U+00CC": {
+    "font": "BRHDevanagari",
+    "cp": 204,
+    "ch": "Ì",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00CC.png",
+    "auto_best": {
+      "mse": 6279.6,
+      "label": "रे",
+      "s": "रे"
+    },
+    "auto_second": {
+      "mse": 7001.4,
+      "label": " ",
+      "s": " "
+    }
+  },
+  "BRHDevanagari:U+00D1": {
+    "font": "BRHDevanagari",
+    "cp": 209,
+    "ch": "Ñ",
+    "unicode": "ु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00D1.png",
+    "auto_best": {
+      "mse": 1346.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1346.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00E5": {
+    "font": "BRHDevanagari",
+    "cp": 229,
+    "ch": "å",
+    "unicode": "े",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00E5.png",
+    "auto_best": {
+      "mse": 5177.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5177.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00EB": {
+    "font": "BRHDevanagari",
+    "cp": 235,
+    "ch": "ë",
+    "unicode": "्र",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00EB.png",
+    "auto_best": {
+      "mse": 1716.5,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1716.5,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00EF": {
+    "font": "BRHDevanagari",
+    "cp": 239,
+    "ch": "ï",
+    "unicode": "र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00EF.png",
+    "auto_best": {
+      "mse": 5485.8,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5485.8,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagari:U+00FB": {
+    "font": "BRHDevanagari",
+    "cp": 251,
+    "ch": "û",
+    "unicode": "(empty)",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00FB.png",
+    "auto_best": {
+      "mse": 1743.5,
+      "label": "U+0952",
+      "s": "॒"
+    },
+    "auto_second": {
+      "mse": 3916.0,
+      "label": "U+0902",
+      "s": "ं"
+    }
+  },
+  "BRHDevanagari:U+00FC": {
+    "font": "BRHDevanagari",
+    "cp": 252,
+    "ch": "ü",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDJEE_BRHDevanagari.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagari/U+00FC.png",
+    "auto_best": {
+      "mse": 640.1,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 5175.8,
+      "label": "U+0952",
+      "s": "॒"
+    }
+  },
+  "BRHDevanagariExtra:U+0020": {
+    "font": "BRHDevanagariExtra",
+    "cp": 32,
+    "ch": " ",
+    "unicode": " ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0020.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+0028": {
+    "font": "BRHDevanagariExtra",
+    "cp": 40,
+    "ch": "(",
+    "unicode": "(",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0028.png",
+    "auto_best": {
+      "mse": 605.0,
+      "label": "(",
+      "s": "("
+    },
+    "auto_second": {
+      "mse": 2564.1,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagariExtra:U+0029": {
+    "font": "BRHDevanagariExtra",
+    "cp": 41,
+    "ch": ")",
+    "unicode": ")",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0029.png",
+    "auto_best": {
+      "mse": 610.4,
+      "label": ")",
+      "s": ")"
+    },
+    "auto_second": {
+      "mse": 3437.8,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagariExtra:U+002C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 44,
+    "ch": ",",
+    "unicode": ",",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+002C.png",
+    "auto_best": {
+      "mse": 2222.9,
+      "label": ",",
+      "s": ","
+    },
+    "auto_second": {
+      "mse": 5495.4,
+      "label": ".",
+      "s": "."
+    }
+  },
+  "BRHDevanagariExtra:U+002D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 45,
+    "ch": "-",
+    "unicode": "-",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+002D.png",
+    "auto_best": {
+      "mse": 2975.5,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 3233.5,
+      "label": "–",
+      "s": "–"
+    }
+  },
+  "BRHDevanagariExtra:U+002E": {
+    "font": "BRHDevanagariExtra",
+    "cp": 46,
+    "ch": ".",
+    "unicode": ".",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+002E.png",
+    "auto_best": {
+      "mse": 4550.3,
+      "label": "U+0902",
+      "s": "ं"
+    },
+    "auto_second": {
+      "mse": 4550.3,
+      "label": "U+093C",
+      "s": "़"
+    }
+  },
+  "BRHDevanagariExtra:U+0041": {
+    "font": "BRHDevanagariExtra",
+    "cp": 65,
+    "ch": "A",
+    "unicode": "अ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0041.png",
+    "auto_best": {
+      "mse": 7040.5,
+      "label": "U+091E",
+      "s": "ञ"
+    },
+    "auto_second": {
+      "mse": 7505.8,
+      "label": "U+091D",
+      "s": "झ"
+    }
+  },
+  "BRHDevanagariExtra:U+0043": {
+    "font": "BRHDevanagariExtra",
+    "cp": 67,
+    "ch": "C",
+    "unicode": "इ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0043.png",
+    "auto_best": {
+      "mse": 3098.9,
+      "label": "U+0907",
+      "s": "इ"
+    },
+    "auto_second": {
+      "mse": 4035.1,
+      "label": "U+0939",
+      "s": "ह"
+    }
+  },
+  "BRHDevanagariExtra:U+0044": {
+    "font": "BRHDevanagariExtra",
+    "cp": 68,
+    "ch": "D",
+    "unicode": "ई",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0044.png",
+    "auto_best": {
+      "mse": 4314.1,
+      "label": "U+0908",
+      "s": "ई"
+    },
+    "auto_second": {
+      "mse": 5689.1,
+      "label": "U+0949",
+      "s": "ॉ"
+    }
+  },
+  "BRHDevanagariExtra:U+0045": {
+    "font": "BRHDevanagariExtra",
+    "cp": 69,
+    "ch": "E",
+    "unicode": "उ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0045.png",
+    "auto_best": {
+      "mse": 5686.1,
+      "label": "U+0909",
+      "s": "उ"
+    },
+    "auto_second": {
+      "mse": 7407.6,
+      "label": "U+0932",
+      "s": "ल"
+    }
+  },
+  "BRHDevanagariExtra:U+0046": {
+    "font": "BRHDevanagariExtra",
+    "cp": 70,
+    "ch": "F",
+    "unicode": "ऊ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0046.png",
+    "auto_best": {
+      "mse": 7122.8,
+      "label": "ला",
+      "s": "ला"
+    },
+    "auto_second": {
+      "mse": 7384.8,
+      "label": "सा",
+      "s": "सा"
+    }
+  },
+  "BRHDevanagariExtra:U+0047": {
+    "font": "BRHDevanagariExtra",
+    "cp": 71,
+    "ch": "G",
+    "unicode": "ऋ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0047.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+004C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 76,
+    "ch": "L",
+    "unicode": "ए",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+004C.png",
+    "auto_best": {
+      "mse": 2399.0,
+      "label": "U+090F",
+      "s": "ए"
+    },
+    "auto_second": {
+      "mse": 4112.8,
+      "label": "म्",
+      "s": "म्"
+    }
+  },
+  "BRHDevanagariExtra:U+004D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 77,
+    "ch": "M",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+004D.png",
+    "auto_best": {
+      "mse": 7076.6,
+      "label": "बः",
+      "s": "बः"
+    },
+    "auto_second": {
+      "mse": 7388.6,
+      "label": "तः",
+      "s": "तः"
+    }
+  },
+  "BRHDevanagariExtra:U+004E": {
+    "font": "BRHDevanagariExtra",
+    "cp": 78,
+    "ch": "N",
+    "unicode": "छ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+004E.png",
+    "auto_best": {
+      "mse": 9048.9,
+      "label": "U+0921",
+      "s": "ड"
+    },
+    "auto_second": {
+      "mse": 10668.9,
+      "label": "U+0932",
+      "s": "ल"
+    }
+  },
+  "BRHDevanagariExtra:U+004F": {
+    "font": "BRHDevanagariExtra",
+    "cp": 79,
+    "ch": "O",
+    "unicode": "ट्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+004F.png",
+    "auto_best": {
+      "mse": 4456.2,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 7717.1,
+      "label": "U+0928",
+      "s": "न"
+    }
+  },
+  "BRHDevanagariExtra:U+0050": {
+    "font": "BRHDevanagariExtra",
+    "cp": 80,
+    "ch": "P",
+    "unicode": "ठ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0050.png",
+    "auto_best": {
+      "mse": 4901.4,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 7096.7,
+      "label": "U+0920",
+      "s": "ठ"
+    }
+  },
+  "BRHDevanagariExtra:U+0051": {
+    "font": "BRHDevanagariExtra",
+    "cp": 81,
+    "ch": "Q",
+    "unicode": "ड",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0051.png",
+    "auto_best": {
+      "mse": 4160.4,
+      "label": "U+0921",
+      "s": "ड"
+    },
+    "auto_second": {
+      "mse": 5340.9,
+      "label": "U+0922",
+      "s": "ढ"
+    }
+  },
+  "BRHDevanagariExtra:U+0052": {
+    "font": "BRHDevanagariExtra",
+    "cp": 82,
+    "ch": "R",
+    "unicode": "ढ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0052.png",
+    "auto_best": {
+      "mse": 3862.2,
+      "label": "U+0922",
+      "s": "ढ"
+    },
+    "auto_second": {
+      "mse": 5231.3,
+      "label": "U+0921",
+      "s": "ड"
+    }
+  },
+  "BRHDevanagariExtra:U+0053": {
+    "font": "BRHDevanagariExtra",
+    "cp": 83,
+    "ch": "S",
+    "unicode": "द",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0053.png",
+    "auto_best": {
+      "mse": 3517.0,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 5691.0,
+      "label": "U+0929",
+      "s": "ऩ"
+    }
+  },
+  "BRHDevanagariExtra:U+0054": {
+    "font": "BRHDevanagariExtra",
+    "cp": 84,
+    "ch": "T",
+    "unicode": "फ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0054.png",
+    "auto_best": {
+      "mse": 7265.6,
+      "label": "U+092B",
+      "s": "फ"
+    },
+    "auto_second": {
+      "mse": 7902.4,
+      "label": "U+095E",
+      "s": "फ़"
+    }
+  },
+  "BRHDevanagariExtra:U+0055": {
+    "font": "BRHDevanagariExtra",
+    "cp": 85,
+    "ch": "U",
+    "unicode": "र",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0055.png",
+    "auto_best": {
+      "mse": 5276.8,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 7059.1,
+      "label": "U+0907",
+      "s": "इ"
+    }
+  },
+  "BRHDevanagariExtra:U+0057": {
+    "font": "BRHDevanagariExtra",
+    "cp": 87,
+    "ch": "W",
+    "unicode": "ह",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0057.png",
+    "auto_best": {
+      "mse": 6810.9,
+      "label": "U+097E",
+      "s": "ॾ"
+    },
+    "auto_second": {
+      "mse": 6867.1,
+      "label": "U+0939",
+      "s": "ह"
+    }
+  },
+  "BRHDevanagariExtra:U+0059": {
+    "font": "BRHDevanagariExtra",
+    "cp": 89,
+    "ch": "Y",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0059.png",
+    "auto_best": {
+      "mse": 7200.5,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 7306.8,
+      "label": "U+092C",
+      "s": "ब"
+    }
+  },
+  "BRHDevanagariExtra:U+005A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 90,
+    "ch": "Z",
+    "unicode": "ख्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+005A.png",
+    "auto_best": {
+      "mse": 11055.3,
+      "label": "रः",
+      "s": "रः"
+    },
+    "auto_second": {
+      "mse": 12022.1,
+      "label": "रा",
+      "s": "रा"
+    }
+  },
+  "BRHDevanagariExtra:U+005B": {
+    "font": "BRHDevanagariExtra",
+    "cp": 91,
+    "ch": "[",
+    "unicode": "[",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+005B.png",
+    "auto_best": {
+      "mse": 2209.8,
+      "label": "[",
+      "s": "["
+    },
+    "auto_second": {
+      "mse": 4746.3,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagariExtra:U+005D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 93,
+    "ch": "]",
+    "unicode": "]",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+005D.png",
+    "auto_best": {
+      "mse": 1605.2,
+      "label": "]",
+      "s": "]"
+    },
+    "auto_second": {
+      "mse": 4951.8,
+      "label": ")",
+      "s": ")"
+    }
+  },
+  "BRHDevanagariExtra:U+0061": {
+    "font": "BRHDevanagariExtra",
+    "cp": 97,
+    "ch": "a",
+    "unicode": "ग्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0061.png",
+    "auto_best": {
+      "mse": 7462.0,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 8526.8,
+      "label": "U+0915",
+      "s": "क"
+    }
+  },
+  "BRHDevanagariExtra:U+0062": {
+    "font": "BRHDevanagariExtra",
+    "cp": 98,
+    "ch": "b",
+    "unicode": "घ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0062.png",
+    "auto_best": {
+      "mse": 10673.6,
+      "label": "U+0909",
+      "s": "उ"
+    },
+    "auto_second": {
+      "mse": 11094.8,
+      "label": "U+091F",
+      "s": "ट"
+    }
+  },
+  "BRHDevanagariExtra:U+0063": {
+    "font": "BRHDevanagariExtra",
+    "cp": 99,
+    "ch": "c",
+    "unicode": "च्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0063.png",
+    "auto_best": {
+      "mse": 9244.9,
+      "label": "U+090A",
+      "s": "ऊ"
+    },
+    "auto_second": {
+      "mse": 9476.3,
+      "label": "U+092B",
+      "s": "फ"
+    }
+  },
+  "BRHDevanagariExtra:U+0065": {
+    "font": "BRHDevanagariExtra",
+    "cp": 101,
+    "ch": "e",
+    "unicode": "ज्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0065.png",
+    "auto_best": {
+      "mse": 10983.2,
+      "label": "U+092B",
+      "s": "फ"
+    },
+    "auto_second": {
+      "mse": 11335.5,
+      "label": "रा",
+      "s": "रा"
+    }
+  },
+  "BRHDevanagariExtra:U+0067": {
+    "font": "BRHDevanagariExtra",
+    "cp": 103,
+    "ch": "g",
+    "unicode": "ञ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0067.png",
+    "auto_best": {
+      "mse": 10286.2,
+      "label": "U+0919",
+      "s": "ङ"
+    },
+    "auto_second": {
+      "mse": 10329.3,
+      "label": "U+090A",
+      "s": "ऊ"
+    }
+  },
+  "BRHDevanagariExtra:U+0068": {
+    "font": "BRHDevanagariExtra",
+    "cp": 104,
+    "ch": "h",
+    "unicode": "ण्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0068.png",
+    "auto_best": {
+      "mse": 9113.5,
+      "label": "U+092A",
+      "s": "प"
+    },
+    "auto_second": {
+      "mse": 9410.9,
+      "label": "U+0918",
+      "s": "घ"
+    }
+  },
+  "BRHDevanagariExtra:U+0069": {
+    "font": "BRHDevanagariExtra",
+    "cp": 105,
+    "ch": "i",
+    "unicode": "त्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0069.png",
+    "auto_best": {
+      "mse": 5524.8,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 6006.4,
+      "label": "U+0968",
+      "s": "२"
+    }
+  },
+  "BRHDevanagariExtra:U+006A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 106,
+    "ch": "j",
+    "unicode": "थ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+006A.png",
+    "auto_best": {
+      "mse": 9125.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 11468.7,
+      "label": "U+0944",
+      "s": "ॄ"
+    }
+  },
+  "BRHDevanagariExtra:U+006B": {
+    "font": "BRHDevanagariExtra",
+    "cp": 107,
+    "ch": "k",
+    "unicode": "ध्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+006B.png",
+    "auto_best": {
+      "mse": 9097.2,
+      "label": "U+096E",
+      "s": "८"
+    },
+    "auto_second": {
+      "mse": 9718.4,
+      "label": "U+0944",
+      "s": "ॄ"
+    }
+  },
+  "BRHDevanagariExtra:U+006C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 108,
+    "ch": "l",
+    "unicode": "न्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+006C.png",
+    "auto_best": {
+      "mse": 11361.3,
+      "label": "U+097D",
+      "s": "ॽ"
+    },
+    "auto_second": {
+      "mse": 11604.6,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagariExtra:U+006D": {
+    "font": "BRHDevanagariExtra",
+    "cp": 109,
+    "ch": "m",
+    "unicode": "प्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+006D.png",
+    "auto_best": {
+      "mse": 10769.8,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 11266.3,
+      "label": "U+0917",
+      "s": "ग"
+    }
+  },
+  "BRHDevanagariExtra:U+006F": {
+    "font": "BRHDevanagariExtra",
+    "cp": 111,
+    "ch": "o",
+    "unicode": "ब्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+006F.png",
+    "auto_best": {
+      "mse": 10215.7,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 10836.8,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariExtra:U+0070": {
+    "font": "BRHDevanagariExtra",
+    "cp": 112,
+    "ch": "p",
+    "unicode": "भ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0070.png",
+    "auto_best": {
+      "mse": 10252.1,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 10758.0,
+      "label": "षू",
+      "s": "षू"
+    }
+  },
+  "BRHDevanagariExtra:U+0071": {
+    "font": "BRHDevanagariExtra",
+    "cp": 113,
+    "ch": "q",
+    "unicode": "म्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0071.png",
+    "auto_best": {
+      "mse": 8124.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 10687.1,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagariExtra:U+0072": {
+    "font": "BRHDevanagariExtra",
+    "cp": 114,
+    "ch": "r",
+    "unicode": "य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0072.png",
+    "auto_best": {
+      "mse": 7306.9,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 10335.1,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariExtra:U+0073": {
+    "font": "BRHDevanagariExtra",
+    "cp": 115,
+    "ch": "s",
+    "unicode": "ल्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0073.png",
+    "auto_best": {
+      "mse": 8986.6,
+      "label": "U+0924",
+      "s": "त"
+    },
+    "auto_second": {
+      "mse": 8991.9,
+      "label": "U+0929",
+      "s": "ऩ"
+    }
+  },
+  "BRHDevanagariExtra:U+0075": {
+    "font": "BRHDevanagariExtra",
+    "cp": 117,
+    "ch": "u",
+    "unicode": "व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0075.png",
+    "auto_best": {
+      "mse": 8649.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 9359.4,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariExtra:U+0077": {
+    "font": "BRHDevanagariExtra",
+    "cp": 119,
+    "ch": "w",
+    "unicode": "ष्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0077.png",
+    "auto_best": {
+      "mse": 11829.2,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 11996.0,
+      "label": "U+0920",
+      "s": "ठ"
+    }
+  },
+  "BRHDevanagariExtra:U+0078": {
+    "font": "BRHDevanagariExtra",
+    "cp": 120,
+    "ch": "x",
+    "unicode": "स्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0078.png",
+    "auto_best": {
+      "mse": 8073.1,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 9410.4,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagariExtra:U+007A": {
+    "font": "BRHDevanagariExtra",
+    "cp": 122,
+    "ch": "z",
+    "unicode": "श्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+007A.png",
+    "auto_best": {
+      "mse": 7127.3,
+      "label": "U+0907",
+      "s": "इ"
+    },
+    "auto_second": {
+      "mse": 7675.6,
+      "label": "U+095C",
+      "s": "ड़"
+    }
+  },
+  "BRHDevanagariExtra:U+007C": {
+    "font": "BRHDevanagariExtra",
+    "cp": 124,
+    "ch": "|",
+    "unicode": "।",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+007C.png",
+    "auto_best": {
+      "mse": 427.2,
+      "label": "U+0964",
+      "s": "।"
+    },
+    "auto_second": {
+      "mse": 2278.3,
+      "label": "|",
+      "s": "|"
+    }
+  },
+  "BRHDevanagariExtra:U+00A1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 161,
+    "ch": "¡",
+    "unicode": "(empty)",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A1.png",
+    "auto_best": {
+      "mse": 4764.7,
+      "label": "U+0903",
+      "s": "ः"
+    },
+    "auto_second": {
+      "mse": 5409.5,
+      "label": ",",
+      "s": ","
+    }
+  },
+  "BRHDevanagariExtra:U+00A2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 162,
+    "ch": "¢",
+    "unicode": "क्र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A2.png",
+    "auto_best": {
+      "mse": 7863.6,
+      "label": "बः",
+      "s": "बः"
+    },
+    "auto_second": {
+      "mse": 7946.7,
+      "label": "तः",
+      "s": "तः"
+    }
+  },
+  "BRHDevanagariExtra:U+00A3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 163,
+    "ch": "£",
+    "unicode": "क्त्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A3.png",
+    "auto_best": {
+      "mse": 7066.2,
+      "label": "नः",
+      "s": "नः"
+    },
+    "auto_second": {
+      "mse": 7272.4,
+      "label": "तः",
+      "s": "तः"
+    }
+  },
+  "BRHDevanagariExtra:U+00A4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 164,
+    "ch": "¤",
+    "unicode": "क्ष्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A4.png",
+    "auto_best": {
+      "mse": 9157.1,
+      "label": "U+0931",
+      "s": "ऱ"
+    },
+    "auto_second": {
+      "mse": 9454.8,
+      "label": "U+0930",
+      "s": "र"
+    }
+  },
+  "BRHDevanagariExtra:U+00A5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 165,
+    "ch": "¥",
+    "unicode": "ज्ञ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A5.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00A6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 166,
+    "ch": "¦",
+    "unicode": "त्त्न्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A6.png",
+    "auto_best": {
+      "mse": 8817.5,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 8893.7,
+      "label": "U+0907",
+      "s": "इ"
+    }
+  },
+  "BRHDevanagariExtra:U+00A7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 167,
+    "ch": "§",
+    "unicode": "त्र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A7.png",
+    "auto_best": {
+      "mse": 8264.6,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 8522.2,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariExtra:U+00A8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 168,
+    "ch": "¨",
+    "unicode": "त्त्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00A8.png",
+    "auto_best": {
+      "mse": 6825.7,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 6946.7,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagariExtra:U+00AE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 174,
+    "ch": "®",
+    "unicode": "द्ध्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00AE.png",
+    "auto_best": {
+      "mse": 7922.4,
+      "label": "रा",
+      "s": "रा"
+    },
+    "auto_second": {
+      "mse": 8724.9,
+      "label": "U+0916",
+      "s": "ख"
+    }
+  },
+  "BRHDevanagariExtra:U+00B0": {
+    "font": "BRHDevanagariExtra",
+    "cp": 176,
+    "ch": "°",
+    "unicode": "द्भ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B0.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00B1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 177,
+    "ch": "±",
+    "unicode": "द्य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B1.png",
+    "auto_best": {
+      "mse": 7531.1,
+      "label": "U+091D",
+      "s": "झ"
+    },
+    "auto_second": {
+      "mse": 8054.3,
+      "label": "U+0923",
+      "s": "ण"
+    }
+  },
+  "BRHDevanagariExtra:U+00B2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 178,
+    "ch": "²",
+    "unicode": "द्व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B2.png",
+    "auto_best": {
+      "mse": 7834.6,
+      "label": "U+0929",
+      "s": "ऩ"
+    },
+    "auto_second": {
+      "mse": 7975.2,
+      "label": "न्",
+      "s": "न्"
+    }
+  },
+  "BRHDevanagariExtra:U+00B3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 179,
+    "ch": "³",
+    "unicode": "न्न्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B3.png",
+    "auto_best": {
+      "mse": 8096.1,
+      "label": "U+0929",
+      "s": "ऩ"
+    },
+    "auto_second": {
+      "mse": 8203.0,
+      "label": "U+0930",
+      "s": "र"
+    }
+  },
+  "BRHDevanagariExtra:U+00B4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 180,
+    "ch": "´",
+    "unicode": "श्र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B4.png",
+    "auto_best": {
+      "mse": 10638.5,
+      "label": "प्",
+      "s": "प्"
+    },
+    "auto_second": {
+      "mse": 10701.9,
+      "label": "U+093D",
+      "s": "ऽ"
+    }
+  },
+  "BRHDevanagariExtra:U+00B5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 181,
+    "ch": "µ",
+    "unicode": "श्व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B5.png",
+    "auto_best": {
+      "mse": 9386.9,
+      "label": "U+096F",
+      "s": "९"
+    },
+    "auto_second": {
+      "mse": 11007.3,
+      "label": "U+096B",
+      "s": "५"
+    }
+  },
+  "BRHDevanagariExtra:U+00B6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 182,
+    "ch": "¶",
+    "unicode": "श्च्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B6.png",
+    "auto_best": {
+      "mse": 10064.8,
+      "label": "U+096F",
+      "s": "९"
+    },
+    "auto_second": {
+      "mse": 11822.9,
+      "label": "U+091F",
+      "s": "ट"
+    }
+  },
+  "BRHDevanagariExtra:U+00B8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 184,
+    "ch": "¸",
+    "unicode": "ष्ठ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B8.png",
+    "auto_best": {
+      "mse": 7445.7,
+      "label": "U+092A",
+      "s": "प"
+    },
+    "auto_second": {
+      "mse": 7452.3,
+      "label": "U+0937",
+      "s": "ष"
+    }
+  },
+  "BRHDevanagariExtra:U+00B9": {
+    "font": "BRHDevanagariExtra",
+    "cp": 185,
+    "ch": "¹",
+    "unicode": "ष्ट्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00B9.png",
+    "auto_best": {
+      "mse": 5892.7,
+      "label": "U+0937",
+      "s": "ष"
+    },
+    "auto_second": {
+      "mse": 7566.6,
+      "label": "U+092A",
+      "s": "प"
+    }
+  },
+  "BRHDevanagariExtra:U+00BA": {
+    "font": "BRHDevanagariExtra",
+    "cp": 186,
+    "ch": "º",
+    "unicode": "ह्ण्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00BA.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00BD": {
+    "font": "BRHDevanagariExtra",
+    "cp": 189,
+    "ch": "½",
+    "unicode": "ह्य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00BD.png",
+    "auto_best": {
+      "mse": 10287.2,
+      "label": "U+0936",
+      "s": "श"
+    },
+    "auto_second": {
+      "mse": 11078.4,
+      "label": "U+091C",
+      "s": "ज"
+    }
+  },
+  "BRHDevanagariExtra:U+00BE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 190,
+    "ch": "¾",
+    "unicode": "ह्र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00BE.png",
+    "auto_best": {
+      "mse": 8875.7,
+      "label": "U+095C",
+      "s": "ड़"
+    },
+    "auto_second": {
+      "mse": 9531.1,
+      "label": "ह्",
+      "s": "ह्"
+    }
+  },
+  "BRHDevanagariExtra:U+00C0": {
+    "font": "BRHDevanagariExtra",
+    "cp": 192,
+    "ch": "À",
+    "unicode": "ह्व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C0.png",
+    "auto_best": {
+      "mse": 9606.8,
+      "label": "छ्",
+      "s": "छ्"
+    },
+    "auto_second": {
+      "mse": 10323.7,
+      "label": "ङ्",
+      "s": "ङ्"
+    }
+  },
+  "BRHDevanagariExtra:U+00C2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 194,
+    "ch": "Â",
+    "unicode": "रु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C2.png",
+    "auto_best": {
+      "mse": 7934.6,
+      "label": "U+0938",
+      "s": "स"
+    },
+    "auto_second": {
+      "mse": 8326.6,
+      "label": "U+092D",
+      "s": "भ"
+    }
+  },
+  "BRHDevanagariExtra:U+00C3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 195,
+    "ch": "Ã",
+    "unicode": "रू",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C3.png",
+    "auto_best": {
+      "mse": 7335.5,
+      "label": "U+090B",
+      "s": "ऋ"
+    },
+    "auto_second": {
+      "mse": 8606.8,
+      "label": "ठा",
+      "s": "ठा"
+    }
+  },
+  "BRHDevanagariExtra:U+00C5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 197,
+    "ch": "Å",
+    "unicode": "ऽ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C5.png",
+    "auto_best": {
+      "mse": 3277.9,
+      "label": "U+093D",
+      "s": "ऽ"
+    },
+    "auto_second": {
+      "mse": 7791.4,
+      "label": "U+0931",
+      "s": "ऱ"
+    }
+  },
+  "BRHDevanagariExtra:U+00C6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 198,
+    "ch": "Æ",
+    "unicode": "ँ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C6.png",
+    "auto_best": {
+      "mse": 9212.4,
+      "label": "U+0944",
+      "s": "ॄ"
+    },
+    "auto_second": {
+      "mse": 13617.8,
+      "label": "U+096D",
+      "s": "७"
+    }
+  },
+  "BRHDevanagariExtra:U+00C7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 199,
+    "ch": "Ç",
+    "unicode": "ं",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C7.png",
+    "auto_best": {
+      "mse": 7760.1,
+      "label": "U+094D",
+      "s": "्"
+    },
+    "auto_second": {
+      "mse": 8818.8,
+      "label": "U+0943",
+      "s": "ृ"
+    }
+  },
+  "BRHDevanagariExtra:U+00C8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 200,
+    "ch": "È",
+    "unicode": "ः",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C8.png",
+    "auto_best": {
+      "mse": 462.3,
+      "label": "U+0903",
+      "s": "ः"
+    },
+    "auto_second": {
+      "mse": 3715.7,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagariExtra:U+00C9": {
+    "font": "BRHDevanagariExtra",
+    "cp": 201,
+    "ch": "É",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00C9.png",
+    "auto_best": {
+      "mse": 3569.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 3833.0,
+      "label": "[",
+      "s": "["
+    }
+  },
+  "BRHDevanagariExtra:U+00CB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 203,
+    "ch": "Ë",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00CB.png",
+    "auto_best": {
+      "mse": 4774.0,
+      "label": "रे",
+      "s": "रे"
+    },
+    "auto_second": {
+      "mse": 4798.3,
+      "label": "[",
+      "s": "["
+    }
+  },
+  "BRHDevanagariExtra:U+00CC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 204,
+    "ch": "Ì",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00CC.png",
+    "auto_best": {
+      "mse": 6279.6,
+      "label": "रे",
+      "s": "रे"
+    },
+    "auto_second": {
+      "mse": 7001.4,
+      "label": " ",
+      "s": " "
+    }
+  },
+  "BRHDevanagariExtra:U+00CD": {
+    "font": "BRHDevanagariExtra",
+    "cp": 205,
+    "ch": "Í",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00CD.png",
+    "auto_best": {
+      "mse": 1981.8,
+      "label": "U+093F",
+      "s": "ि"
+    },
+    "auto_second": {
+      "mse": 7127.1,
+      "label": " ",
+      "s": " "
+    }
+  },
+  "BRHDevanagariExtra:U+00CE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 206,
+    "ch": "Î",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00CE.png",
+    "auto_best": {
+      "mse": 3982.8,
+      "label": "U+093F",
+      "s": "ि"
+    },
+    "auto_second": {
+      "mse": 7010.5,
+      "label": " ",
+      "s": " "
+    }
+  },
+  "BRHDevanagariExtra:U+00CF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 207,
+    "ch": "Ï",
+    "unicode": "ी",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00CF.png",
+    "auto_best": {
+      "mse": 2230.9,
+      "label": "U+0940",
+      "s": "ी"
+    },
+    "auto_second": {
+      "mse": 2847.3,
+      "label": "U+094B",
+      "s": "ो"
+    }
+  },
+  "BRHDevanagariExtra:U+00D1": {
+    "font": "BRHDevanagariExtra",
+    "cp": 209,
+    "ch": "Ñ",
+    "unicode": "ु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D1.png",
+    "auto_best": {
+      "mse": 1346.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1346.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 210,
+    "ch": "Ò",
+    "unicode": "ु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D2.png",
+    "auto_best": {
+      "mse": 732.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 732.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 211,
+    "ch": "Ó",
+    "unicode": "ु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D3.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D4": {
+    "font": "BRHDevanagariExtra",
+    "cp": 212,
+    "ch": "Ô",
+    "unicode": "ू",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D4.png",
+    "auto_best": {
+      "mse": 1661.6,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1661.6,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 213,
+    "ch": "Õ",
+    "unicode": "ू",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D5.png",
+    "auto_best": {
+      "mse": 1024.3,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1024.3,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 215,
+    "ch": "×",
+    "unicode": "ृ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D7.png",
+    "auto_best": {
+      "mse": 1057.8,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1057.8,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00D8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 216,
+    "ch": "Ø",
+    "unicode": "ृ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00D8.png",
+    "auto_best": {
+      "mse": 548.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 548.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00E5": {
+    "font": "BRHDevanagariExtra",
+    "cp": 229,
+    "ch": "å",
+    "unicode": "े",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00E5.png",
+    "auto_best": {
+      "mse": 5177.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5177.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00E6": {
+    "font": "BRHDevanagariExtra",
+    "cp": 230,
+    "ch": "æ",
+    "unicode": "ै",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00E6.png",
+    "auto_best": {
+      "mse": 6827.8,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 6827.8,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00E7": {
+    "font": "BRHDevanagariExtra",
+    "cp": 231,
+    "ch": "ç",
+    "unicode": "्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00E7.png",
+    "auto_best": {
+      "mse": 1186.4,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1186.4,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00E8": {
+    "font": "BRHDevanagariExtra",
+    "cp": 232,
+    "ch": "è",
+    "unicode": "्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00E8.png",
+    "auto_best": {
+      "mse": 903.4,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 903.4,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00EB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 235,
+    "ch": "ë",
+    "unicode": "्र",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00EB.png",
+    "auto_best": {
+      "mse": 1716.5,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1716.5,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00EC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 236,
+    "ch": "ì",
+    "unicode": "्र",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00EC.png",
+    "auto_best": {
+      "mse": 3037.9,
+      "label": "U+0952",
+      "s": "॒"
+    },
+    "auto_second": {
+      "mse": 3104.1,
+      "label": ".",
+      "s": "."
+    }
+  },
+  "BRHDevanagariExtra:U+00EF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 239,
+    "ch": "ï",
+    "unicode": "र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00EF.png",
+    "auto_best": {
+      "mse": 5485.8,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5485.8,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+00F2": {
+    "font": "BRHDevanagariExtra",
+    "cp": 242,
+    "ch": "ò",
+    "unicode": "ꣳ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00F2.png",
+    "auto_best": {
+      "mse": 10016.2,
+      "label": "U+0970",
+      "s": "॰"
+    },
+    "auto_second": {
+      "mse": 13088.1,
+      "label": "U+096A",
+      "s": "४"
+    }
+  },
+  "BRHDevanagariExtra:U+00F3": {
+    "font": "BRHDevanagariExtra",
+    "cp": 243,
+    "ch": "ó",
+    "unicode": "ꣳ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00F3.png",
+    "auto_best": {
+      "mse": 9798.6,
+      "label": "U+0901",
+      "s": "ँ"
+    },
+    "auto_second": {
+      "mse": 10210.1,
+      "label": "U+0970",
+      "s": "॰"
+    }
+  },
+  "BRHDevanagariExtra:U+00FB": {
+    "font": "BRHDevanagariExtra",
+    "cp": 251,
+    "ch": "û",
+    "unicode": "(empty)",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00FB.png",
+    "auto_best": {
+      "mse": 1743.5,
+      "label": "U+0952",
+      "s": "॒"
+    },
+    "auto_second": {
+      "mse": 3916.0,
+      "label": "U+0902",
+      "s": "ं"
+    }
+  },
+  "BRHDevanagariExtra:U+00FC": {
+    "font": "BRHDevanagariExtra",
+    "cp": 252,
+    "ch": "ü",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00FC.png",
+    "auto_best": {
+      "mse": 640.1,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 5175.8,
+      "label": "U+0952",
+      "s": "॒"
+    }
+  },
+  "BRHDevanagariExtra:U+00FE": {
+    "font": "BRHDevanagariExtra",
+    "cp": 254,
+    "ch": "þ",
+    "unicode": "॑",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00FE.png",
+    "auto_best": {
+      "mse": 2773.9,
+      "label": ".",
+      "s": "."
+    },
+    "auto_second": {
+      "mse": 3052.6,
+      "label": "U+0902",
+      "s": "ं"
+    }
+  },
+  "BRHDevanagariExtra:U+00FF": {
+    "font": "BRHDevanagariExtra",
+    "cp": 255,
+    "ch": "ÿ",
+    "unicode": "॒",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+00FF.png",
+    "auto_best": {
+      "mse": 1044.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1044.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariExtra:U+0160": {
+    "font": "BRHDevanagariExtra",
+    "cp": 352,
+    "ch": "Š",
+    "unicode": "च्च्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0160.png",
+    "auto_best": {
+      "mse": 5497.0,
+      "label": "चा",
+      "s": "चा"
+    },
+    "auto_second": {
+      "mse": 6292.8,
+      "label": "णा",
+      "s": "णा"
+    }
+  },
+  "BRHDevanagariExtra:U+0161": {
+    "font": "BRHDevanagariExtra",
+    "cp": 353,
+    "ch": "š",
+    "unicode": "ट्य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0161.png",
+    "auto_best": {
+      "mse": 5153.6,
+      "label": "ङा",
+      "s": "ङा"
+    },
+    "auto_second": {
+      "mse": 5766.8,
+      "label": "का",
+      "s": "का"
+    }
+  },
+  "BRHDevanagariExtra:U+0192": {
+    "font": "BRHDevanagariExtra",
+    "cp": 402,
+    "ch": "ƒ",
+    "unicode": "ङ्क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+0192.png",
+    "auto_best": {
+      "mse": 8804.9,
+      "label": "ढ्",
+      "s": "ढ्"
+    },
+    "auto_second": {
+      "mse": 8942.6,
+      "label": "ञ्",
+      "s": "ञ्"
+    }
+  },
+  "BRHDevanagariExtra:U+2026": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8230,
+    "ch": "…",
+    "unicode": "ङ्ग्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+2026.png",
+    "auto_best": {
+      "mse": 7881.6,
+      "label": "ञ्",
+      "s": "ञ्"
+    },
+    "auto_second": {
+      "mse": 8094.6,
+      "label": "ख्",
+      "s": "ख्"
+    }
+  },
+  "BRHDevanagariExtra:U+2039": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8249,
+    "ch": "‹",
+    "unicode": "ज्ज",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+2039.png",
+    "auto_best": {
+      "mse": 4925.8,
+      "label": "जा",
+      "s": "जा"
+    },
+    "auto_second": {
+      "mse": 5003.3,
+      "label": "का",
+      "s": "का"
+    }
+  },
+  "BRHDevanagariExtra:U+2122": {
+    "font": "BRHDevanagariExtra",
+    "cp": 8482,
+    "ch": "™",
+    "unicode": "हृ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDFEE_BRHDevanagariExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariExtra/U+2122.png",
+    "auto_best": {
+      "mse": 7266.0,
+      "label": "U+095C",
+      "s": "ड़"
+    },
+    "auto_second": {
+      "mse": 7831.4,
+      "label": "U+0939",
+      "s": "ह"
+    }
+  },
+  "BRHDevanagariRN:U+0020": {
+    "font": "BRHDevanagariRN",
+    "cp": 32,
+    "ch": " ",
+    "unicode": " ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0020.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+0028": {
+    "font": "BRHDevanagariRN",
+    "cp": 40,
+    "ch": "(",
+    "unicode": "(",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0028.png",
+    "auto_best": {
+      "mse": 605.0,
+      "label": "(",
+      "s": "("
+    },
+    "auto_second": {
+      "mse": 2564.1,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagariRN:U+0029": {
+    "font": "BRHDevanagariRN",
+    "cp": 41,
+    "ch": ")",
+    "unicode": ")",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0029.png",
+    "auto_best": {
+      "mse": 610.4,
+      "label": ")",
+      "s": ")"
+    },
+    "auto_second": {
+      "mse": 3437.8,
+      "label": "U+0951",
+      "s": "॑"
+    }
+  },
+  "BRHDevanagariRN:U+002D": {
+    "font": "BRHDevanagariRN",
+    "cp": 45,
+    "ch": "-",
+    "unicode": "-",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+002D.png",
+    "auto_best": {
+      "mse": 2975.5,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 3233.5,
+      "label": "–",
+      "s": "–"
+    }
+  },
+  "BRHDevanagariRN:U+004D": {
+    "font": "BRHDevanagariRN",
+    "cp": 77,
+    "ch": "M",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+004D.png",
+    "auto_best": {
+      "mse": 7076.6,
+      "label": "बः",
+      "s": "बः"
+    },
+    "auto_second": {
+      "mse": 7388.6,
+      "label": "तः",
+      "s": "तः"
+    }
+  },
+  "BRHDevanagariRN:U+0050": {
+    "font": "BRHDevanagariRN",
+    "cp": 80,
+    "ch": "P",
+    "unicode": "ठ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0050.png",
+    "auto_best": {
+      "mse": 4901.4,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 7096.7,
+      "label": "U+0920",
+      "s": "ठ"
+    }
+  },
+  "BRHDevanagariRN:U+0051": {
+    "font": "BRHDevanagariRN",
+    "cp": 81,
+    "ch": "Q",
+    "unicode": "ड",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0051.png",
+    "auto_best": {
+      "mse": 4160.4,
+      "label": "U+0921",
+      "s": "ड"
+    },
+    "auto_second": {
+      "mse": 5340.9,
+      "label": "U+0922",
+      "s": "ढ"
+    }
+  },
+  "BRHDevanagariRN:U+0053": {
+    "font": "BRHDevanagariRN",
+    "cp": 83,
+    "ch": "S",
+    "unicode": "द",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0053.png",
+    "auto_best": {
+      "mse": 3517.0,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 5691.0,
+      "label": "U+0929",
+      "s": "ऩ"
+    }
+  },
+  "BRHDevanagariRN:U+0057": {
+    "font": "BRHDevanagariRN",
+    "cp": 87,
+    "ch": "W",
+    "unicode": "ह",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0057.png",
+    "auto_best": {
+      "mse": 6810.9,
+      "label": "U+097E",
+      "s": "ॾ"
+    },
+    "auto_second": {
+      "mse": 6867.1,
+      "label": "U+0939",
+      "s": "ह"
+    }
+  },
+  "BRHDevanagariRN:U+0059": {
+    "font": "BRHDevanagariRN",
+    "cp": 89,
+    "ch": "Y",
+    "unicode": "क्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0059.png",
+    "auto_best": {
+      "mse": 7200.5,
+      "label": "U+0926",
+      "s": "द"
+    },
+    "auto_second": {
+      "mse": 7306.8,
+      "label": "U+092C",
+      "s": "ब"
+    }
+  },
+  "BRHDevanagariRN:U+0063": {
+    "font": "BRHDevanagariRN",
+    "cp": 99,
+    "ch": "c",
+    "unicode": "च्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0063.png",
+    "auto_best": {
+      "mse": 9244.9,
+      "label": "U+090A",
+      "s": "ऊ"
+    },
+    "auto_second": {
+      "mse": 9476.3,
+      "label": "U+092B",
+      "s": "फ"
+    }
+  },
+  "BRHDevanagariRN:U+0068": {
+    "font": "BRHDevanagariRN",
+    "cp": 104,
+    "ch": "h",
+    "unicode": "ण्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0068.png",
+    "auto_best": {
+      "mse": 9113.5,
+      "label": "U+092A",
+      "s": "प"
+    },
+    "auto_second": {
+      "mse": 9410.9,
+      "label": "U+0918",
+      "s": "घ"
+    }
+  },
+  "BRHDevanagariRN:U+0069": {
+    "font": "BRHDevanagariRN",
+    "cp": 105,
+    "ch": "i",
+    "unicode": "त्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0069.png",
+    "auto_best": {
+      "mse": 5524.8,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 6006.4,
+      "label": "U+0968",
+      "s": "२"
+    }
+  },
+  "BRHDevanagariRN:U+006A": {
+    "font": "BRHDevanagariRN",
+    "cp": 106,
+    "ch": "j",
+    "unicode": "थ्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+006A.png",
+    "auto_best": {
+      "mse": 9125.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 11468.7,
+      "label": "U+0944",
+      "s": "ॄ"
+    }
+  },
+  "BRHDevanagariRN:U+006C": {
+    "font": "BRHDevanagariRN",
+    "cp": 108,
+    "ch": "l",
+    "unicode": "न्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+006C.png",
+    "auto_best": {
+      "mse": 11361.3,
+      "label": "U+097D",
+      "s": "ॽ"
+    },
+    "auto_second": {
+      "mse": 11604.6,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagariRN:U+006D": {
+    "font": "BRHDevanagariRN",
+    "cp": 109,
+    "ch": "m",
+    "unicode": "प्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+006D.png",
+    "auto_best": {
+      "mse": 10769.8,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 11266.3,
+      "label": "U+0917",
+      "s": "ग"
+    }
+  },
+  "BRHDevanagariRN:U+0071": {
+    "font": "BRHDevanagariRN",
+    "cp": 113,
+    "ch": "q",
+    "unicode": "म्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0071.png",
+    "auto_best": {
+      "mse": 8124.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 10687.1,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagariRN:U+0072": {
+    "font": "BRHDevanagariRN",
+    "cp": 114,
+    "ch": "r",
+    "unicode": "य्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0072.png",
+    "auto_best": {
+      "mse": 7306.9,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 10335.1,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariRN:U+0075": {
+    "font": "BRHDevanagariRN",
+    "cp": 117,
+    "ch": "u",
+    "unicode": "व्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0075.png",
+    "auto_best": {
+      "mse": 8649.1,
+      "label": "U+091F",
+      "s": "ट"
+    },
+    "auto_second": {
+      "mse": 9359.4,
+      "label": "U+0909",
+      "s": "उ"
+    }
+  },
+  "BRHDevanagariRN:U+0078": {
+    "font": "BRHDevanagariRN",
+    "cp": 120,
+    "ch": "x",
+    "unicode": "स्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+0078.png",
+    "auto_best": {
+      "mse": 8073.1,
+      "label": "U+0930",
+      "s": "र"
+    },
+    "auto_second": {
+      "mse": 9410.4,
+      "label": "U+093E",
+      "s": "ा"
+    }
+  },
+  "BRHDevanagariRN:U+007A": {
+    "font": "BRHDevanagariRN",
+    "cp": 122,
+    "ch": "z",
+    "unicode": "श्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+007A.png",
+    "auto_best": {
+      "mse": 7017.4,
+      "label": "U+0907",
+      "s": "इ"
+    },
+    "auto_second": {
+      "mse": 7583.3,
+      "label": "U+095C",
+      "s": "ड़"
+    }
+  },
+  "BRHDevanagariRN:U+00C8": {
+    "font": "BRHDevanagariRN",
+    "cp": 200,
+    "ch": "È",
+    "unicode": "ः",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00C8.png",
+    "auto_best": {
+      "mse": 462.3,
+      "label": "U+0903",
+      "s": "ः"
+    },
+    "auto_second": {
+      "mse": 3715.7,
+      "label": "U+0964",
+      "s": "।"
+    }
+  },
+  "BRHDevanagariRN:U+00C9": {
+    "font": "BRHDevanagariRN",
+    "cp": 201,
+    "ch": "É",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00C9.png",
+    "auto_best": {
+      "mse": 3569.2,
+      "label": "U+093E",
+      "s": "ा"
+    },
+    "auto_second": {
+      "mse": 3833.0,
+      "label": "[",
+      "s": "["
+    }
+  },
+  "BRHDevanagariRN:U+00CC": {
+    "font": "BRHDevanagariRN",
+    "cp": 204,
+    "ch": "Ì",
+    "unicode": "ि",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00CC.png",
+    "auto_best": {
+      "mse": 6279.6,
+      "label": "रे",
+      "s": "रे"
+    },
+    "auto_second": {
+      "mse": 7001.4,
+      "label": " ",
+      "s": " "
+    }
+  },
+  "BRHDevanagariRN:U+00D1": {
+    "font": "BRHDevanagariRN",
+    "cp": 209,
+    "ch": "Ñ",
+    "unicode": "ु",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00D1.png",
+    "auto_best": {
+      "mse": 1346.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1346.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+00E5": {
+    "font": "BRHDevanagariRN",
+    "cp": 229,
+    "ch": "å",
+    "unicode": "े",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00E5.png",
+    "auto_best": {
+      "mse": 5177.2,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5177.2,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+00E8": {
+    "font": "BRHDevanagariRN",
+    "cp": 232,
+    "ch": "è",
+    "unicode": "्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00E8.png",
+    "auto_best": {
+      "mse": 903.4,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 903.4,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+00EB": {
+    "font": "BRHDevanagariRN",
+    "cp": 235,
+    "ch": "ë",
+    "unicode": "्र",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00EB.png",
+    "auto_best": {
+      "mse": 1716.5,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 1716.5,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+00EF": {
+    "font": "BRHDevanagariRN",
+    "cp": 239,
+    "ch": "ï",
+    "unicode": "र्",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00EF.png",
+    "auto_best": {
+      "mse": 5485.8,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 5485.8,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHDevanagariRN:U+00FB": {
+    "font": "BRHDevanagariRN",
+    "cp": 251,
+    "ch": "û",
+    "unicode": "(empty)",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00FB.png",
+    "auto_best": {
+      "mse": 1743.5,
+      "label": "U+0952",
+      "s": "॒"
+    },
+    "auto_second": {
+      "mse": 3916.0,
+      "label": "U+0902",
+      "s": "ं"
+    }
+  },
+  "BRHDevanagariRN:U+00FC": {
+    "font": "BRHDevanagariRN",
+    "cp": 252,
+    "ch": "ü",
+    "unicode": "ा",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/camakam/BCDJEE_BRHDevanagariRN.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHDevanagariRN/U+00FC.png",
+    "auto_best": {
+      "mse": 640.1,
+      "label": "-",
+      "s": "-"
+    },
+    "auto_second": {
+      "mse": 5175.8,
+      "label": "U+0952",
+      "s": "॒"
+    }
+  },
+  "BRHMalayalamExtra:U+0020": {
+    "font": "BRHMalayalamExtra",
+    "cp": 32,
+    "ch": " ",
+    "unicode": " ",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDGEE_BRHMalayalamExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHMalayalamExtra/U+0020.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  },
+  "BRHMalayalamExtra:U+2013": {
+    "font": "BRHMalayalamExtra",
+    "cp": 8211,
+    "ch": "–",
+    "unicode": "॑",
+    "how": "context",
+    "ttf": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/fonts/namakam/BCDGEE_BRHMalayalamExtra.ttf",
+    "glyph": "/Users/max/Desktop/projects/prakasa/docs/rudra/decode/catalog/glyphs/BRHMalayalamExtra/U+2013.png",
+    "auto_best": {
+      "mse": 0.0,
+      "label": " ",
+      "s": " "
+    },
+    "auto_second": {
+      "mse": 0.0,
+      "label": "U+0953",
+      "s": "॓"
+    }
+  }
+}

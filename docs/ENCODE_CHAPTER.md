@@ -24,13 +24,15 @@ The second pass is what the site actually reflects: every ready chapter was re-g
 
 ---
 
-## Next collection: devatā namaskāra
+## Next collection: Rudra namakam / camakam
 
-Short one-śloka greetings to common gods. Library book `devata-namaskara`. Finding the verse is a separate stage; see `docs/devata-stuti/WORKFLOW.md`.
+Taittirīya Saṃhitā 4.5 and 4.7 (camakam anuvākas 1–11 only). Library book `rudra-namakam-chamakam`. This is information transfer from the VedaVMS PDFs in `data/`, not a hunt.
 
-There is no base document. Encode from the approved package in `docs/devata-stuti/findings/` (Devanagari, IAST, glosses, translation already reviewed). Do not silently rewrite them.
+**Do not start from this file.** Follow `docs/rudra/ENCODE.md`: Stage 1 is a checkable text file (`docs/rudra/text/`), Stage 2 lifts into Prakāśa after the human audits. Empty glosses for now. No svaras.
 
-Fewer of these texts are Vedic ṛks, so Sāyaṇa and Bhaṭṭabhāskara often will not apply. Use whichever traditional commentaries belong to that corpus. More recensions exist; pick a coherent one, note the others as uncertainties, and do not treat a single printed page as law. Adherence to one “ground truth” recension is slightly less important than it was for Sandhyāvandana — still do not invent, still do not silently mix recensions.
+## Previous collection: devatā namaskāra
+
+Short one-śloka greetings. Library book `devata-namaskara`. Packages live in `docs/devata-stuti/findings/`. Finding workflow: `docs/devata-stuti/WORKFLOW.md`.
 
 ---
 

@@ -1,0 +1,872 @@
+[
+  {
+    "font": "BRHDevanagari",
+    "cp": 32,
+    "ch": " "
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 40,
+    "ch": "("
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 41,
+    "ch": ")"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 45,
+    "ch": "-"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 77,
+    "ch": "M"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 80,
+    "ch": "P"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 81,
+    "ch": "Q"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 83,
+    "ch": "S"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 87,
+    "ch": "W"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 89,
+    "ch": "Y"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 99,
+    "ch": "c"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 103,
+    "ch": "g"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 104,
+    "ch": "h"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 105,
+    "ch": "i"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 106,
+    "ch": "j"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 108,
+    "ch": "l"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 109,
+    "ch": "m"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 113,
+    "ch": "q"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 114,
+    "ch": "r"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 117,
+    "ch": "u"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 120,
+    "ch": "x"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 122,
+    "ch": "z"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 174,
+    "ch": "®"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 177,
+    "ch": "±"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 200,
+    "ch": "È"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 201,
+    "ch": "É"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 204,
+    "ch": "Ì"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 209,
+    "ch": "Ñ"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 229,
+    "ch": "å"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 235,
+    "ch": "ë"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 239,
+    "ch": "ï"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 251,
+    "ch": "û"
+  },
+  {
+    "font": "BRHDevanagari",
+    "cp": 252,
+    "ch": "ü"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 32,
+    "ch": " "
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 40,
+    "ch": "("
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 41,
+    "ch": ")"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 44,
+    "ch": ","
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 45,
+    "ch": "-"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 46,
+    "ch": "."
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 65,
+    "ch": "A"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 67,
+    "ch": "C"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 68,
+    "ch": "D"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 69,
+    "ch": "E"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 70,
+    "ch": "F"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 71,
+    "ch": "G"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 76,
+    "ch": "L"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 77,
+    "ch": "M"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 78,
+    "ch": "N"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 79,
+    "ch": "O"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 80,
+    "ch": "P"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 81,
+    "ch": "Q"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 82,
+    "ch": "R"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 83,
+    "ch": "S"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 84,
+    "ch": "T"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 85,
+    "ch": "U"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 87,
+    "ch": "W"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 89,
+    "ch": "Y"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 90,
+    "ch": "Z"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 91,
+    "ch": "["
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 93,
+    "ch": "]"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 97,
+    "ch": "a"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 98,
+    "ch": "b"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 99,
+    "ch": "c"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 101,
+    "ch": "e"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 103,
+    "ch": "g"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 104,
+    "ch": "h"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 105,
+    "ch": "i"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 106,
+    "ch": "j"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 107,
+    "ch": "k"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 108,
+    "ch": "l"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 109,
+    "ch": "m"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 111,
+    "ch": "o"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 112,
+    "ch": "p"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 113,
+    "ch": "q"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 114,
+    "ch": "r"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 115,
+    "ch": "s"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 117,
+    "ch": "u"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 119,
+    "ch": "w"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 120,
+    "ch": "x"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 122,
+    "ch": "z"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 124,
+    "ch": "|"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 161,
+    "ch": "¡"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 162,
+    "ch": "¢"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 163,
+    "ch": "£"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 164,
+    "ch": "¤"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 165,
+    "ch": "¥"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 166,
+    "ch": "¦"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 167,
+    "ch": "§"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 168,
+    "ch": "¨"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 174,
+    "ch": "®"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 176,
+    "ch": "°"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 177,
+    "ch": "±"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 178,
+    "ch": "²"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 179,
+    "ch": "³"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 180,
+    "ch": "´"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 181,
+    "ch": "µ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 182,
+    "ch": "¶"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 184,
+    "ch": "¸"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 185,
+    "ch": "¹"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 186,
+    "ch": "º"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 189,
+    "ch": "½"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 190,
+    "ch": "¾"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 192,
+    "ch": "À"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 194,
+    "ch": "Â"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 195,
+    "ch": "Ã"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 197,
+    "ch": "Å"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 198,
+    "ch": "Æ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 199,
+    "ch": "Ç"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 200,
+    "ch": "È"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 201,
+    "ch": "É"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 203,
+    "ch": "Ë"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 204,
+    "ch": "Ì"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 205,
+    "ch": "Í"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 206,
+    "ch": "Î"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 207,
+    "ch": "Ï"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 209,
+    "ch": "Ñ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 210,
+    "ch": "Ò"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 211,
+    "ch": "Ó"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 212,
+    "ch": "Ô"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 213,
+    "ch": "Õ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 215,
+    "ch": "×"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 216,
+    "ch": "Ø"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 229,
+    "ch": "å"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 230,
+    "ch": "æ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 231,
+    "ch": "ç"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 232,
+    "ch": "è"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 235,
+    "ch": "ë"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 236,
+    "ch": "ì"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 239,
+    "ch": "ï"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 242,
+    "ch": "ò"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 243,
+    "ch": "ó"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 251,
+    "ch": "û"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 252,
+    "ch": "ü"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 254,
+    "ch": "þ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 255,
+    "ch": "ÿ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 352,
+    "ch": "Š"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 353,
+    "ch": "š"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 402,
+    "ch": "ƒ"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 8230,
+    "ch": "…"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 8249,
+    "ch": "‹"
+  },
+  {
+    "font": "BRHDevanagariExtra",
+    "cp": 8482,
+    "ch": "™"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 32,
+    "ch": " "
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 40,
+    "ch": "("
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 41,
+    "ch": ")"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 45,
+    "ch": "-"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 77,
+    "ch": "M"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 80,
+    "ch": "P"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 81,
+    "ch": "Q"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 83,
+    "ch": "S"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 87,
+    "ch": "W"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 89,
+    "ch": "Y"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 99,
+    "ch": "c"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 104,
+    "ch": "h"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 105,
+    "ch": "i"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 106,
+    "ch": "j"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 108,
+    "ch": "l"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 109,
+    "ch": "m"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 113,
+    "ch": "q"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 114,
+    "ch": "r"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 117,
+    "ch": "u"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 120,
+    "ch": "x"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 122,
+    "ch": "z"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 200,
+    "ch": "È"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 201,
+    "ch": "É"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 204,
+    "ch": "Ì"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 209,
+    "ch": "Ñ"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 229,
+    "ch": "å"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 232,
+    "ch": "è"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 235,
+    "ch": "ë"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 239,
+    "ch": "ï"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 251,
+    "ch": "û"
+  },
+  {
+    "font": "BRHDevanagariRN",
+    "cp": 252,
+    "ch": "ü"
+  },
+  {
+    "font": "BRHMalayalamExtra",
+    "cp": 32,
+    "ch": " "
+  },
+  {
+    "font": "BRHMalayalamExtra",
+    "cp": 8211,
+    "ch": "–"
+  }
+]
