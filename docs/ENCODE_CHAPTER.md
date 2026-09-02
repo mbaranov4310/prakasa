@@ -28,7 +28,7 @@ The second pass is what the site actually reflects: every ready chapter was re-g
 
 Taittirīya Saṃhitā 4.5 and 4.7 (camakam anuvākas 1–11 only). Library book `rudra-namakam-chamakam`. This is information transfer from the VedaVMS PDFs in `data/`, not a hunt.
 
-**Do not start from this file.** Follow `docs/rudra/ENCODE.md`: Stage 1 is a checkable text file (`docs/rudra/text/`), Stage 2 lifts into Prakāśa after the human audits. Empty glosses for now. No svaras.
+**Next collection: Rudra namakam / camakam** — Stage 1 text is in `docs/rudra/text/`. Empty-gloss chapters are on the site for recitation review. Translations later. Follow `docs/rudra/STAGE1.md` / `docs/rudra/ENCODE.md`.
 
 ## Previous collection: devatā namaskāra
 

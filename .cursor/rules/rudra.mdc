@@ -1,5 +1,5 @@
 ---
-description: Rudra namakam/camakam — decode the VedaVMS PDFs via a Baraha glyph catalog, not by eye-copy
+description: Rudra namakam/camakam — Stage 1 text files from the decoded dump, then empty-gloss Prakāśa lift
 alwaysApply: true
 ---
 
@@ -7,14 +7,26 @@ alwaysApply: true
 
 Sandhyāvandana and devatā namaskāra are in the library. Current collection is **Rudra namakam / camakam**.
 
-**Current phase: glyph decode.** Do not transcribe anuvākas by eye. Do not encode TypeScript. Do not build Stage 1 tables (IAST, drop `इति`, slices). Those are downstream of a literal Unicode dump.
+**Current phase: empty-gloss review.** Stage 1 files in `docs/rudra/text/` checker-PASS. Lifted to `src/content/rudra/` with empty meanings. Translations later.
 
+- Agent brief: `docs/rudra/STAGE1.md`
+- Queue: `docs/rudra/QUEUE.md`
 - Plan: `docs/rudra/ENCODE.md`
-- Decoder: `scripts/rudra-decode/`
-- Output: `docs/rudra/decode/` (spans JSONL, catalog, `out/*.txt`, `REPORT.md`)
+- Dump: `docs/rudra/decode/out/` (slices in `docs/rudra/decode/slices/`)
 - Eye-copy (not a source): `docs/rudra/archive-eye-copy/`
 - PDFs (gitignored): `data/TS 4.5 Sanskrit Pada Paatam with Vaakyam.pdf` (namakam), `data/TS 4.7 Sanskrit Pada Paatam with Vaakyam.pdf` (camakam)
+- Lift: `python3 scripts/lift-rudra-stage2.py`
+- Checker: `python3 scripts/check-rudra-text.py docs/rudra/text/<id>.md`
 
-Re-run: `python3 scripts/rudra-decode/extract.py` then catalog/apply as in `docs/rudra/decode/REPORT.md`.
+Glyph decode rewind: `1d02141`. Do not add meanings until the human has checked the recitation on the site. Camakam 12–15 stay out.
 
-This is a font decode of those two PDFs. Keep svaras. Include camakam 12–15 in the dump. No meanings. No Prakāśa TypeScript until a later phase after the dump exists and has been used.
+- Agent brief: `docs/rudra/STAGE1.md`
+- Queue: `docs/rudra/QUEUE.md`
+- Plan: `docs/rudra/ENCODE.md`
+- Dump: `docs/rudra/decode/out/` (slices in `docs/rudra/decode/slices/`)
+- Eye-copy (not a source): `docs/rudra/archive-eye-copy/`
+- PDFs (gitignored): `data/TS 4.5 Sanskrit Pada Paatam with Vaakyam.pdf` (namakam), `data/TS 4.7 Sanskrit Pada Paatam with Vaakyam.pdf` (camakam)
+- Lift: `python3 scripts/lift-rudra-stage2.py`
+- Checker: `python3 scripts/check-rudra-text.py docs/rudra/text/<id>.md`
+
+Glyph decode is done (rewind: `1d02141`). Do not re-transcribe by eye from a blank page; start from the dump. Dump/PDF win over eye-copy. Camakam 12–15 stay out of Stage 1. Meanings stay empty until a later phase.

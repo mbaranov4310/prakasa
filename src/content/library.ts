@@ -48,6 +48,28 @@ import { naga } from "./nitya-mangala-slokas/naga";
 import { nandi } from "./nitya-mangala-slokas/nandi";
 import { varuna } from "./nitya-mangala-slokas/varuna";
 import { vayu } from "./nitya-mangala-slokas/vayu";
+import { namakam01 } from "./rudra/namakam-01";
+import { namakam02 } from "./rudra/namakam-02";
+import { namakam03 } from "./rudra/namakam-03";
+import { namakam04 } from "./rudra/namakam-04";
+import { namakam05 } from "./rudra/namakam-05";
+import { namakam06 } from "./rudra/namakam-06";
+import { namakam07 } from "./rudra/namakam-07";
+import { namakam08 } from "./rudra/namakam-08";
+import { namakam09 } from "./rudra/namakam-09";
+import { namakam10 } from "./rudra/namakam-10";
+import { namakam11 } from "./rudra/namakam-11";
+import { chamakam01 } from "./rudra/chamakam-01";
+import { chamakam02 } from "./rudra/chamakam-02";
+import { chamakam03 } from "./rudra/chamakam-03";
+import { chamakam04 } from "./rudra/chamakam-04";
+import { chamakam05 } from "./rudra/chamakam-05";
+import { chamakam06 } from "./rudra/chamakam-06";
+import { chamakam07 } from "./rudra/chamakam-07";
+import { chamakam08 } from "./rudra/chamakam-08";
+import { chamakam09 } from "./rudra/chamakam-09";
+import { chamakam10 } from "./rudra/chamakam-10";
+import { chamakam11 } from "./rudra/chamakam-11";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -144,24 +166,33 @@ export const books: Book[] = [
     titleIast: "rudraḥ — namakaṃ camakam",
     titleEn: "Rudra namakam camakam",
     blurb: "Taittirīya Saṃhitā 4.5 and 4.7, word by word from the pada-pāṭha.",
-    chapters: rudraComingSoon(),
+    chapters: [
+      namakam01,
+      namakam02,
+      namakam03,
+      namakam04,
+      namakam05,
+      namakam06,
+      namakam07,
+      namakam08,
+      namakam09,
+      namakam10,
+      namakam11,
+      chamakam01,
+      chamakam02,
+      chamakam03,
+      chamakam04,
+      chamakam05,
+      chamakam06,
+      chamakam07,
+      chamakam08,
+      chamakam09,
+      chamakam10,
+      chamakam11,
+    ],
   },
 ];
 
-function rudraComingSoon(): Book["chapters"] {
-  const digits = ["१", "२", "३", "४", "५", "६", "७", "८", "९", "१०", "११"];
-  const namakam = digits.map((digit, index) => {
-    const n = index + 1;
-    const id = `namakam-${String(n).padStart(2, "0")}`;
-    return comingSoon(id, `नमकम् ${digit}`, `namakam ${n}`, `Namakam ${n}`);
-  });
-  const chamakam = digits.map((digit, index) => {
-    const n = index + 1;
-    const id = `chamakam-${String(n).padStart(2, "0")}`;
-    return comingSoon(id, `चमकम् ${digit}`, `camakam ${n}`, `Camakam ${n}`);
-  });
-  return [...namakam, ...chamakam];
-}
 
 export function getBook(bookId: string): Book | undefined {
   if (bookId === "nitya-mangala-slokas") bookId = "devata-namaskara";

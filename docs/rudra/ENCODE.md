@@ -2,21 +2,13 @@
 
 Work in `/Users/max/Desktop/projects/prakasa`.
 
-## Current phase — glyph decode (do this, not eye-copy)
+## Current phase — empty-gloss review on the site
 
-The recension is the two VedaVMS PDFs in `data/` (gitignored). They use Baraha fonts; `pdftotext` is Latin garbage. We do **not** transcribe anuvākas by eye. We extract the PDF’s glyph stream, name a finite catalog, and apply the map by machine.
+Glyph decode rewind: `1d02141`. Stage 1 files: `docs/rudra/text/` (checker PASS). Lift: `python3 scripts/lift-rudra-stage2.py` → `src/content/rudra/` with **empty glosses**.
 
-- Decoder: `scripts/rudra-decode/`
-- Output: `docs/rudra/decode/` — span JSONL, catalog, `out/namakam.txt`, `out/camakam.txt`, `REPORT.md`
-- Eye-copy (not a source): `docs/rudra/archive-eye-copy/`
+**This phase:** human reads the recitation on https://mbaranov4310.github.io/prakasa/ before translations. No meanings yet.
 
-**This phase:** literal Unicode of both PDFs, **svaras kept**. Camakam 12–15 stay in the dump. No Stage 1 tables, no IAST, no dropping `इति`, no TypeScript.
-
-**Do not** launch per-anuvāka copy agents. **Do not** encode `src/content/rudra/`.
-
-Re-run commands are in `docs/rudra/decode/REPORT.md`.
-
-The sections below are **later**, after the dump exists. They describe Stage 1 / Prakāśa lift. They are not instructions for the current chat.
+Agent brief: `docs/rudra/STAGE1.md`. Queue: `docs/rudra/QUEUE.md`. Dump slices: `docs/rudra/decode/slices/`. Eye-copy is **not** a source: `docs/rudra/archive-eye-copy/`.
 
 ---
 
@@ -261,13 +253,4 @@ When they ask to publish, same path as `docs/ENCODE_CHAPTER.md` (never `data/*.p
 
 ## Agent prompt (Stage 1)
 
-```
-Work in /Users/max/Desktop/projects/prakasa.
-Follow docs/rudra/ENCODE.md Stage 1 only.
-Snag the first [ ] row in docs/rudra/QUEUE.md.
-Write docs/rudra/text/<id>.md from the VedaVMS PDF (visual, no pdftotext).
-No svaras. No iti. No meanings. Camakam: anuvākas 1–11 only.
-Run python3 scripts/check-rudra-text.py on that file.
-Reconcile against the PDF (start over from the page, not from your .md).
-Paste the Stage 1 review block. Do not encode.
-```
+Do **not** snag the first `[ ]` row. The parent assigns one `id`. Follow `docs/rudra/STAGE1.md`.
