@@ -3,6 +3,8 @@ import { getBook, getChapter } from "./content/library";
 import { Library } from "./components/Library";
 import { ChapterList } from "./components/ChapterList";
 import { Reader } from "./components/Reader";
+import { QuizSetup } from "./components/QuizSetup";
+import { QuizPlay } from "./components/QuizPlay";
 import { SiteFooter } from "./components/SiteFooter";
 import { NavLangProvider } from "./lib/nav-lang";
 import { parseHash, type Route } from "./lib/routes";
@@ -16,6 +18,9 @@ function Routes() {
     if (!window.location.hash) window.location.hash = "#/";
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
+
+  if (route.page === "quiz") return <QuizSetup />;
+  if (route.page === "quiz-play") return <QuizPlay />;
 
   if (route.page === "chapter") {
     const chapter = getChapter(route.bookId, route.chapterId);

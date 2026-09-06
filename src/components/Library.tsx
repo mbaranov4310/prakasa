@@ -10,7 +10,12 @@ export function Library() {
     <section className="library">
       <header className="page-head">
         <p className="eyebrow">Library</p>
-        <LangToggle />
+        <div className="page-head-actions">
+          <button className="quiz-entry" type="button" onClick={() => navigate({ page: "quiz" })}>
+            Quiz
+          </button>
+          <LangToggle />
+        </div>
       </header>
       <h1 className="is-latin">Prakāśa</h1>
       <ul className="book-grid">
