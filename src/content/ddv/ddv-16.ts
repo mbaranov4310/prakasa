@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv16: Chapter = {
   id: 'ddv-16',
-  titleDev: 'साक्षिणः पुरतो भाति लिङ्गं देहेन संयुतम्',
-  titleIast: 'sākṣiṇaḥ purato bhāti liṅgaṃ dehena saṃyutam',
+  titleDev: 'Verse 16',
+  titleIast: 'Verse 16',
   titleEn: 'Verse 16',
   status: 'ready',
   translation: 'Before the Witness appears the subtle body joined with the gross body. From the entry of the reflection of Consciousness it becomes the empirical living self.',

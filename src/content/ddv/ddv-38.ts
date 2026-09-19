@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv38: Chapter = {
   id: 'ddv-38',
-  titleDev: 'चिदाभासस्थिता निद्रा विक्षेपावृतिरूपिणी',
-  titleIast: 'cidābhāsasthitā nidrā vikṣepāvṛtirūpiṇī',
+  titleDev: 'Verse 38',
+  titleIast: 'Verse 38',
   titleEn: 'Verse 38',
   status: 'ready',
   translation: 'Sleep, of the nature of projecting and veiling, rests in the reflection of Consciousness. Covering the previous jīva and world, it imagines new ones.',

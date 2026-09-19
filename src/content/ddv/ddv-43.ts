@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv43: Chapter = {
   id: 'ddv-43',
-  titleDev: 'माधुर्यद्रवशैत्यानि नीरधर्मास्तरङ्गके',
-  titleIast: 'mādhuryadravaśaityāni nīradharmāstaraṅgake',
+  titleDev: 'Verse 43',
+  titleIast: 'Verse 43',
   titleEn: 'Verse 43',
   status: 'ready',
   translation: 'As sweetness, fluidity, and coldness — properties of water — inhere in the wave and then, resting there, inhere also in the foam,',

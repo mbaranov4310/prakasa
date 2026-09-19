@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv04: Chapter = {
   id: 'ddv-04',
-  titleDev: 'कामः सङ्कल्पसन्देहौ श्रद्धाऽश्रद्धे धृतीतरे',
-  titleIast: 'kāmaḥ saṅkalpasandehau śraddhā\'śraddhe dhṛtītare',
+  titleDev: 'Verse 4',
+  titleIast: 'Verse 4',
   titleEn: 'Verse 4',
   status: 'ready',
   translation: 'Consciousness illumines, as a unity, desire, determination and doubt, faith and want of faith, steadiness and its opposite, modesty, understanding, fear, and such other mental states.',

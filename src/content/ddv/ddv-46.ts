@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv46: Chapter = {
   id: 'ddv-46',
-  titleDev: 'प्रातिभासिकजीवस्य लये स्युर्व्यावहारिके',
-  titleIast: 'prātibhāsikajīvasya laye syurvyāvahārike',
+  titleDev: 'Verse 46',
+  titleIast: 'Verse 46',
   titleEn: 'Verse 46',
   status: 'ready',
   translation: 'On the dissolution of the apparent jīva they remain in the empirical; on its dissolution, Existence-Consciousness-Bliss come to rest in the Witness.',

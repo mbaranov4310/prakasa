@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv28: Chapter = {
   id: 'ddv-28',
-  titleDev: 'अखण्डैकरसं वस्तु सच्चिदानन्दलक्षणम्',
-  titleIast: 'akhaṇḍaikarasaṃ vastu saccidānandalakṣaṇam',
+  titleDev: 'Verse 28',
+  titleIast: 'Verse 28',
   titleEn: 'Verse 28',
   status: 'ready',
   translation: 'Unbroken thought “this is the undivided Reality whose mark is Existence-Consciousness-Bliss” is the middle samādhi.',

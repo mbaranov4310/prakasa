@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv44: Chapter = {
   id: 'ddv-44',
-  titleDev: 'साक्षिस्थाः सच्चिदानन्दाः सम्बन्धाद्व्यावहारिके',
-  titleIast: 'sākṣisthāḥ saccidānandāḥ sambandhādvyāvahārike',
+  titleDev: 'Verse 44',
+  titleIast: 'Verse 44',
   titleEn: 'Verse 44',
   status: 'ready',
   translation: 'Existence-Consciousness-Bliss, standing in the Witness, inhere by relation in the empirical, and through that likewise in the apparent.',

@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv40: Chapter = {
   id: 'ddv-40',
-  titleDev: 'प्रातिभासिकजीवो यस्तज्जगत् प्रातिभासिकम्',
-  titleIast: 'prātibhāsikajīvo yastajjagat prātibhāsikam',
+  titleDev: 'Verse 40',
+  titleIast: 'Verse 40',
   titleEn: 'Verse 40',
   status: 'ready',
   translation: 'The apparent jīva takes that apparent world as real; another, the empirical jīva, thinks it false.',

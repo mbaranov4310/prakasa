@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv24: Chapter = {
   id: 'ddv-24',
-  titleDev: 'कामाद्याश्चित्तगा दृश्यास्तत्साक्षित्वेन चेतनम्',
-  titleIast: 'kāmādyāścittagā dṛśyāstatsākṣitvena cetanam',
+  titleDev: 'Verse 24',
+  titleIast: 'Verse 24',
   titleEn: 'Verse 24',
   status: 'ready',
   translation: 'Desire and the other mental objects are the seen; one should meditate as the Consciousness that is their Witness. This is savikalpa samādhi associated with the seen.',

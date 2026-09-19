@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv35: Chapter = {
   id: 'ddv-35',
-  titleDev: 'ब्रह्मण्यवस्थिता माया विक्षेपावृतिरूपिणी',
-  titleIast: 'brahmaṇyavasthitā māyā vikṣepāvṛtirūpiṇī',
+  titleDev: 'Verse 35',
+  titleIast: 'Verse 35',
   titleEn: 'Verse 35',
   status: 'ready',
   translation: 'Māyā, of the nature of projecting and veiling, rests in Brahman. Covering its undivided nature, she imagines world and jīva there.',

@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv30: Chapter = {
   id: 'ddv-30',
-  titleDev: 'देहाभिमाने गलिते विज्ञाते परमात्मनि',
-  titleIast: 'dehābhimāne galite vijñāte paramātmani',
+  titleDev: 'Verse 30',
+  titleIast: 'Verse 30',
   titleEn: 'Verse 30',
   status: 'ready',
   translation: 'When attachment to the body has fallen away and the supreme Self is known, wherever the mind goes, there is samādhi.',

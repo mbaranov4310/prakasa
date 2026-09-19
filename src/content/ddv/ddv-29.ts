@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv29: Chapter = {
   id: 'ddv-29',
-  titleDev: 'स्तब्धीभावो रसास्वादात्तृतीयः पूर्ववन्मतः',
-  titleIast: 'stabdhībhāvo rasāsvādāttṛtīyaḥ pūrvavanmataḥ',
+  titleDev: 'Verse 29',
+  titleIast: 'Verse 29',
   titleEn: 'Verse 29',
   status: 'ready',
   translation: 'The third, a stillness from tasting that rasa, is like the previous (nirvikalpa). With these six samādhis one should spend time without a break.',

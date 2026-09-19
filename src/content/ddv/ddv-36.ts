@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv36: Chapter = {
   id: 'ddv-36',
-  titleDev: 'जीवो धीस्थचिदाभासो भवेद्भोक्ता हि कर्मकृत्',
-  titleIast: 'jīvo dhīsthacidābhāso bhavedbhoktā hi karmakṛt',
+  titleDev: 'Verse 36',
+  titleIast: 'Verse 36',
   titleEn: 'Verse 36',
   status: 'ready',
   translation: 'The jīva is the reflection of Consciousness in the intellect; he is the enjoyer and the doer of karma. All this world of elements and elementals is the enjoyed.',

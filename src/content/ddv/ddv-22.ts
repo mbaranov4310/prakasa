@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv22: Chapter = {
   id: 'ddv-22',
-  titleDev: 'उपेक्ष्य नामरूपे द्वे सच्चिदानन्दतत्परः',
-  titleIast: 'upekṣya nāmarūpe dve saccidānandatatparaḥ',
+  titleDev: 'Verse 22',
+  titleIast: 'Verse 22',
   titleEn: 'Verse 22',
   status: 'ready',
   translation: 'Setting aside the two, name and form, and intent on Existence-Consciousness-Bliss, one should always practise samādhi — in the heart or outside.',

@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv05: Chapter = {
   id: 'ddv-05',
-  titleDev: 'नोदेति नास्तमेत्येषा न वृद्धिं याति न क्षयम्',
-  titleIast: 'nodeti nāstametyeṣā na vṛddhiṃ yāti na kṣayam',
+  titleDev: 'Verse 5',
+  titleIast: 'Verse 5',
   titleEn: 'Verse 5',
   status: 'ready',
   translation: 'This Consciousness neither rises nor sets; it does not increase or decay. Shining of itself, it illumines all else without any other aid.',

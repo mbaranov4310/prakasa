@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv12: Chapter = {
   id: 'ddv-12',
-  titleDev: 'मनोऽहङ्कृत्युपादानं लिङ्गमेकं जडात्मकम्',
-  titleIast: 'mano\'haṅkṛtyupādānaṃ liṅgamekaṃ jaḍātmakam',
+  titleDev: 'Verse 12',
+  titleIast: 'Verse 12',
   titleEn: 'Verse 12',
   status: 'ready',
   translation: 'The subtle body — one, insentient, having mind and ego as its material — follows the three states; so it is born and it dies.',

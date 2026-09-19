@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv26: Chapter = {
   id: 'ddv-26',
-  titleDev: 'स्वानुभूतिरसावेशाद्दृश्यशब्दावुपेक्ष्य तु',
-  titleIast: 'svānubhūtirasāveśāddṛśyaśabdāvupekṣya tu',
+  titleDev: 'Verse 26',
+  titleIast: 'Verse 26',
   titleEn: 'Verse 26',
   status: 'ready',
   translation: 'But when, absorbed in the taste of one’s own being, one disregards both the seen and words, that is nirvikalpa samādhi, like a lamp in a windless place.',

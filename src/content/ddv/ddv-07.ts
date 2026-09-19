@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv07: Chapter = {
   id: 'ddv-07',
-  titleDev: 'छायाऽहङ्कारयोरैक्यं तप्तायःपिण्डवन्मतम्',
-  titleIast: 'chāyā\'haṅkārayoraikyaṃ taptāyaḥpiṇḍavanmatam',
+  titleDev: 'Verse 7',
+  titleIast: 'Verse 7',
   titleEn: 'Verse 7',
   status: 'ready',
   translation: 'The identity of the reflection (of Consciousness) and the ego is held to be like that of fire and a heated iron ball. Through identification with that ego, the body has attained sentiency.',

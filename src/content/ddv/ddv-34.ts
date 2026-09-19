@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv34: Chapter = {
   id: 'ddv-34',
-  titleDev: 'अवच्छिन्नस्य जीवस्य पूर्णेन ब्रह्मणैकताम्',
-  titleIast: 'avacchinnasya jīvasya pūrṇena brahmaṇaikatām',
+  titleDev: 'Verse 34',
+  titleIast: 'Verse 34',
   titleEn: 'Verse 34',
   status: 'ready',
   translation: 'Statements such as “thou art that” declare the identity of the limited jīva with full Brahman — not of the other two jīvas.',

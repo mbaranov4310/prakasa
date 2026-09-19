@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv37: Chapter = {
   id: 'ddv-37',
-  titleDev: 'अनादिकालमारभ्य मोक्षात् पूर्वमिदं द्वयम्',
-  titleIast: 'anādikālamārabhya mokṣāt pūrvamidaṃ dvayam',
+  titleDev: 'Verse 37',
+  titleIast: 'Verse 37',
   titleEn: 'Verse 37',
   status: 'ready',
   translation: 'From beginningless time until liberation these two stand in empirical dealing; therefore both are empirical.',

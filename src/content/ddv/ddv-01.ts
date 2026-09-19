@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv01: Chapter = {
   id: 'ddv-01',
-  titleDev: 'रूपं दृश्यं लोचनं दृक् तद्दृश्यं दृक्तु मानसम्',
-  titleIast: 'rūpaṃ dṛśyaṃ locanaṃ dṛk taddṛśyaṃ dṛktu mānasam',
+  titleDev: 'Verse 1',
+  titleIast: 'Verse 1',
   titleEn: 'Verse 1',
   status: 'ready',
   translation: 'Form is perceived and the eye is its perceiver. The eye is perceived and the mind is its perceiver. The mind with its modifications is perceived, and the Witness is the perceiver. But the Witness is not perceived.',

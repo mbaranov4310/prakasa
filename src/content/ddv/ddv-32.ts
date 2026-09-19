@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv32: Chapter = {
   id: 'ddv-32',
-  titleDev: 'अवच्छिन्नश्चिदाभासस्तृतीयः स्वप्नकल्पितः',
-  titleIast: 'avacchinnaścidābhāsastṛtīyaḥ svapnakalpitaḥ',
+  titleDev: 'Verse 32',
+  titleIast: 'Verse 32',
   titleEn: 'Verse 32',
   status: 'ready',
   translation: 'The limited (jīva), the reflection of Consciousness, and a third imagined in dream: the jīva is to be known as threefold. The first of them is the absolute.',

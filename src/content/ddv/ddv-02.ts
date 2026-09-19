@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv02: Chapter = {
   id: 'ddv-02',
-  titleDev: 'नीलपीतस्थूलसूक्ष्मह्रस्वदीर्घादि भेदतः',
-  titleIast: 'nīlapītasthūlasūkṣmahrasvadīrghādi bhedataḥ',
+  titleDev: 'Verse 2',
+  titleIast: 'Verse 2',
   titleEn: 'Verse 2',
   status: 'ready',
   translation: 'Forms appear as various on account of distinctions such as blue, yellow, gross, subtle, short, and long. The eye, remaining one, perceives them.',

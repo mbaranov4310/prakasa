@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv41: Chapter = {
   id: 'ddv-41',
-  titleDev: 'व्यावहारिकजीवो यस्तज्जगद्व्यावहारिकम्',
-  titleIast: 'vyāvahārikajīvo yastajjagadvyāvahārikam',
+  titleDev: 'Verse 41',
+  titleIast: 'Verse 41',
   titleEn: 'Verse 41',
   status: 'ready',
   translation: 'The empirical jīva takes that empirical world as true; the absolute thinks it false.',

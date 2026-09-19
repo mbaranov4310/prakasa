@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv10: Chapter = {
   id: 'ddv-10',
-  titleDev: 'अहङ्कारलये सुप्तौ भवेद्देहोऽप्यचेतनः',
-  titleIast: 'ahaṅkāralaye suptau bhaveddeho\'pyacetanaḥ',
+  titleDev: 'Verse 10',
+  titleIast: 'Verse 10',
   titleEn: 'Verse 10',
   status: 'ready',
   translation: 'In deep sleep, when the ego has dissolved, the body too is unconscious. Half-blossoming of the ego is dream; its full blossoming is waking.',

@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv45: Chapter = {
   id: 'ddv-45',
-  titleDev: 'लये फेनस्य तद्धर्मा द्रवाद्याः स्युस्तरङ्गके',
-  titleIast: 'laye phenasya taddharmā dravādyāḥ syustaraṅgake',
+  titleDev: 'Verse 45',
+  titleIast: 'Verse 45',
   titleEn: 'Verse 45',
   status: 'ready',
   translation: 'When the foam disappears, those properties such as fluidity remain in the wave; when that too disappears in the water, they remain as before.',

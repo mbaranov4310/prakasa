@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv23: Chapter = {
   id: 'ddv-23',
-  titleDev: 'सविकल्पो निर्विकल्पः समाधिर्द्विविधो हृदि',
-  titleIast: 'savikalpo nirvikalpaḥ samādhirdvividho hṛdi',
+  titleDev: 'Verse 23',
+  titleIast: 'Verse 23',
   titleEn: 'Verse 23',
   status: 'ready',
   translation: 'Samādhi in the heart is of two kinds, with distinction and without. That with distinction is again twofold, associated with the seen and with words.',

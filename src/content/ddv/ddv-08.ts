@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv08: Chapter = {
   id: 'ddv-08',
-  titleDev: 'अहङ्कारस्य तादात्म्यं चिच्छायादेहसाक्षिभिः',
-  titleIast: 'ahaṅkārasya tādātmyaṃ cicchāyādehasākṣibhiḥ',
+  titleDev: 'Verse 8',
+  titleIast: 'Verse 8',
   titleEn: 'Verse 8',
   status: 'ready',
   translation: 'The ego’s identification with the reflection of Consciousness, the body, and the Witness is of three kinds, in order: natural, due to karma, and born of error.',

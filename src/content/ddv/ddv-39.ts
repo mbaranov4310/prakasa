@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv39: Chapter = {
   id: 'ddv-39',
-  titleDev: 'प्रतीतिकाल एवैते स्थितत्वात् प्रातिभासिके',
-  titleIast: 'pratītikāla evaite sthitatvāt prātibhāsike',
+  titleDev: 'Verse 39',
+  titleIast: 'Verse 39',
   titleEn: 'Verse 39',
   status: 'ready',
   translation: 'These two are apparent because they existed only during the time of appearing. One awakened from a dream has no standing of those two again in dream.',

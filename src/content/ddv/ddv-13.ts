@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv13: Chapter = {
   id: 'ddv-13',
-  titleDev: 'शक्तिद्वयं हि मायाया विक्षेपावृतिरूपकम्',
-  titleIast: 'śaktidvayaṃ hi māyāyā vikṣepāvṛtirūpakam',
+  titleDev: 'Verse 13',
+  titleIast: 'Verse 13',
   titleEn: 'Verse 13',
   status: 'ready',
   translation: 'Māyā has two powers, projecting and veiling. The projecting power creates the world from the subtle body up to the cosmic egg.',

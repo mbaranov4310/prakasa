@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv15: Chapter = {
   id: 'ddv-15',
-  titleDev: 'अन्तर्दृग्दृश्ययोर्भेदं बहिश्च ब्रह्मसर्गयोः',
-  titleIast: 'antardṛgdṛśyayorbhedaṃ bahiśca brahmasargayoḥ',
+  titleDev: 'Verse 15',
+  titleIast: 'Verse 15',
   titleEn: 'Verse 15',
   status: 'ready',
   translation: 'The other power conceals the distinction of seer and seen within, and of Brahman and creation without. That is the cause of saṃsāra.',

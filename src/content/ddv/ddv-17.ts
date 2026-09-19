@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv17: Chapter = {
   id: 'ddv-17',
-  titleDev: 'अस्य जीवत्वमारोपात् साक्षिण्यप्यवभासते',
-  titleIast: 'asya jīvatvamāropāt sākṣiṇyapyavabhāsate',
+  titleDev: 'Verse 17',
+  titleIast: 'Verse 17',
   titleEn: 'Verse 17',
   status: 'ready',
   translation: 'By superimposition, that jīva-hood appears even in the Witness. When the veiling is destroyed and the distinction shines, it goes away.',

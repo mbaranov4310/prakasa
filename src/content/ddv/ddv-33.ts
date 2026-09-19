@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv33: Chapter = {
   id: 'ddv-33',
-  titleDev: 'अवच्छेदः कल्पितः स्यादवच्छेद्यं तु वास्तवम्',
-  titleIast: 'avacchedaḥ kalpitaḥ syādavacchedyaṃ tu vāstavam',
+  titleDev: 'Verse 33',
+  titleIast: 'Verse 33',
   titleEn: 'Verse 33',
   status: 'ready',
   translation: 'Limitation is imagined; what seems limited is real. Jīva-hood is superimposed on it; Brahman-hood is its nature.',

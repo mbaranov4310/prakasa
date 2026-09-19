@@ -94,11 +94,6 @@ def word_opts(after: str) -> str:
     return ""
 
 
-def first_pada(block: str) -> str:
-    line = block.replace("\r\n", "\n").strip("\n").split("\n", 1)[0]
-    return line.replace("।", "").replace("॥", "").replace("|", "").strip()
-
-
 def parse_phrases(body: str) -> tuple[str, str]:
     parts = [p.strip() for p in body.split("---")]
     h1 = parts[0] if parts else ""
@@ -146,9 +141,10 @@ def lift_one(path: Path) -> str:
     meta = chk.parse_meta(fences["meta"])
     cid = meta["id"]
     n = int(meta["verse"])
-    title_dev = first_pada(fences["samhita"])
-    title_iast = first_pada(fences["samhita_iast"])
-    title_en = f"Verse {n}"
+    label = f"Verse {n}"
+    title_dev = label
+    title_iast = label
+    title_en = label
     export = f"ddv{n:02d}"
     translation = fences.get("translation", "").replace("\n", " ").strip()
     h1, h2 = parse_phrases(fences.get("phrase", ""))

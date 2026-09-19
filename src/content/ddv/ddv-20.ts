@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv20: Chapter = {
   id: 'ddv-20',
-  titleDev: 'अस्ति भाति प्रियं रूपं नाम चेत्यंशपञ्चकम्',
-  titleIast: 'asti bhāti priyaṃ rūpaṃ nāma cetyaṃśapañcakam',
+  titleDev: 'Verse 20',
+  titleIast: 'Verse 20',
   titleEn: 'Verse 20',
   status: 'ready',
   translation: 'There are five aspects: it exists, it shines, it is dear, form, and name. The first three are the nature of Brahman; the last two are the nature of the world.',

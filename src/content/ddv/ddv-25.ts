@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv25: Chapter = {
   id: 'ddv-25',
-  titleDev: 'असङ्गः सच्चिदानन्दः स्वप्रभो द्वैतवर्जितः',
-  titleIast: 'asaṅgaḥ saccidānandaḥ svaprabho dvaitavarjitaḥ',
+  titleDev: 'Verse 25',
+  titleIast: 'Verse 25',
   titleEn: 'Verse 25',
   status: 'ready',
   translation: '“I am the unattached Existence-Consciousness-Bliss, self-luminous, free from duality” — this, associated with words, is savikalpa samādhi.',

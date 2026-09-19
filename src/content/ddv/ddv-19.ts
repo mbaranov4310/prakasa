@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv19: Chapter = {
   id: 'ddv-19',
-  titleDev: 'अत्राप्यावृतिनाशेन विभाति ब्रह्मसर्गयोः',
-  titleIast: 'atrāpyāvṛtināśena vibhāti brahmasargayoḥ',
+  titleDev: 'Verse 19',
+  titleIast: 'Verse 19',
   titleEn: 'Verse 19',
   status: 'ready',
   translation: 'Here too, when the veiling is destroyed, the distinction of Brahman and creation shines. The modification belongs to creation, never to Brahman.',

@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv42: Chapter = {
   id: 'ddv-42',
-  titleDev: 'पारमार्थिकजीवस्तु ब्रह्मैक्यं पारमार्थिकम्',
-  titleIast: 'pāramārthikajīvastu brahmaikyaṃ pāramārthikam',
+  titleDev: 'Verse 42',
+  titleIast: 'Verse 42',
   titleEn: 'Verse 42',
   status: 'ready',
   translation: 'The absolute jīva knows its identity with Brahman to be absolute. It does not see another; it sees (the other) as of the nature of untruth.',

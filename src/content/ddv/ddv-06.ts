@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv06: Chapter = {
   id: 'ddv-06',
-  titleDev: 'चिच्छायाऽऽवेशतो बुद्धौ भानं धीस्तु द्विधा स्थिता',
-  titleIast: 'cicchāyā\'\'veśato buddhau bhānaṃ dhīstu dvidhā sthitā',
+  titleDev: 'Verse 6',
+  titleIast: 'Verse 6',
   titleEn: 'Verse 6',
   status: 'ready',
   translation: 'Buddhi appears to shine by the entry of the reflection of Consciousness. Intelligence is of two kinds: one is egoity, the other is the inner organ.',

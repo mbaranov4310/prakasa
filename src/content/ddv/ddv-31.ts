@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv31: Chapter = {
   id: 'ddv-31',
-  titleDev: 'भिद्यते हृदयग्रन्थिश्छिद्यन्ते सर्वसंशयाः',
-  titleIast: 'bhidyate hṛdayagranthiśchidyante sarvasaṃśayāḥ',
+  titleDev: 'Verse 31',
+  titleIast: 'Verse 31',
   titleEn: 'Verse 31',
   status: 'ready',
   translation: 'When that high-and-low is seen, the knot of the heart is cut, all doubts are cut away, and his karmas wear out.',

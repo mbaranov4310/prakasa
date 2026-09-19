@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv18: Chapter = {
   id: 'ddv-18',
-  titleDev: 'तथा सर्गब्रह्मणोश्च भेदमावृत्य तिष्ठति',
-  titleIast: 'tathā sargabrahmaṇośca bhedamāvṛtya tiṣṭhati',
+  titleDev: 'Verse 18',
+  titleIast: 'Verse 18',
   titleEn: 'Verse 18',
   status: 'ready',
   translation: 'So too a power remains, concealing the distinction of creation and Brahman; under its influence Brahman appears as modified.',

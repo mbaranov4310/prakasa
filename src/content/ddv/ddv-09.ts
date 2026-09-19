@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv09: Chapter = {
   id: 'ddv-09',
-  titleDev: 'सम्बन्धिनोः सतोर्नास्ति निवृत्तिः सहजस्य तु',
-  titleIast: 'sambandhinoḥ satornāsti nivṛttiḥ sahajasya tu',
+  titleDev: 'Verse 9',
+  titleIast: 'Verse 9',
   titleEn: 'Verse 9',
   status: 'ready',
   translation: 'Of the two that are taken as real and mutually related, the natural identification never ceases. The other two cease, in order, when karma is exhausted and when awakening comes.',

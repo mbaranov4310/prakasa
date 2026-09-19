@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv27: Chapter = {
   id: 'ddv-27',
-  titleDev: 'हृदीव बाह्यदेशेऽपि यस्मिन् कस्मिंश्च वस्तुनि',
-  titleIast: 'hṛdīva bāhyadeśe\'pi yasmin kasmiṃśca vastuni',
+  titleDev: 'Verse 27',
+  titleIast: 'Verse 27',
   titleEn: 'Verse 27',
   status: 'ready',
   translation: 'The first samādhi, even toward some outer thing, is separating name and form from sheer Existence.',

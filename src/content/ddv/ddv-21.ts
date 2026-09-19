@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv21: Chapter = {
   id: 'ddv-21',
-  titleDev: 'खवाय्वग्निजलोर्वीषु देवतिर्यङ्नरादिषु',
-  titleIast: 'khavāyvagnijalorvīṣu devatiryaṅnarādiṣu',
+  titleDev: 'Verse 21',
+  titleIast: 'Verse 21',
   titleEn: 'Verse 21',
   status: 'ready',
   translation: 'In ether, air, fire, water, and earth, and in gods, animals, humans, and the rest, Existence-Consciousness-Bliss is the same; form and name differ.',

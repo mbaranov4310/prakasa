@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv14: Chapter = {
   id: 'ddv-14',
-  titleDev: 'सृष्टिर्नाम ब्रह्मरूपे सच्चिदानन्दवस्तुनि',
-  titleIast: 'sṛṣṭirnāma brahmarūpe saccidānandavastuni',
+  titleDev: 'Verse 14',
+  titleIast: 'Verse 14',
   titleEn: 'Verse 14',
   status: 'ready',
   translation: 'Creation is the spreading of all names and forms in the Reality that is Existence-Consciousness-Bliss, which is Brahman — like foam and the rest in the ocean.',

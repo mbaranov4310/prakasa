@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv11: Chapter = {
   id: 'ddv-11',
-  titleDev: 'अन्तःकरणवृत्तिश्च चितिच्छायैक्यमागता',
-  titleIast: 'antaḥkaraṇavṛttiśca citicchāyaikyamāgatā',
+  titleDev: 'Verse 11',
+  titleIast: 'Verse 11',
   titleEn: 'Verse 11',
   status: 'ready',
   translation: 'The modification of the inner organ, identified with the reflection of Consciousness, imagines impressions in dream, and in waking imagines outer objects through the senses.',

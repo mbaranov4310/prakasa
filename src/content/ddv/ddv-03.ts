@@ -3,8 +3,8 @@ import type { Chapter } from "../../types";
 
 export const ddv03: Chapter = {
   id: 'ddv-03',
-  titleDev: 'आन्ध्यमान्द्यपटुत्वेषु नेत्रधर्मेषु चैकधा',
-  titleIast: 'āndhyamāndyapaṭutveṣu netradharmeṣu caikadhā',
+  titleDev: 'Verse 3',
+  titleIast: 'Verse 3',
   titleEn: 'Verse 3',
   status: 'ready',
   translation: 'Blindness, dullness, and sharpness — properties of the eye — the mind cognizes as a unity. This also applies to the ear, the skin, and the rest.',
