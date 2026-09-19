@@ -5,7 +5,7 @@ id: ddv-01
 verse: 1
 param_pages: 6
 nikh_pages: 17
-expected_padas: 16
+expected_padas: 17
 ```
 
 ```samhita
@@ -40,7 +40,8 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 तु	tu	तु	tu	space	but / and
 मानसम्	mānasam	मानसम्	mānasam	danda	the mind
 दृश्याः	dṛśyāḥ	दृश्या	dṛśyā	space	the seen (pl.)
-धीवृत्तयः	dhīvṛttayaḥ	धीवृत्तयः	dhīvṛttayaḥ	space	modifications of the intellect
+धी	dhī	धी	dhī	join	of the intellect
+वृत्तयः	vṛttayaḥ	वृत्तयः	vṛttayaḥ	space	modifications
 साक्षी	sākṣī	साक्षी	sākṣī	space	the Witness
 दृगेव	dṛgeva	दृगेव	dṛgeva	space	the seer alone (दृक् + एव)
 न	na	न	na	space	not

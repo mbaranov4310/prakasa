@@ -10,9 +10,11 @@ export const ddv32: Chapter = {
   translation: 'The limited (jīva), the reflection of Consciousness, and a third imagined in dream: the jīva is to be known as threefold. The first of them is the absolute.',
   glossary: [
     { term: 'avacchinnaḥ', meaning: 'the limited one' },
-    { term: 'cidābhāsaḥ', meaning: 'the reflection of Consciousness' },
+    { term: 'cit', meaning: 'Consciousness' },
+    { term: 'ābhāsaḥ', meaning: 'the reflection' },
     { term: 'tṛtīyaḥ', meaning: 'a third' },
-    { term: 'svapnakalpitaḥ', meaning: 'imagined in dream' },
+    { term: 'svapna', meaning: 'in dream' },
+    { term: 'kalpitaḥ', meaning: 'imagined' },
     { term: 'vijñeyaḥ', meaning: 'is to be known' },
     { term: 'trividhaḥ', meaning: 'threefold' },
     { term: 'jīvaḥ', meaning: 'the jīva' },
@@ -29,51 +31,55 @@ export const ddv32: Chapter = {
       ['न्न', 'nna'],
       ['श्', 'ś'],
     ], { trailing: '' }),
-    word('ddv-32-w2', 'the reflection of Consciousness', [
+    word('ddv-32-w2', 'Consciousness', [
       ['चि', 'ci'],
       ['दा', 'dā'],
+    ], { trailing: '' }),
+    word('ddv-32-w3', 'the reflection', [
       ['भा', 'bhā'],
       ['स', 'sa'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-32-w3', 'a third', [
+    word('ddv-32-w4', 'a third', [
       ['तृ', 'tṛ'],
       ['ती', 'tī'],
       ['यः', 'yaḥ'],
     ]),
-    word('ddv-32-w4', 'imagined in dream', [
+    word('ddv-32-w5', 'in dream', [
       ['स्व', 'sva'],
       ['प्न', 'pna'],
+    ], { trailing: '' }),
+    word('ddv-32-w6', 'imagined', [
       ['क', 'ka'],
       ['ल्पि', 'lpi'],
       ['तः', 'taḥ'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-32-p2', 'phrase', 'the jīva is threefold; the first is the absolute.', [
-    word('ddv-32-w5', 'is to be known', [
+    word('ddv-32-w7', 'is to be known', [
       ['वि', 'vi'],
       ['ज्ञे', 'jñe'],
       ['य', 'ya'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-32-w6', 'threefold', [
+    word('ddv-32-w8', 'threefold', [
       ['त्रि', 'tri'],
       ['वि', 'vi'],
       ['धो', 'dho'],
     ]),
-    word('ddv-32-w7', 'the jīva', [
+    word('ddv-32-w9', 'the jīva', [
       ['जी', 'jī'],
       ['व', 'va'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-32-w8', 'of them', [
+    word('ddv-32-w10', 'of them', [
       ['त', 'ta'],
       ['त्रा', 'trā'],
     ], { trailing: '' }),
-    word('ddv-32-w9', 'the first', [
+    word('ddv-32-w11', 'the first', [
       ['द्यः', 'dyaḥ'],
     ]),
-    word('ddv-32-w10', 'is the absolute', [
+    word('ddv-32-w12', 'is the absolute', [
       ['पा', 'pā'],
       ['र', 'ra'],
       ['मा', 'mā'],

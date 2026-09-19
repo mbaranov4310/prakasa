@@ -5,7 +5,7 @@ id: ddv-36
 verse: 36
 param_pages: 138
 nikh_pages: 67
-expected_padas: 12
+expected_padas: 18
 ```
 
 ```samhita
@@ -31,15 +31,21 @@ All this world of elements and their products is what is enjoyed.
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 जीवः	jīvaḥ	जीवो	jīvo	space	the jīva
-धीस्थचिदाभासः	dhīsthacidābhāsaḥ	धीस्थचिदाभासो	dhīsthacidābhāso	space	is the reflection of Consciousness standing in the intellect
+धी	dhī	धी	dhī	join	intellect
+स्थ	stha	स्थ	stha	join	standing in
+चित्	cit	चिदा	cidā	join	Consciousness
+आभासः	ābhāsaḥ	भासो	bhāso	space	the reflection
 भवेत्	bhavet	भवेद्	bhaved	join	would be
 भोक्ता	bhoktā	भोक्ता	bhoktā	space	the enjoyer
 हि	hi	हि	hi	space	for
-कर्मकृत्	karmakṛt	कर्मकृत्	karmakṛt	danda	the doer of karma
-भोग्यरूपम्	bhogyarūpam	भोग्यरूपमि	bhogyarūpami	join	of the nature of the enjoyed
+कर्म	karma	कर्म	karma	join	karma
+कृत्	kṛt	कृत्	kṛt	danda	the doer of
+भोग्य	bhogya	भोग्य	bhogya	join	the enjoyed
+रूपम्	rūpam	रूपमि	rūpami	join	of the nature of
 इदं	idaṃ	दं	daṃ	space	this
 सर्वं	sarvaṃ	सर्वं	sarvaṃ	space	all
 जगत्	jagat	जगत्	jagat	space	the world
 स्यात्	syāt	स्याद्	syād	join	would be
-भूतभौतिकम्	bhūtabhautikam	भूतभौतिकम्	bhūtabhautikam	ddanda	elemental and made of elements
+भूत	bhūta	भूत	bhūta	join	elements
+भौतिकम्	bhautikam	भौतिकम्	bhautikam	ddanda	and made of elements
 ```

@@ -5,7 +5,7 @@ id: ddv-23
 verse: 23
 param_pages: 91
 nikh_pages: 46
-expected_padas: 9
+expected_padas: 11
 ```
 
 ```samhita
@@ -35,7 +35,9 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 समाधिः	samādhiḥ	समाधिर्	samādhir	join	samādhi
 द्विविधः	dvividhaḥ	द्विविधो	dvividho	space	is of two kinds
 हृदि	hṛdi	हृदि	hṛdi	danda	in the heart
-दृश्यशब्दानुविद्धेन	dṛśyaśabdānuviddhena	दृश्यशब्दानुविद्धेन	dṛśyaśabdānuviddhena	space	associated with the seen and with words
+दृश्य	dṛśya	दृश्य	dṛśya	join	the seen
+शब्द	śabda	शब्दा	śabdā	join	word
+अनुविद्धेन	anuviddhena	नुविद्धेन	nuviddhena	space	associated with
 सविकल्पः	savikalpaḥ	सविकल्पः	savikalpaḥ	space	savikalpa
 पुनः	punaḥ	पुनर्	punar	join	again
 द्विधा	dvidhā	द्विधा	dvidhā	ddanda	twofold

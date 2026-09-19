@@ -9,57 +9,83 @@ export const ddv21: Chapter = {
   status: 'ready',
   translation: 'In ether, air, fire, water, and earth, and in gods, animals, humans, and the rest, Existence-Consciousness-Bliss is the same; form and name differ.',
   glossary: [
-    { term: 'khavāyvagnijalorvīṣu', meaning: 'in ether, air, fire, water, and earth' },
-    { term: 'devatiryaṅnarādiṣu', meaning: 'in gods, animals, humans, etc.' },
+    { term: 'kha', meaning: 'ether' },
+    { term: 'vāyu', meaning: 'air' },
+    { term: 'agni', meaning: 'fire' },
+    { term: 'jalorvīṣu', meaning: 'water and earth' },
+    { term: 'deva', meaning: 'gods' },
+    { term: 'tiryañc', meaning: 'animals' },
+    { term: 'narādiṣu', meaning: 'humans, etc.' },
     { term: 'abhinnāḥ', meaning: 'undivided' },
-    { term: 'saccidānandāḥ', meaning: 'Existence-Consciousness-Bliss' },
+    { term: 'sat', meaning: 'Existence' },
+    { term: 'cit', meaning: 'Consciousness' },
+    { term: 'ānandāḥ', meaning: 'Bliss' },
     { term: 'bhidyete', meaning: 'the two differ' },
-    { term: 'rūpanāmanī', meaning: 'form and name' },
+    { term: 'rūpa', meaning: 'form' },
+    { term: 'nāmanī', meaning: 'and name' },
   ],
   root: group('ddv-21-verse', 'verse', 'In ether, air, fire, water, and earth, and in gods, animals, humans, and the rest, Existence-Consciousness-Bliss is the same; form and name differ.', [
     group('ddv-21-p1', 'phrase', 'In the five elements and in gods, animals, humans, and so on,', [
-    word('ddv-21-w1', 'in ether, air, fire, water, and earth', [
+    word('ddv-21-w1', 'ether', [
       ['ख', 'kha'],
+    ], { trailing: '' }),
+    word('ddv-21-w2', 'air', [
       ['वा', 'vā'],
       ['य्व', 'yva'],
+    ], { trailing: '' }),
+    word('ddv-21-w3', 'fire', [
       ['ग्नि', 'gni'],
+    ], { trailing: '' }),
+    word('ddv-21-w4', 'water and earth', [
       ['ज', 'ja'],
       ['लो', 'lo'],
       ['र्वी', 'rvī'],
       ['षु', 'ṣu'],
     ]),
-    word('ddv-21-w2', 'in gods, animals, humans, etc.', [
+    word('ddv-21-w5', 'gods', [
       ['दे', 'de'],
       ['व', 'va'],
+    ], { trailing: '' }),
+    word('ddv-21-w6', 'animals', [
       ['ति', 'ti'],
       ['र्य', 'rya'],
-      ['ङ्न', 'ṅna'],
+      ['ङ्', 'ṅ'],
+    ], { trailing: '' }),
+    word('ddv-21-w7', 'humans, etc.', [
+      ['न', 'na'],
       ['रा', 'rā'],
       ['दि', 'di'],
       ['षु', 'ṣu'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-21-p2', 'phrase', 'Existence-Consciousness-Bliss is undivided; form and name are what differ.', [
-    word('ddv-21-w3', 'undivided', [
+    word('ddv-21-w8', 'undivided', [
       ['अ', 'a'],
       ['भि', 'bhi'],
       ['न्नाः', 'nnāḥ'],
     ]),
-    word('ddv-21-w4', 'Existence-Consciousness-Bliss', [
+    word('ddv-21-w9', 'Existence', [
       ['स', 'sa'],
-      ['च्चि', 'cci'],
+      ['च्', 'c'],
+    ], { trailing: '' }),
+    word('ddv-21-w10', 'Consciousness', [
+      ['चि', 'ci'],
       ['दा', 'dā'],
+    ], { trailing: '' }),
+    word('ddv-21-w11', 'Bliss', [
       ['न', 'na'],
       ['न्दाः', 'ndāḥ'],
     ]),
-    word('ddv-21-w5', 'the two differ', [
+    word('ddv-21-w12', 'the two differ', [
       ['भि', 'bhi'],
       ['द्ये', 'dye'],
       ['ते', 'te'],
     ]),
-    word('ddv-21-w6', 'form and name', [
+    word('ddv-21-w13', 'form', [
       ['रू', 'rū'],
       ['प', 'pa'],
+    ], { trailing: '' }),
+    word('ddv-21-w14', 'and name', [
       ['ना', 'nā'],
       ['म', 'ma'],
       ['नी', 'nī'],

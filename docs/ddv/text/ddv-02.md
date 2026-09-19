@@ -5,7 +5,7 @@ id: ddv-02
 verse: 2
 param_pages: 10
 nikh_pages: 19
-expected_padas: 7
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,9 +30,16 @@ The eye sees those many forms while remaining one.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-नीलपीतस्थूलसूक्ष्मह्रस्वदीर्घादि	nīlapītasthūlasūkṣmahrasvadīrghādi	नीलपीतस्थूलसूक्ष्मह्रस्वदीर्घादि	nīlapītasthūlasūkṣmahrasvadīrghādi	space	blue, yellow, gross, subtle, short, long, etc.
+नील	nīla	नील	nīla	join	blue
+पीत	pīta	पीत	pīta	join	yellow
+स्थूल	sthūla	स्थूल	sthūla	join	gross
+सूक्ष्म	sūkṣma	सूक्ष्म	sūkṣma	join	subtle
+ह्रस्व	hrasva	ह्रस्व	hrasva	join	short
+दीर्घ	dīrgha	दीर्घा	dīrghā	join	long
+आदि	ādi	दि	di	space	etc.
 भेदतः	bhedataḥ	भेदतः	bhedataḥ	danda	on account of difference
-नानाविधानि	nānāvidhāni	नानाविधानि	nānāvidhāni	space	of various kinds
+नाना	nānā	नाना	nānā	join	various
+विधानि	vidhāni	विधानि	vidhāni	space	kinds
 रूपाणि	rūpāṇi	रूपाणि	rūpāṇi	space	forms
 पश्येत्	paśyet	पश्येल्	paśyel	join	perceives
 लोचनम्	locanam	लोचनमे	locaname	join	the eye

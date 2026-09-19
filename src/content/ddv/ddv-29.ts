@@ -9,8 +9,10 @@ export const ddv29: Chapter = {
   status: 'ready',
   translation: 'The third, a stillness from tasting that rasa, is like the previous (nirvikalpa). With these six samādhis one should spend time without a break.',
   glossary: [
-    { term: 'stabdhībhāvaḥ', meaning: 'a state of stillness' },
-    { term: 'rasāsvādāt', meaning: 'from tasting the rasa' },
+    { term: 'stabdhī', meaning: 'stillness' },
+    { term: 'bhāvaḥ', meaning: 'a state of' },
+    { term: 'rasa', meaning: 'rasa' },
+    { term: 'āsvādāt', meaning: 'from tasting' },
     { term: 'tṛtīyaḥ', meaning: 'the third' },
     { term: 'pūrvavat', meaning: 'like the previous' },
     { term: 'mataḥ', meaning: 'is held' },
@@ -23,61 +25,65 @@ export const ddv29: Chapter = {
   ],
   root: group('ddv-29-verse', 'verse', 'The third, a stillness from tasting that rasa, is like the previous (nirvikalpa). With these six samādhis one should spend time without a break.', [
     group('ddv-29-p1', 'phrase', 'A freeze of mind from tasting the rasa is the third, like the earlier one.', [
-    word('ddv-29-w1', 'a state of stillness', [
+    word('ddv-29-w1', 'stillness', [
       ['स्त', 'sta'],
       ['ब्धी', 'bdhī'],
+    ], { trailing: '' }),
+    word('ddv-29-w2', 'a state of', [
       ['भा', 'bhā'],
       ['वो', 'vo'],
     ]),
-    word('ddv-29-w2', 'from tasting the rasa', [
+    word('ddv-29-w3', 'rasa', [
       ['र', 'ra'],
       ['सा', 'sā'],
+    ], { trailing: '' }),
+    word('ddv-29-w4', 'from tasting', [
       ['स्वा', 'svā'],
       ['दा', 'dā'],
       ['त्', 't'],
     ], { trailing: '' }),
-    word('ddv-29-w3', 'the third', [
+    word('ddv-29-w5', 'the third', [
       ['तृ', 'tṛ'],
       ['ती', 'tī'],
       ['यः', 'yaḥ'],
     ]),
-    word('ddv-29-w4', 'like the previous', [
+    word('ddv-29-w6', 'like the previous', [
       ['पू', 'pū'],
       ['र्व', 'rva'],
       ['व', 'va'],
       ['न्', 'n'],
     ], { trailing: '' }),
-    word('ddv-29-w5', 'is held', [
+    word('ddv-29-w7', 'is held', [
       ['म', 'ma'],
       ['तः', 'taḥ'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-29-p2', 'phrase', 'By these six samādhis one should pass the time continuously.', [
-    word('ddv-29-w6', 'by these', [
+    word('ddv-29-w8', 'by these', [
       ['ए', 'e'],
       ['तैः', 'taiḥ'],
     ]),
-    word('ddv-29-w7', 'samādhis', [
+    word('ddv-29-w9', 'samādhis', [
       ['स', 'sa'],
       ['मा', 'mā'],
       ['धि', 'dhi'],
       ['भिः', 'bhiḥ'],
     ]),
-    word('ddv-29-w8', 'six', [
+    word('ddv-29-w10', 'six', [
       ['ष', 'ṣa'],
       ['ड्भि', 'ḍbhi'],
       ['र्', 'r'],
     ], { trailing: '' }),
-    word('ddv-29-w9', 'one should lead', [
+    word('ddv-29-w11', 'one should lead', [
       ['न', 'na'],
       ['ये', 'ye'],
       ['त्', 't'],
     ]),
-    word('ddv-29-w10', 'time', [
+    word('ddv-29-w12', 'time', [
       ['का', 'kā'],
       ['लं', 'laṃ'],
     ]),
-    word('ddv-29-w11', 'without interruption', [
+    word('ddv-29-w13', 'without interruption', [
       ['नि', 'ni'],
       ['र', 'ra'],
       ['न्त', 'nta'],

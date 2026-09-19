@@ -11,9 +11,11 @@ export const ddv19: Chapter = {
   glossary: [
     { term: 'atra', meaning: 'here' },
     { term: 'api', meaning: 'too' },
-    { term: 'āvṛtināśena', meaning: 'by destruction of the veiling' },
+    { term: 'āvṛti', meaning: 'of the veiling' },
+    { term: 'nāśena', meaning: 'by destruction' },
     { term: 'vibhāti', meaning: 'shines' },
-    { term: 'brahmasargayoḥ', meaning: 'of Brahman and creation' },
+    { term: 'brahma', meaning: 'Brahman' },
+    { term: 'sargayoḥ', meaning: 'and creation' },
     { term: 'bhedaḥ', meaning: 'their distinction' },
     { term: 'tayoḥ', meaning: 'of those two' },
     { term: 'vikāraḥ', meaning: 'modification' },
@@ -32,59 +34,63 @@ export const ddv19: Chapter = {
     word('ddv-19-w2', 'too', [
       ['प्या', 'pyā'],
     ], { trailing: '' }),
-    word('ddv-19-w3', 'by destruction of the veiling', [
+    word('ddv-19-w3', 'of the veiling', [
       ['वृ', 'vṛ'],
       ['ति', 'ti'],
+    ], { trailing: '' }),
+    word('ddv-19-w4', 'by destruction', [
       ['ना', 'nā'],
       ['शे', 'śe'],
       ['न', 'na'],
     ]),
-    word('ddv-19-w4', 'shines', [
+    word('ddv-19-w5', 'shines', [
       ['वि', 'vi'],
       ['भा', 'bhā'],
       ['ति', 'ti'],
     ]),
-    word('ddv-19-w5', 'of Brahman and creation', [
+    word('ddv-19-w6', 'Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
+    ], { trailing: '' }),
+    word('ddv-19-w7', 'and creation', [
       ['स', 'sa'],
       ['र्ग', 'rga'],
       ['योः', 'yoḥ'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-19-p2', 'phrase', 'Change belongs to creation, never to Brahman.', [
-    word('ddv-19-w6', 'their distinction', [
+    word('ddv-19-w8', 'their distinction', [
       ['भे', 'bhe'],
       ['द', 'da'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-19-w7', 'of those two', [
+    word('ddv-19-w9', 'of those two', [
       ['त', 'ta'],
       ['यो', 'yo'],
       ['र्', 'r'],
     ], { trailing: '' }),
-    word('ddv-19-w8', 'modification', [
+    word('ddv-19-w10', 'modification', [
       ['वि', 'vi'],
       ['का', 'kā'],
       ['रः', 'raḥ'],
     ]),
-    word('ddv-19-w9', 'would be', [
+    word('ddv-19-w11', 'would be', [
       ['स्या', 'syā'],
       ['त्', 't'],
     ]),
-    word('ddv-19-w10', 'in creation', [
+    word('ddv-19-w12', 'in creation', [
       ['स', 'sa'],
       ['र्गे', 'rge'],
     ]),
-    word('ddv-19-w11', 'not', [
+    word('ddv-19-w13', 'not', [
       ['न', 'na'],
     ]),
-    word('ddv-19-w12', 'in Brahman', [
+    word('ddv-19-w14', 'in Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
       ['णि', 'ṇi'],
     ]),
-    word('ddv-19-w13', 'anywhere', [
+    word('ddv-19-w15', 'anywhere', [
       ['क्व', 'kva'],
       ['चि', 'ci'],
       ['त्', 't'],

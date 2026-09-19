@@ -5,7 +5,7 @@ id: ddv-31
 verse: 31
 param_pages: 124
 nikh_pages: 59
-expected_padas: 11
+expected_padas: 14
 ```
 
 ```samhita
@@ -31,14 +31,17 @@ His karmas wear away when that which is high and low is seen.
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 भिद्यते	bhidyate	भिद्यते	bhidyate	space	is split
-हृदयग्रन्थिः	hṛdayagranthiḥ	हृदयग्रन्थिश्	hṛdayagranthiś	join	the knot of the heart
+हृदय	hṛdaya	हृदय	hṛdaya	join	of the heart
+ग्रन्थिः	granthiḥ	ग्रन्थिश्	granthiś	join	the knot
 छिद्यन्ते	chidyante	छिद्यन्ते	chidyante	space	are cut
-सर्वसंशयाः	sarvasaṃśayāḥ	सर्वसंशयाः	sarvasaṃśayāḥ	danda	all doubts
+सर्व	sarva	सर्व	sarva	join	all
+संशयाः	saṃśayāḥ	संशयाः	saṃśayāḥ	danda	doubts
 क्षीयन्ते	kṣīyante	क्षीयन्ते	kṣīyante	space	wear away
 च	ca	चा	cā	join	and
 अस्य	asya	स्य	sya	space	his
 कर्माणि	karmāṇi	कर्माणि	karmāṇi	space	karmas
 तस्मिन्	tasmin	तस्मिन्	tasmin	space	in that
 दृष्टे	dṛṣṭe	दृष्टे	dṛṣṭe	space	when seen
-परावरे	parāvare	परावरे	parāvare	ddanda	which is high and low
+पर	para	परा	parā	join	high
+अवरे	avare	वरे	vare	ddanda	and low
 ```

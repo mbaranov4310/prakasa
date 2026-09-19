@@ -5,7 +5,7 @@ id: ddv-32
 verse: 32
 param_pages: 128
 nikh_pages: 61
-expected_padas: 10
+expected_padas: 12
 ```
 
 ```samhita
@@ -31,9 +31,11 @@ the jīva is threefold; the first is the absolute.
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 अवच्छिन्नः	avacchinnaḥ	अवच्छिन्नश्	avacchinnaś	join	the limited one
-चिदाभासः	cidābhāsaḥ	चिदाभासस्	cidābhāsas	join	the reflection of Consciousness
+चित्	cit	चिदा	cidā	join	Consciousness
+आभासः	ābhāsaḥ	भासस्	bhāsas	join	the reflection
 तृतीयः	tṛtīyaḥ	तृतीयः	tṛtīyaḥ	space	a third
-स्वप्नकल्पितः	svapnakalpitaḥ	स्वप्नकल्पितः	svapnakalpitaḥ	danda	imagined in dream
+स्वप्न	svapna	स्वप्न	svapna	join	in dream
+कल्पितः	kalpitaḥ	कल्पितः	kalpitaḥ	danda	imagined
 विज्ञेयः	vijñeyaḥ	विज्ञेयस्	vijñeyas	join	is to be known
 त्रिविधः	trividhaḥ	त्रिविधो	trividho	space	threefold
 जीवः	jīvaḥ	जीवस्	jīvas	join	the jīva

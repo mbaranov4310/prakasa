@@ -14,7 +14,9 @@ export const ddv23: Chapter = {
     { term: 'samādhiḥ', meaning: 'samādhi' },
     { term: 'dvividhaḥ', meaning: 'is of two kinds' },
     { term: 'hṛdi', meaning: 'in the heart' },
-    { term: 'dṛśyaśabdānuviddhena', meaning: 'associated with the seen and with words' },
+    { term: 'dṛśya', meaning: 'the seen' },
+    { term: 'śabda', meaning: 'word' },
+    { term: 'anuviddhena', meaning: 'associated with' },
     { term: 'punaḥ', meaning: 'again' },
     { term: 'dvidhā', meaning: 'twofold' },
   ],
@@ -49,28 +51,32 @@ export const ddv23: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-23-p2', 'phrase', 'The savikalpa kind, associated with the seen or with words, is again two.', [
-    word('ddv-23-w6', 'associated with the seen and with words', [
+    word('ddv-23-w6', 'the seen', [
       ['दृ', 'dṛ'],
       ['श्य', 'śya'],
+    ], { trailing: '' }),
+    word('ddv-23-w7', 'word', [
       ['श', 'śa'],
       ['ब्दा', 'bdā'],
+    ], { trailing: '' }),
+    word('ddv-23-w8', 'associated with', [
       ['नु', 'nu'],
       ['वि', 'vi'],
       ['द्धे', 'ddhe'],
       ['न', 'na'],
     ]),
-    word('ddv-23-w7', 'savikalpa', [
+    word('ddv-23-w9', 'savikalpa', [
       ['स', 'sa'],
       ['वि', 'vi'],
       ['क', 'ka'],
       ['ल्पः', 'lpaḥ'],
     ]),
-    word('ddv-23-w8', 'again', [
+    word('ddv-23-w10', 'again', [
       ['पु', 'pu'],
       ['न', 'na'],
       ['र्', 'r'],
     ], { trailing: '' }),
-    word('ddv-23-w9', 'twofold', [
+    word('ddv-23-w11', 'twofold', [
       ['द्वि', 'dvi'],
       ['धा', 'dhā'],
     ], { trailing: ' ॥', lineBreakAfter: true }),

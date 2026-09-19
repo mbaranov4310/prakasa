@@ -12,11 +12,16 @@ export const ddv34: Chapter = {
     { term: 'avacchinnasya', meaning: 'of the limited' },
     { term: 'jīvasya', meaning: 'jīva' },
     { term: 'pūrṇena', meaning: 'with the full' },
-    { term: 'brahmaṇaikatām', meaning: 'identity with Brahman' },
-    { term: 'tattvamasyādivākyāni', meaning: 'statements such as “thou art that”' },
+    { term: 'brahmaṇaḥ', meaning: 'with Brahman' },
+    { term: 'ekatām', meaning: 'identity' },
+    { term: 'tat', meaning: 'that' },
+    { term: 'tvam', meaning: 'thou' },
+    { term: 'asyādi', meaning: 'art — and so on' },
+    { term: 'vākyāni', meaning: 'statements' },
     { term: 'jaguḥ', meaning: 'have declared' },
     { term: 'na', meaning: 'not' },
-    { term: 'itarajīvayoḥ', meaning: 'of the other two jīvas' },
+    { term: 'itara', meaning: 'the other' },
+    { term: 'jīvayoḥ', meaning: 'two jīvas' },
   ],
   root: group('ddv-34-verse', 'verse', 'Statements such as “thou art that” declare the identity of the limited jīva with full Brahman — not of the other two jīvas.', [
     group('ddv-34-p1', 'phrase', 'The identity of the limited jīva with full Brahman —', [
@@ -37,37 +42,48 @@ export const ddv34: Chapter = {
       ['र्णे', 'rṇe'],
       ['न', 'na'],
     ]),
-    word('ddv-34-w4', 'identity with Brahman', [
+    word('ddv-34-w4', 'with Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
       ['णै', 'ṇai'],
+    ], { trailing: '' }),
+    word('ddv-34-w5', 'identity', [
       ['क', 'ka'],
       ['ता', 'tā'],
       ['म्', 'm'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-34-p2', 'phrase', 'mahāvākyas such as tattvamasi declare; not of the other two jīvas.', [
-    word('ddv-34-w5', 'statements such as “thou art that”', [
+    word('ddv-34-w6', 'that', [
       ['त', 'ta'],
-      ['त्त्व', 'ttva'],
+      ['त्', 't'],
+    ], { trailing: '' }),
+    word('ddv-34-w7', 'thou', [
+      ['त्व', 'tva'],
       ['म', 'ma'],
+    ], { trailing: '' }),
+    word('ddv-34-w8', 'art — and so on', [
       ['स्या', 'syā'],
       ['दि', 'di'],
+    ], { trailing: '' }),
+    word('ddv-34-w9', 'statements', [
       ['वा', 'vā'],
       ['क्या', 'kyā'],
       ['नि', 'ni'],
     ]),
-    word('ddv-34-w6', 'have declared', [
+    word('ddv-34-w10', 'have declared', [
       ['ज', 'ja'],
       ['गु', 'gu'],
       ['र्', 'r'],
     ], { trailing: '' }),
-    word('ddv-34-w7', 'not', [
+    word('ddv-34-w11', 'not', [
       ['ने', 'ne'],
     ], { trailing: '' }),
-    word('ddv-34-w8', 'of the other two jīvas', [
+    word('ddv-34-w12', 'the other', [
       ['त', 'ta'],
       ['र', 'ra'],
+    ], { trailing: '' }),
+    word('ddv-34-w13', 'two jīvas', [
       ['जी', 'jī'],
       ['व', 'va'],
       ['योः', 'yoḥ'],

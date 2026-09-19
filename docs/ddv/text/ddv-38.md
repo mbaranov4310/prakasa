@@ -5,7 +5,7 @@ id: ddv-38
 verse: 38
 param_pages: 141
 nikh_pages: 70
-expected_padas: 9
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,11 +30,16 @@ Covering the former jīva and world, it imagines new ones.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-चिदाभासस्थिता	cidābhāsasthitā	चिदाभासस्थिता	cidābhāsasthitā	space	seated in the reflection of Consciousness
+चित्	cit	चिदा	cidā	join	Consciousness
+आभास	ābhāsa	भास	bhāsa	join	reflection
+स्थिता	sthitā	स्थिता	sthitā	space	seated in
 निद्रा	nidrā	निद्रा	nidrā	space	sleep
-विक्षेपावृतिरूपिणी	vikṣepāvṛtirūpiṇī	विक्षेपावृतिरूपिणी	vikṣepāvṛtirūpiṇī	danda	of the nature of projecting and veiling
+विक्षेप	vikṣepa	विक्षेपा	vikṣepā	join	projecting
+आवृति	āvṛti	वृति	vṛti	join	veiling
+रूपिणी	rūpiṇī	रूपिणी	rūpiṇī	danda	of the nature of
 आवृत्य	āvṛtya	आवृत्य	āvṛtya	space	having covered
-जीवजगती	jīvajagatī	जीवजगती	jīvajagatī	space	jīva and world
+जीव	jīva	जीव	jīva	join	jīva
+जगती	jagatī	जगती	jagatī	space	and world
 पूर्वे	pūrve	पूर्वे	pūrve	space	the previous
 नूत्ने	nūtne	नूत्ने	nūtne	space	new ones
 तु	tu	तु	tu	space	but

@@ -5,7 +5,7 @@ id: ddv-34
 verse: 34
 param_pages: 135
 nikh_pages: 65
-expected_padas: 8
+expected_padas: 13
 ```
 
 ```samhita
@@ -33,9 +33,14 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 अवच्छिन्नस्य	avacchinnasya	अवच्छिन्नस्य	avacchinnasya	space	of the limited
 जीवस्य	jīvasya	जीवस्य	jīvasya	space	jīva
 पूर्णेन	pūrṇena	पूर्णेन	pūrṇena	space	with the full
-ब्रह्मणैकताम्	brahmaṇaikatām	ब्रह्मणैकताम्	brahmaṇaikatām	danda	identity with Brahman
-तत्त्वमस्यादिवाक्यानि	tattvamasyādivākyāni	तत्त्वमस्यादिवाक्यानि	tattvamasyādivākyāni	space	statements such as “thou art that”
+ब्रह्मणः	brahmaṇaḥ	ब्रह्मणै	brahmaṇai	join	with Brahman
+एकताम्	ekatām	कताम्	katām	danda	identity
+तत्	tat	तत्	tat	join	that
+त्वम्	tvam	त्वम	tvama	join	thou
+अस्यादि	asyādi	स्यादि	syādi	join	art — and so on
+वाक्यानि	vākyāni	वाक्यानि	vākyāni	space	statements
 जगुः	jaguḥ	जगुर्	jagur	join	have declared
 न	na	ने	ne	join	not
-इतरजीवयोः	itarajīvayoḥ	तरजीवयोः	tarajīvayoḥ	ddanda	of the other two jīvas
+इतर	itara	तर	tara	join	the other
+जीवयोः	jīvayoḥ	जीवयोः	jīvayoḥ	ddanda	two jīvas
 ```

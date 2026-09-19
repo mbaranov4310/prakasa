@@ -5,7 +5,7 @@ id: ddv-41
 verse: 41
 param_pages: 147
 nikh_pages: 73
-expected_padas: 11
+expected_padas: 12
 ```
 
 ```samhita
@@ -30,7 +30,8 @@ as true; the absolute thinks it false.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-व्यावहारिकजीवः	vyāvahārikajīvaḥ	व्यावहारिकजीवो	vyāvahārikajīvo	space	the empirical jīva
+व्यावहारिक	vyāvahārika	व्यावहारिक	vyāvahārika	join	empirical
+जीवः	jīvaḥ	जीवो	jīvo	space	the jīva
 यः	yaḥ	यस्	yas	join	who
 तत्	tat	तज्	taj	join	that
 जगत्	jagat	जगद्	jagad	join	world

@@ -102,7 +102,9 @@ Hyphen is a transcript/print aid. Recitation is Nikh’s `कुर्याद�
 
 ## Phase 2 — pada splits
 
-Verses **1–6** and now **7–46** use Nikhilananda padaccheda as the pada column, with `join` slices so concat equals the locked Param saṃhitā. Virama + independent vowel does not NFC-compose (`दृग्`+`एव` ≠ `दृगेव`), so those stay one surface slice or bake the vowel into the previous slice (`छायाऽहङ्कारयो`+`रैक्यं`, `कुर्याद्`+`धृदये`).
+Verses **1–6** and **7–46** use Nikhilananda padaccheda as the pada column, then split dvandvas and transparent compounds so each stem has its own gloss (`नील` `पीत` `स्थूल` …, `सत्` `चित्` `आनन्द`). Join slices still equal the locked Param saṃhitā. Virama + independent vowel does not NFC-compose (`दृग्`+`एव` ≠ `दृगेव`; `चिद्`+`आनन्द` ≠ `चिदानन्द`), so those bake the vowel into the previous slice.
+
+Keep as one word: technical terms (`अहङ्कार`, `अन्तःकरण`, `साक्षी`, `समाधि`, `व्यावहारिक`, `प्रातिभासिक`, `पारमार्थिक`) and sandhi chunks that cannot split cleanly (`लिङ्गादि`, `त्वगादौ`, `जलोर्वीषु`).
 
 Flag, don’t merge:
 

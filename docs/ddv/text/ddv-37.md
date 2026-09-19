@@ -5,7 +5,7 @@ id: ddv-37
 verse: 37
 param_pages: 140
 nikh_pages: 68
-expected_padas: 11
+expected_padas: 12
 ```
 
 ```samhita
@@ -30,7 +30,8 @@ stands in vyavahāra; therefore both are empirical.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-अनादिकालम्	anādikālam	अनादिकालमा	anādikālamā	join	beginningless time
+अनादि	anādi	अनादि	anādi	join	beginningless
+कालम्	kālam	कालमा	kālamā	join	time
 आरभ्य	ārabhya	रभ्य	rabhya	space	beginning from
 मोक्षात्	mokṣāt	मोक्षात्	mokṣāt	space	from liberation
 पूर्वम्	pūrvam	पूर्वमि	pūrvami	join	before it

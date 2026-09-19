@@ -5,7 +5,7 @@ id: ddv-15
 verse: 15
 param_pages: 61
 nikh_pages: 37
-expected_padas: 12
+expected_padas: 14
 ```
 
 ```samhita
@@ -31,11 +31,13 @@ That other power is the cause of saṃsāra.
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 अन्तर्	antar	अन्तर्	antar	join	within
-दृग्दृश्ययोः	dṛgdṛśyayoḥ	दृग्दृश्ययोर्	dṛgdṛśyayor	join	of seer and seen
+दृक्	dṛk	दृग्	dṛg	join	seer
+दृश्ययोः	dṛśyayoḥ	दृश्ययोर्	dṛśyayor	join	and seen
 भेदं	bhedaṃ	भेदं	bhedaṃ	space	the distinction
 बहिः	bahiḥ	बहिश्	bahiś	join	outwardly
 च	ca	च	ca	space	and
-ब्रह्मसर्गयोः	brahmasargayoḥ	ब्रह्मसर्गयोः	brahmasargayoḥ	danda	of Brahman and creation
+ब्रह्म	brahma	ब्रह्म	brahma	join	Brahman
+सर्गयोः	sargayoḥ	सर्गयोः	sargayoḥ	danda	and creation
 आवृणोति	āvṛṇoti	आवृणोत्य	āvṛṇotya	join	conceals
 अपरा	aparā	परा	parā	space	the other
 शक्तिः	śaktiḥ	शक्तिः	śaktiḥ	space	power

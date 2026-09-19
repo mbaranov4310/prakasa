@@ -5,7 +5,7 @@ id: ddv-12
 verse: 12
 param_pages: 46
 nikh_pages: 32
-expected_padas: 9
+expected_padas: 12
 ```
 
 ```samhita
@@ -30,11 +30,14 @@ It follows the three states; it is born and it dies.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-मनोऽहङ्कृत्युपादानं	mano'haṅkṛtyupādānaṃ	मनोऽहङ्कृत्युपादानं	mano'haṅkṛtyupādānaṃ	space	having mind and ego as material
+मनस्	manas	मनोऽ	mano'	join	mind
+अहङ्कृत्युपादानम्	ahaṅkṛtyupādānam	हङ्कृत्युपादानं	haṅkṛtyupādānaṃ	space	having ego as material
 लिङ्गम्	liṅgam	लिङ्गमे	liṅgame	join	the subtle body
 एकं	ekaṃ	कं	kaṃ	space	one
-जडात्मकम्	jaḍātmakam	जडात्मकम्	jaḍātmakam	danda	of insentient nature
-अवस्थात्रयम्	avasthātrayam	अवस्थात्रयम	avasthātrayama	join	the three states
+जड	jaḍa	जडा	jaḍā	join	insentient
+आत्मकम्	ātmakam	त्मकम्	tmakam	danda	of the nature of
+अवस्था	avasthā	अवस्था	avasthā	join	states
+त्रयम्	trayam	त्रयम	trayama	join	three
 अन्वेति	anveti	न्वेति	nveti	space	it follows
 जायते	jāyate	जायते	jāyate	space	is born
 म्रियते	mriyate	म्रियते	mriyate	space	dies

@@ -5,7 +5,7 @@ id: ddv-07
 verse: 7
 param_pages: 22
 nikh_pages: 25
-expected_padas: 11
+expected_padas: 13
 ```
 
 ```samhita
@@ -30,10 +30,12 @@ By identity with that ego, the body appears sentient.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-छायाऽहङ्कारयोः	chāyā'haṅkārayoḥ	छायाऽहङ्कारयो	chāyā'haṅkārayo	join	of the reflection and the ego
+छाया	chāyā	छायाऽ	chāyā'	join	reflection
+अहङ्कारयोः	ahaṅkārayoḥ	हङ्कारयो	haṅkārayo	join	and the ego
 ऐक्यं	aikyaṃ	रैक्यं	raikyaṃ	space	identity
 तप्त	tapta	तप्ता	taptā	join	heated
-अयःपिण्डवत्	ayaḥpiṇḍavat	यःपिण्डवन्	yaḥpiṇḍavan	join	like an iron ball
+अयः	ayaḥ	यः	yaḥ	join	iron
+पिण्डवत्	piṇḍavat	पिण्डवन्	piṇḍavan	join	like a ball
 मतम्	matam	मतम्	matam	danda	is held (by the wise)
 तत्	tat	तद	tada	join	that
 अहङ्कार	ahaṅkāra	हङ्कार	haṅkāra	join	ego

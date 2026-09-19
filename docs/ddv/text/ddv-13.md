@@ -5,7 +5,7 @@ id: ddv-13
 verse: 13
 param_pages: 49
 nikh_pages: 34
-expected_padas: 9
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,13 +30,18 @@ The projecting power creates the world from the subtle body to the universe.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-शक्तिद्वयं	śaktidvayaṃ	शक्तिद्वयं	śaktidvayaṃ	space	a pair of powers
+शक्ति	śakti	शक्ति	śakti	join	powers
+द्वयम्	dvayam	द्वयं	dvayaṃ	space	a pair
 हि	hi	हि	hi	space	indeed
 मायायाः	māyāyāḥ	मायाया	māyāyā	space	of Māyā
-विक्षेपावृतिरूपकम्	vikṣepāvṛtirūpakam	विक्षेपावृतिरूपकम्	vikṣepāvṛtirūpakam	danda	of the form of projecting and veiling
-विक्षेपशक्तिः	vikṣepaśaktiḥ	विक्षेपशक्तिर्	vikṣepaśaktir	join	the projecting power
+विक्षेप	vikṣepa	विक्षेपा	vikṣepā	join	projecting
+आवृति	āvṛti	वृति	vṛti	join	veiling
+रूपकम्	rūpakam	रूपकम्	rūpakam	danda	of the form of
+विक्षेप	vikṣepa	विक्षेप	vikṣepa	join	projecting
+शक्तिः	śaktiḥ	शक्तिर्	śaktir	join	power
 लिङ्गादि	liṅgādi	लिङ्गादि	liṅgādi	space	from the subtle body onward
-ब्रह्माण्डान्तं	brahmāṇḍāntaṃ	ब्रह्माण्डान्तं	brahmāṇḍāntaṃ	space	up to the cosmic egg
+ब्रह्माण्ड	brahmāṇḍa	ब्रह्माण्डा	brahmāṇḍā	join	the cosmic egg
+अन्तम्	antam	न्तं	ntaṃ	space	up to
 जगत्	jagat	जगत्	jagat	space	the world
 सृजेत्	sṛjet	सृजेत्	sṛjet	ddanda	creates
 ```

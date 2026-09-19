@@ -9,7 +9,8 @@ export const ddv40: Chapter = {
   status: 'ready',
   translation: 'The apparent jīva takes that apparent world as real; another, the empirical jīva, thinks it false.',
   glossary: [
-    { term: 'prātibhāsikajīvaḥ', meaning: 'the apparent jīva' },
+    { term: 'prātibhāsika', meaning: 'apparent' },
+    { term: 'jīvaḥ', meaning: 'the jīva' },
     { term: 'yaḥ', meaning: 'who' },
     { term: 'tat', meaning: 'that' },
     { term: 'jagat', meaning: 'world' },
@@ -24,29 +25,31 @@ export const ddv40: Chapter = {
   ],
   root: group('ddv-40-verse', 'verse', 'The apparent jīva takes that apparent world as real; another, the empirical jīva, thinks it false.', [
     group('ddv-40-p1', 'phrase', 'The apparent jīva (takes) that apparent world', [
-    word('ddv-40-w1', 'the apparent jīva', [
+    word('ddv-40-w1', 'apparent', [
       ['प्रा', 'prā'],
       ['ति', 'ti'],
       ['भा', 'bhā'],
       ['सि', 'si'],
       ['क', 'ka'],
+    ], { trailing: '' }),
+    word('ddv-40-w2', 'the jīva', [
       ['जी', 'jī'],
       ['वो', 'vo'],
     ]),
-    word('ddv-40-w2', 'who', [
+    word('ddv-40-w3', 'who', [
       ['य', 'ya'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-40-w3', 'that', [
+    word('ddv-40-w4', 'that', [
       ['त', 'ta'],
       ['ज्', 'j'],
     ], { trailing: '' }),
-    word('ddv-40-w4', 'world', [
+    word('ddv-40-w5', 'world', [
       ['ज', 'ja'],
       ['ग', 'ga'],
       ['त्', 't'],
     ]),
-    word('ddv-40-w5', 'is apparent', [
+    word('ddv-40-w6', 'is apparent', [
       ['प्रा', 'prā'],
       ['ति', 'ti'],
       ['भा', 'bhā'],
@@ -56,31 +59,31 @@ export const ddv40: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-40-p2', 'phrase', 'as real; the other, the empirical, thinks it false.', [
-    word('ddv-40-w6', 'as real', [
+    word('ddv-40-w7', 'as real', [
       ['वा', 'vā'],
       ['स्त', 'sta'],
       ['वं', 'vaṃ'],
     ]),
-    word('ddv-40-w7', 'thinks', [
+    word('ddv-40-w8', 'thinks', [
       ['म', 'ma'],
       ['न्य', 'nya'],
       ['तेऽ', 'te\''],
     ], { trailing: '' }),
-    word('ddv-40-w8', 'another', [
+    word('ddv-40-w9', 'another', [
       ['न्य', 'nya'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-40-w9', 'but', [
+    word('ddv-40-w10', 'but', [
       ['तु', 'tu'],
     ]),
-    word('ddv-40-w10', 'as false', [
+    word('ddv-40-w11', 'as false', [
       ['मि', 'mi'],
       ['थ्ये', 'thye'],
     ], { trailing: '' }),
-    word('ddv-40-w11', 'thus', [
+    word('ddv-40-w12', 'thus', [
       ['ति', 'ti'],
     ]),
-    word('ddv-40-w12', 'the empirical (jīva)', [
+    word('ddv-40-w13', 'the empirical (jīva)', [
       ['व्या', 'vyā'],
       ['व', 'va'],
       ['हा', 'hā'],

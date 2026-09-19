@@ -15,7 +15,8 @@ export const ddv16: Chapter = {
     { term: 'liṅgaṃ', meaning: 'the subtle body' },
     { term: 'dehena', meaning: 'with the (gross) body' },
     { term: 'saṃyutam', meaning: 'joined' },
-    { term: 'citicchāyā', meaning: 'the reflection of Consciousness' },
+    { term: 'citi', meaning: 'Consciousness' },
+    { term: 'chāyā', meaning: 'the reflection' },
     { term: 'samāveśāt', meaning: 'from its entry' },
     { term: 'jīvaḥ', meaning: 'the living self' },
     { term: 'syāt', meaning: 'becomes' },
@@ -54,28 +55,30 @@ export const ddv16: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-16-p2', 'phrase', 'By the entry of the reflection it becomes the empirical jīva.', [
-    word('ddv-16-w7', 'the reflection of Consciousness', [
+    word('ddv-16-w7', 'Consciousness', [
       ['चि', 'ci'],
       ['ति', 'ti'],
+    ], { trailing: '' }),
+    word('ddv-16-w8', 'the reflection', [
       ['च्छा', 'cchā'],
       ['या', 'yā'],
     ]),
-    word('ddv-16-w8', 'from its entry', [
+    word('ddv-16-w9', 'from its entry', [
       ['स', 'sa'],
       ['मा', 'mā'],
       ['वे', 've'],
       ['शा', 'śā'],
       ['ज्', 'j'],
     ], { trailing: '' }),
-    word('ddv-16-w9', 'the living self', [
+    word('ddv-16-w10', 'the living self', [
       ['जी', 'jī'],
       ['वः', 'vaḥ'],
     ]),
-    word('ddv-16-w10', 'becomes', [
+    word('ddv-16-w11', 'becomes', [
       ['स्या', 'syā'],
       ['द्', 'd'],
     ], { trailing: '' }),
-    word('ddv-16-w11', 'empirical', [
+    word('ddv-16-w12', 'empirical', [
       ['व्या', 'vyā'],
       ['व', 'va'],
       ['हा', 'hā'],

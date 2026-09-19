@@ -5,7 +5,7 @@ id: ddv-22
 verse: 22
 param_pages: 83
 nikh_pages: 45
-expected_padas: 11
+expected_padas: 15
 ```
 
 ```samhita
@@ -31,9 +31,13 @@ one should always do samādhi in the heart or outside.
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 उपेक्ष्य	upekṣya	उपेक्ष्य	upekṣya	space	having disregarded
-नामरूपे	nāmarūpe	नामरूपे	nāmarūpe	space	name and form
+नाम	nāma	नाम	nāma	join	name
+रूपे	rūpe	रूपे	rūpe	space	and form
 द्वे	dve	द्वे	dve	space	the two
-सच्चिदानन्दतत्परः	saccidānandatatparaḥ	सच्चिदानन्दतत्परः	saccidānandatatparaḥ	danda	intent on Existence-Consciousness-Bliss
+सत्	sat	सच्	sac	join	Existence
+चित्	cit	चिदा	cidā	join	Consciousness
+आनन्द	ānanda	नन्द	nanda	join	Bliss
+तत्परः	tatparaḥ	तत्परः	tatparaḥ	danda	intent on
 समाधिं	samādhiṃ	समाधिं	samādhiṃ	space	samādhi
 सर्वदा	sarvadā	सर्वदा	sarvadā	space	always
 कुर्यात्	kuryāt	कुर्याद्	kuryād	join	one should practise

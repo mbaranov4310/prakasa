@@ -5,7 +5,7 @@ id: ddv-35
 verse: 35
 param_pages: 136
 nikh_pages: 66
-expected_padas: 9
+expected_padas: 12
 ```
 
 ```samhita
@@ -33,10 +33,13 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 ब्रह्मणि	brahmaṇi	ब्रह्मण्य	brahmaṇya	join	in Brahman
 अवस्थिता	avasthitā	वस्थिता	vasthitā	space	established
 माया	māyā	माया	māyā	space	Māyā
-विक्षेपावृतिरूपिणी	vikṣepāvṛtirūpiṇī	विक्षेपावृतिरूपिणी	vikṣepāvṛtirūpiṇī	danda	of the nature of projecting and veiling
+विक्षेप	vikṣepa	विक्षेपा	vikṣepā	join	projecting
+आवृति	āvṛti	वृति	vṛti	join	veiling
+रूपिणी	rūpiṇī	रूपिणी	rūpiṇī	danda	of the nature of
 आवृत्य	āvṛtya	आवृत्या	āvṛtyā	join	having covered
 अखण्डतां	akhaṇḍatāṃ	खण्डतां	khaṇḍatāṃ	space	undividedness
 तस्मिन्	tasmin	तस्मिन्	tasmin	space	in that
-जगज्जीवौ	jagajjīvau	जगज्जीवौ	jagajjīvau	space	world and jīva
+जगत्	jagat	जगज्	jagaj	join	world
+जीवौ	jīvau	जीवौ	jīvau	space	and jīva
 प्रकल्पयेत्	prakalpayet	प्रकल्पयेत्	prakalpayet	ddanda	she imagines
 ```

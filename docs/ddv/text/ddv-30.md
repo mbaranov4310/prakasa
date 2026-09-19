@@ -5,7 +5,7 @@ id: ddv-30
 verse: 30
 param_pages: 121
 nikh_pages: 57
-expected_padas: 11
+expected_padas: 13
 ```
 
 ```samhita
@@ -30,10 +30,12 @@ wherever the mind goes, there samādhis are.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-देहाभिमाने	dehābhimāne	देहाभिमाने	dehābhimāne	space	when identification with the body
+देह	deha	देहा	dehā	join	the body
+अभिमाने	abhimāne	भिमाने	bhimāne	space	when identification with
 गलिते	galite	गलिते	galite	space	has melted
 विज्ञाते	vijñāte	विज्ञाते	vijñāte	space	when known
-परमात्मनि	paramātmani	परमात्मनि	paramātmani	danda	the supreme Self
+परम	parama	परमा	paramā	join	supreme
+आत्मनि	ātmani	त्मनि	tmani	danda	Self
 यत्र	yatra	यत्र	yatra	space	wherever
 यत्र	yatra	यत्र	yatra	space	wherever
 मनः	manaḥ	मनो	mano	space	the mind

@@ -5,7 +5,7 @@ id: ddv-26
 verse: 26
 param_pages: 101
 nikh_pages: 50
-expected_padas: 8
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,12 +30,18 @@ nirvikalpa samādhi, like a lamp standing in still air.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-स्वानुभूतिरसावेशात्	svānubhūtirasāveśāt	स्वानुभूतिरसावेशाद्	svānubhūtirasāveśād	join	from absorption in the taste of one’s own experience
-दृश्यशब्दौ	dṛśyaśabdau	दृश्यशब्दावु	dṛśyaśabdāvu	join	seen and word
+स्व	sva	स्वा	svā	join	one’s own
+अनुभूति	anubhūti	नुभूति	nubhūti	join	experience
+रस	rasa	रसा	rasā	join	taste
+आवेशात्	āveśāt	वेशाद्	veśād	join	from absorption
+दृश्य	dṛśya	दृश्य	dṛśya	join	seen
+शब्दौ	śabdau	शब्दावु	śabdāvu	join	and word
 उपेक्ष्य	upekṣya	पेक्ष्य	pekṣya	space	having disregarded
 तु	tu	तु	tu	danda	but
 निर्विकल्पः	nirvikalpaḥ	निर्विकल्पः	nirvikalpaḥ	space	without distinction
 समाधिः	samādhiḥ	समाधिः	samādhiḥ	space	samādhi
 स्यात्	syāt	स्यान्	syān	join	would be
-निवातस्थितदीपवत्	nivātasthitadīpavat	निवातस्थितदीपवत्	nivātasthitadīpavat	ddanda	like a lamp in a windless place
+निवात	nivāta	निवात	nivāta	join	windless
+स्थित	sthita	स्थित	sthita	join	standing
+दीपवत्	dīpavat	दीपवत्	dīpavat	ddanda	like a lamp
 ```

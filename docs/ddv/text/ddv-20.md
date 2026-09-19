@@ -5,7 +5,7 @@ id: ddv-20
 verse: 20
 param_pages: 75
 nikh_pages: 43
-expected_padas: 13
+expected_padas: 17
 ```
 
 ```samhita
@@ -37,10 +37,14 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 नाम	nāma	नाम	nāma	space	name
 च	ca	चे	ce	join	and
 इति	iti	त्यं	tyaṃ	join	thus
-अंशपञ्चकम्	aṃśapañcakam	शपञ्चकम्	śapañcakam	danda	a group of five aspects
-आद्यत्रयं	ādyatrayaṃ	आद्यत्रयं	ādyatrayaṃ	space	the first three
-ब्रह्मरूपं	brahmarūpaṃ	ब्रह्मरूपं	brahmarūpaṃ	space	are the nature of Brahman
-जगद्रूपं	jagadrūpaṃ	जगद्रूपं	jagadrūpaṃ	space	the nature of the world
+अंश	aṃśa	श	śa	join	aspects
+पञ्चकम्	pañcakam	पञ्चकम्	pañcakam	danda	a group of five
+आद्य	ādya	आद्य	ādya	join	the first
+त्रयम्	trayam	त्रयं	trayaṃ	space	three
+ब्रह्म	brahma	ब्रह्म	brahma	join	Brahman
+रूपम्	rūpam	रूपं	rūpaṃ	space	are the nature of
+जगत्	jagat	जगद्	jagad	join	the world
+रूपम्	rūpam	रूपं	rūpaṃ	space	the nature of
 ततः	tataḥ	ततो	tato	space	then
 द्वयम्	dvayam	द्वयम्	dvayam	ddanda	the two
 ```

@@ -5,7 +5,7 @@ id: ddv-28
 verse: 28
 param_pages: 109
 nikh_pages: 55
-expected_padas: 9
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,11 +30,16 @@ this uninterrupted reflection is the middle samādhi.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-अखण्डैकरसं	akhaṇḍaikarasaṃ	अखण्डैकरसं	akhaṇḍaikarasaṃ	space	undivided, of one taste
+अखण्ड	akhaṇḍa	अखण्डै	akhaṇḍai	join	undivided
+एकरसम्	ekarasam	करसं	karasaṃ	space	of one taste
 वस्तु	vastu	वस्तु	vastu	space	the Reality
-सच्चिदानन्दलक्षणम्	saccidānandalakṣaṇam	सच्चिदानन्दलक्षणम्	saccidānandalakṣaṇam	danda	whose mark is Existence-Consciousness-Bliss
+सत्	sat	सच्	sac	join	Existence
+चित्	cit	चिदा	cidā	join	Consciousness
+आनन्द	ānanda	नन्द	nanda	join	Bliss
+लक्षणम्	lakṣaṇam	लक्षणम्	lakṣaṇam	danda	whose mark is
 इति	iti	इत्य	itya	join	thus
-अविच्छिन्नचिन्ता	avicchinnacintā	विच्छिन्नचिन्ते	vicchinnacinte	join	uninterrupted thought
+अविच्छिन्न	avicchinna	विच्छिन्न	vicchinna	join	uninterrupted
+चिन्ता	cintā	चिन्ते	cinte	join	thought
 इयं	iyaṃ	यं	yaṃ	space	this
 समाधिः	samādhiḥ	समाधिर्	samādhir	join	samādhi
 मध्यमः	madhyamaḥ	मध्यमो	madhyamo	space	the middle

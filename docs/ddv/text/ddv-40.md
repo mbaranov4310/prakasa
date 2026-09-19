@@ -5,7 +5,7 @@ id: ddv-40
 verse: 40
 param_pages: 146
 nikh_pages: 72
-expected_padas: 12
+expected_padas: 13
 ```
 
 ```samhita
@@ -30,7 +30,8 @@ as real; the other, the empirical, thinks it false.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-प्रातिभासिकजीवः	prātibhāsikajīvaḥ	प्रातिभासिकजीवो	prātibhāsikajīvo	space	the apparent jīva
+प्रातिभासिक	prātibhāsika	प्रातिभासिक	prātibhāsika	join	apparent
+जीवः	jīvaḥ	जीवो	jīvo	space	the jīva
 यः	yaḥ	यस्	yas	join	who
 तत्	tat	तज्	taj	join	that
 जगत्	jagat	जगत्	jagat	space	world

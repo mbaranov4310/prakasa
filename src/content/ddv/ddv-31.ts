@@ -10,16 +10,19 @@ export const ddv31: Chapter = {
   translation: 'When that high-and-low is seen, the knot of the heart is cut, all doubts are cut away, and his karmas wear out.',
   glossary: [
     { term: 'bhidyate', meaning: 'is split' },
-    { term: 'hṛdayagranthiḥ', meaning: 'the knot of the heart' },
+    { term: 'hṛdaya', meaning: 'of the heart' },
+    { term: 'granthiḥ', meaning: 'the knot' },
     { term: 'chidyante', meaning: 'are cut' },
-    { term: 'sarvasaṃśayāḥ', meaning: 'all doubts' },
+    { term: 'sarva', meaning: 'all' },
+    { term: 'saṃśayāḥ', meaning: 'doubts' },
     { term: 'kṣīyante', meaning: 'wear away' },
     { term: 'ca', meaning: 'and' },
     { term: 'asya', meaning: 'his' },
     { term: 'karmāṇi', meaning: 'karmas' },
     { term: 'tasmin', meaning: 'in that' },
     { term: 'dṛṣṭe', meaning: 'when seen' },
-    { term: 'parāvare', meaning: 'which is high and low' },
+    { term: 'para', meaning: 'high' },
+    { term: 'avare', meaning: 'and low' },
   ],
   root: group('ddv-31-verse', 'verse', 'When that high-and-low is seen, the knot of the heart is cut, all doubts are cut away, and his karmas wear out.', [
     group('ddv-31-p1', 'phrase', 'The knot of the heart is split; all doubts are cut.', [
@@ -28,56 +31,62 @@ export const ddv31: Chapter = {
       ['द्य', 'dya'],
       ['ते', 'te'],
     ]),
-    word('ddv-31-w2', 'the knot of the heart', [
+    word('ddv-31-w2', 'of the heart', [
       ['हृ', 'hṛ'],
       ['द', 'da'],
       ['य', 'ya'],
+    ], { trailing: '' }),
+    word('ddv-31-w3', 'the knot', [
       ['ग्र', 'gra'],
       ['न्थि', 'nthi'],
       ['श्', 'ś'],
     ], { trailing: '' }),
-    word('ddv-31-w3', 'are cut', [
+    word('ddv-31-w4', 'are cut', [
       ['छि', 'chi'],
       ['द्य', 'dya'],
       ['न्ते', 'nte'],
     ]),
-    word('ddv-31-w4', 'all doubts', [
+    word('ddv-31-w5', 'all', [
       ['स', 'sa'],
       ['र्व', 'rva'],
+    ], { trailing: '' }),
+    word('ddv-31-w6', 'doubts', [
       ['सं', 'saṃ'],
       ['श', 'śa'],
       ['याः', 'yāḥ'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-31-p2', 'phrase', 'His karmas wear away when that which is high and low is seen.', [
-    word('ddv-31-w5', 'wear away', [
+    word('ddv-31-w7', 'wear away', [
       ['क्षी', 'kṣī'],
       ['य', 'ya'],
       ['न्ते', 'nte'],
     ]),
-    word('ddv-31-w6', 'and', [
+    word('ddv-31-w8', 'and', [
       ['चा', 'cā'],
     ], { trailing: '' }),
-    word('ddv-31-w7', 'his', [
+    word('ddv-31-w9', 'his', [
       ['स्य', 'sya'],
     ]),
-    word('ddv-31-w8', 'karmas', [
+    word('ddv-31-w10', 'karmas', [
       ['क', 'ka'],
       ['र्मा', 'rmā'],
       ['णि', 'ṇi'],
     ]),
-    word('ddv-31-w9', 'in that', [
+    word('ddv-31-w11', 'in that', [
       ['त', 'ta'],
       ['स्मि', 'smi'],
       ['न्', 'n'],
     ]),
-    word('ddv-31-w10', 'when seen', [
+    word('ddv-31-w12', 'when seen', [
       ['दृ', 'dṛ'],
       ['ष्टे', 'ṣṭe'],
     ]),
-    word('ddv-31-w11', 'which is high and low', [
+    word('ddv-31-w13', 'high', [
       ['प', 'pa'],
       ['रा', 'rā'],
+    ], { trailing: '' }),
+    word('ddv-31-w14', 'and low', [
       ['व', 'va'],
       ['रे', 're'],
     ], { trailing: ' ॥', lineBreakAfter: true }),

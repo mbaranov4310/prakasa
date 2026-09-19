@@ -5,7 +5,7 @@ id: ddv-24
 verse: 24
 param_pages: 93
 nikh_pages: 47
-expected_padas: 10
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,13 +30,17 @@ Meditating thus is savikalpa samādhi associated with the seen.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-कामाद्याः	kāmādyāḥ	कामाद्याश्	kāmādyāś	join	desires and the rest
-चित्तगाः	cittagāḥ	चित्तगा	cittagā	space	occurring in the mind
+काम	kāma	कामा	kāmā	join	desires
+आद्याः	ādyāḥ	द्याश्	dyāś	join	and the rest
+चित्त	citta	चित्त	citta	join	in the mind
+गाः	gāḥ	गा	gā	space	occurring
 दृश्याः	dṛśyāḥ	दृश्यास्	dṛśyās	join	are the seen
-तत्साक्षित्वेन	tatsākṣitvena	तत्साक्षित्वेन	tatsākṣitvena	space	as their Witness
+तत्	tat	तत्	tat	join	their
+साक्षित्वेन	sākṣitvena	साक्षित्वेन	sākṣitvena	space	as Witness
 चेतनम्	cetanam	चेतनम्	cetanam	danda	Consciousness
 ध्यायेत्	dhyāyet	ध्यायेद्	dhyāyed	join	one should meditate
-दृश्यानुविद्धः	dṛśyānuviddhaḥ	दृश्यानुविद्धोऽ	dṛśyānuviddho'	join	associated with the seen
+दृश्य	dṛśya	दृश्या	dṛśyā	join	the seen
+अनुविद्धः	anuviddhaḥ	नुविद्धोऽ	nuviddho'	join	associated with
 अयं	ayaṃ	यं	yaṃ	space	this
 समाधिः	samādhiḥ	समाधिः	samādhiḥ	space	samādhi
 सविकल्पकः	savikalpakaḥ	सविकल्पकः	savikalpakaḥ	ddanda	with distinction

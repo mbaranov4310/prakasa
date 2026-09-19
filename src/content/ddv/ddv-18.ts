@@ -10,14 +10,16 @@ export const ddv18: Chapter = {
   translation: 'So too a power remains, concealing the distinction of creation and Brahman; under its influence Brahman appears as modified.',
   glossary: [
     { term: 'tathā', meaning: 'in the same way' },
-    { term: 'sargabrahmaṇoḥ', meaning: 'of creation and Brahman' },
+    { term: 'sarga', meaning: 'creation' },
+    { term: 'brahmaṇoḥ', meaning: 'and Brahman' },
     { term: 'ca', meaning: 'and' },
     { term: 'bhedam', meaning: 'the distinction' },
     { term: 'āvṛtya', meaning: 'having concealed' },
     { term: 'tiṣṭhati', meaning: 'it remains' },
     { term: 'yā', meaning: 'which' },
     { term: 'śaktiḥ', meaning: 'power' },
-    { term: 'tadvaśāt', meaning: 'by its force' },
+    { term: 'tat', meaning: 'its' },
+    { term: 'vaśāt', meaning: 'by the force' },
     { term: 'brahma', meaning: 'Brahman' },
     { term: 'vikṛtatvena', meaning: 'as modified' },
     { term: 'bhāsate', meaning: 'appears' },
@@ -28,59 +30,64 @@ export const ddv18: Chapter = {
       ['त', 'ta'],
       ['था', 'thā'],
     ]),
-    word('ddv-18-w2', 'of creation and Brahman', [
+    word('ddv-18-w2', 'creation', [
       ['स', 'sa'],
       ['र्ग', 'rga'],
+    ], { trailing: '' }),
+    word('ddv-18-w3', 'and Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
       ['णो', 'ṇo'],
       ['श्', 'ś'],
     ], { trailing: '' }),
-    word('ddv-18-w3', 'and', [
+    word('ddv-18-w4', 'and', [
       ['च', 'ca'],
     ]),
-    word('ddv-18-w4', 'the distinction', [
+    word('ddv-18-w5', 'the distinction', [
       ['भे', 'bhe'],
       ['द', 'da'],
       ['मा', 'mā'],
     ], { trailing: '' }),
-    word('ddv-18-w5', 'having concealed', [
+    word('ddv-18-w6', 'having concealed', [
       ['वृ', 'vṛ'],
       ['त्य', 'tya'],
     ]),
-    word('ddv-18-w6', 'it remains', [
+    word('ddv-18-w7', 'it remains', [
       ['ति', 'ti'],
       ['ष्ठ', 'ṣṭha'],
       ['ति', 'ti'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-18-p2', 'phrase', 'By its force Brahman appears as if transformed.', [
-    word('ddv-18-w7', 'which', [
+    word('ddv-18-w8', 'which', [
       ['या', 'yā'],
     ]),
-    word('ddv-18-w8', 'power', [
+    word('ddv-18-w9', 'power', [
       ['श', 'śa'],
       ['क्ति', 'kti'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-18-w9', 'by its force', [
+    word('ddv-18-w10', 'its', [
       ['त', 'ta'],
-      ['द्व', 'dva'],
+      ['द्', 'd'],
+    ], { trailing: '' }),
+    word('ddv-18-w11', 'by the force', [
+      ['व', 'va'],
       ['शा', 'śā'],
       ['द्', 'd'],
     ], { trailing: '' }),
-    word('ddv-18-w10', 'Brahman', [
+    word('ddv-18-w12', 'Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
     ]),
-    word('ddv-18-w11', 'as modified', [
+    word('ddv-18-w13', 'as modified', [
       ['वि', 'vi'],
       ['कृ', 'kṛ'],
       ['त', 'ta'],
       ['त्वे', 'tve'],
       ['न', 'na'],
     ]),
-    word('ddv-18-w12', 'appears', [
+    word('ddv-18-w14', 'appears', [
       ['भा', 'bhā'],
       ['स', 'sa'],
       ['ते', 'te'],

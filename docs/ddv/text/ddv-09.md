@@ -5,7 +5,7 @@ id: ddv-09
 verse: 9
 param_pages: 30
 nikh_pages: 28
-expected_padas: 13
+expected_padas: 14
 ```
 
 ```samhita
@@ -37,7 +37,8 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 निवृत्तिः	nivṛttiḥ	निवृत्तिः	nivṛttiḥ	space	cessation
 सहजस्य	sahajasya	सहजस्य	sahajasya	space	of the natural (identification)
 तु	tu	तु	tu	danda	but
-कर्मक्षयात्	karmakṣayāt	कर्मक्षयात्	karmakṣayāt	space	from the wearing-out of karma
+कर्म	karma	कर्म	karma	join	of karma
+क्षयात्	kṣayāt	क्षयात्	kṣayāt	space	from the wearing-out
 प्रबोधात्	prabodhāt	प्रबोधाच्	prabodhāc	join	from awakening
 च	ca	च	ca	space	and
 निवर्तेते	nivartete	निवर्तेते	nivartete	space	the two cease

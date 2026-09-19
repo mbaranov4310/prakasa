@@ -5,7 +5,7 @@ id: ddv-16
 verse: 16
 param_pages: 64
 nikh_pages: 39
-expected_padas: 11
+expected_padas: 12
 ```
 
 ```samhita
@@ -36,7 +36,8 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 लिङ्गं	liṅgaṃ	लिङ्गं	liṅgaṃ	space	the subtle body
 देहेन	dehena	देहेन	dehena	space	with the (gross) body
 संयुतम्	saṃyutam	संयुतम्	saṃyutam	danda	joined
-चितिच्छाया	citicchāyā	चितिच्छाया	citicchāyā	space	the reflection of Consciousness
+चिति	citi	चिति	citi	join	Consciousness
+छाया	chāyā	च्छाया	cchāyā	space	the reflection
 समावेशात्	samāveśāt	समावेशाज्	samāveśāj	join	from its entry
 जीवः	jīvaḥ	जीवः	jīvaḥ	space	the living self
 स्यात्	syāt	स्याद्	syād	join	becomes

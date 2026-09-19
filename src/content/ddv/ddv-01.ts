@@ -17,7 +17,8 @@ export const ddv01: Chapter = {
     { term: 'tu', meaning: 'but / and' },
     { term: 'mānasam', meaning: 'the mind' },
     { term: 'dṛśyāḥ', meaning: 'the seen (pl.)' },
-    { term: 'dhīvṛttayaḥ', meaning: 'modifications of the intellect' },
+    { term: 'dhī', meaning: 'of the intellect' },
+    { term: 'vṛttayaḥ', meaning: 'modifications' },
     { term: 'sākṣī', meaning: 'the Witness' },
     { term: 'dṛgeva', meaning: 'the seer alone (दृक् + एव)' },
     { term: 'na', meaning: 'not' },
@@ -69,28 +70,30 @@ export const ddv01: Chapter = {
       ['दृ', 'dṛ'],
       ['श्या', 'śyā'],
     ]),
-    word('ddv-01-w11', 'modifications of the intellect', [
+    word('ddv-01-w11', 'of the intellect', [
       ['धी', 'dhī'],
+    ], { trailing: '' }),
+    word('ddv-01-w12', 'modifications', [
       ['वृ', 'vṛ'],
       ['त्त', 'tta'],
       ['यः', 'yaḥ'],
     ]),
-    word('ddv-01-w12', 'the Witness', [
+    word('ddv-01-w13', 'the Witness', [
       ['सा', 'sā'],
       ['क्षी', 'kṣī'],
     ]),
-    word('ddv-01-w13', 'the seer alone (दृक् + एव)', [
+    word('ddv-01-w14', 'the seer alone (दृक् + एव)', [
       ['दृ', 'dṛ'],
       ['गे', 'ge'],
       ['व', 'va'],
     ]),
-    word('ddv-01-w14', 'not', [
+    word('ddv-01-w15', 'not', [
       ['न', 'na'],
     ]),
-    word('ddv-01-w15', 'but', [
+    word('ddv-01-w16', 'but', [
       ['तु', 'tu'],
     ]),
-    word('ddv-01-w16', 'is seen', [
+    word('ddv-01-w17', 'is seen', [
       ['दृ', 'dṛ'],
       ['श्य', 'śya'],
       ['ते', 'te'],

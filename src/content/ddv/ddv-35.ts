@@ -12,11 +12,14 @@ export const ddv35: Chapter = {
     { term: 'brahmaṇi', meaning: 'in Brahman' },
     { term: 'avasthitā', meaning: 'established' },
     { term: 'māyā', meaning: 'Māyā' },
-    { term: 'vikṣepāvṛtirūpiṇī', meaning: 'of the nature of projecting and veiling' },
+    { term: 'vikṣepa', meaning: 'projecting' },
+    { term: 'āvṛti', meaning: 'veiling' },
+    { term: 'rūpiṇī', meaning: 'of the nature of' },
     { term: 'āvṛtya', meaning: 'having covered' },
     { term: 'akhaṇḍatāṃ', meaning: 'undividedness' },
     { term: 'tasmin', meaning: 'in that' },
-    { term: 'jagajjīvau', meaning: 'world and jīva' },
+    { term: 'jagat', meaning: 'world' },
+    { term: 'jīvau', meaning: 'and jīva' },
     { term: 'prakalpayet', meaning: 'she imagines' },
   ],
   root: group('ddv-35-verse', 'verse', 'Māyā, of the nature of projecting and veiling, rests in Brahman. Covering its undivided nature, she imagines world and jīva there.', [
@@ -35,40 +38,47 @@ export const ddv35: Chapter = {
       ['मा', 'mā'],
       ['या', 'yā'],
     ]),
-    word('ddv-35-w4', 'of the nature of projecting and veiling', [
+    word('ddv-35-w4', 'projecting', [
       ['वि', 'vi'],
       ['क्षे', 'kṣe'],
       ['पा', 'pā'],
+    ], { trailing: '' }),
+    word('ddv-35-w5', 'veiling', [
       ['वृ', 'vṛ'],
       ['ति', 'ti'],
+    ], { trailing: '' }),
+    word('ddv-35-w6', 'of the nature of', [
       ['रू', 'rū'],
       ['पि', 'pi'],
       ['णी', 'ṇī'],
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-35-p2', 'phrase', 'Covering undividedness, she imagines world and jīva in it.', [
-    word('ddv-35-w5', 'having covered', [
+    word('ddv-35-w7', 'having covered', [
       ['आ', 'ā'],
       ['वृ', 'vṛ'],
       ['त्या', 'tyā'],
     ], { trailing: '' }),
-    word('ddv-35-w6', 'undividedness', [
+    word('ddv-35-w8', 'undividedness', [
       ['ख', 'kha'],
       ['ण्ड', 'ṇḍa'],
       ['तां', 'tāṃ'],
     ]),
-    word('ddv-35-w7', 'in that', [
+    word('ddv-35-w9', 'in that', [
       ['त', 'ta'],
       ['स्मि', 'smi'],
       ['न्', 'n'],
     ]),
-    word('ddv-35-w8', 'world and jīva', [
+    word('ddv-35-w10', 'world', [
       ['ज', 'ja'],
       ['ग', 'ga'],
-      ['ज्जी', 'jjī'],
+      ['ज्', 'j'],
+    ], { trailing: '' }),
+    word('ddv-35-w11', 'and jīva', [
+      ['जी', 'jī'],
       ['वौ', 'vau'],
     ]),
-    word('ddv-35-w9', 'she imagines', [
+    word('ddv-35-w12', 'she imagines', [
       ['प्र', 'pra'],
       ['क', 'ka'],
       ['ल्प', 'lpa'],

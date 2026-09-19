@@ -5,7 +5,7 @@ id: ddv-46
 verse: 46
 param_pages: 155
 nikh_pages: 78
-expected_padas: 8
+expected_padas: 12
 ```
 
 ```samhita
@@ -30,12 +30,16 @@ When that dissolves, Existence-Consciousness-Bliss come to rest in the Witness.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-प्रातिभासिकजीवस्य	prātibhāsikajīvasya	प्रातिभासिकजीवस्य	prātibhāsikajīvasya	space	of the apparent jīva
+प्रातिभासिक	prātibhāsika	प्रातिभासिक	prātibhāsika	join	apparent
+जीवस्य	jīvasya	जीवस्य	jīvasya	space	of the jīva
 लये	laye	लये	laye	space	on dissolution
 स्युः	syuḥ	स्युर्	syur	join	they would be
 व्यावहारिके	vyāvahārike	व्यावहारिके	vyāvahārike	danda	in the empirical
-तल्लये	tallaye	तल्लये	tallaye	space	on the dissolution of that
-सच्चिदानन्दाः	saccidānandāḥ	सच्चिदानन्दाः	saccidānandāḥ	space	Existence-Consciousness-Bliss
+तत्	tat	तल्	tal	join	of that
+लये	laye	लये	laye	space	on the dissolution
+सत्	sat	सच्	sac	join	Existence
+चित्	cit	चिदा	cidā	join	Consciousness
+आनन्दाः	ānandāḥ	नन्दाः	nandāḥ	space	Bliss
 पर्यवस्यन्ति	paryavasyanti	पर्यवस्यन्ति	paryavasyanti	space	come to rest
 साक्षिणि	sākṣiṇi	साक्षिणि	sākṣiṇi	ddanda	in the Witness
 ```

@@ -5,7 +5,7 @@ id: ddv-42
 verse: 42
 param_pages: 150
 nikh_pages: 74
-expected_padas: 11
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,9 +30,11 @@ It does not see another; it sees it as untrue.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-पारमार्थिकजीवः	pāramārthikajīvaḥ	पारमार्थिकजीवस्	pāramārthikajīvas	join	the absolute jīva
+पारमार्थिक	pāramārthika	पारमार्थिक	pāramārthika	join	absolute
+जीवः	jīvaḥ	जीवस्	jīvas	join	the jīva
 तु	tu	तु	tu	space	but
-ब्रह्मैक्यं	brahmaikyaṃ	ब्रह्मैक्यं	brahmaikyaṃ	space	identity with Brahman
+ब्रह्म	brahma	ब्रह्मै	brahmai	join	Brahman
+ऐक्यम्	aikyam	क्यं	kyaṃ	space	identity with
 पारमार्थिकम्	pāramārthikam	पारमार्थिकम्	pāramārthikam	danda	as absolute
 प्रत्येति	pratyeti	प्रत्येति	pratyeti	space	cognizes
 वीक्षते	vīkṣate	वीक्षते	vīkṣate	space	sees
@@ -40,5 +42,6 @@ pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 अन्यत्	anyat	न्यद्	nyad	join	another
 वीक्षते	vīkṣate	वीक्षते	vīkṣate	space	it sees
 तु	tu	त्व	tva	join	but
-अनृतात्मना	anṛtātmanā	नृतात्मना	nṛtātmanā	ddanda	as of the nature of untruth
+अनृत	anṛta	नृता	nṛtā	join	untruth
+आत्मना	ātmanā	त्मना	tmanā	ddanda	as of the nature of
 ```

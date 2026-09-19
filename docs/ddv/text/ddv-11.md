@@ -5,7 +5,7 @@ id: ddv-11
 verse: 11
 param_pages: 39
 nikh_pages: 31
-expected_padas: 11
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,9 +30,12 @@ projects impressions in dream, and outer objects in waking through the senses.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-अन्तःकरणवृत्तिः	antaḥkaraṇavṛttiḥ	अन्तःकरणवृत्तिश्	antaḥkaraṇavṛttiś	join	a modification of the inner organ
+अन्तःकरण	antaḥkaraṇa	अन्तःकरण	antaḥkaraṇa	join	inner organ
+वृत्तिः	vṛttiḥ	वृत्तिश्	vṛttiś	join	a modification
 च	ca	च	ca	space	and
-चितिच्छायैक्यम्	citicchāyaikyam	चितिच्छायैक्यमा	citicchāyaikyamā	join	identity with the reflection of Consciousness
+चिति	citi	चिति	citi	join	Consciousness
+छाया	chāyā	च्छायै	cchāyai	join	reflection
+ऐक्यम्	aikyam	क्यमा	kyamā	join	identity
 आगता	āgatā	गता	gatā	danda	having attained
 वासनाः	vāsanāḥ	वासनाः	vāsanāḥ	space	impressions
 कल्पयेत्	kalpayet	कल्पयेत्	kalpayet	space	it imagines

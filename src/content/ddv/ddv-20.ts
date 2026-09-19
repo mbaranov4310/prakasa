@@ -16,10 +16,13 @@ export const ddv20: Chapter = {
     { term: 'nāma', meaning: 'name' },
     { term: 'ca', meaning: 'and' },
     { term: 'iti', meaning: 'thus' },
-    { term: 'aṃśapañcakam', meaning: 'a group of five aspects' },
-    { term: 'ādyatrayaṃ', meaning: 'the first three' },
-    { term: 'brahmarūpaṃ', meaning: 'are the nature of Brahman' },
-    { term: 'jagadrūpaṃ', meaning: 'the nature of the world' },
+    { term: 'aṃśa', meaning: 'aspects' },
+    { term: 'pañcakam', meaning: 'a group of five' },
+    { term: 'ādya', meaning: 'the first' },
+    { term: 'trayam', meaning: 'three' },
+    { term: 'brahma', meaning: 'Brahman' },
+    { term: 'rūpam', meaning: 'are the nature of' },
+    { term: 'jagat', meaning: 'the world' },
     { term: 'tataḥ', meaning: 'then' },
     { term: 'dvayam', meaning: 'the two' },
   ],
@@ -51,8 +54,10 @@ export const ddv20: Chapter = {
     word('ddv-20-w7', 'thus', [
       ['त्यं', 'tyaṃ'],
     ], { trailing: '' }),
-    word('ddv-20-w8', 'a group of five aspects', [
+    word('ddv-20-w8', 'aspects', [
       ['श', 'śa'],
+    ], { trailing: '' }),
+    word('ddv-20-w9', 'a group of five', [
       ['प', 'pa'],
       ['ञ्च', 'ñca'],
       ['क', 'ka'],
@@ -60,29 +65,36 @@ export const ddv20: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-20-p2', 'phrase', 'The first three are Brahman’s; the last two are the world’s.', [
-    word('ddv-20-w9', 'the first three', [
+    word('ddv-20-w10', 'the first', [
       ['आ', 'ā'],
       ['द्य', 'dya'],
+    ], { trailing: '' }),
+    word('ddv-20-w11', 'three', [
       ['त्र', 'tra'],
       ['यं', 'yaṃ'],
     ]),
-    word('ddv-20-w10', 'are the nature of Brahman', [
+    word('ddv-20-w12', 'Brahman', [
       ['ब्र', 'bra'],
       ['ह्म', 'hma'],
+    ], { trailing: '' }),
+    word('ddv-20-w13', 'are the nature of', [
       ['रू', 'rū'],
       ['पं', 'paṃ'],
     ]),
-    word('ddv-20-w11', 'the nature of the world', [
+    word('ddv-20-w14', 'the world', [
       ['ज', 'ja'],
       ['ग', 'ga'],
-      ['द्रू', 'drū'],
+      ['द्', 'd'],
+    ], { trailing: '' }),
+    word('ddv-20-w15', 'the nature of', [
+      ['रू', 'rū'],
       ['पं', 'paṃ'],
     ]),
-    word('ddv-20-w12', 'then', [
+    word('ddv-20-w16', 'then', [
       ['त', 'ta'],
       ['तो', 'to'],
     ]),
-    word('ddv-20-w13', 'the two', [
+    word('ddv-20-w17', 'the two', [
       ['द्व', 'dva'],
       ['य', 'ya'],
       ['म्', 'm'],

@@ -5,7 +5,7 @@ id: ddv-14
 verse: 14
 param_pages: 59
 nikh_pages: 35
-expected_padas: 7
+expected_padas: 15
 ```
 
 ```samhita
@@ -32,9 +32,17 @@ Like foam etc. in the ocean: the spreading of all names and forms.
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 सृष्टिः	sṛṣṭiḥ	सृष्टिर्	sṛṣṭir	join	creation
 नाम	nāma	नाम	nāma	space	is called
-ब्रह्मरूपे	brahmarūpe	ब्रह्मरूपे	brahmarūpe	space	in that which has the nature of Brahman
-सच्चिदानन्दवस्तुनि	saccidānandavastuni	सच्चिदानन्दवस्तुनि	saccidānandavastuni	danda	in the entity that is Existence-Consciousness-Bliss
+ब्रह्म	brahma	ब्रह्म	brahma	join	Brahman
+रूपे	rūpe	रूपे	rūpe	space	in that which has the nature of
+सत्	sat	सच्	sac	join	Existence
+चित्	cit	चिदा	cidā	join	Consciousness
+आनन्द	ānanda	नन्द	nanda	join	Bliss
+वस्तुनि	vastuni	वस्तुनि	vastuni	danda	in the entity
 अब्धौ	abdhau	अब्धौ	abdhau	space	in the ocean
-फेनादिवत्	phenādivat	फेनादिवत्	phenādivat	space	like foam and so on
-सर्वनामरूपप्रसारणा	sarvanāmarūpaprasāraṇā	सर्वनामरूपप्रसारणा	sarvanāmarūpaprasāraṇā	ddanda	the spreading of all names and forms
+फेन	phena	फेना	phenā	join	foam
+आदिवत्	ādivat	दिवत्	divat	space	and so on, like
+सर्व	sarva	सर्व	sarva	join	all
+नाम	nāma	नाम	nāma	join	names
+रूप	rūpa	रूप	rūpa	join	and forms
+प्रसारणा	prasāraṇā	प्रसारणा	prasāraṇā	ddanda	the spreading
 ```

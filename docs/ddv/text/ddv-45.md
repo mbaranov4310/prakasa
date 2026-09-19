@@ -5,7 +5,7 @@ id: ddv-45
 verse: 45
 param_pages: 154
 nikh_pages: 77
-expected_padas: 14
+expected_padas: 16
 ```
 
 ```samhita
@@ -32,8 +32,10 @@ When that too dissolves in the water, they remain as before.
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 लये	laye	लये	laye	space	on dissolution
 फेनस्य	phenasya	फेनस्य	phenasya	space	of the foam
-तद्धर्माः	taddharmāḥ	तद्धर्मा	taddharmā	space	those properties of it
-द्रवाद्याः	dravādyāḥ	द्रवाद्याः	dravādyāḥ	space	fluidity and the rest
+तत्	tat	तद्	tad	join	those
+धर्माः	dharmāḥ	धर्मा	dharmā	space	properties of it
+द्रव	drava	द्रवा	dravā	join	fluidity
+आद्याः	ādyāḥ	द्याः	dyāḥ	space	and the rest
 स्युः	syuḥ	स्युस्	syus	join	would be
 तरङ्गके	taraṅgake	तरङ्गके	taraṅgake	danda	in the wave
 तस्य	tasya	तस्या	tasyā	join	of that

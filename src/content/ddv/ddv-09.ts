@@ -16,7 +16,8 @@ export const ddv09: Chapter = {
     { term: 'nivṛttiḥ', meaning: 'cessation' },
     { term: 'sahajasya', meaning: 'of the natural (identification)' },
     { term: 'tu', meaning: 'but' },
-    { term: 'karmakṣayāt', meaning: 'from the wearing-out of karma' },
+    { term: 'karma', meaning: 'of karma' },
+    { term: 'kṣayāt', meaning: 'from the wearing-out' },
     { term: 'prabodhāt', meaning: 'from awakening' },
     { term: 'ca', meaning: 'and' },
     { term: 'nivartete', meaning: 'the two cease' },
@@ -58,34 +59,36 @@ export const ddv09: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-09-p2', 'phrase', 'The other two cease with the wearing-out of karma and with awakening.', [
-    word('ddv-09-w8', 'from the wearing-out of karma', [
+    word('ddv-09-w8', 'of karma', [
       ['क', 'ka'],
       ['र्म', 'rma'],
+    ], { trailing: '' }),
+    word('ddv-09-w9', 'from the wearing-out', [
       ['क्ष', 'kṣa'],
       ['या', 'yā'],
       ['त्', 't'],
     ]),
-    word('ddv-09-w9', 'from awakening', [
+    word('ddv-09-w10', 'from awakening', [
       ['प्र', 'pra'],
       ['बो', 'bo'],
       ['धा', 'dhā'],
       ['च्', 'c'],
     ], { trailing: '' }),
-    word('ddv-09-w10', 'and', [
+    word('ddv-09-w11', 'and', [
       ['च', 'ca'],
     ]),
-    word('ddv-09-w11', 'the two cease', [
+    word('ddv-09-w12', 'the two cease', [
       ['नि', 'ni'],
       ['व', 'va'],
       ['र्ते', 'rte'],
       ['ते', 'te'],
     ]),
-    word('ddv-09-w12', 'in order', [
+    word('ddv-09-w13', 'in order', [
       ['क्र', 'kra'],
       ['मा', 'mā'],
       ['दु', 'du'],
     ], { trailing: '' }),
-    word('ddv-09-w13', 'both', [
+    word('ddv-09-w14', 'both', [
       ['भे', 'bhe'],
     ], { trailing: ' ॥', lineBreakAfter: true }),
     ]),

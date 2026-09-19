@@ -9,7 +9,8 @@ export const ddv41: Chapter = {
   status: 'ready',
   translation: 'The empirical jīva takes that empirical world as true; the absolute thinks it false.',
   glossary: [
-    { term: 'vyāvahārikajīvaḥ', meaning: 'the empirical jīva' },
+    { term: 'vyāvahārika', meaning: 'empirical' },
+    { term: 'jīvaḥ', meaning: 'the jīva' },
     { term: 'yaḥ', meaning: 'who' },
     { term: 'tat', meaning: 'that' },
     { term: 'jagat', meaning: 'world' },
@@ -23,29 +24,31 @@ export const ddv41: Chapter = {
   ],
   root: group('ddv-41-verse', 'verse', 'The empirical jīva takes that empirical world as true; the absolute thinks it false.', [
     group('ddv-41-p1', 'phrase', 'The empirical jīva (takes) that empirical world', [
-    word('ddv-41-w1', 'the empirical jīva', [
+    word('ddv-41-w1', 'empirical', [
       ['व्या', 'vyā'],
       ['व', 'va'],
       ['हा', 'hā'],
       ['रि', 'ri'],
       ['क', 'ka'],
+    ], { trailing: '' }),
+    word('ddv-41-w2', 'the jīva', [
       ['जी', 'jī'],
       ['वो', 'vo'],
     ]),
-    word('ddv-41-w2', 'who', [
+    word('ddv-41-w3', 'who', [
       ['य', 'ya'],
       ['स्', 's'],
     ], { trailing: '' }),
-    word('ddv-41-w3', 'that', [
+    word('ddv-41-w4', 'that', [
       ['त', 'ta'],
       ['ज्', 'j'],
     ], { trailing: '' }),
-    word('ddv-41-w4', 'world', [
+    word('ddv-41-w5', 'world', [
       ['ज', 'ja'],
       ['ग', 'ga'],
       ['द्', 'd'],
     ], { trailing: '' }),
-    word('ddv-41-w5', 'is empirical', [
+    word('ddv-41-w6', 'is empirical', [
       ['व्या', 'vyā'],
       ['व', 'va'],
       ['हा', 'hā'],
@@ -55,28 +58,28 @@ export const ddv41: Chapter = {
     ], { trailing: ' ।', lineBreakAfter: true }),
     ]),
     group('ddv-41-p2', 'phrase', 'as true; the absolute thinks it false.', [
-    word('ddv-41-w6', 'as true', [
+    word('ddv-41-w7', 'as true', [
       ['स', 'sa'],
       ['त्यं', 'tyaṃ'],
     ]),
-    word('ddv-41-w7', 'cognizes', [
+    word('ddv-41-w8', 'cognizes', [
       ['प्र', 'pra'],
       ['त्ये', 'tye'],
       ['ति', 'ti'],
     ]),
-    word('ddv-41-w8', 'as false', [
+    word('ddv-41-w9', 'as false', [
       ['मि', 'mi'],
       ['थ्ये', 'thye'],
     ], { trailing: '' }),
-    word('ddv-41-w9', 'thus', [
+    word('ddv-41-w10', 'thus', [
       ['ति', 'ti'],
     ]),
-    word('ddv-41-w10', 'thinks', [
+    word('ddv-41-w11', 'thinks', [
       ['म', 'ma'],
       ['न्य', 'nya'],
       ['ते', 'te'],
     ]),
-    word('ddv-41-w11', 'the absolute (jīva)', [
+    word('ddv-41-w12', 'the absolute (jīva)', [
       ['पा', 'pā'],
       ['र', 'ra'],
       ['मा', 'mā'],

@@ -5,7 +5,7 @@ id: ddv-21
 verse: 21
 param_pages: 81
 nikh_pages: 44
-expected_padas: 6
+expected_padas: 14
 ```
 
 ```samhita
@@ -30,10 +30,18 @@ Existence-Consciousness-Bliss is undivided; form and name are what differ.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-खवाय्वग्निजलोर्वीषु	khavāyvagnijalorvīṣu	खवाय्वग्निजलोर्वीषु	khavāyvagnijalorvīṣu	space	in ether, air, fire, water, and earth
-देवतिर्यङ्नरादिषु	devatiryaṅnarādiṣu	देवतिर्यङ्नरादिषु	devatiryaṅnarādiṣu	danda	in gods, animals, humans, etc.
+ख	kha	ख	kha	join	ether
+वायु	vāyu	वाय्व	vāyva	join	air
+अग्नि	agni	ग्नि	gni	join	fire
+जलोर्वीषु	jalorvīṣu	जलोर्वीषु	jalorvīṣu	space	water and earth
+देव	deva	देव	deva	join	gods
+तिर्यञ्च्	tiryañc	तिर्यङ्	tiryaṅ	join	animals
+नरादिषु	narādiṣu	नरादिषु	narādiṣu	danda	humans, etc.
 अभिन्नाः	abhinnāḥ	अभिन्नाः	abhinnāḥ	space	undivided
-सच्चिदानन्दाः	saccidānandāḥ	सच्चिदानन्दाः	saccidānandāḥ	space	Existence-Consciousness-Bliss
+सत्	sat	सच्	sac	join	Existence
+चित्	cit	चिदा	cidā	join	Consciousness
+आनन्दाः	ānandāḥ	नन्दाः	nandāḥ	space	Bliss
 भिद्येते	bhidyete	भिद्येते	bhidyete	space	the two differ
-रूपनामनी	rūpanāmanī	रूपनामनी	rūpanāmanī	ddanda	form and name
+रूप	rūpa	रूप	rūpa	join	form
+नामनी	nāmanī	नामनी	nāmanī	ddanda	and name
 ```

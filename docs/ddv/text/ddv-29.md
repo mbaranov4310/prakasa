@@ -5,7 +5,7 @@ id: ddv-29
 verse: 29
 param_pages: 113
 nikh_pages: 56
-expected_padas: 11
+expected_padas: 13
 ```
 
 ```samhita
@@ -30,8 +30,10 @@ By these six samādhis one should pass the time continuously.
 
 ```padas
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
-स्तब्धीभावः	stabdhībhāvaḥ	स्तब्धीभावो	stabdhībhāvo	space	a state of stillness
-रसास्वादात्	rasāsvādāt	रसास्वादात्	rasāsvādāt	join	from tasting the rasa
+स्तब्धी	stabdhī	स्तब्धी	stabdhī	join	stillness
+भावः	bhāvaḥ	भावो	bhāvo	space	a state of
+रस	rasa	रसा	rasā	join	rasa
+आस्वादात्	āsvādāt	स्वादात्	svādāt	join	from tasting
 तृतीयः	tṛtīyaḥ	तृतीयः	tṛtīyaḥ	space	the third
 पूर्ववत्	pūrvavat	पूर्ववन्	pūrvavan	join	like the previous
 मतः	mataḥ	मतः	mataḥ	danda	is held

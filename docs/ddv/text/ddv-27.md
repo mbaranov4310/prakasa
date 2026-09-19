@@ -5,7 +5,7 @@ id: ddv-27
 verse: 27
 param_pages: 107
 nikh_pages: 53
-expected_padas: 11
+expected_padas: 16
 ```
 
 ```samhita
@@ -32,13 +32,18 @@ the first samādhi is separating name and form from Existence alone.
 pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
 हृदि	hṛdi	हृदी	hṛdī	join	in the heart
 इव	iva	व	va	space	as
-बाह्यदेशे	bāhyadeśe	बाह्यदेशेऽ	bāhyadeśe'	join	in an outer place
+बाह्य	bāhya	बाह्य	bāhya	join	outer
+देशे	deśe	देशेऽ	deśe'	join	place
 अपि	api	पि	pi	space	even
 यस्मिन्	yasmin	यस्मिन्	yasmin	space	in whichever
 कस्मिंश्च	kasmiṃśca	कस्मिंश्च	kasmiṃśca	space	and in whatever
 वस्तुनि	vastuni	वस्तुनि	vastuni	danda	thing
 समाधिः	samādhiḥ	समाधिरा	samādhirā	join	samādhi
 आद्यः	ādyaḥ	द्यः	dyaḥ	space	the first
-सन्मात्रात्	sanmātrāt	सन्मात्रान्	sanmātrān	join	from Existence alone
-नामरूपपृथक्कृतिः	nāmarūpapṛthakkṛtiḥ	नामरूपपृथक्कृतिः	nāmarūpapṛthakkṛtiḥ	ddanda	is the separating of name and form
+सत्	sat	सन्	san	join	Existence
+मात्रात्	mātrāt	मात्रान्	mātrān	join	from … alone
+नाम	nāma	नाम	nāma	join	name
+रूप	rūpa	रूप	rūpa	join	and form
+पृथक्	pṛthak	पृथक्	pṛthak	join	separating
+कृतिः	kṛtiḥ	कृतिः	kṛtiḥ	ddanda	the act of
 ```
