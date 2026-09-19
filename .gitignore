@@ -24,5 +24,8 @@ npm-debug.log*
 # source PDFs stay on this computer (they include personal ritual details)
 data/*.pdf
 
+# local verse crops from those PDFs (regenerate with scripts/ddv-crop-verses.py)
+docs/ddv/decode/crops/
+
 # local encoding worktrees
 .worktrees/

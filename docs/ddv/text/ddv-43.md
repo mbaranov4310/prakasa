@@ -1,0 +1,43 @@
+# ddv-43
+
+```meta
+id: ddv-43
+verse: 43
+param_pages: 151
+nikh_pages: 75
+expected_padas: 10
+```
+
+```samhita
+माधुर्यद्रवशैत्यानि नीरधर्मास्तरङ्गके ।
+अनुगम्याथ तन्निष्ठे फेनेऽप्यनुगता यथा ॥
+```
+
+```samhita_iast
+mādhuryadravaśaityāni nīradharmāstaraṅgake |
+anugamyātha tanniṣṭhe phene'pyanugatā yathā ||
+```
+
+```translation
+As sweetness, fluidity, and coldness — properties of water — inhere in the wave and then, resting there, inhere also in the foam,
+```
+
+```phrase
+Sweetness, fluidity, and coldness, properties of water, in the wave —
+---
+having inhered, inhere also in the foam that rests on it, as it were.
+```
+
+```padas
+pada_dev	pada_iast	slice_dev	slice_iast	after	meaning
+माधुर्यद्रवशैत्यानि	mādhuryadravaśaityāni	माधुर्यद्रवशैत्यानि	mādhuryadravaśaityāni	space	sweetness, fluidity, and coldness
+नीरधर्माः	nīradharmāḥ	नीरधर्मास्	nīradharmās	join	properties of water
+तरङ्गके	taraṅgake	तरङ्गके	taraṅgake	danda	in the wave
+अनुगम्य	anugamya	अनुगम्या	anugamyā	join	having inhered
+अथ	atha	थ	tha	space	then
+तन्निष्ठे	tanniṣṭhe	तन्निष्ठे	tanniṣṭhe	space	in that which rests on it
+फेने	phene	फेनेऽ	phene'	join	in the foam
+अपि	api	प्य	pya	join	also
+अनुगता	anugatā	नुगता	nugatā	space	inhere
+यथा	yathā	यथा	yathā	ddanda	as
+```

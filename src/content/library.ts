@@ -70,6 +70,52 @@ import { chamakam08 } from "./rudra/chamakam-08";
 import { chamakam09 } from "./rudra/chamakam-09";
 import { chamakam10 } from "./rudra/chamakam-10";
 import { chamakam11 } from "./rudra/chamakam-11";
+import { ddv01 } from "./ddv/ddv-01";
+import { ddv02 } from "./ddv/ddv-02";
+import { ddv03 } from "./ddv/ddv-03";
+import { ddv04 } from "./ddv/ddv-04";
+import { ddv05 } from "./ddv/ddv-05";
+import { ddv06 } from "./ddv/ddv-06";
+import { ddv07 } from "./ddv/ddv-07";
+import { ddv08 } from "./ddv/ddv-08";
+import { ddv09 } from "./ddv/ddv-09";
+import { ddv10 } from "./ddv/ddv-10";
+import { ddv11 } from "./ddv/ddv-11";
+import { ddv12 } from "./ddv/ddv-12";
+import { ddv13 } from "./ddv/ddv-13";
+import { ddv14 } from "./ddv/ddv-14";
+import { ddv15 } from "./ddv/ddv-15";
+import { ddv16 } from "./ddv/ddv-16";
+import { ddv17 } from "./ddv/ddv-17";
+import { ddv18 } from "./ddv/ddv-18";
+import { ddv19 } from "./ddv/ddv-19";
+import { ddv20 } from "./ddv/ddv-20";
+import { ddv21 } from "./ddv/ddv-21";
+import { ddv22 } from "./ddv/ddv-22";
+import { ddv23 } from "./ddv/ddv-23";
+import { ddv24 } from "./ddv/ddv-24";
+import { ddv25 } from "./ddv/ddv-25";
+import { ddv26 } from "./ddv/ddv-26";
+import { ddv27 } from "./ddv/ddv-27";
+import { ddv28 } from "./ddv/ddv-28";
+import { ddv29 } from "./ddv/ddv-29";
+import { ddv30 } from "./ddv/ddv-30";
+import { ddv31 } from "./ddv/ddv-31";
+import { ddv32 } from "./ddv/ddv-32";
+import { ddv33 } from "./ddv/ddv-33";
+import { ddv34 } from "./ddv/ddv-34";
+import { ddv35 } from "./ddv/ddv-35";
+import { ddv36 } from "./ddv/ddv-36";
+import { ddv37 } from "./ddv/ddv-37";
+import { ddv38 } from "./ddv/ddv-38";
+import { ddv39 } from "./ddv/ddv-39";
+import { ddv40 } from "./ddv/ddv-40";
+import { ddv41 } from "./ddv/ddv-41";
+import { ddv42 } from "./ddv/ddv-42";
+import { ddv43 } from "./ddv/ddv-43";
+import { ddv44 } from "./ddv/ddv-44";
+import { ddv45 } from "./ddv/ddv-45";
+import { ddv46 } from "./ddv/ddv-46";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -189,6 +235,61 @@ export const books: Book[] = [
       chamakam09,
       chamakam10,
       chamakam11,
+    ],
+  },
+  {
+    id: "drg-drsya-viveka",
+    titleDev: "दृग्दृश्यविवेकः",
+    titleIast: "dṛgdṛśyavivekaḥ",
+    titleEn: "Dṛg-dṛśya-viveka",
+    blurb: "Forty-six verses on seer and seen, word by word.",
+    chapters: [
+      ddv01,
+      ddv02,
+      ddv03,
+      ddv04,
+      ddv05,
+      ddv06,
+      ddv07,
+      ddv08,
+      ddv09,
+      ddv10,
+      ddv11,
+      ddv12,
+      ddv13,
+      ddv14,
+      ddv15,
+      ddv16,
+      ddv17,
+      ddv18,
+      ddv19,
+      ddv20,
+      ddv21,
+      ddv22,
+      ddv23,
+      ddv24,
+      ddv25,
+      ddv26,
+      ddv27,
+      ddv28,
+      ddv29,
+      ddv30,
+      ddv31,
+      ddv32,
+      ddv33,
+      ddv34,
+      ddv35,
+      ddv36,
+      ddv37,
+      ddv38,
+      ddv39,
+      ddv40,
+      ddv41,
+      ddv42,
+      ddv43,
+      ddv44,
+      ddv45,
+      ddv46,
     ],
   },
 ];

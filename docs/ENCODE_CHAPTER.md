@@ -24,11 +24,13 @@ The second pass is what the site actually reflects: every ready chapter was re-g
 
 ---
 
-## Next collection: Rudra namakam / camakam
+## Previous collection: Rudra namakam / camakam
 
 Taittirīya Saṃhitā 4.5 and 4.7 (camakam anuvākas 1–11 only). Library book `rudra-namakam-chamakam`. This is information transfer from the VedaVMS PDFs in `data/`, not a hunt.
 
-**Next collection: Rudra namakam / camakam** — Stage 1 text is in `docs/rudra/text/`. Empty-gloss chapters are on the site for recitation review. Translations later. Follow `docs/rudra/STAGE1.md` / `docs/rudra/ENCODE.md`.
+**Current collection: Dṛg-dṛśya-viveka** — 46 chapters on the site (`drg-drsya-viveka`). Text in `docs/ddv/text/`. Follow `docs/ddv/ENCODE.md`. Meanings are still a human audit, not a closed recension.
+
+**Rudra recitation review** — Stage 1 text is in `docs/rudra/text/`. Empty-gloss chapters are on the site. Translations later. Follow `docs/rudra/STAGE1.md` / `docs/rudra/ENCODE.md`.
 
 ## Previous collection: devatā namaskāra
 
