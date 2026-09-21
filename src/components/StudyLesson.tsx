@@ -43,7 +43,7 @@ function LessonBlocks({ blocks }: { blocks: LessonBlock[] }) {
               <table className="study-table">
                 <thead>
                   <tr>
-                    <th />
+                    <th>{block.labelHeader ?? ""}</th>
                     {block.headers.map((header) => (
                       <th key={header}>{header}</th>
                     ))}
@@ -51,10 +51,17 @@ function LessonBlocks({ blocks }: { blocks: LessonBlock[] }) {
                 </thead>
                 <tbody>
                   {block.rows.map((row) => (
-                    <tr key={row.label}>
-                      <th scope="row">{row.label}</th>
-                      {row.cells.map((cell) => (
-                        <td key={`${row.label}-${cell.iast}`}>
+                    <tr key={row.label.en}>
+                      <th scope="row">
+                        <span className="case-en">{row.label.en}</span>
+                        <span className="case-sa">
+                          <span className="is-deva">{row.label.dev}</span>
+                          <span className="is-latin">{row.label.iast}</span>
+                        </span>
+                        {row.label.cue ? <span className="case-cue">{row.label.cue}</span> : null}
+                      </th>
+                      {row.cells.map((cell, cellIndex) => (
+                        <td key={`${row.label.en}-${cellIndex}`}>
                           <span className="is-deva">{cell.dev}</span>
                           <span className="is-latin">{cell.iast}</span>
                         </td>

@@ -5,8 +5,6 @@ import { vowelsAndConsonants } from "./lessons/vowels-and-consonants";
 import { vowelMarks } from "./lessons/vowel-marks";
 import { consonantClusters } from "./lessons/consonant-clusters";
 import { numeralsAndPunctuation } from "./lessons/numerals-and-punctuation";
-import { oldDevanagari } from "./lessons/old-devanagari";
-import { vedicDevanagari } from "./lessons/vedic-devanagari";
 import { aStems } from "./lessons/a-stems";
 
 export type LessonStatus = "ready" | "coming-soon";
@@ -20,8 +18,12 @@ export type LessonBlock =
   | {
       type: "table";
       caption?: string;
+      labelHeader?: string;
       headers: string[];
-      rows: Array<{ label: string; cells: Array<{ dev: string; iast: string }> }>;
+      rows: Array<{
+        label: { en: string; dev: string; iast: string; cue?: string };
+        cells: Array<{ dev: string; iast: string }>;
+      }>;
     };
 
 export type LessonMeta = {
@@ -117,28 +119,6 @@ const devanagari = topicLessons("devanagari", [
     prereqs: ["devanagari-vowels-and-consonants"],
     practice: {
       deckIds: ["devanagari-numerals-punctuation"],
-      direction: "dev-iast",
-    },
-  },
-  {
-    id: "devanagari-old-devanagari",
-    titleEn: "Old Devanagari",
-    sourceUrl: `${GUIDE}/devanagari/old-devanagari/`,
-    status: "ready",
-    prereqs: ["devanagari-vowels-and-consonants"],
-    practice: {
-      deckIds: ["devanagari-old"],
-      direction: "meaning-iast",
-    },
-  },
-  {
-    id: "devanagari-vedic-devanagari",
-    titleEn: "Vedic Devanagari",
-    sourceUrl: `${GUIDE}/devanagari/vedic-devanagari/`,
-    status: "ready",
-    prereqs: ["devanagari-vowel-marks"],
-    practice: {
-      deckIds: ["devanagari-vedic"],
       direction: "dev-iast",
     },
   },
@@ -574,8 +554,6 @@ export const lessonBodies: Record<string, LessonBlock[]> = {
   "devanagari-vowel-marks": vowelMarks,
   "devanagari-consonant-clusters": consonantClusters,
   "devanagari-numerals-and-punctuation": numeralsAndPunctuation,
-  "devanagari-old-devanagari": oldDevanagari,
-  "devanagari-vedic-devanagari": vedicDevanagari,
   "nominals-a-stems": aStems,
 };
 

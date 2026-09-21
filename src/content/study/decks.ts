@@ -153,24 +153,6 @@ const numeralItems = letters("akshara", [
   ["avagraha", "ऽ", "'", "avagraha (elided vowel)"],
 ]);
 
-const oldDevanagariItems = letters("akshara", [
-  ["site-shapes", "देवनागरी", "modern", "Letter drawings this reader uses"],
-  ["old-count", "अ आ ओ औ झ ण", "six", "How many letters in this lesson had older printed drawings"],
-  ["old-kind", "अ", "font variants", "Older अ आ ओ औ झ ण were this, not new Unicode letters"],
-  ["need-old", "अ", "no", "Do you need those old drawings to read Prakāśa?"],
-]);
-
-const vedicDevanagariItems = letters("akshara", [
-  ["lla", "ळ", "ḷa"],
-  ["llha", "ळ्ह", "ḷha"],
-  ["anudatta", "अ॒", "anudātta"],
-  ["udatta", "अ", "udātta"],
-  ["svarita", "अ॑", "svarita"],
-  ["vedic-anusvara", "ꣳ", "vedic ṃ"],
-  ["ogm", "ॐ॒", "ogm"],
-  ["sam-namakam", "षाꣳ", "ṣāṃ"],
-]);
-
 const clusterItems = letters(
   "conjunct",
   libraryClusterItems().map((item) => [item.id, item.dev, item.iast]),
@@ -223,21 +205,6 @@ export const scriptDecks: QuizDeck[] = [
     "aṅka-virāma",
     "devanagari-numerals-and-punctuation",
     numeralItems,
-  ),
-  deck(
-    "devanagari-old",
-    "Old Devanagari",
-    "prācīna-devanāgarī",
-    "devanagari-old-devanagari",
-    oldDevanagariItems,
-    "script",
-  ),
-  deck(
-    "devanagari-vedic",
-    "Vedic Devanagari",
-    "vaidika-devanāgarī",
-    "devanagari-vedic-devanagari",
-    vedicDevanagariItems,
   ),
   deck(
     "nominals-rama-a-stems",

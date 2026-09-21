@@ -8,11 +8,11 @@ export const aStems: LessonBlock[] = [
   { type: "h2", text: "Masculine rāma, 8 × 3" },
   {
     type: "table",
-    caption: "Case 1 is usually the subject, case 2 the object, case 3 “with / by,” case 4 “for,” case 5 “from,” case 6 “of,” case 7 “in / on,” case 8 the person addressed.",
+    labelHeader: "Case",
     headers: ["Singular", "Dual", "Plural"],
     rows: [
       {
-        label: "1",
+        label: { en: "nominative", dev: "प्रथमा", iast: "prathamā", cue: "subject" },
         cells: [
           { dev: "रामः", iast: "rāmaḥ" },
           { dev: "रामौ", iast: "rāmau" },
@@ -20,7 +20,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "2",
+        label: { en: "accusative", dev: "द्वितीया", iast: "dvitīyā", cue: "object" },
         cells: [
           { dev: "रामम्", iast: "rāmam" },
           { dev: "रामौ", iast: "rāmau" },
@@ -28,7 +28,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "3",
+        label: { en: "instrumental", dev: "तृतीया", iast: "tṛtīyā", cue: "with, by means of" },
         cells: [
           { dev: "रामेण", iast: "rāmeṇa" },
           { dev: "रामाभ्याम्", iast: "rāmābhyām" },
@@ -36,7 +36,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "4",
+        label: { en: "dative", dev: "चतुर्थी", iast: "caturthī", cue: "for, to" },
         cells: [
           { dev: "रामाय", iast: "rāmāya" },
           { dev: "रामाभ्याम्", iast: "rāmābhyām" },
@@ -44,7 +44,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "5",
+        label: { en: "ablative", dev: "पञ्चमी", iast: "pañcamī", cue: "from" },
         cells: [
           { dev: "रामात्", iast: "rāmāt" },
           { dev: "रामाभ्याम्", iast: "rāmābhyām" },
@@ -52,7 +52,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "6",
+        label: { en: "genitive", dev: "षष्ठी", iast: "ṣaṣṭhī", cue: "of" },
         cells: [
           { dev: "रामस्य", iast: "rāmasya" },
           { dev: "रामयोः", iast: "rāmayoḥ" },
@@ -60,7 +60,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "7",
+        label: { en: "locative", dev: "सप्तमी", iast: "saptamī", cue: "in, on" },
         cells: [
           { dev: "रामे", iast: "rāme" },
           { dev: "रामयोः", iast: "rāmayoḥ" },
@@ -68,7 +68,7 @@ export const aStems: LessonBlock[] = [
         ],
       },
       {
-        label: "8",
+        label: { en: "vocative", dev: "सम्बोधन", iast: "sambodhana", cue: "O" },
         cells: [
           { dev: "राम", iast: "rāma" },
           { dev: "रामौ", iast: "rāmau" },
@@ -79,7 +79,7 @@ export const aStems: LessonBlock[] = [
   },
   {
     type: "p",
-    text: "Several cells share a form: dual 1, 2, and 8 are all rāmau; dual 3–5 are rāmābhyām; dual 6–7 are rāmayoḥ; plural 1 and 8 are rāmāḥ; plural 4 and 5 are rāmebhyaḥ.",
+    text: "Several cells share a form: dual nominative, accusative, and vocative are all rāmau; dual instrumental through ablative are rāmābhyām; dual genitive and locative are rāmayoḥ; plural nominative and vocative are rāmāḥ; plural dative and ablative are rāmebhyaḥ.",
   },
   { type: "h2", text: "n becomes ṇ" },
   {
@@ -96,6 +96,6 @@ export const aStems: LessonBlock[] = [
   { type: "h2", text: "Neuter, in brief" },
   {
     type: "p",
-    text: "Neuter -a stems such as phala, “fruit,” match the masculine in cases 3–7. They differ in 1, 2, and 8 (phalam, phale, phalāni). A later pass can drill those; this preview stays on masculine rāma.",
+    text: "Neuter -a stems such as phala, “fruit,” match the masculine from the instrumental through the locative. They differ in the nominative, accusative, and vocative (phalam, phale, phalāni). A later pass can drill those; this preview stays on masculine rāma.",
   },
 ];

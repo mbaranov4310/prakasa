@@ -789,9 +789,32 @@ button {
 }
 
 .study-table tbody th {
-  color: var(--muted);
+  font-weight: 500;
+  min-width: 9.5rem;
+  vertical-align: top;
+}
+
+.case-en,
+.case-sa,
+.case-cue {
+  display: block;
+}
+
+.case-en {
+  color: var(--ink);
   font-weight: 600;
-  width: 2.2rem;
+}
+
+.case-sa .is-deva {
+  font-size: 1.05rem;
+  margin-right: 0.35rem;
+}
+
+.case-sa .is-latin,
+.case-cue {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 400;
 }
 
 .study-table td {
