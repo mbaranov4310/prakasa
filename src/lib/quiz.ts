@@ -1,4 +1,5 @@
 import { books, getChapter } from "../content/library";
+import { scriptDecks } from "../content/study/decks";
 import type { Chapter, SpanNode } from "../types";
 import { descendantWordIds, findPath, walkLeaves } from "./tree";
 
@@ -31,19 +32,25 @@ export type QuizItem = {
   meaning?: string;
   sourceId: string;
   occurrences: QuizOccurrence[];
+  lessonId?: string;
 };
 
 export type QuizDeckItem = {
   id: string;
   dev: string;
   iast: string;
+  meaning?: string;
   unit: QuizUnit;
 };
+
+export type QuizDeckKind = "script" | "grammar";
 
 export type QuizDeck = {
   id: string;
   titleEn: string;
   titleIast: string;
+  lessonId?: string;
+  kind?: QuizDeckKind;
   units: QuizUnit[];
   items: QuizDeckItem[];
 };
@@ -98,13 +105,8 @@ export const QUIZ_DIRECTIONS: {
   { id: "dev-iast", prompt: "dev", answer: "iast", label: "Devanagari → IAST" },
 ];
 
-/**
- * Quiz-only decks (letters, mātrās, conjuncts, sandhi). Never import these from
- * library.ts — the library page must stay mantras. Add a file under
- * src/content/quiz/, push it here, and itemsFromDecks() will feed the same
- * player. Quiz setup lists non-empty decks under a Script group.
- */
-export const quizDecks: QuizDeck[] = [];
+/** Quiz-only letter/sandhi decks. Never import from library.ts. */
+export const quizDecks: QuizDeck[] = scriptDecks;
 
 const chapterExtractCache = new Map<string, QuizItem[]>();
 
@@ -211,6 +213,25 @@ function dedupeKey(item: QuizItem): string {
   return `${item.unit}\0${item.iast}\0${item.meaning ?? ""}`;
 }
 
+export function deckEligibleCount(deckId: string, direction: QuizDirection): number {
+  const deck = quizDecks.find((entry) => entry.id === deckId);
+  if (!deck) return 0;
+  return deck.items.filter((entry) =>
+    itemEligible(
+      {
+        id: entry.id,
+        unit: entry.unit,
+        dev: entry.dev,
+        iast: entry.iast,
+        meaning: entry.meaning,
+        sourceId: deck.id,
+        occurrences: [],
+      },
+      direction,
+    ),
+  ).length;
+}
+
 function itemsFromDecks(setup: QuizSetupState): QuizItem[] {
   const selected = new Set(setup.deckIds);
   const items: QuizItem[] = [];
@@ -222,8 +243,10 @@ function itemsFromDecks(setup: QuizSetupState): QuizItem[] {
         unit: entry.unit,
         dev: entry.dev,
         iast: entry.iast,
+        meaning: entry.meaning,
         sourceId: `deck:${deck.id}`,
         occurrences: [],
+        lessonId: deck.lessonId,
       };
       if (itemEligible(item, setup.direction)) items.push(item);
     }

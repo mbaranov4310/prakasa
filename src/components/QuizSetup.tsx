@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   chapterEligibleCount,
+  deckEligibleCount,
   directionNeedsMeaning,
   itemsForSetup,
   mantraSources,
@@ -9,6 +10,7 @@ import {
   quizDecks,
   type MantraSource,
   type MantraUnit,
+  type QuizDeck,
   type QuizDirection,
   type QuizMode,
   type QuizSetupState,
@@ -97,16 +99,68 @@ export function QuizSetup() {
     });
   }
 
+  function toggleDeck(id: string, eligible: boolean) {
+    if (!eligible) return;
+    setSetup((prev) => {
+      const selected = new Set(prev.deckIds);
+      if (selected.has(id)) selected.delete(id);
+      else selected.add(id);
+      return { ...prev, deckIds: [...selected] };
+    });
+  }
+
+  function renderDeckGroup(legend: string, decks: QuizDeck[]) {
+    if (!decks.length) return null;
+    return (
+      <fieldset className="quiz-fieldset">
+        <legend>{legend}</legend>
+        <ul className="quiz-chapters">
+          {decks.map((deck) => {
+            const count = deckEligibleCount(deck.id, setup.direction);
+            const eligible = count > 0;
+            return (
+              <li key={deck.id}>
+                <label className={`quiz-check quiz-chapter${eligible ? "" : " is-disabled"}`}>
+                  <input
+                    type="checkbox"
+                    checked={eligible && setup.deckIds.includes(deck.id)}
+                    disabled={!eligible}
+                    onChange={() => toggleDeck(deck.id, eligible)}
+                  />
+                  <span>
+                    <span className="is-latin">{deck.titleEn}</span>
+                    {eligible ? (
+                      <span className="chapter-meta">{count}</span>
+                    ) : (
+                      <span className="chapter-meta">
+                        {directionNeedsMeaning(setup.direction) ? "needs a meaning drill" : "no items"}
+                      </span>
+                    )}
+                  </span>
+                </label>
+              </li>
+            );
+          })}
+        </ul>
+      </fieldset>
+    );
+  }
+
   return (
     <section className="quiz-setup">
       <header className="page-head">
         <button className="back" onClick={() => navigate({ page: "library" })}>
           ← Library
         </button>
+        <button className="quiz-entry" type="button" onClick={() => navigate({ page: "study" })}>
+          Study
+        </button>
       </header>
       <p className="eyebrow">Practice</p>
       <h1 className="chapter-title is-latin">Quiz</h1>
-      <p className="quiz-lead">Drill words and phrases from the mantras you have already glossed.</p>
+      <p className="quiz-lead">
+        Drill words and phrases from the mantras you have already glossed, or letters from Study.
+      </p>
 
       <fieldset className="quiz-fieldset">
         <legend>Mode</legend>
@@ -234,12 +288,8 @@ export function QuizSetup() {
         </div>
       </fieldset>
 
-      {quizDecks.length > 0 ? (
-        <fieldset className="quiz-fieldset">
-          <legend>Script</legend>
-          <p className="quiz-lead">Letter and sandhi decks will appear here.</p>
-        </fieldset>
-      ) : null}
+      {renderDeckGroup("Script", quizDecks.filter((deck) => deck.kind !== "grammar"))}
+      {renderDeckGroup("Grammar", quizDecks.filter((deck) => deck.kind === "grammar"))}
 
       <div className="quiz-start-row">
         <p className="quiz-count">{poolSize} {poolSize === 1 ? "card" : "cards"}</p>

@@ -1,4 +1,4 @@
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useState } from "react";
 import {
   directionMeta,
   itemFace,
@@ -11,9 +11,8 @@ import {
   type QuizItem,
   type QuizSetupState,
 } from "../lib/quiz";
-import { loadQuizSetup } from "../lib/prefs";
 import { useNavLang } from "../lib/nav-lang";
-import { navigate } from "../lib/routes";
+import { navigate, type Route } from "../lib/routes";
 
 type Card = {
   item: QuizItem;
@@ -95,8 +94,7 @@ function buildQueue(setup: QuizSetupState): Card[] {
   }));
 }
 
-export function QuizPlay() {
-  const setup = useMemo(() => loadQuizSetup(), []);
+export function QuizPlay({ setup, back }: { setup: QuizSetupState; back: Route }) {
   const [remaining, setRemaining] = useState(() => buildQueue(setup));
   const [total] = useState(() => remaining.length);
   const [correctCount, setCorrectCount] = useState(0);
@@ -105,6 +103,7 @@ export function QuizPlay() {
   const [showCite, setShowCite] = useState(false);
   const [occIndex, setOccIndex] = useState(0);
 
+  const backLabel = back.page === "study-lesson" ? "← Lesson" : "← Setup";
   const card = remaining[0];
   const meta = directionMeta(setup.direction);
   const done = total > 0 && remaining.length === 0;
@@ -136,8 +135,8 @@ export function QuizPlay() {
     return (
       <section className="quiz-play">
         <header className="page-head">
-          <button className="back" onClick={() => navigate({ page: "quiz" })}>
-            ← Setup
+          <button className="back" onClick={() => navigate(back)}>
+            {backLabel}
           </button>
         </header>
         <p className="empty">No cards for this setup. Choose chapters that have meanings, or a script drill.</p>
@@ -149,8 +148,8 @@ export function QuizPlay() {
     return (
       <section className="quiz-play">
         <header className="page-head">
-          <button className="back" onClick={() => navigate({ page: "quiz" })}>
-            ← Setup
+          <button className="back" onClick={() => navigate(back)}>
+            {backLabel}
           </button>
         </header>
         <p className="eyebrow">Done</p>
@@ -162,8 +161,8 @@ export function QuizPlay() {
           <button type="button" className="quiz-start" onClick={resetRun}>
             Again
           </button>
-          <button type="button" className="quiz-text-btn" onClick={() => navigate({ page: "quiz" })}>
-            Change setup
+          <button type="button" className="quiz-text-btn" onClick={() => navigate(back)}>
+            {back.page === "study-lesson" ? "Back to lesson" : "Change setup"}
           </button>
         </div>
       </section>
@@ -178,13 +177,19 @@ export function QuizPlay() {
     (face) => face !== meta.prompt && itemFace(card.item, face),
   );
   const canCite = card.item.occurrences.length > 0;
+  const lessonId = card.item.lessonId;
   const locked = setup.mode === "mcq" ? picked !== null : revealed;
+
+  function openLesson() {
+    if (!lessonId) return;
+    navigate({ page: "study-lesson", lessonId });
+  }
 
   return (
     <section className="quiz-play">
       <header className="reader-head">
-        <button className="back" onClick={() => navigate({ page: "quiz" })}>
-          ← Setup
+        <button className="back" onClick={() => navigate(back)}>
+          {backLabel}
         </button>
         <p className="quiz-progress">
           {correctCount} known · {remaining.length} left
@@ -253,12 +258,22 @@ export function QuizPlay() {
           ) : null}
           {setup.mode === "mcq" ? (
             <div className="quiz-nav-row">
+              {lessonId ? (
+                <button type="button" className="quiz-text-btn" onClick={openLesson}>
+                  Explain
+                </button>
+              ) : null}
               <button type="button" className="quiz-start" onClick={() => consume(false)}>
                 Next
               </button>
             </div>
           ) : (
             <div className="quiz-nav-row">
+              {lessonId ? (
+                <button type="button" className="quiz-text-btn" onClick={openLesson}>
+                  Explain
+                </button>
+              ) : null}
               <button type="button" className="quiz-text-btn" onClick={() => consume(true)}>
                 Still learning
               </button>
@@ -277,8 +292,19 @@ export function QuizPlay() {
         </div>
       ) : setup.mode === "mcq" ? (
         <div className="quiz-nav-row">
+          {lessonId ? (
+            <button type="button" className="quiz-text-btn" onClick={openLesson}>
+              I don't know
+            </button>
+          ) : null}
           <button type="button" className="quiz-text-btn" onClick={() => consume(false)}>
             Skip
+          </button>
+        </div>
+      ) : lessonId ? (
+        <div className="quiz-nav-row">
+          <button type="button" className="quiz-text-btn" onClick={openLesson}>
+            I don't know
           </button>
         </div>
       ) : null}

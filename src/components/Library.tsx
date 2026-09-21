@@ -11,6 +11,9 @@ export function Library() {
       <header className="page-head">
         <p className="eyebrow">Library</p>
         <div className="page-head-actions">
+          <button className="quiz-entry" type="button" onClick={() => navigate({ page: "study" })}>
+            Study
+          </button>
           <button className="quiz-entry" type="button" onClick={() => navigate({ page: "quiz" })}>
             Quiz
           </button>

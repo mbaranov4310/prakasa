@@ -1,13 +1,23 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getBook, getChapter } from "./content/library";
 import { Library } from "./components/Library";
 import { ChapterList } from "./components/ChapterList";
 import { Reader } from "./components/Reader";
 import { QuizSetup } from "./components/QuizSetup";
 import { QuizPlay } from "./components/QuizPlay";
+import { StudyIndex } from "./components/StudyIndex";
+import { StudyLesson } from "./components/StudyLesson";
 import { SiteFooter } from "./components/SiteFooter";
 import { NavLangProvider } from "./lib/nav-lang";
+import { loadQuizSetup } from "./lib/prefs";
 import { parseHash, type Route } from "./lib/routes";
+import { setupForLesson } from "./lib/study";
+
+function StudyPractice({ lessonId }: { lessonId: string }) {
+  const setup = useMemo(() => setupForLesson(lessonId), [lessonId]);
+  if (!setup) return <StudyLesson lessonId={lessonId} />;
+  return <QuizPlay key={lessonId} setup={setup} back={{ page: "study-lesson", lessonId }} />;
+}
 
 function Routes() {
   const [route, setRoute] = useState<Route>(parseHash);
@@ -20,7 +30,12 @@ function Routes() {
   }, []);
 
   if (route.page === "quiz") return <QuizSetup />;
-  if (route.page === "quiz-play") return <QuizPlay />;
+  if (route.page === "quiz-play") {
+    return <QuizPlay setup={loadQuizSetup()} back={{ page: "quiz" }} />;
+  }
+  if (route.page === "study") return <StudyIndex />;
+  if (route.page === "study-lesson") return <StudyLesson lessonId={route.lessonId} />;
+  if (route.page === "study-practice") return <StudyPractice lessonId={route.lessonId} />;
 
   if (route.page === "chapter") {
     const chapter = getChapter(route.bookId, route.chapterId);
