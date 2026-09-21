@@ -1,101 +1,58 @@
 # Study lesson brief — one page
 
-Work in `/Users/max/Desktop/projects/prakasa`. **You own exactly one lesson** (the id in your task). Do not edit other lessons, the plan file, mantra chapters, or this brief. Do not commit or publish unless the human asks.
+Work in `/Users/max/Desktop/projects/prakasa`. **You own exactly one lesson** (the id in your task) and **one pass** (transfer, or drills). Do not edit other lessons, the plan file, mantra chapters, or this brief. Do not commit or publish unless the human asks.
 
-The catalog of stubs is `src/content/study/catalog.ts`. Ready pages are already filled. Coming-soon pages are the queue. Part II of [learnsanskrit.org/guide](https://learnsanskrit.org/guide/) is the syllabus. There is no second Core track.
+Stubs live in `src/content/study/catalog.ts`. Each draft has a `sourceUrl` on [learnsanskrit.org/guide](https://learnsanskrit.org/guide/) (CC BY 4.0). That page is the source. Part II is the syllabus. There is no second Core track.
 
 **Out of scope:** Old Devanagari and Vedic Devanagari. Do not add those lessons back.
 
-## Goal
+## How to write
 
-Turn that one stub into a page a person can read and drill:
+Read the reference page. Read one ready lesson that is the same kind of page (`src/content/study/lessons/`). Put the reference into that shape.
 
-1. A short lesson body.
-2. A handwritten practice deck.
-3. Catalog wiring so the lesson is `ready` and Practice opens.
+You are transferring, not authoring. Do not add facts, examples, stems, or rules the reference does not have. Do not paste their paragraphs; shorten them into the blocks the existing lessons use (`p`, `h2`, `ul`, `glyphs`, `note`, `table`). The site footer already attributes the adaptation.
 
-`npx tsc --noEmit` must pass. Importing the catalog throws if a ready lesson has no body, no source URL, or a deck id that does not exist.
+If the reference shows a paradigm table, copy its labels and layout from the closest ready table (see `a-stems.ts`). Do not invent a labeling scheme.
 
-## What to copy
+Check every Devanagari string you type:
 
-| Job | Model |
-| --- | --- |
-| Script page (letters, marks) | `src/content/study/lessons/vowel-marks.ts` and its deck in `src/content/study/decks.ts` |
-| Paradigm page (endings table) | `src/content/study/lessons/a-stems.ts` and the `ramaItems` deck |
-| Clusters | Do **not** copy `src/lib/clusters.ts`. That deck is harvested from the library. New drills are typed by hand. |
-
-## Files you may edit
-
-- `src/content/study/lessons/<slug>.ts` — new file, one export of `LessonBlock[]`.
-- `src/content/study/decks.ts` — one `letters(...)` list and one `deck(...)` entry.
-- `src/content/study/catalog.ts` — import the body, add it to `lessonBodies`, set `status: "ready"` and `practice` on **that** draft only.
-
-Leave `prereqs` as they are unless the draft has none and the previous lesson in the same topic is the real dependency (the helper already chains them).
-
-## Where examples come from
-
-Teach Classical Sanskrit. One sentence is enough when a mantra form is Vedic or sandhi-odd. Do not open a Vedic grammar.
-
-1. **The guide page** in that lesson’s `sourceUrl` (CC BY 4.0). Rewrite it shorter. Do not paste their paragraphs. The site footer already attributes the adaptation.
-2. **A closed inventory** (a vowel grid, an endings table, a sandhi rule the guide states). Type it from that page. Check every Devanagari string with `python3 scripts/rudra-iast.py '…'`. Prakāśa IAST uses `ā ī ū ṛ ṝ ḷ ṃ ḥ ṅ ñ ṭ ḍ ṇ ś ṣ`. If the script and your IAST disagree, fix the card before shipping.
-3. **A mantra syllable**, only when you can point at an existing encoded pair in `src/content/**/*.ts` (a `["ना", "nā"]` style tuple or the same word in a chapter). Copy both sides. Name the chapter in the glyph `note`. If the library does not have the form, do not invent a “from the mantras” example. Use the guide’s sentence instead and say so.
-4. Do not “correct” a chapter’s encoding in the same task. If a stored pair looks wrong, leave it out of the lesson and mention it in your summary.
-
-End every lesson with a `note` block that says which examples are the guide’s table, which are copied syllables, and which are the guide’s sample sentence. That note is how a reviewer checks you.
-
-## The eight cases
-
-Any paradigm table uses these labels, in this order. Do not renumber them and do not swap in another Sanskrit name.
-
-| English | Devanagari | IAST | Cue |
-| --- | --- | --- | --- |
-| nominative | प्रथमा | prathamā | subject |
-| accusative | द्वितीया | dvitīyā | object |
-| instrumental | तृतीया | tṛtīyā | with, by means of |
-| dative | चतुर्थी | caturthī | for, to |
-| ablative | पञ्चमी | pañcamī | from |
-| genitive | षष्ठी | ṣaṣṭhī | of |
-| locative | सप्तमी | saptamī | in, on |
-| vocative | सम्बोधन | sambodhana | O |
-
-```ts
-{
-  type: "table",
-  labelHeader: "Case",
-  headers: ["Singular", "Dual", "Plural"],
-  rows: [
-    {
-      label: { en: "instrumental", dev: "तृतीया", iast: "tṛtīyā", cue: "with, by means of" },
-      cells: [
-        { dev: "रामेण", iast: "rāmeṇa" },
-        { dev: "रामाभ्याम्", iast: "rāmābhyām" },
-        { dev: "रामैः", iast: "rāmaiḥ" },
-      ],
-    },
-  ],
-}
+```bash
+python3 scripts/rudra-iast.py '…'
 ```
 
-One exemplar stem per lesson (rāma, phala, agni, …), the stem the guide uses. Do not generate a second stem’s full grid unless that page’s guide table already prints it.
+Prakāśa IAST uses `ā ī ū ṛ ṝ ḷ ṃ ḥ ṅ ñ ṭ ḍ ṇ ś ṣ`. If the script and the IAST disagree, fix it before you stop.
 
-## Drills
+A mantra example is allowed only when both the Devanagari and the IAST are copied from an existing pair in `src/content/**/*.ts`. If the library does not have it, use the reference’s own example. Do not correct a chapter’s encoding in this task.
 
-Handwritten. Each row is `[id, dev, iast]` or `[id, dev, iast, meaning]`.
+## Pass 1 — transfer
 
-- **Script** (read the glyph): `direction: "dev-iast"`. Meaning optional. `dev` must differ across cards or the multiple choice collapses.
-- **Grammar** (produce the form): `direction: "meaning-iast"`. The meaning is the prompt (“with (one) Rāma”). When two cells share a form (`rāmau`), the meanings must still differ (“two Rāmas as the subject” vs “as the object”).
-- Deck id: stable, kebab-case, unique in `scriptDecks`. `lessonId` on the deck matches the catalog id. `kind` is `"script"` or `"grammar"`.
-- Size: the lesson’s own table or a short list of before/after pairs. Not every word in the library.
-- `unit`: `akshara` or `matra` for script, `sandhi` for sandhi pairs, `word` for inflected forms.
+Make the lesson readable. The practice deck, if you add one, is only the reference’s own examples turned into cards. Same forms. Do not build a large drill here.
 
-A lesson cannot be `ready` without `practice.deckIds`.
+Files:
 
-## Lesson shape
+- `src/content/study/lessons/<slug>.ts` — one export of `LessonBlock[]`.
+- `src/content/study/decks.ts` — only if you add that small deck: one `letters(...)` list and one `deck(...)` entry.
+- `src/content/study/catalog.ts` — import the body into `lessonBodies`. Set `status: "ready"` and `practice` on **that** draft only. A ready lesson must have a deck; the catalog throws otherwise. Leave `prereqs` alone.
 
-Blocks already implemented: `p`, `h2`, `ul`, `glyphs`, `note`, `table`. A few screens. Patterns and the odd shape first, then the grid. Glyph `note` is a short gloss (“gurubhyo”), not a second paragraph.
+`npx tsc --noEmit` must pass. Stop. Report the lesson id and anything you were unsure how to transfer. Do not start the next stub.
 
-## Check
+## Pass 2 — drills
 
-1. `npx tsc --noEmit`
-2. With the dev server up, open `#/study/<lessonId>`, read the page, open Practice, answer one card correctly.
-3. Stop. Report the lesson id, how many cards, and which examples are guide vs copied. Do not start the next stub.
+A later task. The lesson body already exists. Extend its deck with more cards that practice the same material.
+
+Every card has to be checkable:
+
+- It is a form the reference already gives, or
+- It is the same rule applied to a stem the reference already declines, and `scripts/rudra-iast.py` agrees, or
+- Both sides are copied from an encoded chapter.
+
+If you cannot show which of those it is, do not add the card. Do not harvest the library (the cluster deck in `src/lib/clusters.ts` is an exception already shipped; do not copy that approach).
+
+Handwritten rows: `[id, dev, iast]` or `[id, dev, iast, meaning]`.
+
+- Reading a glyph: `direction: "dev-iast"`. The `dev` values must differ or the choices collapse.
+- Producing a form: `direction: "meaning-iast"`. The meaning is the prompt. If two forms are spelled the same, the prompts must still differ.
+
+Deck id stays the one the lesson already points at. `kind` is `"script"` or `"grammar"`. `unit` is `akshara` or `matra` for script, `sandhi` for sandhi pairs, `word` for inflected forms.
+
+Stop after that one deck. Report how many cards you added and, for any card that is not printed on the reference page, where it came from.

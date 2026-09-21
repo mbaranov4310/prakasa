@@ -1,5 +1,17 @@
 import { libraryClusterItems } from "../../lib/clusters";
 import type { QuizDeck, QuizDeckItem, QuizUnit } from "../../lib/quiz";
+import { pendingDeck as sandhiSystemDeck } from "./pending/sandhi-the-sandhi-system";
+import { pendingDeck as vowelSandhiDeck } from "./pending/sandhi-vowel-sandhi";
+import { pendingDeck as visargaSandhiDeck } from "./pending/sandhi-visarga-sandhi";
+import { pendingDeck as consonantSandhiBetweenDeck } from "./pending/sandhi-consonant-sandhi-between-words";
+import { pendingDeck as consonantSandhiWithinDeck } from "./pending/sandhi-consonant-sandhi-within-a-word";
+import { pendingDeck as nominalSystemDeck } from "./pending/nominals-the-nominal-system";
+import { pendingDeck as basicEndingsDeck } from "./pending/nominals-basic-nominal-endings";
+import { pendingDeck as aaIiUuDeck } from "./pending/nominals-aa-ii-uu-stems";
+import { pendingDeck as iAndUDeck } from "./pending/nominals-i-and-u-stems";
+import { pendingDeck as rStemsDeck } from "./pending/nominals-r-stems";
+import { pendingDeck as aiOAuDeck } from "./pending/nominals-ai-o-au-stems";
+import { pendingDeck as consonantStemsDeck } from "./pending/nominals-consonant-stems";
 
 function letters(
   unit: QuizUnit,
@@ -213,5 +225,21 @@ export const scriptDecks: QuizDeck[] = [
     "nominals-a-stems",
     ramaItems,
     "grammar",
+  ),
+  ...[
+    sandhiSystemDeck,
+    vowelSandhiDeck,
+    visargaSandhiDeck,
+    consonantSandhiBetweenDeck,
+    consonantSandhiWithinDeck,
+    nominalSystemDeck,
+    basicEndingsDeck,
+    aaIiUuDeck,
+    iAndUDeck,
+    rStemsDeck,
+    aiOAuDeck,
+    consonantStemsDeck,
+  ].map((entry) =>
+    deck(entry.id, entry.titleEn, entry.titleIast, entry.lessonId, entry.items, entry.kind),
   ),
 ];

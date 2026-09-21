@@ -6,6 +6,18 @@ import { vowelMarks } from "./lessons/vowel-marks";
 import { consonantClusters } from "./lessons/consonant-clusters";
 import { numeralsAndPunctuation } from "./lessons/numerals-and-punctuation";
 import { aStems } from "./lessons/a-stems";
+import { sandhiSystem } from "./lessons/sandhi-system";
+import { vowelSandhi } from "./lessons/vowel-sandhi";
+import { visargaSandhi } from "./lessons/visarga-sandhi";
+import { consonantSandhiBetweenWords } from "./lessons/consonant-sandhi-between-words";
+import { consonantSandhiWithinAWord } from "./lessons/consonant-sandhi-within-a-word";
+import { nominalSystem } from "./lessons/nominal-system";
+import { basicNominalEndings } from "./lessons/basic-nominal-endings";
+import { aaIiUuStems } from "./lessons/aa-ii-uu-stems";
+import { iAndUStems } from "./lessons/i-and-u-stems";
+import { rStems } from "./lessons/r-stems";
+import { aiOAuStems } from "./lessons/ai-o-au-stems";
+import { consonantStems } from "./lessons/consonant-stems";
 
 export type LessonStatus = "ready" | "coming-soon";
 
@@ -163,26 +175,36 @@ const sandhi = topicLessons("sandhi", [
     id: "sandhi-the-sandhi-system",
     titleEn: "The sandhi system",
     sourceUrl: `${GUIDE}/sandhi/the-sandhi-system/`,
+    status: "ready",
+    practice: { deckIds: ["sandhi-the-sandhi-system"], direction: "meaning-iast" },
   },
   {
     id: "sandhi-vowel-sandhi",
     titleEn: "Vowel sandhi",
     sourceUrl: `${GUIDE}/sandhi/vowel-sandhi/`,
+    status: "ready",
+    practice: { deckIds: ["sandhi-vowel-sandhi"], direction: "meaning-iast" },
   },
   {
     id: "sandhi-visarga-sandhi",
     titleEn: "visarga sandhi",
     sourceUrl: `${GUIDE}/sandhi/visarga-sandhi/`,
+    status: "ready",
+    practice: { deckIds: ["sandhi-visarga-sandhi"], direction: "meaning-iast" },
   },
   {
     id: "sandhi-consonant-sandhi-between-words",
     titleEn: "Consonant sandhi between words",
     sourceUrl: `${GUIDE}/sandhi/consonant-sandhi-between-words/`,
+    status: "ready",
+    practice: { deckIds: ["sandhi-consonant-sandhi-between-words"], direction: "meaning-iast" },
   },
   {
     id: "sandhi-consonant-sandhi-within-a-word",
     titleEn: "Consonant sandhi within a word",
     sourceUrl: `${GUIDE}/sandhi/consonant-sandhi-within-a-word/`,
+    status: "ready",
+    practice: { deckIds: ["sandhi-consonant-sandhi-within-a-word"], direction: "meaning-iast" },
   },
 ]);
 
@@ -191,11 +213,15 @@ const nominals1 = topicLessons("nominals-1", [
     id: "nominals-the-nominal-system",
     titleEn: "The nominal system",
     sourceUrl: `${GUIDE}/nominals/the-nominal-system/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-the-nominal-system"], direction: "meaning-iast" },
   },
   {
     id: "nominals-basic-nominal-endings",
     titleEn: "Basic nominal endings",
     sourceUrl: `${GUIDE}/nominals/basic-nominal-endings/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-basic-nominal-endings"], direction: "meaning-iast" },
   },
   {
     id: "nominals-a-stems",
@@ -211,26 +237,36 @@ const nominals1 = topicLessons("nominals-1", [
     id: "nominals-aa-ii-uu-stems",
     titleEn: "-ā, -ī, and -ū stems",
     sourceUrl: `${GUIDE}/nominals/a-i-and-u-stems/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-aa-ii-uu-stems"], direction: "meaning-iast" },
   },
   {
     id: "nominals-i-and-u-stems",
     titleEn: "-i and -u stems",
     sourceUrl: `${GUIDE}/nominals/i-and-u-stems/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-i-and-u-stems"], direction: "meaning-iast" },
   },
   {
     id: "nominals-r-stems",
     titleEn: "-ṛ stems",
     sourceUrl: `${GUIDE}/nominals/r-stems/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-r-stems"], direction: "meaning-iast" },
   },
   {
     id: "nominals-ai-o-au-stems",
     titleEn: "-ai, -o, and -au stems",
     sourceUrl: `${GUIDE}/nominals/ai-o-and-au-stems/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-ai-o-au-stems"], direction: "meaning-iast" },
   },
   {
     id: "nominals-consonant-stems",
     titleEn: "Consonant stems",
     sourceUrl: `${GUIDE}/nominals/consonant-stems/`,
+    status: "ready",
+    practice: { deckIds: ["nominals-consonant-stems"], direction: "meaning-iast" },
   },
 ]);
 
@@ -554,7 +590,19 @@ export const lessonBodies: Record<string, LessonBlock[]> = {
   "devanagari-vowel-marks": vowelMarks,
   "devanagari-consonant-clusters": consonantClusters,
   "devanagari-numerals-and-punctuation": numeralsAndPunctuation,
+  "sandhi-the-sandhi-system": sandhiSystem,
+  "sandhi-vowel-sandhi": vowelSandhi,
+  "sandhi-visarga-sandhi": visargaSandhi,
+  "sandhi-consonant-sandhi-between-words": consonantSandhiBetweenWords,
+  "sandhi-consonant-sandhi-within-a-word": consonantSandhiWithinAWord,
+  "nominals-the-nominal-system": nominalSystem,
+  "nominals-basic-nominal-endings": basicNominalEndings,
   "nominals-a-stems": aStems,
+  "nominals-aa-ii-uu-stems": aaIiUuStems,
+  "nominals-i-and-u-stems": iAndUStems,
+  "nominals-r-stems": rStems,
+  "nominals-ai-o-au-stems": aiOAuStems,
+  "nominals-consonant-stems": consonantStems,
 };
 
 function checkCatalog() {
