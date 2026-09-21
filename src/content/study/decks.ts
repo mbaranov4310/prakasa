@@ -12,6 +12,64 @@ import { pendingDeck as iAndUDeck } from "./pending/nominals-i-and-u-stems";
 import { pendingDeck as rStemsDeck } from "./pending/nominals-r-stems";
 import { pendingDeck as aiOAuDeck } from "./pending/nominals-ai-o-au-stems";
 import { pendingDeck as consonantStemsDeck } from "./pending/nominals-consonant-stems";
+import { pendingDeck as soundsTheSoundSystemDeck } from "./pending/sounds-the-sound-system";
+import { pendingDeck as soundsVowelsDeck } from "./pending/sounds-vowels";
+import { pendingDeck as soundsConsonantsDeck } from "./pending/sounds-consonants";
+import { pendingDeck as soundsOtherSoundsDeck } from "./pending/sounds-other-sounds";
+import { pendingDeck as soundsSyllablesDeck } from "./pending/sounds-syllables";
+import { pendingDeck as soundsModernPronunciationDeck } from "./pending/sounds-modern-pronunciation";
+import { pendingDeck as uninflectedTypesDeck } from "./pending/uninflected-types";
+import { pendingDeck as uninflectedUpasargaDeck } from "./pending/uninflected-upasarga";
+import { pendingDeck as uninflectedOtherPrefixesDeck } from "./pending/uninflected-other-prefixes";
+import { pendingDeck as uninflectedCaVaAndOthersDeck } from "./pending/uninflected-ca-va-and-others";
+import { pendingDeck as uninflectedAdverbsDeck } from "./pending/uninflected-adverbs";
+import { pendingDeck as sentencesSentenceStructureDeck } from "./pending/sentences-sentence-structure";
+import { pendingDeck as sentencesAgreementDeck } from "./pending/sentences-agreement";
+import { pendingDeck as sentencesVerblessSentencesDeck } from "./pending/sentences-verbless-sentences";
+import { pendingDeck as sentencesQuestionsDeck } from "./pending/sentences-questions";
+import { pendingDeck as sentencesRelativePhrasesDeck } from "./pending/sentences-relative-phrases";
+import { pendingDeck as sentencesParticiplesDeck } from "./pending/sentences-participles";
+import { pendingDeck as sentencesTheEightCasesDeck } from "./pending/sentences-the-eight-cases";
+import { pendingDeck as nominalsAsmadAndYusmadDeck } from "./pending/nominals-asmad-and-yusmad";
+import { pendingDeck as nominalsTadEtadIdamAndAdasDeck } from "./pending/nominals-tad-etad-idam-and-adas";
+import { pendingDeck as nominalsKimAndYadDeck } from "./pending/nominals-kim-and-yad";
+import { pendingDeck as nominalsPronominalAdjectivesDeck } from "./pending/nominals-pronominal-adjectives";
+import { pendingDeck as nominalsNumberWordsDeck } from "./pending/nominals-number-words";
+import { pendingDeck as verbsSpecialTenseMoodsDeck } from "./pending/verbs-special-tense-moods";
+import { pendingDeck as verbsThePresentTenseDeck } from "./pending/verbs-the-present-tense";
+import { pendingDeck as verbsTheCommandMoodDeck } from "./pending/verbs-the-command-mood";
+import { pendingDeck as verbsTheOrdinaryPastTenseDeck } from "./pending/verbs-the-ordinary-past-tense";
+import { pendingDeck as verbsThePotentialMoodDeck } from "./pending/verbs-the-potential-mood";
+import { pendingDeck as verbsAtmanepadaDeck } from "./pending/verbs-atmanepada";
+import { pendingDeck as verbsBhuDivTudAndCurDeck } from "./pending/verbs-bhu-div-tud-and-cur";
+import { pendingDeck as verbsSuTanAndKriDeck } from "./pending/verbs-su-tan-and-kri";
+import { pendingDeck as verbsAdAndRudhDeck } from "./pending/verbs-ad-and-rudh";
+import { pendingDeck as verbsTheHuClassDeck } from "./pending/verbs-the-hu-class";
+import { pendingDeck as verbsKarmaniAndBhavePrayogaDeck } from "./pending/verbs-karmani-and-bhave-prayoga";
+import { pendingDeck as verbsOtherTenseMoodsDeck } from "./pending/verbs-other-tense-moods";
+import { pendingDeck as verbsTheSimpleFutureTenseDeck } from "./pending/verbs-the-simple-future-tense";
+import { pendingDeck as verbsTheConditionalMoodDeck } from "./pending/verbs-the-conditional-mood";
+import { pendingDeck as verbsTheDistantFutureTenseDeck } from "./pending/verbs-the-distant-future-tense";
+import { pendingDeck as verbsTheDistantPastTenseDeck } from "./pending/verbs-the-distant-past-tense";
+import { pendingDeck as verbsTheRecentPastTenseDeck } from "./pending/verbs-the-recent-past-tense";
+import { pendingDeck as verbsTheBlessingMoodDeck } from "./pending/verbs-the-blessing-mood";
+import { pendingDeck as verbsCausalRootsDeck } from "./pending/verbs-causal-roots";
+import { pendingDeck as verbsDesiderativeRootsDeck } from "./pending/verbs-desiderative-roots";
+import { pendingDeck as verbsNominalRootsDeck } from "./pending/verbs-nominal-roots";
+import { pendingDeck as verbsIntensiveRootsDeck } from "./pending/verbs-intensive-roots";
+import { pendingDeck as suffixesTheSuffixSystemDeck } from "./pending/suffixes-the-suffix-system";
+import { pendingDeck as suffixesTvaAndYaDeck } from "./pending/suffixes-tva-and-ya";
+import { pendingDeck as suffixesTaAndTavatDeck } from "./pending/suffixes-ta-and-tavat";
+import { pendingDeck as suffixesTumDeck } from "./pending/suffixes-tum";
+import { pendingDeck as suffixesTavyaAniyaAndYaDeck } from "./pending/suffixes-tavya-aniya-and-ya";
+import { pendingDeck as suffixesAtAnaAndVasDeck } from "./pending/suffixes-at-ana-and-vas";
+import { pendingDeck as suffixesOtherRootSuffixesDeck } from "./pending/suffixes-other-root-suffixes";
+import { pendingDeck as suffixesNominalSuffixesDeck } from "./pending/suffixes-nominal-suffixes";
+import { pendingDeck as compoundsTheCompoundSystemDeck } from "./pending/compounds-the-compound-system";
+import { pendingDeck as compoundsTheDvandvaDeck } from "./pending/compounds-the-dvandva";
+import { pendingDeck as compoundsTheTatpurusaDeck } from "./pending/compounds-the-tatpurusa";
+import { pendingDeck as compoundsTheBahuvrihiDeck } from "./pending/compounds-the-bahuvrihi";
+import { pendingDeck as compoundsTheAvyayibhavaDeck } from "./pending/compounds-the-avyayibhava";
 
 function letters(
   unit: QuizUnit,
@@ -239,6 +297,64 @@ export const scriptDecks: QuizDeck[] = [
     rStemsDeck,
     aiOAuDeck,
     consonantStemsDeck,
+    soundsTheSoundSystemDeck,
+    soundsVowelsDeck,
+    soundsConsonantsDeck,
+    soundsOtherSoundsDeck,
+    soundsSyllablesDeck,
+    soundsModernPronunciationDeck,
+    uninflectedTypesDeck,
+    uninflectedUpasargaDeck,
+    uninflectedOtherPrefixesDeck,
+    uninflectedCaVaAndOthersDeck,
+    uninflectedAdverbsDeck,
+    sentencesSentenceStructureDeck,
+    sentencesAgreementDeck,
+    sentencesVerblessSentencesDeck,
+    sentencesQuestionsDeck,
+    sentencesRelativePhrasesDeck,
+    sentencesParticiplesDeck,
+    sentencesTheEightCasesDeck,
+    nominalsAsmadAndYusmadDeck,
+    nominalsTadEtadIdamAndAdasDeck,
+    nominalsKimAndYadDeck,
+    nominalsPronominalAdjectivesDeck,
+    nominalsNumberWordsDeck,
+    verbsSpecialTenseMoodsDeck,
+    verbsThePresentTenseDeck,
+    verbsTheCommandMoodDeck,
+    verbsTheOrdinaryPastTenseDeck,
+    verbsThePotentialMoodDeck,
+    verbsAtmanepadaDeck,
+    verbsBhuDivTudAndCurDeck,
+    verbsSuTanAndKriDeck,
+    verbsAdAndRudhDeck,
+    verbsTheHuClassDeck,
+    verbsKarmaniAndBhavePrayogaDeck,
+    verbsOtherTenseMoodsDeck,
+    verbsTheSimpleFutureTenseDeck,
+    verbsTheConditionalMoodDeck,
+    verbsTheDistantFutureTenseDeck,
+    verbsTheDistantPastTenseDeck,
+    verbsTheRecentPastTenseDeck,
+    verbsTheBlessingMoodDeck,
+    verbsCausalRootsDeck,
+    verbsDesiderativeRootsDeck,
+    verbsNominalRootsDeck,
+    verbsIntensiveRootsDeck,
+    suffixesTheSuffixSystemDeck,
+    suffixesTvaAndYaDeck,
+    suffixesTaAndTavatDeck,
+    suffixesTumDeck,
+    suffixesTavyaAniyaAndYaDeck,
+    suffixesAtAnaAndVasDeck,
+    suffixesOtherRootSuffixesDeck,
+    suffixesNominalSuffixesDeck,
+    compoundsTheCompoundSystemDeck,
+    compoundsTheDvandvaDeck,
+    compoundsTheTatpurusaDeck,
+    compoundsTheBahuvrihiDeck,
+    compoundsTheAvyayibhavaDeck,
   ].map((entry) =>
     deck(entry.id, entry.titleEn, entry.titleIast, entry.lessonId, entry.items, entry.kind),
   ),

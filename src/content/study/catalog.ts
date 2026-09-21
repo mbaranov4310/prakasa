@@ -18,6 +18,64 @@ import { iAndUStems } from "./lessons/i-and-u-stems";
 import { rStems } from "./lessons/r-stems";
 import { aiOAuStems } from "./lessons/ai-o-au-stems";
 import { consonantStems } from "./lessons/consonant-stems";
+import { soundSystem } from "./lessons/sounds-system";
+import { soundVowels } from "./lessons/sounds-vowels";
+import { soundConsonants } from "./lessons/sounds-consonants";
+import { otherSounds } from "./lessons/sounds-other";
+import { syllablesLesson } from "./lessons/sounds-syllables";
+import { modernPronunciation } from "./lessons/sounds-modern";
+import { uninflectedTypes } from "./lessons/uninflected-types";
+import { upasarga } from "./lessons/upasarga";
+import { otherPrefixes } from "./lessons/other-prefixes";
+import { caVa } from "./lessons/ca-va";
+import { adverbs } from "./lessons/adverbs";
+import { sentenceStructure } from "./lessons/sentence-structure";
+import { agreement } from "./lessons/agreement";
+import { verblessSentences } from "./lessons/verbless-sentences";
+import { questions } from "./lessons/questions";
+import { relativePhrases } from "./lessons/relative-phrases";
+import { sentenceParticiples } from "./lessons/sentence-participles";
+import { eightCases } from "./lessons/eight-cases";
+import { asmadYusmad } from "./lessons/asmad-yusmad";
+import { tadEtad } from "./lessons/tad-etad";
+import { kimYad } from "./lessons/kim-yad";
+import { pronominalAdjectives } from "./lessons/pronominal-adjectives";
+import { numberWords } from "./lessons/number-words";
+import { specialTenseMoods } from "./lessons/special-tense-moods";
+import { presentTense } from "./lessons/present-tense";
+import { commandMood } from "./lessons/command-mood";
+import { ordinaryPast } from "./lessons/ordinary-past";
+import { potentialMood } from "./lessons/potential-mood";
+import { atmanepada } from "./lessons/atmanepada";
+import { bhuClass } from "./lessons/bhu-class";
+import { suTanKri } from "./lessons/su-tan-kri";
+import { adRudh } from "./lessons/ad-rudh";
+import { huClass } from "./lessons/hu-class";
+import { karmani } from "./lessons/karmani";
+import { otherTenseMoods } from "./lessons/other-tense-moods";
+import { simpleFuture } from "./lessons/simple-future";
+import { conditionalMood } from "./lessons/conditional-mood";
+import { distantFuture } from "./lessons/distant-future";
+import { distantPast } from "./lessons/distant-past";
+import { recentPast } from "./lessons/recent-past";
+import { blessingMood } from "./lessons/blessing-mood";
+import { causalRoots } from "./lessons/causal-roots";
+import { desiderativeRoots } from "./lessons/desiderative-roots";
+import { nominalRoots } from "./lessons/nominal-roots";
+import { intensiveRoots } from "./lessons/intensive-roots";
+import { suffixSystem } from "./lessons/suffix-system";
+import { tvaYa } from "./lessons/tva-ya";
+import { taTavat } from "./lessons/ta-tavat";
+import { tumSuffix } from "./lessons/tum";
+import { tavyaAniya } from "./lessons/tavya-aniya";
+import { atAnaVas } from "./lessons/at-ana-vas";
+import { otherRootSuffixes } from "./lessons/other-root-suffixes";
+import { nominalSuffixes } from "./lessons/nominal-suffixes";
+import { compoundSystem } from "./lessons/compound-system";
+import { dvandva } from "./lessons/dvandva";
+import { tatpurusa } from "./lessons/tatpurusa";
+import { bahuvrihi } from "./lessons/bahuvrihi";
+import { avyayibhava } from "./lessons/avyayibhava";
 
 export type LessonStatus = "ready" | "coming-soon";
 
@@ -68,15 +126,21 @@ type Draft = {
   practice?: LessonMeta["practice"];
 };
 
-function topicLessons(topicId: string, drafts: Draft[]): LessonMeta[] {
+function topicLessons(
+  topicId: string,
+  drafts: Draft[],
+  markReady = false,
+): LessonMeta[] {
   return drafts.map((draft, index) => ({
     id: draft.id,
     topicId,
     titleEn: draft.titleEn,
-    status: draft.status ?? "coming-soon",
+    status: draft.status ?? (markReady ? "ready" : "coming-soon"),
     prereqs: draft.prereqs ?? (index === 0 ? [] : [drafts[index - 1].id]),
     sourceUrl: draft.sourceUrl,
-    practice: draft.practice,
+    practice:
+      draft.practice ??
+      (markReady ? { deckIds: [draft.id], direction: "meaning-iast" } : undefined),
   }));
 }
 
@@ -168,7 +232,7 @@ const sounds = topicLessons("sounds", [
     sourceUrl: `${GUIDE}/sounds/modern-pronunciation/`,
     prereqs: ["sounds-other-sounds"],
   },
-]);
+], true);
 
 const sandhi = topicLessons("sandhi", [
   {
@@ -296,7 +360,7 @@ const uninflected = topicLessons("uninflected", [
     titleEn: "Adverbs",
     sourceUrl: `${GUIDE}/uninflected-words/adverbs/`,
   },
-]);
+], true);
 
 const sentences = topicLessons("sentences", [
   {
@@ -334,7 +398,7 @@ const sentences = topicLessons("sentences", [
     titleEn: "The eight cases",
     sourceUrl: `${GUIDE}/sentences/the-eight-cases/`,
   },
-]);
+], true);
 
 const nominals2 = topicLessons("nominals-2", [
   {
@@ -362,7 +426,7 @@ const nominals2 = topicLessons("nominals-2", [
     titleEn: "Number words",
     sourceUrl: `${GUIDE}/nominals/number-words/`,
   },
-]);
+], true);
 
 const verbs1 = topicLessons("verbs-1", [
   {
@@ -420,7 +484,7 @@ const verbs1 = topicLessons("verbs-1", [
     titleEn: "karmaṇi and bhāve prayoga",
     sourceUrl: `${GUIDE}/verbs/karmani-and-bhave-prayoga/`,
   },
-]);
+], true);
 
 const verbs2 = topicLessons("verbs-2", [
   {
@@ -458,7 +522,7 @@ const verbs2 = topicLessons("verbs-2", [
     titleEn: "The blessing mood",
     sourceUrl: `${GUIDE}/verbs/the-blessing-mood/`,
   },
-]);
+], true);
 
 const verbs3 = topicLessons("verbs-3", [
   {
@@ -481,7 +545,7 @@ const verbs3 = topicLessons("verbs-3", [
     titleEn: "Intensive roots",
     sourceUrl: `${GUIDE}/verbs/intensive-roots/`,
   },
-]);
+], true);
 
 const suffixes = topicLessons("suffixes", [
   {
@@ -524,7 +588,7 @@ const suffixes = topicLessons("suffixes", [
     titleEn: "Nominal suffixes",
     sourceUrl: `${GUIDE}/suffixes/nominal-suffixes/`,
   },
-]);
+], true);
 
 const compounds = topicLessons("compounds", [
   {
@@ -552,7 +616,7 @@ const compounds = topicLessons("compounds", [
     titleEn: "The avyayībhāva",
     sourceUrl: `${GUIDE}/compounds/the-avyayibhava/`,
   },
-]);
+], true);
 
 export const lessonMetas: LessonMeta[] = [
   ...devanagari,
@@ -603,6 +667,64 @@ export const lessonBodies: Record<string, LessonBlock[]> = {
   "nominals-r-stems": rStems,
   "nominals-ai-o-au-stems": aiOAuStems,
   "nominals-consonant-stems": consonantStems,
+  "sounds-the-sound-system": soundSystem,
+  "sounds-vowels": soundVowels,
+  "sounds-consonants": soundConsonants,
+  "sounds-other-sounds": otherSounds,
+  "sounds-syllables": syllablesLesson,
+  "sounds-modern-pronunciation": modernPronunciation,
+  "uninflected-types": uninflectedTypes,
+  "uninflected-upasarga": upasarga,
+  "uninflected-other-prefixes": otherPrefixes,
+  "uninflected-ca-va-and-others": caVa,
+  "uninflected-adverbs": adverbs,
+  "sentences-sentence-structure": sentenceStructure,
+  "sentences-agreement": agreement,
+  "sentences-verbless-sentences": verblessSentences,
+  "sentences-questions": questions,
+  "sentences-relative-phrases": relativePhrases,
+  "sentences-participles": sentenceParticiples,
+  "sentences-the-eight-cases": eightCases,
+  "nominals-asmad-and-yusmad": asmadYusmad,
+  "nominals-tad-etad-idam-and-adas": tadEtad,
+  "nominals-kim-and-yad": kimYad,
+  "nominals-pronominal-adjectives": pronominalAdjectives,
+  "nominals-number-words": numberWords,
+  "verbs-special-tense-moods": specialTenseMoods,
+  "verbs-the-present-tense": presentTense,
+  "verbs-the-command-mood": commandMood,
+  "verbs-the-ordinary-past-tense": ordinaryPast,
+  "verbs-the-potential-mood": potentialMood,
+  "verbs-atmanepada": atmanepada,
+  "verbs-bhu-div-tud-and-cur": bhuClass,
+  "verbs-su-tan-and-kri": suTanKri,
+  "verbs-ad-and-rudh": adRudh,
+  "verbs-the-hu-class": huClass,
+  "verbs-karmani-and-bhave-prayoga": karmani,
+  "verbs-other-tense-moods": otherTenseMoods,
+  "verbs-the-simple-future-tense": simpleFuture,
+  "verbs-the-conditional-mood": conditionalMood,
+  "verbs-the-distant-future-tense": distantFuture,
+  "verbs-the-distant-past-tense": distantPast,
+  "verbs-the-recent-past-tense": recentPast,
+  "verbs-the-blessing-mood": blessingMood,
+  "verbs-causal-roots": causalRoots,
+  "verbs-desiderative-roots": desiderativeRoots,
+  "verbs-nominal-roots": nominalRoots,
+  "verbs-intensive-roots": intensiveRoots,
+  "suffixes-the-suffix-system": suffixSystem,
+  "suffixes-tva-and-ya": tvaYa,
+  "suffixes-ta-and-tavat": taTavat,
+  "suffixes-tum": tumSuffix,
+  "suffixes-tavya-aniya-and-ya": tavyaAniya,
+  "suffixes-at-ana-and-vas": atAnaVas,
+  "suffixes-other-root-suffixes": otherRootSuffixes,
+  "suffixes-nominal-suffixes": nominalSuffixes,
+  "compounds-the-compound-system": compoundSystem,
+  "compounds-the-dvandva": dvandva,
+  "compounds-the-tatpurusa": tatpurusa,
+  "compounds-the-bahuvrihi": bahuvrihi,
+  "compounds-the-avyayibhava": avyayibhava,
 };
 
 function checkCatalog() {

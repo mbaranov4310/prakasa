@@ -17,7 +17,7 @@ export function StudyIndex() {
       <p className="eyebrow">Study</p>
       <h1 className="chapter-title is-latin">Lessons</h1>
       <p className="quiz-lead">
-        A map of Sanskrit grammar, with drills. Start with Devanagari. Other topics will fill in.
+        A map of Sanskrit grammar, with drills. Start with Devanagari.
       </p>
 
       {topics.map((topic) => (
