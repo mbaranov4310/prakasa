@@ -107,6 +107,70 @@ const ramaItems = letters("word", [
   ["pl8", "रामाः", "rāmāḥ", "O Rāmas (many)"],
 ]);
 
+const vowelMarkItems = letters("matra", [
+  ["ka", "क", "ka"],
+  ["kaa", "का", "kā"],
+  ["ki", "कि", "ki"],
+  ["kii", "की", "kī"],
+  ["ku", "कु", "ku"],
+  ["kuu", "कू", "kū"],
+  ["kr", "कृ", "kṛ"],
+  ["krr", "कॄ", "kṝ"],
+  ["kl", "कॢ", "kḷ"],
+  ["kll", "कॣ", "kḹ"],
+  ["ke", "के", "ke"],
+  ["kai", "कै", "kai"],
+  ["ko", "को", "ko"],
+  ["kau", "कौ", "kau"],
+  ["kam", "कं", "kaṃ"],
+  ["kah", "कः", "kaḥ"],
+  ["k-candra", "कँ", "ka̐"],
+  ["k-virama", "क्", "k"],
+  ["ru", "रु", "ru"],
+  ["ruu", "रू", "rū"],
+  ["rr", "रृ", "rṛ"],
+  ["hr", "हृ", "hṛ"],
+  ["hrr", "हॄ", "hṝ"],
+  ["naa", "ना", "nā"],
+  ["gu", "गु", "gu"],
+  ["bhyo", "भ्यो", "bhyo"],
+  ["kraa", "क्रा", "krā"],
+]);
+
+const numeralItems = letters("akshara", [
+  ["0", "०", "0"],
+  ["1", "१", "1"],
+  ["2", "२", "2"],
+  ["3", "३", "3"],
+  ["4", "४", "4"],
+  ["5", "५", "5"],
+  ["6", "६", "6"],
+  ["7", "७", "7"],
+  ["8", "८", "8"],
+  ["9", "९", "9"],
+  ["danda", "।", "|", "daṇḍa (end of a sentence or mid-verse)"],
+  ["double-danda", "॥", "||", "double daṇḍa (end of a verse)"],
+  ["avagraha", "ऽ", "'", "avagraha (elided vowel)"],
+]);
+
+const oldDevanagariItems = letters("akshara", [
+  ["site-shapes", "देवनागरी", "modern", "Letter drawings this reader uses"],
+  ["old-count", "अ आ ओ औ झ ण", "six", "How many letters in this lesson had older printed drawings"],
+  ["old-kind", "अ", "font variants", "Older अ आ ओ औ झ ण were this, not new Unicode letters"],
+  ["need-old", "अ", "no", "Do you need those old drawings to read Prakāśa?"],
+]);
+
+const vedicDevanagariItems = letters("akshara", [
+  ["lla", "ळ", "ḷa"],
+  ["llha", "ळ्ह", "ḷha"],
+  ["anudatta", "अ॒", "anudātta"],
+  ["udatta", "अ", "udātta"],
+  ["svarita", "अ॑", "svarita"],
+  ["vedic-anusvara", "ꣳ", "vedic ṃ"],
+  ["ogm", "ॐ॒", "ogm"],
+  ["sam-namakam", "षाꣳ", "ṣāṃ"],
+]);
+
 const clusterItems = letters(
   "conjunct",
   libraryClusterItems().map((item) => [item.id, item.dev, item.iast]),
@@ -140,11 +204,40 @@ export const scriptDecks: QuizDeck[] = [
     vowelConsonantItems,
   ),
   deck(
+    "devanagari-vowel-marks",
+    "Vowel marks",
+    "mātrā",
+    "devanagari-vowel-marks",
+    vowelMarkItems,
+  ),
+  deck(
     "devanagari-clusters",
     "Consonant clusters",
     "saṃyuktākṣara",
     "devanagari-consonant-clusters",
     clusterItems,
+  ),
+  deck(
+    "devanagari-numerals-punctuation",
+    "Numerals and punctuation",
+    "aṅka-virāma",
+    "devanagari-numerals-and-punctuation",
+    numeralItems,
+  ),
+  deck(
+    "devanagari-old",
+    "Old Devanagari",
+    "prācīna-devanāgarī",
+    "devanagari-old-devanagari",
+    oldDevanagariItems,
+    "script",
+  ),
+  deck(
+    "devanagari-vedic",
+    "Vedic Devanagari",
+    "vaidika-devanāgarī",
+    "devanagari-vedic-devanagari",
+    vedicDevanagariItems,
   ),
   deck(
     "nominals-rama-a-stems",
