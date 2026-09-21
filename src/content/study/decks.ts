@@ -1,3 +1,4 @@
+import { libraryClusterItems } from "../../lib/clusters";
 import type { QuizDeck, QuizDeckItem, QuizUnit } from "../../lib/quiz";
 
 function letters(
@@ -106,37 +107,10 @@ const ramaItems = letters("word", [
   ["pl8", "रामाः", "rāmāḥ", "O Rāmas (many)"],
 ]);
 
-const clusterItems = letters("conjunct", [
-  ["ksha", "क्ष", "kṣa"],
-  ["jna", "ज्ञ", "jña"],
-  ["tsa", "त्स", "tsa"],
-  ["nda", "ण्ड", "ṇḍa"],
-  ["sta", "स्त", "sta"],
-  ["rta", "र्त", "rta"],
-  ["rna", "र्न", "rna"],
-  ["rma", "र्म", "rma"],
-  ["pra", "प्र", "pra"],
-  ["kra", "क्र", "kra"],
-  ["tra", "त्र", "tra"],
-  ["ttra-r", "ट्र", "ṭra"],
-  ["pna", "प्न", "pna"],
-  ["kna", "क्न", "kna"],
-  ["tna", "त्न", "tna"],
-  ["dya", "द्य", "dya"],
-  ["dma", "द्म", "dma"],
-  ["hya", "ह्य", "hya"],
-  ["hma", "ह्म", "hma"],
-  ["shra", "श्र", "śra"],
-  ["shva", "श्व", "śva"],
-  ["shca", "श्च", "śca"],
-  ["shta", "ष्ट", "ṣṭa"],
-  ["shtha", "ष्ठ", "ṣṭha"],
-  ["dgha", "द्घ", "dgha"],
-  ["ddha", "द्ध", "ddha"],
-  ["dbha", "द्भ", "dbha"],
-  ["kta", "क्त", "kta"],
-  ["tta", "त्त", "tta"],
-]);
+const clusterItems = letters(
+  "conjunct",
+  libraryClusterItems().map((item) => [item.id, item.dev, item.iast]),
+);
 
 function deck(
   id: string,

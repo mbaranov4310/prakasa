@@ -35,7 +35,7 @@ export const dvitiyaMarjana: Chapter = {
               ["द", "da"],
               ["धि", "dhi"],
               ["क्रा", "krā"],
-              ["व्ण्णो", "vṇṇo"],
+              ["व्णो", "vṇo"],
             ]),
             word("dm-akarisam", "I have performed", [
               ["अ", "a"],
@@ -91,8 +91,8 @@ export const dvitiyaMarjana: Chapter = {
             word("dm-nah-lives", "our", [["ण", "ṇa"]]),
             word("dm-ayumsi", "lifespans", [
               ["आ", "ā"],
-              ["यू", "yū"],
-              ["ङ्षि", "ṅṣi"],
+              ["यूं", "yūṃ"],
+              ["षि", "ṣi"],
             ]),
             word("dm-tarisat", "may he carry across", [
               ["ता", "tā"],

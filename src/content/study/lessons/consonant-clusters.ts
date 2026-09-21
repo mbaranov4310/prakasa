@@ -59,8 +59,28 @@ export const consonantClusters: LessonBlock[] = [
       { dev: "त्त", iast: "tta" },
     ],
   },
+  { type: "h2", text: "These show up constantly in the mantras" },
+  {
+    type: "p",
+    text: "The shapes above are the patterns. The recitation library is full of other stacks built the same way — भ्य in every gurubhyo namaḥ, न्द्र in Indra, स्य at the end of many genitives:",
+  },
+  {
+    type: "glyphs",
+    items: [
+      { dev: "भ्य", iast: "bhya", note: "guru-bhyo" },
+      { dev: "न्त", iast: "nta" },
+      { dev: "स्य", iast: "sya" },
+      { dev: "द्र", iast: "dra" },
+      { dev: "त्य", iast: "tya" },
+      { dev: "ब्र", iast: "bra" },
+      { dev: "स्व", iast: "sva" },
+      { dev: "न्द", iast: "nda" },
+      { dev: "न्द्र", iast: "ndra", note: "three letters" },
+      { dev: "स्त्र", iast: "stra", note: "three letters" },
+    ],
+  },
   {
     type: "note",
-    text: "Three-letter clusters exist (स्त्र, त्त्र, and others). Drill the two-letter shapes first; the longer ones reuse the same pieces.",
+    text: "Practice quizzes every cluster that appears in the mantras on this site, plus a few odd ligatures (ट्र, ह्ण, ज्ज, …) that the Rudra font table encodes even when they are rare here. Three-letter stacks reuse the two-letter pieces.",
   },
 ];
