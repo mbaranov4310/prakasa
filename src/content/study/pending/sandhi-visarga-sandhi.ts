@@ -1,11 +1,20 @@
 import type { QuizDeckItem, QuizDeckKind, QuizDirection } from "../../../lib/quiz";
 
 // Drill provenance (criticize these):
-// - balas-carati: from the reference — common: ḥ → ś before c/ch
-// - naras-madyam: from the reference — -as + voiced consonant → o
-// - naras-amrtam: from the reference — -as + a → o '
-// - agnis-asti: from the reference — otherwise ḥ → r before voiced
-// - ramas-gacchati: composed — review prompt rāmaḥ gacchati; -as + voiced consonant → o
+// Exercise cue: First Steps Towards Sanskrit §8.2 (pp.141–144) — apply visarga
+//   sandhi to a join (Rāmaḥ aśvaṃ → Rāmo ’śvaṃ); Concise Elementary Grammar
+//   §§13–16 (p.16) for the same pair shape (devas gacchati → devo gacchati).
+// Stems swapped in: bāla→gaja/nara/rāma; nara→aśva/gajā; rāma→gaja/aśva/deva;
+//   agni/vāyu→guru/dhenu/avi/nṛpati/muni.
+// - balas-carati, balas-tippanim, balas-tisthati: from the lesson — ḥ → ś/ṣ/s
+// - gajas-calati, naras-tikam, ramas-tarati: composed — same matching, swapped stem
+// - naras-udakam-as, naras-madyam-as, naras-vamanti, asvas-vahanti: lesson / Gonda — -ās drops
+// - naras-madyam, ramas-gacchati, gajas-bhavati, asvas-dhavati, devas-gacchati: lesson / Gonda / First Steps — -as → o
+// - naras-amrtam, ramas-asvam, gajas-api, asvas-agacchat: lesson / First Steps / Gonda — -as + a → o ’
+// - naras-udakam, naras-odanam, asvas-iva, gajas-uvaca: lesson / Gonda — -as before other vowels drops
+// - agnis-asti, vayus-asti, gurus-vadati, dhenus-iva, avis-mama: lesson / First Steps / Gonda — else → r
+// - agnis-rocate, vayus-rocate, nrpatis-ramate, munis-ramate: lesson / Gonda — before r, lengthen
+// - sah-acintayat, esah-apasyat, sah-icchati, sah-cintayati, esah-pasyati: from the lesson — saḥ/eṣaḥ
 
 export const pendingDeck = {
   id: "sandhi-visarga-sandhi",
@@ -15,12 +24,88 @@ export const pendingDeck = {
   kind: "grammar" as QuizDeckKind,
   direction: "meaning-iast" as QuizDirection,
   items: [
+    // visarga|before-unvoiced — ḥ matches ś/ṣ/s before c/ṭ/t
     {
       id: "balas-carati",
       dev: "बालश् चरति",
       iast: "bālaś carati",
       meaning: "bālaḥ + carati",
       unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+    {
+      id: "balas-tippanim",
+      dev: "बालष् टिप्पणीं",
+      iast: "bālaṣ ṭippaṇīṃ",
+      meaning: "bālaḥ + ṭippaṇīṃ",
+      unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+    {
+      id: "balas-tisthati",
+      dev: "बालस् तिष्ठति",
+      iast: "bālas tiṣṭhati",
+      meaning: "bālaḥ + tiṣṭhati",
+      unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+    {
+      id: "gajas-calati",
+      dev: "गजश् चलति",
+      iast: "gajaś calati",
+      meaning: "gajaḥ + calati",
+      unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+    {
+      id: "naras-tikam",
+      dev: "नरष् टीकां",
+      iast: "naraṣ ṭīkāṃ",
+      meaning: "naraḥ + ṭīkāṃ",
+      unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+    {
+      id: "ramas-tarati",
+      dev: "रामस् तरति",
+      iast: "rāmas tarati",
+      meaning: "rāmaḥ + tarati",
+      unit: "sandhi",
+      group: "visarga|before-unvoiced",
+    },
+
+    // visarga|before-voiced — -ās drop; -as → o / o’ / drop; else → r or lengthen before r
+    {
+      id: "naras-udakam-as",
+      dev: "नरा उदकं",
+      iast: "narā udakaṃ",
+      meaning: "narāḥ + udakaṃ",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "naras-madyam-as",
+      dev: "नरा मद्यं",
+      iast: "narā madyaṃ",
+      meaning: "narāḥ + madyaṃ",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "naras-vamanti",
+      dev: "नरा वमन्ति",
+      iast: "narā vamanti",
+      meaning: "narāḥ + vamanti",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "asvas-vahanti",
+      dev: "अश्वा वहन्ति",
+      iast: "aśvā vahanti",
+      meaning: "aśvāḥ + vahanti",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
     },
     {
       id: "naras-madyam",
@@ -28,20 +113,7 @@ export const pendingDeck = {
       iast: "naro madyaṃ",
       meaning: "naraḥ + madyaṃ",
       unit: "sandhi",
-    },
-    {
-      id: "naras-amrtam",
-      dev: "नरोऽमृतं",
-      iast: "naro 'mṛtaṃ",
-      meaning: "naraḥ + amṛtaṃ",
-      unit: "sandhi",
-    },
-    {
-      id: "agnis-asti",
-      dev: "अग्निर् अस्ति",
-      iast: "agnir asti",
-      meaning: "agniḥ + asti",
-      unit: "sandhi",
+      group: "visarga|before-voiced",
     },
     {
       id: "ramas-gacchati",
@@ -49,6 +121,209 @@ export const pendingDeck = {
       iast: "rāmo gacchati",
       meaning: "rāmaḥ + gacchati",
       unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "gajas-bhavati",
+      dev: "गजो भवति",
+      iast: "gajo bhavati",
+      meaning: "gajaḥ + bhavati",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "asvas-dhavati",
+      dev: "अश्वो धावति",
+      iast: "aśvo dhāvati",
+      meaning: "aśvaḥ + dhāvati",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "devas-gacchati",
+      dev: "देवो गच्छति",
+      iast: "devo gacchati",
+      meaning: "devaḥ + gacchati",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "naras-amrtam",
+      dev: "नरोऽमृतं",
+      iast: "naro 'mṛtaṃ",
+      meaning: "naraḥ + amṛtaṃ",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "ramas-asvam",
+      dev: "रामोऽश्वं",
+      iast: "rāmo 'śvaṃ",
+      meaning: "rāmaḥ + aśvaṃ",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "gajas-api",
+      dev: "गजोऽपि",
+      iast: "gajo 'pi",
+      meaning: "gajaḥ + api",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "asvas-agacchat",
+      dev: "अश्वोऽगच्छत्",
+      iast: "aśvo 'gacchat",
+      meaning: "aśvaḥ + agacchat",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "naras-udakam",
+      dev: "नर उदकं",
+      iast: "nara udakaṃ",
+      meaning: "naraḥ + udakaṃ",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "naras-odanam",
+      dev: "नर ओदनम्",
+      iast: "nara odanam",
+      meaning: "naraḥ + odanam",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "asvas-iva",
+      dev: "अश्व इव",
+      iast: "aśva iva",
+      meaning: "aśvaḥ + iva",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "gajas-uvaca",
+      dev: "गज उवाच",
+      iast: "gaja uvāca",
+      meaning: "gajaḥ + uvāca",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "agnis-asti",
+      dev: "अग्निर् अस्ति",
+      iast: "agnir asti",
+      meaning: "agniḥ + asti",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "vayus-asti",
+      dev: "वायुर् अस्ति",
+      iast: "vāyur asti",
+      meaning: "vāyuḥ + asti",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "gurus-vadati",
+      dev: "गुरुर् वदति",
+      iast: "gurur vadati",
+      meaning: "guruḥ + vadati",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "dhenus-iva",
+      dev: "धेनुर् इव",
+      iast: "dhenur iva",
+      meaning: "dhenuḥ + iva",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "avis-mama",
+      dev: "अविर् मम",
+      iast: "avir mama",
+      meaning: "aviḥ + mama",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "agnis-rocate",
+      dev: "अग्नी रोचते",
+      iast: "agnī rocate",
+      meaning: "agniḥ + rocate",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "vayus-rocate",
+      dev: "वायू रोचते",
+      iast: "vāyū rocate",
+      meaning: "vāyuḥ + rocate",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "nrpatis-ramate",
+      dev: "नृपती रमते",
+      iast: "nṛpatī ramate",
+      meaning: "nṛpatiḥ + ramate",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+    {
+      id: "munis-ramate",
+      dev: "मुनी रमते",
+      iast: "munī ramate",
+      meaning: "muniḥ + ramate",
+      unit: "sandhi",
+      group: "visarga|before-voiced",
+    },
+
+    // visarga|sah — saḥ / eṣaḥ
+    {
+      id: "sah-acintayat",
+      dev: "सोऽचिन्तयत्",
+      iast: "so 'cintayat",
+      meaning: "saḥ + acintayat",
+      unit: "sandhi",
+      group: "visarga|sah",
+    },
+    {
+      id: "esah-apasyat",
+      dev: "एषोऽपश्यत्",
+      iast: "eṣo 'paśyat",
+      meaning: "eṣaḥ + apaśyat",
+      unit: "sandhi",
+      group: "visarga|sah",
+    },
+    {
+      id: "sah-icchati",
+      dev: "स इच्छति",
+      iast: "sa icchati",
+      meaning: "saḥ + icchati",
+      unit: "sandhi",
+      group: "visarga|sah",
+    },
+    {
+      id: "sah-cintayati",
+      dev: "स चिन्तयति",
+      iast: "sa cintayati",
+      meaning: "saḥ + cintayati",
+      unit: "sandhi",
+      group: "visarga|sah",
+    },
+    {
+      id: "esah-pasyati",
+      dev: "एष पश्यति",
+      iast: "eṣa paśyati",
+      meaning: "eṣaḥ + paśyati",
+      unit: "sandhi",
+      group: "visarga|sah",
     },
   ] as QuizDeckItem[],
 };

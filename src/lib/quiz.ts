@@ -30,6 +30,8 @@ export type QuizItem = {
   dev: string;
   iast: string;
   meaning?: string;
+  /** Same-stem family. Wrong answers are drawn from this set when it is set. */
+  group?: string;
   sourceId: string;
   occurrences: QuizOccurrence[];
   lessonId?: string;
@@ -41,6 +43,8 @@ export type QuizDeckItem = {
   iast: string;
   meaning?: string;
   unit: QuizUnit;
+  /** `stem|number` for nouns, `root|tense` or `root|person` for verbs. */
+  group?: string;
 };
 
 export type QuizDeckKind = "script" | "grammar";
@@ -224,6 +228,7 @@ export function deckEligibleCount(deckId: string, direction: QuizDirection): num
         dev: entry.dev,
         iast: entry.iast,
         meaning: entry.meaning,
+        group: entry.group,
         sourceId: deck.id,
         occurrences: [],
       },
@@ -244,6 +249,7 @@ function itemsFromDecks(setup: QuizSetupState): QuizItem[] {
         dev: entry.dev,
         iast: entry.iast,
         meaning: entry.meaning,
+        group: entry.group,
         sourceId: `deck:${deck.id}`,
         occurrences: [],
         lessonId: deck.lessonId,
@@ -329,8 +335,11 @@ export function mcqOptions(
   rng: () => number = Math.random,
 ): string[] {
   const correct = itemFace(item, field);
+  const source = item.group
+    ? pool.filter((other) => other.group === item.group)
+    : pool;
   const unique = new Set<string>();
-  for (const other of pool) {
+  for (const other of source) {
     const value = itemFace(other, field);
     if (value && value !== correct) unique.add(value);
   }

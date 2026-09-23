@@ -1,10 +1,11 @@
 /**
  * Drill card provenance:
- * - ka: from the reference — first of kavarga (sparśa grid)
- * - cavarga-nasal: from the reference — nasal of cavarga (ña)
- * - ya: from the reference — first antaḥstha / semivowel
- * - ha: from the reference — voiced member of śavarga
- * - ra: from the reference — semivowel also named repha
+ * First Steps Towards Sanskrit §3.2 series tables (book ~pp.35–42) and
+ * true/false §3.6 (book p.50): identify a consonant by series + manner.
+ * Same column labels as the lesson sparśa grid; each varga is one family.
+ * Swapped from the book’s velar walkthrough to every printed varga.
+ * yavarga / śavarga: printed glyph lists on the lesson (antaḥstha / ūṣman).
+ * Vedic ḷa/ḷha and -kāra naming omitted (fewer than four distinct spellings).
  */
 import type { QuizDeckItem, QuizDeckKind, QuizDirection } from "../../../lib/quiz";
 
@@ -16,12 +17,79 @@ export const pendingDeck = {
   kind: "grammar" as QuizDeckKind,
   direction: "meaning-iast" as QuizDirection,
   items: [
+    // --- kavarga (First Steps velar table shape; lesson kavarga) ---
     {
-      id: "ka",
+      id: "kavarga-unvoiced-unaspirated",
       dev: "क",
       iast: "ka",
-      meaning: "first consonant of kavarga",
+      meaning: "unvoiced unaspirated of kavarga",
       unit: "akshara",
+      group: "kavarga",
+    },
+    {
+      id: "kavarga-unvoiced-aspirated",
+      dev: "ख",
+      iast: "kha",
+      meaning: "unvoiced aspirated of kavarga",
+      unit: "akshara",
+      group: "kavarga",
+    },
+    {
+      id: "kavarga-voiced-unaspirated",
+      dev: "ग",
+      iast: "ga",
+      meaning: "voiced unaspirated of kavarga",
+      unit: "akshara",
+      group: "kavarga",
+    },
+    {
+      id: "kavarga-voiced-aspirated",
+      dev: "घ",
+      iast: "gha",
+      meaning: "voiced aspirated of kavarga",
+      unit: "akshara",
+      group: "kavarga",
+    },
+    {
+      id: "kavarga-nasal",
+      dev: "ङ",
+      iast: "ṅa",
+      meaning: "nasal of kavarga",
+      unit: "akshara",
+      group: "kavarga",
+    },
+    // --- cavarga ---
+    {
+      id: "cavarga-unvoiced-unaspirated",
+      dev: "च",
+      iast: "ca",
+      meaning: "unvoiced unaspirated of cavarga",
+      unit: "akshara",
+      group: "cavarga",
+    },
+    {
+      id: "cavarga-unvoiced-aspirated",
+      dev: "छ",
+      iast: "cha",
+      meaning: "unvoiced aspirated of cavarga",
+      unit: "akshara",
+      group: "cavarga",
+    },
+    {
+      id: "cavarga-voiced-unaspirated",
+      dev: "ज",
+      iast: "ja",
+      meaning: "voiced unaspirated of cavarga",
+      unit: "akshara",
+      group: "cavarga",
+    },
+    {
+      id: "cavarga-voiced-aspirated",
+      dev: "झ",
+      iast: "jha",
+      meaning: "voiced aspirated of cavarga",
+      unit: "akshara",
+      group: "cavarga",
     },
     {
       id: "cavarga-nasal",
@@ -29,27 +97,196 @@ export const pendingDeck = {
       iast: "ña",
       meaning: "nasal of cavarga",
       unit: "akshara",
+      group: "cavarga",
+    },
+    // --- ṭavarga ---
+    {
+      id: "tavarga-retroflex-unvoiced-unaspirated",
+      dev: "ट",
+      iast: "ṭa",
+      meaning: "unvoiced unaspirated of ṭavarga",
+      unit: "akshara",
+      group: "ṭavarga",
     },
     {
-      id: "ya",
+      id: "tavarga-retroflex-unvoiced-aspirated",
+      dev: "ठ",
+      iast: "ṭha",
+      meaning: "unvoiced aspirated of ṭavarga",
+      unit: "akshara",
+      group: "ṭavarga",
+    },
+    {
+      id: "tavarga-retroflex-voiced-unaspirated",
+      dev: "ड",
+      iast: "ḍa",
+      meaning: "voiced unaspirated of ṭavarga",
+      unit: "akshara",
+      group: "ṭavarga",
+    },
+    {
+      id: "tavarga-retroflex-voiced-aspirated",
+      dev: "ढ",
+      iast: "ḍha",
+      meaning: "voiced aspirated of ṭavarga",
+      unit: "akshara",
+      group: "ṭavarga",
+    },
+    {
+      id: "tavarga-retroflex-nasal",
+      dev: "ण",
+      iast: "ṇa",
+      meaning: "nasal of ṭavarga",
+      unit: "akshara",
+      group: "ṭavarga",
+    },
+    // --- tavarga (dental) ---
+    {
+      id: "tavarga-dental-unvoiced-unaspirated",
+      dev: "त",
+      iast: "ta",
+      meaning: "unvoiced unaspirated of tavarga",
+      unit: "akshara",
+      group: "tavarga",
+    },
+    {
+      id: "tavarga-dental-unvoiced-aspirated",
+      dev: "थ",
+      iast: "tha",
+      meaning: "unvoiced aspirated of tavarga",
+      unit: "akshara",
+      group: "tavarga",
+    },
+    {
+      id: "tavarga-dental-voiced-unaspirated",
+      dev: "द",
+      iast: "da",
+      meaning: "voiced unaspirated of tavarga",
+      unit: "akshara",
+      group: "tavarga",
+    },
+    {
+      id: "tavarga-dental-voiced-aspirated",
+      dev: "ध",
+      iast: "dha",
+      meaning: "voiced aspirated of tavarga",
+      unit: "akshara",
+      group: "tavarga",
+    },
+    {
+      id: "tavarga-dental-nasal",
+      dev: "न",
+      iast: "na",
+      meaning: "nasal of tavarga",
+      unit: "akshara",
+      group: "tavarga",
+    },
+    // --- pavarga ---
+    {
+      id: "pavarga-unvoiced-unaspirated",
+      dev: "प",
+      iast: "pa",
+      meaning: "unvoiced unaspirated of pavarga",
+      unit: "akshara",
+      group: "pavarga",
+    },
+    {
+      id: "pavarga-unvoiced-aspirated",
+      dev: "फ",
+      iast: "pha",
+      meaning: "unvoiced aspirated of pavarga",
+      unit: "akshara",
+      group: "pavarga",
+    },
+    {
+      id: "pavarga-voiced-unaspirated",
+      dev: "ब",
+      iast: "ba",
+      meaning: "voiced unaspirated of pavarga",
+      unit: "akshara",
+      group: "pavarga",
+    },
+    {
+      id: "pavarga-voiced-aspirated",
+      dev: "भ",
+      iast: "bha",
+      meaning: "voiced aspirated of pavarga",
+      unit: "akshara",
+      group: "pavarga",
+    },
+    {
+      id: "pavarga-nasal",
+      dev: "म",
+      iast: "ma",
+      meaning: "nasal of pavarga",
+      unit: "akshara",
+      group: "pavarga",
+    },
+    // --- yavarga (antaḥstha; lesson glyph list) ---
+    {
+      id: "yavarga-ya",
       dev: "य",
       iast: "ya",
-      meaning: "first antaḥstha (semivowel)",
+      meaning: "first of yavarga",
       unit: "akshara",
+      group: "yavarga",
     },
     {
-      id: "ha",
+      id: "yavarga-ra",
+      dev: "र",
+      iast: "ra",
+      meaning: "repha (of yavarga)",
+      unit: "akshara",
+      group: "yavarga",
+    },
+    {
+      id: "yavarga-la",
+      dev: "ल",
+      iast: "la",
+      meaning: "third of yavarga",
+      unit: "akshara",
+      group: "yavarga",
+    },
+    {
+      id: "yavarga-va",
+      dev: "व",
+      iast: "va",
+      meaning: "fourth of yavarga",
+      unit: "akshara",
+      group: "yavarga",
+    },
+    // --- śavarga (ūṣman; lesson glyph list) ---
+    {
+      id: "savarga-sa-palatal",
+      dev: "श",
+      iast: "śa",
+      meaning: "first of śavarga",
+      unit: "akshara",
+      group: "śavarga",
+    },
+    {
+      id: "savarga-sa-retroflex",
+      dev: "ष",
+      iast: "ṣa",
+      meaning: "second of śavarga",
+      unit: "akshara",
+      group: "śavarga",
+    },
+    {
+      id: "savarga-sa-dental",
+      dev: "स",
+      iast: "sa",
+      meaning: "third of śavarga",
+      unit: "akshara",
+      group: "śavarga",
+    },
+    {
+      id: "savarga-ha",
       dev: "ह",
       iast: "ha",
       meaning: "voiced member of śavarga",
       unit: "akshara",
-    },
-    {
-      id: "ra",
-      dev: "र",
-      iast: "ra",
-      meaning: "semivowel also called repha",
-      unit: "akshara",
+      group: "śavarga",
     },
   ] as QuizDeckItem[],
 };

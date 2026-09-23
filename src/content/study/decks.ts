@@ -73,14 +73,15 @@ import { pendingDeck as compoundsTheAvyayibhavaDeck } from "./pending/compounds-
 
 function letters(
   unit: QuizUnit,
-  rows: Array<[id: string, dev: string, iast: string, meaning?: string]>,
+  rows: Array<[id: string, dev: string, iast: string, meaning?: string, group?: string]>,
 ): QuizDeckItem[] {
-  return rows.map(([id, dev, iast, meaning]) => ({
+  return rows.map(([id, dev, iast, meaning, group]) => ({
     id,
     dev,
     iast,
     unit,
     meaning,
+    group,
   }));
 }
 
@@ -150,31 +151,59 @@ const vowelConsonantItems = letters("akshara", [
   ["ha", "ह", "ha"],
 ]);
 
+// Masculine -a case drill. Cue: First Steps Towards Sanskrit §6.3 paradigm
+// (deva, p.121) and §6.7.1 case/number ID (p.131); lesson table is rāma.
+// Swapped stems: aśva (horse, used in ch.6 examples), gaja (elephant).
+// Dual omitted: only three distinct spellings (need four for a practice group).
 const ramaItems = letters("word", [
-  ["sg1", "रामः", "rāmaḥ", "Rāma as the subject (one)"],
-  ["sg2", "रामम्", "rāmam", "Rāma as the object (one)"],
-  ["sg3", "रामेण", "rāmeṇa", "with (one) Rāma"],
-  ["sg4", "रामाय", "rāmāya", "for (one) Rāma"],
-  ["sg5", "रामात्", "rāmāt", "from (one) Rāma"],
-  ["sg6", "रामस्य", "rāmasya", "of (one) Rāma"],
-  ["sg7", "रामे", "rāme", "in (one) Rāma"],
-  ["sg8", "राम", "rāma", "O Rāma (one)"],
-  ["du1", "रामौ", "rāmau", "two Rāmas as the subject"],
-  ["du2", "रामौ", "rāmau", "two Rāmas as the object"],
-  ["du3", "रामाभ्याम्", "rāmābhyām", "with two Rāmas"],
-  ["du4", "रामाभ्याम्", "rāmābhyām", "for two Rāmas"],
-  ["du5", "रामाभ्याम्", "rāmābhyām", "from two Rāmas"],
-  ["du6", "रामयोः", "rāmayoḥ", "of two Rāmas"],
-  ["du7", "रामयोः", "rāmayoḥ", "in two Rāmas"],
-  ["du8", "रामौ", "rāmau", "O two Rāmas"],
-  ["pl1", "रामाः", "rāmāḥ", "Rāmas as the subject (many)"],
-  ["pl2", "रामान्", "rāmān", "Rāmas as the object (many)"],
-  ["pl3", "रामैः", "rāmaiḥ", "with (many) Rāmas"],
-  ["pl4", "रामेभ्यः", "rāmebhyaḥ", "for (many) Rāmas"],
-  ["pl5", "रामेभ्यः", "rāmebhyaḥ", "from (many) Rāmas"],
-  ["pl6", "रामाणाम्", "rāmāṇām", "of (many) Rāmas"],
-  ["pl7", "रामेषु", "rāmeṣu", "in (many) Rāmas"],
-  ["pl8", "रामाः", "rāmāḥ", "O Rāmas (many)"],
+  // rāma|sg
+  ["rama-sg-nom", "रामः", "rāmaḥ", "subject (one) rāma", "rāma|sg"],
+  ["rama-sg-acc", "रामम्", "rāmam", "object (one) rāma", "rāma|sg"],
+  ["rama-sg-ins", "रामेण", "rāmeṇa", "with (one) rāma", "rāma|sg"],
+  ["rama-sg-dat", "रामाय", "rāmāya", "for (one) rāma", "rāma|sg"],
+  ["rama-sg-abl", "रामात्", "rāmāt", "from (one) rāma", "rāma|sg"],
+  ["rama-sg-gen", "रामस्य", "rāmasya", "of (one) rāma", "rāma|sg"],
+  ["rama-sg-loc", "रामे", "rāme", "in (one) rāma", "rāma|sg"],
+  ["rama-sg-voc", "राम", "rāma", "O (one) rāma", "rāma|sg"],
+  // rāma|pl (nom=voc; dat=abl collapsed)
+  ["rama-pl-nom", "रामाः", "rāmāḥ", "subject / O (many) rāma", "rāma|pl"],
+  ["rama-pl-acc", "रामान्", "rāmān", "object (many) rāma", "rāma|pl"],
+  ["rama-pl-ins", "रामैः", "rāmaiḥ", "with (many) rāma", "rāma|pl"],
+  ["rama-pl-dat", "रामेभ्यः", "rāmebhyaḥ", "for / from (many) rāma", "rāma|pl"],
+  ["rama-pl-gen", "रामाणाम्", "rāmāṇām", "of (many) rāma", "rāma|pl"],
+  ["rama-pl-loc", "रामेषु", "rāmeṣu", "in (many) rāma", "rāma|pl"],
+  // aśva|sg
+  ["asva-sg-nom", "अश्वः", "aśvaḥ", "subject (one) aśva", "aśva|sg"],
+  ["asva-sg-acc", "अश्वम्", "aśvam", "object (one) aśva", "aśva|sg"],
+  ["asva-sg-ins", "अश्वेन", "aśvena", "with (one) aśva", "aśva|sg"],
+  ["asva-sg-dat", "अश्वाय", "aśvāya", "for (one) aśva", "aśva|sg"],
+  ["asva-sg-abl", "अश्वात्", "aśvāt", "from (one) aśva", "aśva|sg"],
+  ["asva-sg-gen", "अश्वस्य", "aśvasya", "of (one) aśva", "aśva|sg"],
+  ["asva-sg-loc", "अश्वे", "aśve", "in (one) aśva", "aśva|sg"],
+  ["asva-sg-voc", "अश्व", "aśva", "O (one) aśva", "aśva|sg"],
+  // aśva|pl
+  ["asva-pl-nom", "अश्वाः", "aśvāḥ", "subject / O (many) aśva", "aśva|pl"],
+  ["asva-pl-acc", "अश्वान्", "aśvān", "object (many) aśva", "aśva|pl"],
+  ["asva-pl-ins", "अश्वैः", "aśvaiḥ", "with (many) aśva", "aśva|pl"],
+  ["asva-pl-dat", "अश्वेभ्यः", "aśvebhyaḥ", "for / from (many) aśva", "aśva|pl"],
+  ["asva-pl-gen", "अश्वानाम्", "aśvānām", "of (many) aśva", "aśva|pl"],
+  ["asva-pl-loc", "अश्वेषु", "aśveṣu", "in (many) aśva", "aśva|pl"],
+  // gaja|sg
+  ["gaja-sg-nom", "गजः", "gajaḥ", "subject (one) gaja", "gaja|sg"],
+  ["gaja-sg-acc", "गजम्", "gajam", "object (one) gaja", "gaja|sg"],
+  ["gaja-sg-ins", "गजेन", "gajena", "with (one) gaja", "gaja|sg"],
+  ["gaja-sg-dat", "गजाय", "gajāya", "for (one) gaja", "gaja|sg"],
+  ["gaja-sg-abl", "गजात्", "gajāt", "from (one) gaja", "gaja|sg"],
+  ["gaja-sg-gen", "गजस्य", "gajasya", "of (one) gaja", "gaja|sg"],
+  ["gaja-sg-loc", "गजे", "gaje", "in (one) gaja", "gaja|sg"],
+  ["gaja-sg-voc", "गज", "gaja", "O (one) gaja", "gaja|sg"],
+  // gaja|pl
+  ["gaja-pl-nom", "गजाः", "gajāḥ", "subject / O (many) gaja", "gaja|pl"],
+  ["gaja-pl-acc", "गजान्", "gajān", "object (many) gaja", "gaja|pl"],
+  ["gaja-pl-ins", "गजैः", "gajaiḥ", "with (many) gaja", "gaja|pl"],
+  ["gaja-pl-dat", "गजेभ्यः", "gajebhyaḥ", "for / from (many) gaja", "gaja|pl"],
+  ["gaja-pl-gen", "गजानाम्", "gajānām", "of (many) gaja", "gaja|pl"],
+  ["gaja-pl-loc", "गजेषु", "gajeṣu", "in (many) gaja", "gaja|pl"],
 ]);
 
 const vowelMarkItems = letters("matra", [

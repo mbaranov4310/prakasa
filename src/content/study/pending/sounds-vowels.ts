@@ -1,10 +1,11 @@
 /**
  * Drill card provenance:
- * - a-soft-palate: from the reference — simple vowel at the soft palate (अ a)
- * - i-hard-palate: from the reference — simple vowel at the hard palate (इ i)
- * - u-lips: from the reference — simple vowel at the lips (उ u)
- * - aa-long: from the reference — long form of a (आ ā)
- * - akara: from the reference — a named with -kāra (अकार akāra)
+ * First Steps Towards Sanskrit §3.1 vowels (book ~pp.26–30) and true/false
+ * §3.6 (book p.50): simple vs long, secondary e/o vs diphthongs ai/au,
+ * ṛ/ḷ as vowels. Same inventory the lesson prints; groups are the lesson
+ * families (simple by place, long forms, compounds, -kāra names, pluta).
+ * Swapped nothing from a noun paradigm — exercise shape is inventory ID,
+ * applied to every cell the lesson tables already show.
  */
 import type { QuizDeckItem, QuizDeckKind, QuizDirection } from "../../../lib/quiz";
 
@@ -16,40 +17,226 @@ export const pendingDeck = {
   kind: "grammar" as QuizDeckKind,
   direction: "meaning-iast" as QuizDirection,
   items: [
+    // --- simple (samānākṣara; lesson place table) ---
     {
-      id: "a-soft-palate",
+      id: "simple-a",
       dev: "अ",
       iast: "a",
       meaning: "simple vowel at the soft palate",
       unit: "akshara",
+      group: "simple",
     },
     {
-      id: "i-hard-palate",
+      id: "simple-i",
       dev: "इ",
       iast: "i",
       meaning: "simple vowel at the hard palate",
       unit: "akshara",
+      group: "simple",
     },
     {
-      id: "u-lips",
+      id: "simple-r",
+      dev: "ऋ",
+      iast: "ṛ",
+      meaning: "simple vowel at the edge of the roof",
+      unit: "akshara",
+      group: "simple",
+    },
+    {
+      id: "simple-l",
+      dev: "ऌ",
+      iast: "ḷ",
+      meaning: "simple vowel at the base of the teeth",
+      unit: "akshara",
+      group: "simple",
+    },
+    {
+      id: "simple-u",
       dev: "उ",
       iast: "u",
       meaning: "simple vowel at the lips",
       unit: "akshara",
+      group: "simple",
     },
+    // --- long (dīrgha of the short simple set; ḷ has no long) ---
     {
-      id: "aa-long",
+      id: "long-aa",
       dev: "आ",
       iast: "ā",
       meaning: "long form of a",
       unit: "akshara",
+      group: "long",
     },
     {
-      id: "akara",
+      id: "long-ii",
+      dev: "ई",
+      iast: "ī",
+      meaning: "long form of i",
+      unit: "akshara",
+      group: "long",
+    },
+    {
+      id: "long-rr",
+      dev: "ॠ",
+      iast: "ṝ",
+      meaning: "long form of ṛ",
+      unit: "akshara",
+      group: "long",
+    },
+    {
+      id: "long-uu",
+      dev: "ऊ",
+      iast: "ū",
+      meaning: "long form of u",
+      unit: "akshara",
+      group: "long",
+    },
+    // --- compound (sandhyakṣara; First Steps secondary e/o vs diphthong ai/au) ---
+    {
+      id: "compound-e",
+      dev: "ए",
+      iast: "e",
+      meaning: "secondary vowel (soft palate with hard palate)",
+      unit: "akshara",
+      group: "compound",
+    },
+    {
+      id: "compound-ai",
+      dev: "ऐ",
+      iast: "ai",
+      meaning: "diphthong (soft palate with hard palate)",
+      unit: "akshara",
+      group: "compound",
+    },
+    {
+      id: "compound-o",
+      dev: "ओ",
+      iast: "o",
+      meaning: "secondary vowel (soft palate with lips)",
+      unit: "akshara",
+      group: "compound",
+    },
+    {
+      id: "compound-au",
+      dev: "औ",
+      iast: "au",
+      meaning: "diphthong (soft palate with lips)",
+      unit: "akshara",
+      group: "compound",
+    },
+    // --- kara (-kāra names; lesson shows akāra, same join on other simples) ---
+    {
+      id: "kara-a",
       dev: "अकार",
       iast: "akāra",
       meaning: "the letter a, named with -kāra",
       unit: "akshara",
+      group: "kara",
+    },
+    {
+      id: "kara-i",
+      dev: "इकार",
+      iast: "ikāra",
+      meaning: "the letter i, named with -kāra",
+      unit: "akshara",
+      group: "kara",
+    },
+    {
+      id: "kara-u",
+      dev: "उकार",
+      iast: "ukāra",
+      meaning: "the letter u, named with -kāra",
+      unit: "akshara",
+      group: "kara",
+    },
+    {
+      id: "kara-r",
+      dev: "ऋकार",
+      iast: "ṛkāra",
+      meaning: "the letter ṛ, named with -kāra",
+      unit: "akshara",
+      group: "kara",
+    },
+    {
+      id: "kara-l",
+      dev: "ऌकार",
+      iast: "ḷkāra",
+      meaning: "the letter ḷ, named with -kāra",
+      unit: "akshara",
+      group: "kara",
+    },
+    // --- pluta (lesson list; Vedic protracted) ---
+    {
+      id: "pluta-aa",
+      dev: "आ३",
+      iast: "ā३",
+      meaning: "pluta form of a",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-ii",
+      dev: "ई३",
+      iast: "ī३",
+      meaning: "pluta form of i",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-uu",
+      dev: "ऊ३",
+      iast: "ū३",
+      meaning: "pluta form of u",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-rr",
+      dev: "ॠ३",
+      iast: "ṝ३",
+      meaning: "pluta form of ṛ",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-l",
+      dev: "ऌ३",
+      iast: "ḷ३",
+      meaning: "pluta form of ḷ",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-e",
+      dev: "ए३",
+      iast: "e३",
+      meaning: "pluta form of e",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-ai",
+      dev: "ऐ३",
+      iast: "ai३",
+      meaning: "pluta form of ai",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-o",
+      dev: "ओ३",
+      iast: "o३",
+      meaning: "pluta form of o",
+      unit: "akshara",
+      group: "pluta",
+    },
+    {
+      id: "pluta-au",
+      dev: "औ३",
+      iast: "au३",
+      meaning: "pluta form of au",
+      unit: "akshara",
+      group: "pluta",
     },
   ] as QuizDeckItem[],
 };

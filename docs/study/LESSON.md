@@ -38,7 +38,7 @@ Files:
 
 ## Pass 2 — drills
 
-A later task. The lesson body already exists. Extend its deck with more cards that practice the same material.
+Follow `docs/study/DRILLS.md`. That brief decides whether a lesson gets more cards, where those cards come from, and how the wrong answers are chosen. The rules below are the older, tighter pass; do not use them once `DRILLS.md` applies.
 
 Every card has to be checkable:
 
