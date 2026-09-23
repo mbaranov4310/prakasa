@@ -1,10 +1,12 @@
 /**
  * Drill card provenance:
- * - agacchat: from the reference — gacchati → agacchat “went”
- * - apasyat: from the reference — apaśyat in “Rama saw Sita”
- * - anayat: from the reference — 3sg paradigm / nayati → anayat
- * - anayam: from the reference — 1sg paradigm / nayāmi → anayam
- * - paryagacchat: from the reference — parigacchati → paryagacchat
+ * Exercise cue: First Steps Towards Sanskrit §7.4 (book p.131–132) — imperfect
+ *   person grid on √bhū (bhava); Concise Elementary Grammar §60 (p.48) — imperfect
+ *   of thematic √bhṛ (bhara), same endings. Verb swapped off √bhū.
+ * Endings from the lesson naya (√nī) table; a- + thematic stem + past ending.
+ * - nī-*: from the lesson — full ordinary-past parasmaipada grid for naya
+ * - bhṛ-*: Gonda §60 bhṛ imperfect; same join as naya (a- + bhara- + ending)
+ * - vad-*: First Steps §7.7 avadat; √vad Class I stem vada, same endings as naya
  */
 import type { QuizDeckItem, QuizDeckKind, QuizDirection } from "../../../lib/quiz";
 
@@ -16,40 +18,226 @@ export const pendingDeck = {
   kind: "grammar" as QuizDeckKind,
   direction: "meaning-iast" as QuizDirection,
   items: [
+    // nī|past — lesson naya grid
     {
-      id: "agacchat",
-      dev: "अगच्छत्",
-      iast: "agacchat",
-      meaning: "(someone) went",
-      unit: "word",
-    },
-    {
-      id: "apasyat",
-      dev: "अपश्यत्",
-      iast: "apaśyat",
-      meaning: "(someone) saw",
-      unit: "word",
-    },
-    {
-      id: "anayat",
+      id: "ni-3sg",
       dev: "अनयत्",
       iast: "anayat",
-      meaning: "(someone) led",
+      meaning: "nī, 3rd singular",
       unit: "word",
+      group: "nī|past",
     },
     {
-      id: "anayam",
+      id: "ni-3du",
+      dev: "अनयताम्",
+      iast: "anayatām",
+      meaning: "nī, 3rd dual",
+      unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-3pl",
+      dev: "अनयन्",
+      iast: "anayan",
+      meaning: "nī, 3rd plural",
+      unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-2sg",
+      dev: "अनयः",
+      iast: "anayaḥ",
+      meaning: "nī, 2nd singular",
+      unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-2du",
+      dev: "अनयतम्",
+      iast: "anayatam",
+      meaning: "nī, 2nd dual",
+      unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-2pl",
+      dev: "अनयत",
+      iast: "anayata",
+      meaning: "nī, 2nd plural",
+      unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-1sg",
       dev: "अनयम्",
       iast: "anayam",
-      meaning: "I led",
+      meaning: "nī, 1st singular",
       unit: "word",
+      group: "nī|past",
     },
     {
-      id: "paryagacchat",
-      dev: "पर्यगच्छत्",
-      iast: "paryagacchat",
-      meaning: "(someone) went around",
+      id: "ni-1du",
+      dev: "अनयाव",
+      iast: "anayāva",
+      meaning: "nī, 1st dual",
       unit: "word",
+      group: "nī|past",
+    },
+    {
+      id: "ni-1pl",
+      dev: "अनयाम",
+      iast: "anayāma",
+      meaning: "nī, 1st plural",
+      unit: "word",
+      group: "nī|past",
+    },
+
+    // bhṛ|past — Gonda §60; First Steps √bhū swapped to √bhṛ
+    {
+      id: "bhr-3sg",
+      dev: "अभरत्",
+      iast: "abharat",
+      meaning: "bhṛ, 3rd singular",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-3du",
+      dev: "अभरताम्",
+      iast: "abharatām",
+      meaning: "bhṛ, 3rd dual",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-3pl",
+      dev: "अभरन्",
+      iast: "abharan",
+      meaning: "bhṛ, 3rd plural",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-2sg",
+      dev: "अभरः",
+      iast: "abharaḥ",
+      meaning: "bhṛ, 2nd singular",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-2du",
+      dev: "अभरतम्",
+      iast: "abharatam",
+      meaning: "bhṛ, 2nd dual",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-2pl",
+      dev: "अभरत",
+      iast: "abharata",
+      meaning: "bhṛ, 2nd plural",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-1sg",
+      dev: "अभरम्",
+      iast: "abharam",
+      meaning: "bhṛ, 1st singular",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-1du",
+      dev: "अभराव",
+      iast: "abharāva",
+      meaning: "bhṛ, 1st dual",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+    {
+      id: "bhr-1pl",
+      dev: "अभराम",
+      iast: "abharāma",
+      meaning: "bhṛ, 1st plural",
+      unit: "word",
+      group: "bhṛ|past",
+    },
+
+    // vad|past — First Steps §7.7 avadat; same thematic endings
+    {
+      id: "vad-3sg",
+      dev: "अवदत्",
+      iast: "avadat",
+      meaning: "vad, 3rd singular",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-3du",
+      dev: "अवदताम्",
+      iast: "avadatām",
+      meaning: "vad, 3rd dual",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-3pl",
+      dev: "अवदन्",
+      iast: "avadan",
+      meaning: "vad, 3rd plural",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-2sg",
+      dev: "अवदः",
+      iast: "avadaḥ",
+      meaning: "vad, 2nd singular",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-2du",
+      dev: "अवदतम्",
+      iast: "avadatam",
+      meaning: "vad, 2nd dual",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-2pl",
+      dev: "अवदत",
+      iast: "avadata",
+      meaning: "vad, 2nd plural",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-1sg",
+      dev: "अवदम्",
+      iast: "avadam",
+      meaning: "vad, 1st singular",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-1du",
+      dev: "अवदाव",
+      iast: "avadāva",
+      meaning: "vad, 1st dual",
+      unit: "word",
+      group: "vad|past",
+    },
+    {
+      id: "vad-1pl",
+      dev: "अवदाम",
+      iast: "avadāma",
+      meaning: "vad, 1st plural",
+      unit: "word",
+      group: "vad|past",
     },
   ] as QuizDeckItem[],
 };
