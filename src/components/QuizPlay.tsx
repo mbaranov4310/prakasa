@@ -26,7 +26,7 @@ function faceClass(face: QuizFace): string {
 
 function LetterInWord({ item }: { item: QuizItem }) {
   const { navLang } = useNavLang();
-  if (item.unit !== "akshara") return null;
+  if (item.unit !== "akshara" && item.unit !== "matra") return null;
   const example = letterExample(item.dev, item.iast);
   if (!example) return null;
   const title = navLang === "sanskrit" ? example.titleDev : example.titleIast;

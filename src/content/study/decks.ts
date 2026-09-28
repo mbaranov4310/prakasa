@@ -1,4 +1,5 @@
 import { libraryClusterItems } from "../../lib/clusters";
+import { libraryVowelMarkItems } from "../../lib/vowel-marks";
 import type { QuizDeck, QuizDeckItem, QuizUnit } from "../../lib/quiz";
 import { pendingDeck as sandhiSystemDeck } from "./pending/sandhi-the-sandhi-system";
 import { pendingDeck as vowelSandhiDeck } from "./pending/sandhi-vowel-sandhi";
@@ -208,35 +209,10 @@ const ramaItems = letters("word", [
   ["gaja-pl-loc", "गजेषु", "gajeṣu", "in (many) gaja", "gaja|pl"],
 ]);
 
-const vowelMarkItems = letters("matra", [
-  ["ka", "क", "ka"],
-  ["kaa", "का", "kā"],
-  ["ki", "कि", "ki"],
-  ["kii", "की", "kī"],
-  ["ku", "कु", "ku"],
-  ["kuu", "कू", "kū"],
-  ["kr", "कृ", "kṛ"],
-  ["krr", "कॄ", "kṝ"],
-  ["kl", "कॢ", "kḷ"],
-  ["kll", "कॣ", "kḹ"],
-  ["ke", "के", "ke"],
-  ["kai", "कै", "kai"],
-  ["ko", "को", "ko"],
-  ["kau", "कौ", "kau"],
-  ["kam", "कं", "kaṃ"],
-  ["kah", "कः", "kaḥ"],
-  ["k-candra", "कँ", "ka̐"],
-  ["k-virama", "क्", "k"],
-  ["ru", "रु", "ru"],
-  ["ruu", "रू", "rū"],
-  ["rr", "रृ", "rṛ"],
-  ["hr", "हृ", "hṛ"],
-  ["hrr", "हॄ", "hṝ"],
-  ["naa", "ना", "nā"],
-  ["gu", "गु", "gu"],
-  ["bhyo", "भ्यो", "bhyo"],
-  ["kraa", "क्रा", "krā"],
-]);
+const vowelMarkItems = letters(
+  "matra",
+  libraryVowelMarkItems().map((item) => [item.id, item.dev, item.iast, undefined, item.group]),
+);
 
 const numeralItems = letters("akshara", [
   ["0", "०", "0"],
