@@ -11,6 +11,7 @@ import {
   type QuizItem,
   type QuizSetupState,
 } from "../lib/quiz";
+import { letterExample, type LetterExample } from "../lib/letter-example";
 import { useNavLang } from "../lib/nav-lang";
 import { navigate, type Route } from "../lib/routes";
 
@@ -21,6 +22,44 @@ type Card = {
 
 function faceClass(face: QuizFace): string {
   return face === "dev" ? "is-deva" : "is-latin";
+}
+
+function LetterInWord({ item }: { item: QuizItem }) {
+  const { navLang } = useNavLang();
+  if (item.unit !== "akshara") return null;
+  const example = letterExample(item.dev, item.iast);
+  if (!example) return null;
+  const title = navLang === "sanskrit" ? example.titleDev : example.titleIast;
+  return (
+    <div className="quiz-cite">
+      <LetterLine example={example} script="dev" />
+      <LetterLine example={example} script="iast" />
+      <p className={`quiz-cite-src ${navLang === "sanskrit" ? "is-deva" : "is-latin"}`}>{title}</p>
+      <div className="quiz-cite-actions">
+        <button
+          type="button"
+          className="quiz-text-btn"
+          onClick={() =>
+            navigate({ page: "chapter", bookId: example.bookId, chapterId: example.chapterId })
+          }
+        >
+          Open chapter
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function LetterLine({ example, script }: { example: LetterExample; script: "dev" | "iast" }) {
+  return (
+    <p className={`quiz-cite-line ${script === "dev" ? "is-deva" : "is-latin"}`}>
+      {example.syllables.map((syllable, index) => (
+        <span key={index} className={index === example.hitIndex ? "quiz-cite-word is-hit" : undefined}>
+          {script === "dev" ? syllable.dev : syllable.iast}
+        </span>
+      ))}
+    </p>
+  );
 }
 
 function CiteView({
@@ -243,6 +282,7 @@ export function QuizPlay({ setup, back }: { setup: QuizSetupState; back: Route }
 
       {locked ? (
         <div className="quiz-after">
+          {setup.mode === "mcq" && picked === answer ? <LetterInWord item={card.item} /> : null}
           {canCite ? (
             showCite ? (
               <CiteView
