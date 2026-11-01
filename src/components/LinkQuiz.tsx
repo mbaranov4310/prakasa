@@ -125,7 +125,7 @@ export function LinkQuiz({ bookId, chapterId }: Props) {
           ← Chapter
         </button>
         <p className="quiz-progress">
-          Word {roundIndex + 1} of {rounds.length}
+          Line {roundIndex + 1} of {rounds.length}
           {" · "}
           {stepIndex + 1} of {round.steps.length}
         </p>
@@ -159,11 +159,16 @@ export function LinkQuiz({ bookId, chapterId }: Props) {
         })}
       </div>
       {picked ? (
-        <div className="quiz-nav-row">
-          <button type="button" className="quiz-start" onClick={next}>
-            Next
-          </button>
-        </div>
+        <>
+          <p className="quiz-explain">
+            {picked === step.answer ? "Yes!" : "No."} {step.explain}
+          </p>
+          <div className="quiz-nav-row">
+            <button type="button" className="quiz-start" onClick={next}>
+              Next
+            </button>
+          </div>
+        </>
       ) : null}
     </section>
   );

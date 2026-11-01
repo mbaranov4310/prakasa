@@ -5,6 +5,18 @@ from: ms-dhrtah
 to: ms-mitrasya
 judgment: obvious
 
+## complement
+from: ms-dhrtah
+to: ms-carsani
+judgment: obvious
+note: The peoples are who he supports. carṣaṇī is the front of the compound and has no case of its own.
+
+## complement
+from: ms-mitrasya
+to: ms-sravo
+judgment: obvious
+note: Genitive. The fame is what Mitra possesses.
+
 ## subject
 from: ms-yatayati
 to: ms-mitro-1

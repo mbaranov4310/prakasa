@@ -1,15 +1,16 @@
-import { chapterLeaves, chapterSentenceLinks } from "../content/sandhya-links";
+import { chapterSentenceLinks } from "../content/sandhya-links";
 import { wordGloss } from "../content/sandhya-gloss";
 import { getChapter } from "../content/library";
-import type { LinkRole } from "./link-parse";
+import type { SentenceLink } from "./link-parse";
+import type { WordGloss } from "./gloss-parse";
 import { shuffle } from "./quiz";
-import { findPath, walkLeaves } from "./tree";
-import type { SpanNode } from "../types";
+import { walkLeaves } from "./tree";
 
 export type LinkLeaf = {
   id: string;
   dev: string;
   iast: string;
+  meaning: string;
   trailing?: string;
   lineBreakAfter?: boolean;
 };
@@ -22,6 +23,7 @@ export type LinkOption = {
 
 export type LinkStep = {
   prompt: string;
+  explain: string;
   leaves: LinkLeaf[];
   highlightId: string;
   answer: string;
@@ -29,35 +31,205 @@ export type LinkStep = {
 };
 
 export type LinkRound = {
-  wordId: string;
-  iast: string;
   steps: LinkStep[];
 };
 
-const ROLE_PROMPT: Record<LinkRole, string> = {
-  subject: "Who is doing this?",
-  object: "What is this done to?",
-  describes: "Which word does this describe?",
-  complement: "What is this aimed at?",
-  same: "Which word is the same person?",
-};
+const CASES = [
+  "nominative",
+  "accusative",
+  "instrumental",
+  "dative",
+  "ablative",
+  "genitive",
+  "locative",
+  "vocative",
+];
 
-function leavesOf(node: SpanNode): LinkLeaf[] {
-  return walkLeaves(node).map((leaf) => ({
-    id: leaf.id,
-    dev: leaf.dev,
-    iast: leaf.iast,
-    trailing: leaf.trailing,
-    lineBreakAfter: leaf.lineBreakAfter,
-  }));
+const FIELD_TEXT: [string, string][] = [
+  ["Root", "the root is"],
+  ["Stem", "the stem is"],
+  ["Case", "the case is"],
+  ["Number", "the number is"],
+  ["Gender", "the gender is"],
+  ["Person", "the person is"],
+  ["Tense", "the tense is"],
+  ["Voice", "the voice is"],
+];
+
+function field(gloss: WordGloss | undefined, label: string): string | undefined {
+  return gloss?.fields.find((item) => item.label === label)?.value;
 }
 
-function passage(root: SpanNode, focusId: string, answerId: string): SpanNode {
-  const focusPath = findPath(root, focusId) ?? [];
-  const answerPath = findPath(root, answerId) ?? [];
-  const sentence = [...focusPath].reverse().find((node) => node.level === "sentence");
-  if (sentence && answerPath.some((node) => node.id === sentence.id)) return sentence;
-  return [...focusPath].reverse().find((node) => node.level === "verse") ?? root;
+function caseOf(gloss: WordGloss | undefined): string | undefined {
+  const listed = field(gloss, "Case");
+  if (listed) return listed;
+  const why = gloss?.why ?? "";
+  const found = CASES.filter((item) => why.includes(item));
+  return found.length === 1 ? found[0] : undefined;
+}
+
+function shortMeaning(meaning: string): string {
+  return meaning.split(" / ")[0].trim();
+}
+
+function roleName(meaning: string): string | null {
+  const short = shortMeaning(meaning);
+  const at = short.indexOf(" of");
+  if (at === -1) return null;
+  return short.slice(0, at).trim();
+}
+
+function possessedName(meaning: string): string {
+  return meaning.replace(/^\s*of\s+/i, "").trim() || meaning;
+}
+
+function capitalize(text: string): string {
+  return text ? text[0].toUpperCase() + text.slice(1) : text;
+}
+
+function grammarExplain(id: string, meaning: string): string {
+  const gloss = wordGloss(id);
+  if (!gloss || gloss.judgment === "unsure") {
+    const why = gloss?.why ? ` ${gloss.why}` : "";
+    return `This means “${meaning}.”${why}`;
+  }
+  const bits = FIELD_TEXT.flatMap(([label, text]) => {
+    const value = field(gloss, label);
+    return value ? [`${text} ${value}`] : [];
+  });
+  const note = gloss.note ? ` ${gloss.note}` : "";
+  if (!bits.length) return `This means “${meaning}.” It does not decline.${note}`;
+  const sentence = bits.join(", ");
+  return `${sentence[0].toUpperCase()}${sentence.slice(1)}, and this means “${meaning}.”${note}`;
+}
+
+type Relation = {
+  focusId: string;
+  answerId: string;
+  prompt: string;
+  explain: string;
+  sort: number;
+};
+
+function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation | null {
+  if (link.judgment !== "obvious" || !link.to) return null;
+  const from = leaves.get(link.from);
+  const to = leaves.get(link.to);
+  if (!from || !to) return null;
+  const fromGloss = wordGloss(from.id);
+  const kind = field(fromGloss, "Kind");
+  const wordCase = caseOf(fromGloss);
+
+  if (link.role === "describes") {
+    const role = roleName(from.meaning);
+    const ask = role
+      ? `Who is the ${role}?`
+      : `Who or what is ${shortMeaning(from.meaning)}?`;
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 0,
+      prompt: `We know ${from.iast} means “${from.meaning}.” ${ask}`,
+      explain: `${to.iast}, “${to.meaning},” is the one this word is about.`,
+    };
+  }
+
+  if (link.role === "subject") {
+    return {
+      focusId: to.id,
+      answerId: from.id,
+      sort: 1,
+      prompt: `We know ${to.iast} means “${to.meaning}.” It is nominative. It is the subject of which word?`,
+      explain: `${to.iast} is the subject of ${from.iast}, “${from.meaning}.”`,
+    };
+  }
+
+  if (link.role === "object") {
+    const named = wordCase === "accusative" ? "It is accusative. " : "";
+    return {
+      focusId: to.id,
+      answerId: from.id,
+      sort: 2,
+      prompt: `We know ${to.iast} means “${to.meaning}.” ${named}It is the object of which word?`,
+      explain: `${to.iast} is the object of ${from.iast}, “${from.meaning}.”`,
+    };
+  }
+
+  if (link.role === "same") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 4,
+      prompt: `We know ${from.iast} means “${from.meaning}.” This is the same person as which word?`,
+      explain: `${from.iast} is the same person as ${to.iast}, “${to.meaning}.”`,
+    };
+  }
+
+  if (link.role !== "complement" || kind === "indeclinable" || !kind) return null;
+
+  if (kind === "adjective") {
+    const role = roleName(from.meaning) ?? shortMeaning(from.meaning);
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” ${capitalize(role)} of whom?`,
+      explain: `${capitalize(role)} of ${to.iast}, “${to.meaning}.”`,
+    };
+  }
+
+  if (wordCase === "genitive") {
+    const who = possessedName(from.meaning);
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is genitive. ${capitalize(who)}'s what?`,
+      explain: `${capitalize(who)}'s “${to.meaning}” is ${to.iast}.`,
+    };
+  }
+
+  if (wordCase === "instrumental") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is instrumental. This is the means of which word?`,
+      explain: `${from.iast} is the means of ${to.iast}, “${to.meaning}.”`,
+    };
+  }
+
+  if (wordCase === "dative") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is dative. This is for which word?`,
+      explain: `${from.iast} is what ${to.iast}, “${to.meaning},” is for.`,
+    };
+  }
+
+  if (wordCase === "ablative") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is ablative. Which word does this go with?`,
+      explain: `${from.iast}, “${from.meaning},” goes with ${to.iast}.`,
+    };
+  }
+
+  if (kind === "pronoun") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” Which word is this joined to?`,
+      explain: `${from.iast} is joined to ${to.iast}, “${to.meaning}.”`,
+    };
+  }
+
+  return null;
 }
 
 function meaningOptions(answer: string, meanings: string[]): LinkOption[] {
@@ -68,71 +240,99 @@ function meaningOptions(answer: string, meanings: string[]): LinkOption[] {
   }));
 }
 
+function wordOptions(answer: LinkLeaf, focusId: string, visible: LinkLeaf[], all: LinkLeaf[]): LinkOption[] {
+  const sameFace = (item: LinkLeaf) => item.dev === answer.dev && item.iast === answer.iast;
+  const pool = all.filter((item) => item.id !== focusId && item.id !== answer.id && !sameFace(item));
+  const nearIds = new Set(visible.map((item) => item.id));
+  const near = pool.filter((item) => nearIds.has(item.id));
+  const far = pool.filter((item) => !nearIds.has(item.id));
+  const distractors = [...shuffle(near), ...shuffle(far)].slice(0, 3);
+  return shuffle([answer, ...distractors]).map((item) => ({
+    key: item.id,
+    label: item.dev,
+    hint: item.iast,
+  }));
+}
+
+function padas(leaves: LinkLeaf[]): LinkLeaf[][] {
+  const groups: LinkLeaf[][] = [];
+  let current: LinkLeaf[] = [];
+  for (const leaf of leaves) {
+    current.push(leaf);
+    if (/[।॥]/.test(leaf.trailing ?? "")) {
+      groups.push(current);
+      current = [];
+    }
+  }
+  if (current.length) groups.push(current);
+  return groups;
+}
+
 export function linkRounds(bookId: string, chapterId: string): LinkRound[] {
   const chapter = getChapter(bookId, chapterId);
   if (!chapter?.root) return [];
-  const root = chapter.root;
-  const leaves = chapterLeaves(chapterId);
+  const leaves: LinkLeaf[] = walkLeaves(chapter.root).map((leaf) => ({
+    id: leaf.id,
+    dev: leaf.dev,
+    iast: leaf.iast,
+    meaning: leaf.meaning,
+    trailing: leaf.trailing,
+    lineBreakAfter: leaf.lineBreakAfter,
+  }));
   const byId = new Map(leaves.map((leaf) => [leaf.id, leaf]));
-  const stepsByWord = new Map<string, { prompt: string; answerId: string }[]>();
+  const lines = padas(leaves);
+  const lineOf = new Map<string, number>();
+  const placeOf = new Map<string, number>();
+  lines.forEach((line, index) => line.forEach((leaf) => lineOf.set(leaf.id, index)));
+  leaves.forEach((leaf, index) => placeOf.set(leaf.id, index));
 
-  function push(wordId: string, prompt: string, answerId: string) {
-    const list = stepsByWord.get(wordId);
-    const step = { prompt, answerId };
-    if (list) list.push(step);
-    else stepsByWord.set(wordId, [step]);
-  }
-
+  const pending = new Map<number, Relation[]>();
   for (const link of chapterSentenceLinks(chapterId)) {
-    if (link.judgment !== "obvious" || !link.to) continue;
-    if (link.role === "complement") {
-      const kind = wordGloss(link.from)?.fields.find((field) => field.label === "Kind")?.value;
-      if (!kind || kind === "indeclinable") continue;
-      push(link.to, ROLE_PROMPT.complement, link.from);
-      continue;
-    }
-    push(link.from, ROLE_PROMPT[link.role], link.to);
+    const item = relation(link, byId);
+    if (!item) continue;
+    const focusLine = lineOf.get(item.focusId) ?? 0;
+    const answerLine = lineOf.get(item.answerId) ?? 0;
+    const at = Math.max(focusLine, answerLine);
+    const list = pending.get(at);
+    if (list) list.push(item);
+    else pending.set(at, [item]);
   }
 
-  const rounds: LinkRound[] = [];
-  for (const leaf of leaves) {
-    const relations = stepsByWord.get(leaf.id);
-    if (!relations?.length) continue;
+  return lines.flatMap((line, index) => {
     const steps: LinkStep[] = [];
-    const meaning = leaf.meaning.trim();
-    if (meaning) {
-      const node = passage(root, leaf.id, leaf.id);
+    for (const leaf of line) {
+      const meaning = leaf.meaning.trim();
+      if (!meaning) continue;
       steps.push({
         prompt: "What does this mean?",
-        leaves: leavesOf(node),
+        explain: grammarExplain(leaf.id, meaning),
+        leaves: line,
         highlightId: leaf.id,
         answer: meaning,
         options: meaningOptions(meaning, leaves.map((item) => item.meaning)),
       });
     }
-    for (const relation of relations) {
-      const answer = byId.get(relation.answerId);
-      if (!answer) continue;
-      const node = passage(root, leaf.id, relation.answerId);
-      const visible = new Set(leavesOf(node).map((item) => item.id));
-      const sameFace = (item: { dev: string; iast: string }) => item.dev === answer.dev && item.iast === answer.iast;
-      const pool = leaves.filter((item) => item.id !== leaf.id && item.id !== answer.id && !sameFace(item));
-      const near = pool.filter((item) => visible.has(item.id));
-      const far = pool.filter((item) => !visible.has(item.id));
-      const distractors = [...shuffle(near), ...shuffle(far)].slice(0, 3);
+    const relations = (pending.get(index) ?? []).sort((a, b) => {
+      const place = (placeOf.get(a.focusId) ?? 0) - (placeOf.get(b.focusId) ?? 0);
+      if (place !== 0) return place;
+      return a.sort - b.sort;
+    });
+    for (const item of relations) {
+      const focus = byId.get(item.focusId);
+      const answer = byId.get(item.answerId);
+      if (!focus || !answer) continue;
+      const start = Math.min(lineOf.get(item.focusId) ?? index, lineOf.get(item.answerId) ?? index);
+      const end = Math.max(lineOf.get(item.focusId) ?? index, lineOf.get(item.answerId) ?? index);
+      const shown = lines.slice(start, end + 1).flat();
       steps.push({
-        prompt: relation.prompt,
-        leaves: leavesOf(node),
-        highlightId: leaf.id,
+        prompt: item.prompt,
+        explain: item.explain,
+        leaves: shown,
+        highlightId: item.focusId,
         answer: answer.id,
-        options: shuffle([answer, ...distractors]).map((item) => ({
-          key: item.id,
-          label: item.dev,
-          hint: item.iast,
-        })),
+        options: wordOptions(answer, item.focusId, shown, leaves),
       });
     }
-    if (steps.length) rounds.push({ wordId: leaf.id, iast: leaf.iast, steps });
-  }
-  return rounds;
+    return steps.length ? [{ steps }] : [];
+  });
 }

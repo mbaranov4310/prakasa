@@ -94,6 +94,12 @@ button {
   line-height: 1.5;
 }
 
+.quiz-explain {
+  margin: 0.9rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
 .quiz-fieldset {
   border: 0;
   margin: 1.6rem 0 0;
