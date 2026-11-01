@@ -620,7 +620,7 @@ button {
   position: fixed;
   z-index: 20;
   min-width: 168px;
-  max-width: 22rem;
+  max-width: 26rem;
   padding: 0.9rem 2rem 0.75rem 1rem;
   background: var(--popover);
   border-radius: 10px;
@@ -638,6 +638,40 @@ button {
   margin: 0.2rem 0 0;
   color: #7d888f;
   font-size: 0.95rem;
+}
+
+.popover-grammar {
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.28rem;
+}
+
+.popover-grammar div {
+  display: grid;
+  grid-template-columns: 6.4rem 1fr;
+  gap: 0.45rem;
+  align-items: baseline;
+}
+
+.popover-grammar dt {
+  margin: 0;
+  color: #7d888f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.popover-grammar dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.popover-unsure {
+  margin: 0.65rem 0 0;
+  color: #5c6770;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .popover-levels {
@@ -681,6 +715,11 @@ button {
   height: 12px;
   background: var(--popover);
   transform: rotate(45deg);
+}
+
+.popover.is-below .popover-caret {
+  top: -6px;
+  bottom: auto;
 }
 
 .quiz-prompt.is-latin:not(.is-iast-prompt) {

@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { wordGloss } from "../content/sandhya-gloss";
 import type { SpanNode } from "../types";
 import { LEVEL_LABEL } from "../lib/tree";
 
@@ -12,7 +13,7 @@ type Props = {
 
 export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const [pos, setPos] = useState({ top: 0, left: 0 });
+  const [pos, setPos] = useState({ top: 0, left: 0, below: false });
 
   useLayoutEffect(() => {
     const el = ref.current;
@@ -20,8 +21,12 @@ export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) 
     const { height, width } = el.getBoundingClientRect();
     const gap = 14;
     const left = Math.max(12, Math.min(anchor.left, window.innerWidth - width - 12));
-    const top = Math.max(12, anchor.top - height - gap);
-    setPos({ top, left });
+    const above = anchor.top - height - gap;
+    const below = above < 12;
+    const top = below
+      ? Math.min(anchor.bottom + gap, window.innerHeight - height - 12)
+      : above;
+    setPos({ top, left, below });
   }, [anchor, node.id]);
 
   useEffect(() => {
@@ -42,11 +47,12 @@ export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) 
   }, [onClose]);
 
   const caretLeft = Math.max(16, Math.min(anchor.left - pos.left + 8, 80));
+  const gloss = wordGloss(node.id);
 
   return (
     <div
       ref={ref}
-      className="popover"
+      className={`popover${pos.below ? " is-below" : ""}`}
       style={{ top: pos.top, left: pos.left }}
       role="dialog"
       aria-label="Meaning"
@@ -56,6 +62,21 @@ export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) 
       </button>
       <p className="popover-meaning">{node.meaning}</p>
       <p className="popover-iast">{node.iast}</p>
+      {gloss ? (
+        <>
+          <dl className="popover-grammar">
+            {gloss.fields.map((field) => (
+              <div key={field.label}>
+                <dt>{field.label}</dt>
+                <dd>{field.value}</dd>
+              </div>
+            ))}
+          </dl>
+          {gloss.judgment === "unsure" && gloss.why ? (
+            <p className="popover-unsure">{gloss.why}</p>
+          ) : null}
+        </>
+      ) : null}
       <div className="popover-levels">
         {chain.map((step) => (
           <button
