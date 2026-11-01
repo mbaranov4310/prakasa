@@ -18,6 +18,8 @@ Read the word’s IAST and Devanagari, and the meaning already stored. The meani
 
 **Noun.** Stem, gender, case, number. “Stem” is the form that declines (`pāpa` in `pāpebhyo`), not a verbal root. If the noun is built from a verb, also name that root (`kṛta` from `kṛ`). Leave the root blank when there is none.
 
+**Adjective.** Same fields as a noun. Use this when the word describes another word and takes that word’s gender, case, and number. A participle stays a participle.
+
 Cases, in the names the study pages use: nominative, accusative, instrumental, dative, ablative, genitive, locative, vocative. Number is singular, dual, or plural. Gender is masculine, feminine, or neuter.
 
 **Finite verb.** Root, and any prefix that is part of the word (`pra`, `ā`, `sam`). Tense or mood, in the lesson names: present, command, ordinary past, potential, blessing, simple future, distant future, conditional, distant past, recent past. Voice: parasmaipada or ātmanepada, and passive or impersonal when the form is that. Person. Number. Name the class only when the stem is not the obvious one. A finite verb has no gender.

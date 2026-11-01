@@ -263,6 +263,14 @@ button {
   background: #eef4f0;
 }
 
+.quiz-option-hint {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 .quiz-option.is-wrong {
   border-color: #b56a5a;
   background: #f7ece8;

@@ -8,7 +8,7 @@ meaning: primordial sound
 
 ## apavitraḥ
 ids: s-apavitrah
-kind: noun
+kind: adjective
 judgment: obvious
 stem: apavitra
 gender: masculine
@@ -19,7 +19,7 @@ meaning: impure
 
 ## pavitro
 ids: s-pavitro
-kind: noun
+kind: adjective
 judgment: obvious
 stem: pavitra
 gender: masculine
@@ -108,14 +108,14 @@ meaning: he
 
 ## bāhyā
 ids: s-bahya
-kind: noun
+kind: adjective
 judgment: unsure
 why: This is the prior member of bāhyābhyantaraḥ, so it shows the stem with no case ending, and the same shape is feminine nominative singular.
 meaning: outer
 
 ## bhyantaraḥ
 ids: s-abhyantarah
-kind: noun
+kind: adjective
 judgment: obvious
 stem: abhyantara
 gender: masculine
@@ -125,7 +125,7 @@ meaning: inner
 
 ## śuciḥ
 ids: s-sucih
-kind: noun
+kind: adjective
 judgment: unsure
 why: śuciḥ is nominative singular of both masculine and feminine śuci.
 meaning: pure

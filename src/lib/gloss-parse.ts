@@ -6,6 +6,7 @@ export type GlossField = {
 export type WordGloss = {
   judgment: "obvious" | "unsure";
   why?: string;
+  note?: string;
   fields: GlossField[];
 };
 
@@ -26,6 +27,7 @@ const FIELD_ORDER = [
 
 const ORDER_BY_KIND: Record<string, string[]> = {
   noun: ["stem", "gender", "case", "number", "root", "compound"],
+  adjective: ["stem", "gender", "case", "number", "root", "compound"],
   verb: ["root", "prefix", "class", "tense", "voice", "person", "number"],
   participle: ["root", "participle", "stem", "gender", "case", "number", "prefix", "compound"],
   pronoun: ["stem", "gender", "case", "number"],
@@ -49,6 +51,7 @@ const LABELS: Record<string, string> = {
 
 const KIND_LABEL: Record<string, string> = {
   noun: "noun",
+  adjective: "adjective",
   verb: "verb",
   participle: "participle",
   pronoun: "pronoun",
@@ -80,6 +83,7 @@ export function parseGlossNote(markdown: string): Map<string, WordGloss> {
     const gloss: WordGloss = {
       judgment,
       why: data.why || undefined,
+      note: data.note || undefined,
       fields,
     };
     for (const id of (data.ids ?? "").split(",")) {

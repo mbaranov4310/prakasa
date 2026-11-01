@@ -2,6 +2,7 @@ export type Route =
   | { page: "library" }
   | { page: "book"; bookId: string }
   | { page: "chapter"; bookId: string; chapterId: string }
+  | { page: "chapter-practice"; bookId: string; chapterId: string }
   | { page: "quiz" }
   | { page: "quiz-play" }
   | { page: "study" }
@@ -18,6 +19,9 @@ export function parseHash(): Route {
     if (parts[1] && parts[2] === "practice") return { page: "study-practice", lessonId: parts[1] };
     if (parts[1]) return { page: "study-lesson", lessonId: parts[1] };
     return { page: "study" };
+  }
+  if (parts.length >= 3 && parts[2] === "practice") {
+    return { page: "chapter-practice", bookId: parts[0], chapterId: parts[1] };
   }
   if (parts.length >= 2) {
     return { page: "chapter", bookId: parts[0], chapterId: parts[1] };
@@ -36,6 +40,7 @@ export function toHash(route: Route): string {
   if (route.page === "study-lesson") return `#/study/${route.lessonId}`;
   if (route.page === "study-practice") return `#/study/${route.lessonId}/practice`;
   if (route.page === "book") return `#/${route.bookId}`;
+  if (route.page === "chapter-practice") return `#/${route.bookId}/${route.chapterId}/practice`;
   return `#/${route.bookId}/${route.chapterId}`;
 }
 

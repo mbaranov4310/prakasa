@@ -78,6 +78,7 @@ export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onClos
           {gloss.judgment === "unsure" && gloss.why ? (
             <p className="popover-unsure">{gloss.why}</p>
           ) : null}
+          {gloss.note ? <p className="popover-unsure">{gloss.note}</p> : null}
         </>
       ) : null}
       {links.length > 0 ? (

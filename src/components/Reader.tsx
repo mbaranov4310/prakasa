@@ -6,6 +6,7 @@ import { Glossary } from "./Glossary";
 import { MantraText } from "./MantraText";
 import { ScriptToggle } from "./ScriptToggle";
 import { useNavLang } from "../lib/nav-lang";
+import { hasLinkQuiz } from "../content/sandhya-links";
 import { navigate } from "../lib/routes";
 
 type Props = {
@@ -43,6 +44,15 @@ export function Reader({ bookId, chapter }: Props) {
       </header>
 
       <h1 className={`chapter-title ${mode === "iast" ? "is-latin" : "is-deva"}`}>{heading}</h1>
+      {hasLinkQuiz(chapter.id) ? (
+        <button
+          type="button"
+          className="quiz-text-btn"
+          onClick={() => navigate({ page: "chapter-practice", bookId, chapterId: chapter.id })}
+        >
+          Practice this chapter
+        </button>
+      ) : null}
 
       {chapter.status === "coming-soon" || !root ? (
         <p className="empty">This chapter will be added next.</p>

@@ -4,6 +4,7 @@ import { Library } from "./components/Library";
 import { ChapterList } from "./components/ChapterList";
 import { Reader } from "./components/Reader";
 import { QuizSetup } from "./components/QuizSetup";
+import { LinkQuiz } from "./components/LinkQuiz";
 import { QuizPlay } from "./components/QuizPlay";
 import { StudyIndex } from "./components/StudyIndex";
 import { StudyLesson } from "./components/StudyLesson";
@@ -36,6 +37,10 @@ function Routes() {
   if (route.page === "study") return <StudyIndex />;
   if (route.page === "study-lesson") return <StudyLesson lessonId={route.lessonId} />;
   if (route.page === "study-practice") return <StudyPractice lessonId={route.lessonId} />;
+
+  if (route.page === "chapter-practice") {
+    return <LinkQuiz bookId={route.bookId} chapterId={route.chapterId} />;
+  }
 
   if (route.page === "chapter") {
     const chapter = getChapter(route.bookId, route.chapterId);
