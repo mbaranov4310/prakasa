@@ -64,6 +64,10 @@ export function Reader({ bookId, chapter }: Props) {
               chain={chain}
               anchor={anchor}
               onSelect={setSelectedId}
+              onOpenWord={(id) => {
+                setWordId(id);
+                setSelectedId(id);
+              }}
               onClose={() => {
                 setWordId(null);
                 setSelectedId(null);

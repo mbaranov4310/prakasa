@@ -674,6 +674,50 @@ button {
   line-height: 1.45;
 }
 
+.popover-links {
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.popover-link {
+  display: grid;
+  grid-template-columns: 6.4rem 1fr;
+  gap: 0.45rem;
+  align-items: baseline;
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.popover-link span:first-child {
+  color: #7d888f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.popover-link span:last-child {
+  color: var(--forest);
+  font-size: 0.95rem;
+}
+
+.popover-link em {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.popover-links .popover-unsure {
+  margin: 0.15rem 0 0;
+}
+
 .popover-levels {
   display: flex;
   flex-wrap: wrap;

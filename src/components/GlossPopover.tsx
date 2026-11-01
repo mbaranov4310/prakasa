@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { wordGloss } from "../content/sandhya-gloss";
+import { wordLinks } from "../content/sandhya-links";
 import type { SpanNode } from "../types";
 import { LEVEL_LABEL } from "../lib/tree";
 
@@ -8,10 +9,11 @@ type Props = {
   chain: SpanNode[];
   anchor: DOMRect;
   onSelect: (id: string) => void;
+  onOpenWord: (id: string) => void;
   onClose: () => void;
 };
 
-export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) {
+export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onClose }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState({ top: 0, left: 0, below: false });
 
@@ -48,6 +50,7 @@ export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) 
 
   const caretLeft = Math.max(16, Math.min(anchor.left - pos.left + 8, 80));
   const gloss = wordGloss(node.id);
+  const links = wordLinks(node.id);
 
   return (
     <div
@@ -76,6 +79,28 @@ export function GlossPopover({ node, chain, anchor, onSelect, onClose }: Props) 
             <p className="popover-unsure">{gloss.why}</p>
           ) : null}
         </>
+      ) : null}
+      {links.length > 0 ? (
+        <div className="popover-links">
+          {links.map((link, index) =>
+            link.wordId ? (
+              <div key={`${link.label}-${link.wordId}`}>
+                <button type="button" className="popover-link" onClick={() => onOpenWord(link.wordId as string)}>
+                  <span>{link.label}</span>
+                  <span>
+                    {link.iast}
+                    {link.meaning ? <em>{link.meaning}</em> : null}
+                  </span>
+                </button>
+                {link.detail ? <p className="popover-unsure">{link.detail}</p> : null}
+              </div>
+            ) : (
+              <p key={`unsure-${index}`} className="popover-unsure">
+                {link.detail}
+              </p>
+            ),
+          )}
+        </div>
       ) : null}
       <div className="popover-levels">
         {chain.map((step) => (
