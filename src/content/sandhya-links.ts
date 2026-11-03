@@ -1,11 +1,14 @@
-import mitraLinks from "../../docs/sandhya/links/mitra-sukta.md?raw";
-import sariraLinks from "../../docs/sandhya/links/sarira-suddhi.md?raw";
-import { mitraSukta } from "./mitra-sukta";
 import { wordGloss } from "./sandhya-gloss";
-import { sariraSuddhi } from "./sarira-suddhi";
+import { books } from "./library";
 import { parseLinkNote, type LinkRole, type SentenceLink } from "../lib/link-parse";
 import { walkLeaves } from "../lib/tree";
 import type { Chapter } from "../types";
+
+const linkFiles = import.meta.glob("../../docs/sandhya/links/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
 
 export type WordLink = {
   label: string;
@@ -89,8 +92,19 @@ function indexChapter(chapter: Chapter, markdown: string) {
   }
 }
 
-indexChapter(sariraSuddhi, sariraLinks);
-indexChapter(mitraSukta, mitraLinks);
+function chapterById(id: string): Chapter | undefined {
+  for (const book of books) {
+    const found = book.chapters.find((chapter) => chapter.id === id);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+for (const [path, markdown] of Object.entries(linkFiles)) {
+  const id = path.split("/").pop()?.replace(/\.md$/, "");
+  const chapter = id ? chapterById(id) : undefined;
+  if (chapter) indexChapter(chapter, markdown);
+}
 
 export function wordLinks(id: string): WordLink[] {
   return byWord.get(id) ?? [];

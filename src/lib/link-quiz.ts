@@ -219,6 +219,16 @@ function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation |
     };
   }
 
+  if (wordCase === "locative") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is locative. This is the place of which word?`,
+      explain: `${from.iast}, “${from.meaning},” is where ${to.iast} takes place.`,
+    };
+  }
+
   if (kind === "pronoun") {
     return {
       focusId: from.id,

@@ -66,7 +66,7 @@ stem: viṣṇu
 gender: masculine
 case: dative
 number: singular
-root: viṣ
+note: -ave is the dative singular of a masculine -u stem.
 meaning: the all-pervading one
 
 ## madhusūdanāya
@@ -157,6 +157,7 @@ gender: masculine
 case: dative
 number: singular
 root: kṛṣ
+note: Built from kṛṣ with the prefix sam.
 meaning: Vyuha form associated with strength
 
 ## vāsudevāya
@@ -188,6 +189,7 @@ gender: masculine
 case: dative
 number: singular
 root: rudh
+note: a- negates the past participle niruddha (ni + rudh), “unobstructed.”
 meaning: Vyuha form associated with will/ego
 
 ## puruṣottamāya
@@ -198,6 +200,7 @@ stem: puruṣottama
 gender: masculine
 case: dative
 number: singular
+note: puruṣa + uttama joined as puruṣottama.
 meaning: the supreme person
 
 ## adhokṣajāya
@@ -218,7 +221,6 @@ stem: nārasiṃha
 gender: masculine
 case: dative
 number: singular
-compound: karmadhāraya
 meaning: man-lion form
 
 ## acyutāya
@@ -230,6 +232,7 @@ gender: masculine
 case: dative
 number: singular
 root: cyu
+note: a- negates the past participle cyuta, used here as a name.
 meaning: unfailing, imperishable
 
 ## janārdanāya
@@ -240,6 +243,9 @@ stem: janārdana
 gender: masculine
 case: dative
 number: singular
+root: ard
+compound: tatpuruṣa
+note: jana + ardana joined as janārdana.
 meaning: protector/uplifter of people
 
 ## upendrāya
@@ -250,7 +256,7 @@ stem: upendra
 gender: masculine
 case: dative
 number: singular
-compound: tatpuruṣa
+note: upa + indra joined as upendra.
 meaning: brother of Indra (Vāmana)
 
 ## haraye
@@ -262,15 +268,12 @@ gender: masculine
 case: dative
 number: singular
 root: hṛ
+note: -aye is the dative singular of a masculine -i stem.
 meaning: remover of sins/binds
 
 ## śrīkṛṣṇaparabrahmaṇe
 ids: a-srikrsnaparabrahmane
 kind: noun
-judgment: obvious
-stem: śrīkṛṣṇaparabrahman
-gender: neuter
-case: dative
-number: singular
-compound: karmadhāraya
+judgment: unsure
+why: -aṇe is dative singular of an -an stem, but brahman can be neuter “the Absolute” or the compound can be masculine naming Kṛṣṇa, and the form is the same for both.
 meaning: the Supreme Reality in the form of Śrī Kṛṣṇa

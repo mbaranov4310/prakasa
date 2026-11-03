@@ -1,5 +1,29 @@
 # sarira-suddhi
 
+## describes
+from: s-apavitrah
+to: s-yah
+judgment: obvious
+note: The one who is impure is whoever remembers. saḥ is that same man.
+
+## describes
+from: s-pavitro
+to: s-yah
+judgment: obvious
+note: The one who is pure is whoever remembers. saḥ is that same man.
+
+## describes
+from: s-gatah
+to: s-yah
+judgment: obvious
+note: The one who has gone into any state is whoever remembers. saḥ is that same man.
+
+## complement
+from: s-gatah
+to: s-sarvavasthan
+judgment: obvious
+note: Accusative of the place reached with gataḥ, “gone into every state.”
+
 ## subject
 from: s-smaret
 to: s-yah
@@ -8,26 +32,6 @@ judgment: obvious
 ## object
 from: s-smaret
 to: s-pundarikaksam
-judgment: obvious
-
-## describes
-from: s-apavitrah
-to: s-yah
-judgment: obvious
-
-## describes
-from: s-pavitro
-to: s-yah
-judgment: obvious
-
-## describes
-from: s-gatah
-to: s-yah
-judgment: obvious
-
-## complement
-from: s-sarvavasthan
-to: s-gatah
 judgment: obvious
 
 ## same
@@ -39,19 +43,20 @@ judgment: obvious
 from: s-sucih
 to: s-sah
 judgment: obvious
-note: The form is masculine or feminine. sa is masculine, so here it describes him.
+note: Predicate adjective. No verb is written.
+
+## describes
+from: s-abhyantarah
+judgment: unsure
+why: The compound can describe saḥ or go with śuciḥ, “pure outwardly and inwardly.”
+
+## describes
+from: s-bahya
+judgment: unsure
+why: The ending sits on the next member, and the compound can describe either of two nominatives.
 
 ## complement
 from: s-pundarikaksaya
 to: s-namah
 judgment: obvious
-
-## describes
-from: s-bahya
-judgment: unsure
-why: bāhyā is the first member of bāhyābhyantaraḥ. The ending sits on bhyantaraḥ, so this piece leans on no word by itself.
-
-## describes
-from: s-abhyantarah
-judgment: unsure
-why: bāhyābhyantaraḥ is nominative masculine, so it can describe sa or śuciḥ. Both readings mean he is pure outwardly and inwardly.
+note: Dative with namaḥ. The salutation is to Puṇḍarīkākṣa.
