@@ -739,6 +739,10 @@ button {
   margin-top: 0.9rem;
 }
 
+.popover-practice {
+  margin-top: 0.85rem;
+}
+
 .level {
   border: 0;
   background: none;

@@ -5,6 +5,7 @@ import { navigate } from "../lib/routes";
 type Props = {
   bookId: string;
   chapterId: string;
+  line?: number;
 };
 
 function Passage({ leaves, highlightId }: { leaves: LinkLeaf[]; highlightId: string }) {
@@ -47,9 +48,12 @@ function PassageLine({
   );
 }
 
-export function LinkQuiz({ bookId, chapterId }: Props) {
+export function LinkQuiz({ bookId, chapterId, line }: Props) {
   const [run, setRun] = useState(0);
-  const rounds = useMemo(() => linkRounds(bookId, chapterId), [bookId, chapterId, run]);
+  const all = useMemo(() => linkRounds(bookId, chapterId), [bookId, chapterId, run]);
+  const only = line != null && line >= 1 && line <= all.length ? line - 1 : null;
+  const rounds = only == null ? all : [all[only]];
+  const lineNumber = only == null ? null : only + 1;
   const [roundIndex, setRoundIndex] = useState(0);
   const [stepIndex, setStepIndex] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -125,7 +129,7 @@ export function LinkQuiz({ bookId, chapterId }: Props) {
           ← Chapter
         </button>
         <p className="quiz-progress">
-          Line {roundIndex + 1} of {rounds.length}
+          {lineNumber != null ? `Line ${lineNumber}` : `Line ${roundIndex + 1} of ${rounds.length}`}
           {" · "}
           {stepIndex + 1} of {round.steps.length}
         </p>

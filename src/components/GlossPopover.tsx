@@ -10,10 +10,11 @@ type Props = {
   anchor: DOMRect;
   onSelect: (id: string) => void;
   onOpenWord: (id: string) => void;
+  onPracticeLine?: () => void;
   onClose: () => void;
 };
 
-export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onClose }: Props) {
+export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onPracticeLine, onClose }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState({ top: 0, left: 0, below: false });
 
@@ -114,6 +115,11 @@ export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onClos
           </button>
         ))}
       </div>
+      {onPracticeLine ? (
+        <button type="button" className="quiz-text-btn popover-practice" onClick={onPracticeLine}>
+          Practice this line
+        </button>
+      ) : null}
       <span className="popover-caret" style={{ left: caretLeft }} />
     </div>
   );

@@ -346,3 +346,13 @@ export function linkRounds(bookId: string, chapterId: string): LinkRound[] {
     return steps.length ? [{ steps }] : [];
   });
 }
+
+export function roundForWord(bookId: string, chapterId: string, wordId: string): number | null {
+  const rounds = linkRounds(bookId, chapterId);
+  const index = rounds.findIndex((round) => {
+    const line = round.steps.find((step) => step.prompt === "What does this mean?")?.leaves;
+    if (line?.some((leaf) => leaf.id === wordId)) return true;
+    return round.steps.some((step) => step.highlightId === wordId);
+  });
+  return index >= 0 ? index : null;
+}

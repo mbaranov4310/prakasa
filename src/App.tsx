@@ -39,7 +39,14 @@ function Routes() {
   if (route.page === "study-practice") return <StudyPractice lessonId={route.lessonId} />;
 
   if (route.page === "chapter-practice") {
-    return <LinkQuiz bookId={route.bookId} chapterId={route.chapterId} />;
+    return (
+      <LinkQuiz
+        key={`${route.bookId}/${route.chapterId}/${route.line ?? "all"}`}
+        bookId={route.bookId}
+        chapterId={route.chapterId}
+        line={route.line}
+      />
+    );
   }
 
   if (route.page === "chapter") {

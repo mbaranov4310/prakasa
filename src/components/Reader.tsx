@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import type { Chapter, ScriptMode } from "../types";
 import { findPath } from "../lib/tree";
 import { GlossPopover } from "./GlossPopover";
@@ -7,6 +7,7 @@ import { MantraText } from "./MantraText";
 import { ScriptToggle } from "./ScriptToggle";
 import { useNavLang } from "../lib/nav-lang";
 import { hasLinkQuiz } from "../content/sandhya-links";
+import { roundForWord } from "../lib/link-quiz";
 import { navigate } from "../lib/routes";
 
 type Props = {
@@ -26,6 +27,10 @@ export function Reader({ bookId, chapter }: Props) {
   }, []);
 
   const root = chapter.root;
+  const practiceRound = useMemo(
+    () => (wordId && hasLinkQuiz(chapter.id) ? roundForWord(bookId, chapter.id, wordId) : null),
+    [bookId, chapter.id, wordId],
+  );
   const path = root && wordId ? findPath(root, wordId) : null;
   const chain = path ? [...path].reverse() : [];
   const selected = path?.find((node) => node.id === selectedId) ?? null;
@@ -78,6 +83,17 @@ export function Reader({ bookId, chapter }: Props) {
                 setWordId(id);
                 setSelectedId(id);
               }}
+              onPracticeLine={
+                practiceRound == null
+                  ? undefined
+                  : () =>
+                      navigate({
+                        page: "chapter-practice",
+                        bookId,
+                        chapterId: chapter.id,
+                        line: practiceRound + 1,
+                      })
+              }
               onClose={() => {
                 setWordId(null);
                 setSelectedId(null);
