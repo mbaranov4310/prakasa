@@ -1,5 +1,9 @@
 import { asatoMa } from "./mangala-shlokas/asato-ma";
+import { karagre } from "./mangala-shlokas/karagre";
+import { mangalaDipam } from "./mangala-shlokas/mangala-dipam";
 import { sahaNavavatu } from "./mangala-shlokas/saha-navavatu";
+import { samudravasane } from "./mangala-shlokas/samudravasane";
+import { suklambaraDharam } from "./mangala-shlokas/suklambara-dharam";
 import { acamana } from "./acamana";
 import { aghamarsana } from "./aghamarsana";
 import { bhagavanNamaskara } from "./bhagavan-namaskara";
@@ -135,8 +139,8 @@ export const books: Book[] = [
     titleDev: "मङ्गलश्लोकाः",
     titleIast: "maṅgalaślokāḥ",
     titleEn: "Maṅgala ślokas",
-    blurb: "Two opening peace mantras, word by word.",
-    chapters: [sahaNavavatu, asatoMa],
+    blurb: "Auspicious verses for the day, word by word.",
+    chapters: [suklambaraDharam, karagre, samudravasane, mangalaDipam, sahaNavavatu, asatoMa],
   },
   {
     id: "sandhya-vandana",
