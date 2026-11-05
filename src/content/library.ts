@@ -1,4 +1,5 @@
 import { asatoMa } from "./mangala-shlokas/asato-ma";
+import { dipajyotir } from "./mangala-shlokas/dipajyotir";
 import { karagre } from "./mangala-shlokas/karagre";
 import { mangalaDipam } from "./mangala-shlokas/mangala-dipam";
 import { sahaNavavatu } from "./mangala-shlokas/saha-navavatu";
@@ -140,7 +141,7 @@ export const books: Book[] = [
     titleIast: "maṅgalaślokāḥ",
     titleEn: "Maṅgala ślokas",
     blurb: "Auspicious verses for the day, word by word.",
-    chapters: [suklambaraDharam, karagre, samudravasane, mangalaDipam, sahaNavavatu, asatoMa],
+    chapters: [suklambaraDharam, karagre, samudravasane, mangalaDipam, dipajyotir, sahaNavavatu, asatoMa],
   },
   {
     id: "sandhya-vandana",
