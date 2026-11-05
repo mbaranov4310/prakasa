@@ -4,11 +4,10 @@ import { parseLinkNote, type LinkRole, type SentenceLink } from "../lib/link-par
 import { walkLeaves } from "../lib/tree";
 import type { Chapter } from "../types";
 
-const linkFiles = import.meta.glob("../../docs/sandhya/links/*.md", {
-  query: "?raw",
-  import: "default",
-  eager: true,
-}) as Record<string, string>;
+const linkFiles = import.meta.glob(
+  ["../../docs/sandhya/links/*.md", "../../docs/mangala-shlokas/links/*.md"],
+  { query: "?raw", import: "default", eager: true },
+) as Record<string, string>;
 
 export type WordLink = {
   label: string;

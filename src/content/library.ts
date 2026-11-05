@@ -1,3 +1,5 @@
+import { asatoMa } from "./mangala-shlokas/asato-ma";
+import { sahaNavavatu } from "./mangala-shlokas/saha-navavatu";
 import { acamana } from "./acamana";
 import { aghamarsana } from "./aghamarsana";
 import { bhagavanNamaskara } from "./bhagavan-namaskara";
@@ -128,6 +130,14 @@ function comingSoon(
 }
 
 export const books: Book[] = [
+  {
+    id: "mangala-shlokas",
+    titleDev: "मङ्गलश्लोकाः",
+    titleIast: "maṅgalaślokāḥ",
+    titleEn: "Maṅgala ślokas",
+    blurb: "Two opening peace mantras, word by word.",
+    chapters: [sahaNavavatu, asatoMa],
+  },
   {
     id: "sandhya-vandana",
     titleDev: "सन्ध्यावन्दनम्",
