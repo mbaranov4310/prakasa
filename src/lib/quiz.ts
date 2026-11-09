@@ -114,8 +114,8 @@ export const quizDecks: QuizDeck[] = scriptDecks;
 
 const chapterExtractCache = new Map<string, QuizItem[]>();
 
-/** Nominals 1 drills. The question keeps the English cue and names the case. */
-const NOMINALS_1_DECKS = new Set([
+/** Nominal drills. The question keeps the English cue and names the case. */
+const NOMINAL_DECKS = new Set([
   "nominals-the-nominal-system",
   "nominals-basic-nominal-endings",
   "nominals-rama-a-stems",
@@ -124,6 +124,11 @@ const NOMINALS_1_DECKS = new Set([
   "nominals-r-stems",
   "nominals-ai-o-au-stems",
   "nominals-consonant-stems",
+  "nominals-asmad-and-yusmad",
+  "nominals-tad-etad-idam-and-adas",
+  "nominals-kim-and-yad",
+  "nominals-pronominal-adjectives",
+  "nominals-number-words",
 ]);
 
 const CASE_CUES: [RegExp, string][] = [
@@ -149,9 +154,9 @@ function caseLabel(meaning: string): string {
   return `${meaning} (${names})`;
 }
 
-function nominals1Meaning(item: QuizItem, meaning: string): string {
+function nominalMeaning(item: QuizItem, meaning: string): string {
   const deckId = item.sourceId.startsWith("deck:") ? item.sourceId.slice("deck:".length) : "";
-  if (!NOMINALS_1_DECKS.has(deckId)) return meaning;
+  if (!NOMINAL_DECKS.has(deckId)) return meaning;
   return caseLabel(meaning);
 }
 
@@ -175,7 +180,7 @@ export function directionNeedsMeaning(direction: QuizDirection): boolean {
 }
 
 export function itemFace(item: QuizItem, face: QuizFace): string {
-  if (face === "meaning") return nominals1Meaning(item, item.meaning?.trim() ?? "");
+  if (face === "meaning") return nominalMeaning(item, item.meaning?.trim() ?? "");
   return item[face].trim();
 }
 
