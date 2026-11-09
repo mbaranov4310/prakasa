@@ -114,6 +114,47 @@ export const quizDecks: QuizDeck[] = scriptDecks;
 
 const chapterExtractCache = new Map<string, QuizItem[]>();
 
+/** Nominals 1 drills. The question keeps the English cue and names the case. */
+const NOMINALS_1_DECKS = new Set([
+  "nominals-the-nominal-system",
+  "nominals-basic-nominal-endings",
+  "nominals-rama-a-stems",
+  "nominals-aa-ii-uu-stems",
+  "nominals-i-and-u-stems",
+  "nominals-r-stems",
+  "nominals-ai-o-au-stems",
+  "nominals-consonant-stems",
+]);
+
+const CASE_CUES: [RegExp, string][] = [
+  [/\bsubject\b/, "nominative"],
+  [/\bobject\b/, "accusative"],
+  [/\b(?:with|by)\b/, "instrumental"],
+  [/\bfor\b/, "dative"],
+  [/\bfrom\b/, "ablative"],
+  [/\bof\b/, "genitive"],
+  [/\bin\b/, "locative"],
+  [/(?:^|[\s/])O(?=[\s(]|$)/, "vocative"],
+];
+
+function caseLabel(meaning: string): string {
+  const found = CASE_CUES.filter(([pattern]) => pattern.test(meaning)).map(([, name]) => name);
+  if (found.length === 0 || /\([^)]*case\)\s*$/.test(meaning)) return meaning;
+  const names =
+    found.length === 1
+      ? `${found[0]} case`
+      : found.length === 2
+        ? `${found[0]} and ${found[1]} cases`
+        : `${found.slice(0, -1).join(", ")}, and ${found[found.length - 1]} cases`;
+  return `${meaning} (${names})`;
+}
+
+function nominals1Meaning(item: QuizItem, meaning: string): string {
+  const deckId = item.sourceId.startsWith("deck:") ? item.sourceId.slice("deck:".length) : "";
+  if (!NOMINALS_1_DECKS.has(deckId)) return meaning;
+  return caseLabel(meaning);
+}
+
 export function chapterKey(bookId: string, chapterId: string): string {
   return `${bookId}/${chapterId}`;
 }
@@ -134,7 +175,7 @@ export function directionNeedsMeaning(direction: QuizDirection): boolean {
 }
 
 export function itemFace(item: QuizItem, face: QuizFace): string {
-  if (face === "meaning") return item.meaning?.trim() ?? "";
+  if (face === "meaning") return nominals1Meaning(item, item.meaning?.trim() ?? "");
   return item[face].trim();
 }
 
