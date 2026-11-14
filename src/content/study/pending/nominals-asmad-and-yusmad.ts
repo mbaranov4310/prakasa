@@ -7,13 +7,6 @@
  * - asmad-sg-abl: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — mat
  * - asmad-sg-gen: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — mama
  * - asmad-sg-loc: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — mayi
- * - asmad-pl-nom: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — vayam
- * - asmad-pl-acc: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmān
- * - asmad-pl-ins: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmābhiḥ
- * - asmad-pl-dat: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmabhyam
- * - asmad-pl-abl: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmat
- * - asmad-pl-gen: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmākam
- * - asmad-pl-loc: lesson asmad table (First Steps §6.6 p.118; Gonda §47 p.37) — asmāsu
  * - yusmad-sg-nom: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tvam
  * - yusmad-sg-acc: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tvām
  * - yusmad-sg-ins: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tvayā
@@ -21,14 +14,7 @@
  * - yusmad-sg-abl: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tvat
  * - yusmad-sg-gen: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tava
  * - yusmad-sg-loc: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — tvayi
- * - yusmad-pl-nom: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yūyam
- * - yusmad-pl-acc: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmān
- * - yusmad-pl-ins: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmābhiḥ
- * - yusmad-pl-dat: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmabhyam
- * - yusmad-pl-abl: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmat
- * - yusmad-pl-gen: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmākam
- * - yusmad-pl-loc: lesson yuṣmad table (First Steps §6.6 p.118; Gonda §47 p.37) — yuṣmāsu
- * Dual omitted (only three distinct spellings after collapse). Enclitics not in lesson table.
+ * Plural and dual stay on the lesson page and are not quizzed. Enclitics not in lesson table.
  */
 import type { QuizDeckItem, QuizDeckKind, QuizDirection } from "../../../lib/quiz";
 
@@ -97,62 +83,6 @@ export const pendingDeck = {
       group: "asmad|sg",
     },
     {
-      id: "asmad-pl-nom",
-      dev: "वयम्",
-      iast: "vayam",
-      meaning: "subject (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-acc",
-      dev: "अस्मान्",
-      iast: "asmān",
-      meaning: "object (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-ins",
-      dev: "अस्माभिः",
-      iast: "asmābhiḥ",
-      meaning: "with (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-dat",
-      dev: "अस्मभ्यम्",
-      iast: "asmabhyam",
-      meaning: "for (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-abl",
-      dev: "अस्मत्",
-      iast: "asmat",
-      meaning: "from (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-gen",
-      dev: "अस्माकम्",
-      iast: "asmākam",
-      meaning: "of (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
-      id: "asmad-pl-loc",
-      dev: "अस्मासु",
-      iast: "asmāsu",
-      meaning: "in (many) asmad",
-      unit: "word",
-      group: "asmad|pl",
-    },
-    {
       id: "yusmad-sg-nom",
       dev: "त्वम्",
       iast: "tvam",
@@ -207,62 +137,6 @@ export const pendingDeck = {
       meaning: "in (one) yuṣmad",
       unit: "word",
       group: "yuṣmad|sg",
-    },
-    {
-      id: "yusmad-pl-nom",
-      dev: "यूयम्",
-      iast: "yūyam",
-      meaning: "subject (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-acc",
-      dev: "युष्मान्",
-      iast: "yuṣmān",
-      meaning: "object (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-ins",
-      dev: "युष्माभिः",
-      iast: "yuṣmābhiḥ",
-      meaning: "with (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-dat",
-      dev: "युष्मभ्यम्",
-      iast: "yuṣmabhyam",
-      meaning: "for (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-abl",
-      dev: "युष्मत्",
-      iast: "yuṣmat",
-      meaning: "from (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-gen",
-      dev: "युष्माकम्",
-      iast: "yuṣmākam",
-      meaning: "of (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
-    },
-    {
-      id: "yusmad-pl-loc",
-      dev: "युष्मासु",
-      iast: "yuṣmāsu",
-      meaning: "in (many) yuṣmad",
-      unit: "word",
-      group: "yuṣmad|pl",
     },
   ] as QuizDeckItem[],
 };
