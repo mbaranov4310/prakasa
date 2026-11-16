@@ -17,6 +17,14 @@ type Props = {
 
 const RECORDINGS: Record<string, string> = {
   "ddv-01": "audio/ddv/ddv-01.m4a",
+  "ddv-02": "audio/ddv/ddv-02.m4a",
+  "ddv-03": "audio/ddv/ddv-03.m4a",
+  "ddv-04": "audio/ddv/ddv-04.m4a",
+  "ddv-05": "audio/ddv/ddv-05.m4a",
+  "ddv-06": "audio/ddv/ddv-06.m4a",
+  "ddv-07": "audio/ddv/ddv-07.m4a",
+  "ddv-08": "audio/ddv/ddv-08.m4a",
+  "ddv-09": "audio/ddv/ddv-09.m4a",
 };
 
 function recordingSrc(chapterId: string): string | null {
