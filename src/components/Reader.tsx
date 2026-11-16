@@ -15,29 +15,12 @@ type Props = {
   chapter: Chapter;
 };
 
-const RECORDINGS: Record<string, string> = {
-  "ddv-01": "audio/ddv/ddv-01.m4a",
-  "ddv-02": "audio/ddv/ddv-02.m4a",
-  "ddv-03": "audio/ddv/ddv-03.m4a",
-  "ddv-04": "audio/ddv/ddv-04.m4a",
-  "ddv-05": "audio/ddv/ddv-05.m4a",
-  "ddv-06": "audio/ddv/ddv-06.m4a",
-  "ddv-07": "audio/ddv/ddv-07.m4a",
-  "ddv-08": "audio/ddv/ddv-08.m4a",
-  "ddv-09": "audio/ddv/ddv-09.m4a",
-  "ddv-10": "audio/ddv/ddv-10.m4a",
-  "ddv-11": "audio/ddv/ddv-11.m4a",
-  "ddv-12": "audio/ddv/ddv-12.m4a",
-  "ddv-13": "audio/ddv/ddv-13.m4a",
-  "ddv-14": "audio/ddv/ddv-14.m4a",
-  "ddv-15": "audio/ddv/ddv-15.m4a",
-  "ddv-16": "audio/ddv/ddv-16.m4a",
-  "ddv-17": "audio/ddv/ddv-17.m4a",
-};
-
 function recordingSrc(chapterId: string): string | null {
-  const file = RECORDINGS[chapterId];
-  return file ? `${import.meta.env.BASE_URL}${file}` : null;
+  const match = /^ddv-(\d{2})$/.exec(chapterId);
+  if (!match) return null;
+  const verse = Number(match[1]);
+  if (verse < 1 || verse > 33) return null;
+  return `${import.meta.env.BASE_URL}audio/ddv/${chapterId}.m4a`;
 }
 
 function RecordingButton({ src }: { src: string }) {
