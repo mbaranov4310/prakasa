@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import type { Chapter, ScriptMode } from "../types";
 import { findPath } from "../lib/tree";
 import { GlossPopover } from "./GlossPopover";
@@ -14,6 +14,43 @@ type Props = {
   bookId: string;
   chapter: Chapter;
 };
+
+const RECORDINGS: Record<string, string> = {
+  "ddv-01": "audio/ddv/ddv-01.m4a",
+};
+
+function recordingSrc(chapterId: string): string | null {
+  const file = RECORDINGS[chapterId];
+  return file ? `${import.meta.env.BASE_URL}${file}` : null;
+}
+
+function RecordingButton({ src }: { src: string }) {
+  const audio = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+
+  function toggle() {
+    const element = audio.current;
+    if (!element) return;
+    if (element.paused) void element.play();
+    else element.pause();
+  }
+
+  return (
+    <>
+      <button type="button" className="quiz-text-btn" onClick={toggle}>
+        {playing ? "Pause recording" : "Play recording"}
+      </button>
+      <audio
+        ref={audio}
+        src={src}
+        preload="none"
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+      />
+    </>
+  );
+}
 
 export function Reader({ bookId, chapter }: Props) {
   const { navLang } = useNavLang();
@@ -35,6 +72,7 @@ export function Reader({ bookId, chapter }: Props) {
   const chain = path ? [...path].reverse() : [];
   const selected = path?.find((node) => node.id === selectedId) ?? null;
   const heading = mode === "iast" ? chapter.titleIast : chapter.titleDev;
+  const recording = recordingSrc(chapter.id);
 
   return (
     <article className="reader">
@@ -49,14 +87,19 @@ export function Reader({ bookId, chapter }: Props) {
       </header>
 
       <h1 className={`chapter-title ${mode === "iast" ? "is-latin" : "is-deva"}`}>{heading}</h1>
-      {hasLinkQuiz(chapter.id) ? (
-        <button
-          type="button"
-          className="quiz-text-btn"
-          onClick={() => navigate({ page: "chapter-practice", bookId, chapterId: chapter.id })}
-        >
-          Practice this chapter
-        </button>
+      {recording || hasLinkQuiz(chapter.id) ? (
+        <div className="reader-actions">
+          {recording ? <RecordingButton src={recording} /> : null}
+          {hasLinkQuiz(chapter.id) ? (
+            <button
+              type="button"
+              className="quiz-text-btn"
+              onClick={() => navigate({ page: "chapter-practice", bookId, chapterId: chapter.id })}
+            >
+              Practice this chapter
+            </button>
+          ) : null}
+        </div>
       ) : null}
 
       {chapter.status === "coming-soon" || !root ? (
