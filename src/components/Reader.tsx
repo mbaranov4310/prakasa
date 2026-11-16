@@ -25,6 +25,14 @@ const RECORDINGS: Record<string, string> = {
   "ddv-07": "audio/ddv/ddv-07.m4a",
   "ddv-08": "audio/ddv/ddv-08.m4a",
   "ddv-09": "audio/ddv/ddv-09.m4a",
+  "ddv-10": "audio/ddv/ddv-10.m4a",
+  "ddv-11": "audio/ddv/ddv-11.m4a",
+  "ddv-12": "audio/ddv/ddv-12.m4a",
+  "ddv-13": "audio/ddv/ddv-13.m4a",
+  "ddv-14": "audio/ddv/ddv-14.m4a",
+  "ddv-15": "audio/ddv/ddv-15.m4a",
+  "ddv-16": "audio/ddv/ddv-16.m4a",
+  "ddv-17": "audio/ddv/ddv-17.m4a",
 };
 
 function recordingSrc(chapterId: string): string | null {
