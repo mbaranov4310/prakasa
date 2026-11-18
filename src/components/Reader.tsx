@@ -15,7 +15,13 @@ type Props = {
   chapter: Chapter;
 };
 
+const RECORDINGS: Record<string, string> = {
+  dipajyotir: "audio/mangala/dipajyotir.m4a",
+};
+
 function recordingSrc(chapterId: string): string | null {
+  const extra = RECORDINGS[chapterId];
+  if (extra) return `${import.meta.env.BASE_URL}${extra}`;
   const match = /^ddv-(\d{2})$/.exec(chapterId);
   if (!match) return null;
   const verse = Number(match[1]);
