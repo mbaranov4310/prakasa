@@ -29,3 +29,6 @@ docs/ddv/decode/crops/
 
 # local encoding worktrees
 .worktrees/
+
+# Bhagavad Gītā witnesses and scans stay on this computer (licences differ; see docs/gita/ENCODE.md)
+data/gita/

@@ -23,4 +23,5 @@ export const LEVEL_LABEL: Record<SpanLevel, string> = {
   phrase: "PHRASE",
   sentence: "SENTENCE",
   verse: "VERSE",
+  chapter: "CHAPTER",
 };

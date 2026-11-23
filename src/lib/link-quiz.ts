@@ -11,6 +11,7 @@ export type LinkLeaf = {
   dev: string;
   iast: string;
   meaning: string;
+  pada?: string;
   trailing?: string;
   lineBreakAfter?: boolean;
 };
@@ -113,12 +114,28 @@ type Relation = {
 
 function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation | null {
   if (link.judgment !== "obvious" || !link.to) return null;
-  const from = leaves.get(link.from);
-  const to = leaves.get(link.to);
-  if (!from || !to) return null;
+  const fromLeaf = leaves.get(link.from);
+  const toLeaf = leaves.get(link.to);
+  if (!fromLeaf || !toLeaf) return null;
+  // A question names the word by itself, not the sandhi slice shown in the line.
+  const from = { ...fromLeaf, iast: fromLeaf.pada ?? fromLeaf.iast };
+  const to = { ...toLeaf, iast: toLeaf.pada ?? toLeaf.iast };
   const fromGloss = wordGloss(from.id);
   const kind = field(fromGloss, "Kind");
   const wordCase = caseOf(fromGloss);
+  // Chapters that store the word by itself (the Gītā) have meanings of every shape,
+  // with notes in brackets, so their questions do not quote the meaning back as a phrase.
+  const plain = fromLeaf.pada !== undefined;
+
+  if (link.role === "describes" && plain) {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 0,
+      prompt: `We know ${from.iast} means “${from.meaning}.” Which word does it describe?`,
+      explain: `${from.iast} describes ${to.iast}, “${to.meaning}.”`,
+    };
+  }
 
   if (link.role === "describes") {
     const role = roleName(from.meaning);
@@ -155,6 +172,16 @@ function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation |
     };
   }
 
+  if (link.role === "same" && plain) {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 4,
+      prompt: `We know ${from.iast} means “${from.meaning}.” Which other word names the same one?`,
+      explain: `${from.iast} and ${to.iast}, “${to.meaning},” are the same one.`,
+    };
+  }
+
   if (link.role === "same") {
     return {
       focusId: from.id,
@@ -167,7 +194,7 @@ function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation |
 
   if (link.role !== "complement" || kind === "indeclinable" || !kind) return null;
 
-  if (kind === "adjective") {
+  if (kind === "adjective" && !plain) {
     const role = roleName(from.meaning) ?? shortMeaning(from.meaning);
     return {
       focusId: from.id,
@@ -175,6 +202,16 @@ function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation |
       sort: 3,
       prompt: `We know ${from.iast} means “${from.meaning}.” ${capitalize(role)} of whom?`,
       explain: `${capitalize(role)} of ${to.iast}, “${to.meaning}.”`,
+    };
+  }
+
+  if (wordCase === "genitive" && plain) {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is genitive. Which word does it belong to?`,
+      explain: `${from.iast} belongs to ${to.iast}, “${to.meaning}.”`,
     };
   }
 
@@ -186,6 +223,16 @@ function relation(link: SentenceLink, leaves: Map<string, LinkLeaf>): Relation |
       sort: 3,
       prompt: `We know ${from.iast} means “${from.meaning}.” It is genitive. ${capitalize(who)}'s what?`,
       explain: `${capitalize(who)}'s “${to.meaning}” is ${to.iast}.`,
+    };
+  }
+
+  if (wordCase === "instrumental" && field(wordGloss(to.id), "Voice") === "passive") {
+    return {
+      focusId: from.id,
+      answerId: to.id,
+      sort: 3,
+      prompt: `We know ${from.iast} means “${from.meaning}.” It is instrumental, and here it is the doer of a passive verb. Which verb?`,
+      explain: `${from.iast} is the doer of ${to.iast}, “${to.meaning}.” With a passive verb the doer is instrumental.`,
     };
   }
 
@@ -260,7 +307,7 @@ function wordOptions(answer: LinkLeaf, focusId: string, visible: LinkLeaf[], all
   return shuffle([answer, ...distractors]).map((item) => ({
     key: item.id,
     label: item.dev,
-    hint: item.iast,
+    hint: item.pada ?? item.iast,
   }));
 }
 
@@ -286,6 +333,7 @@ export function linkRounds(bookId: string, chapterId: string): LinkRound[] {
     dev: leaf.dev,
     iast: leaf.iast,
     meaning: leaf.meaning,
+    pada: leaf.pada,
     trailing: leaf.trailing,
     lineBreakAfter: leaf.lineBreakAfter,
   }));
@@ -315,7 +363,9 @@ export function linkRounds(bookId: string, chapterId: string): LinkRound[] {
       if (!meaning) continue;
       steps.push({
         prompt: "What does this mean?",
-        explain: grammarExplain(leaf.id, meaning),
+        explain:
+          (leaf.pada && leaf.pada !== leaf.iast ? `By itself the word is ${leaf.pada}. ` : "") +
+          grammarExplain(leaf.id, meaning),
         leaves: line,
         highlightId: leaf.id,
         answer: meaning,

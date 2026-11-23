@@ -65,7 +65,7 @@ export function GlossPopover({ node, chain, anchor, onSelect, onOpenWord, onPrac
         ×
       </button>
       <p className="popover-meaning">{node.meaning}</p>
-      <p className="popover-iast">{node.iast}</p>
+      <p className="popover-iast">{node.pada ?? node.iast}</p>
       {gloss ? (
         <>
           <dl className="popover-grammar">

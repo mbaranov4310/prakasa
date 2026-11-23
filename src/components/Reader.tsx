@@ -74,7 +74,7 @@ export function Reader({ bookId, chapter }: Props) {
     [bookId, chapter.id, wordId],
   );
   const path = root && wordId ? findPath(root, wordId) : null;
-  const chain = path ? [...path].reverse() : [];
+  const chain = path ? [...path].reverse().filter((node) => node.level !== "chapter") : [];
   const selected = path?.find((node) => node.id === selectedId) ?? null;
   const heading = mode === "iast" ? chapter.titleIast : chapter.titleDev;
   const recording = recordingSrc(chapter.id);
@@ -120,6 +120,7 @@ export function Reader({ bookId, chapter }: Props) {
               setSelectedId(id);
             }}
             onAnchorChange={onAnchorChange}
+            joinFused={chapter.joinFused}
           />
           {selected && anchor ? (
             <GlossPopover

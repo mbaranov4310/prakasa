@@ -240,10 +240,10 @@ def patch_library() -> None:
         count=1,
         flags=re.S,
     )
-    tail = "      chamakam11,\n    ],\n  },\n];"
+    tail = "      chamakam11,\n    ],\n  },\n"
     if tail not in src:
         raise SystemExit("library.ts: missing rudra book tail")
-    src = src.replace(tail, "      chamakam11,\n    ],\n  },\n" + ddv_book() + "];", 1)
+    src = src.replace(tail, tail + ddv_book(), 1)
     LIBRARY.write_text(src, encoding="utf-8")
 
 

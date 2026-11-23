@@ -529,6 +529,33 @@ button {
   margin-right: 0.35em;
 }
 
+/* Words that sandhi wrote as one. A plain inline box lets the letters join across them. */
+.mantra-devanagari .word.fused-before,
+.mantra-devanagari .word.fused-after,
+.mantra-iast .word.fused-before,
+.mantra-iast .word.fused-after {
+  display: inline;
+}
+
+.mantra-devanagari .word.fused-before,
+.mantra-iast .word.fused-before {
+  padding-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mantra-devanagari .word.fused-after,
+.mantra-iast .word.fused-after {
+  padding-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.verse-gap {
+  display: block;
+  height: 0.75em;
+}
+
 .word:hover {
   background: #f6ebc4;
 }
@@ -613,6 +640,7 @@ button {
   margin: 0;
   font-size: 1.08rem;
   line-height: 1.65;
+  white-space: pre-line;
 }
 
 .glossary {

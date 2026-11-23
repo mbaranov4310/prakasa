@@ -6,7 +6,7 @@ export function word(
   id: string,
   meaning: string,
   syllables: SyllablePair[],
-  options?: { trailing?: string; lineBreakAfter?: boolean },
+  options?: { trailing?: string; lineBreakAfter?: boolean; gapAfter?: boolean; pada?: string },
 ): SpanNode {
   return {
     id,
@@ -15,9 +15,11 @@ export function word(
     source: "curated",
     dev: syllables.map(([dev]) => dev).join(""),
     iast: syllables.map(([, iast]) => iast).join(""),
+    pada: options?.pada,
     syllables: syllables.map(([dev, iast]) => ({ dev, iast })),
     trailing: options?.trailing ?? " ",
     lineBreakAfter: options?.lineBreakAfter,
+    gapAfter: options?.gapAfter,
   };
 }
 
@@ -44,7 +46,11 @@ export function group(
       .join("")
       .replace(/\s+/g, " ")
       .trim(),
-    iast: leaves.map((leaf) => leaf.iast).join(" "),
+    // Words fused by sandhi (trailing "") are written together, as they are in Devanagari.
+    iast: leaves
+      .map((leaf) => leaf.iast + (leaf.trailing === "" ? "" : " "))
+      .join("")
+      .trim(),
     children,
   };
 }

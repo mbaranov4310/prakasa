@@ -1,7 +1,12 @@
 import { parseGlossNote, type WordGloss } from "../lib/gloss-parse";
 
 const glossFiles = import.meta.glob(
-  ["../../docs/sandhya/gloss/*.md", "../../docs/mangala-shlokas/gloss/*.md", "../../docs/ddv/gloss/*.md"],
+  [
+    "../../docs/sandhya/gloss/*.md",
+    "../../docs/mangala-shlokas/gloss/*.md",
+    "../../docs/ddv/gloss/*.md",
+    "../../docs/gita/gloss/*/*.md",
+  ],
   { query: "?raw", import: "default", eager: true },
 ) as Record<string, string>;
 

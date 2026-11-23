@@ -123,6 +123,7 @@ import { ddv43 } from "./ddv/ddv-43";
 import { ddv44 } from "./ddv/ddv-44";
 import { ddv45 } from "./ddv/ddv-45";
 import { ddv46 } from "./ddv/ddv-46";
+import { gita12 } from "./gita/gita-12";
 import type { Book } from "../types";
 
 function comingSoon(
@@ -305,6 +306,33 @@ export const books: Book[] = [
       ddv44,
       ddv45,
       ddv46,
+    ],
+  },
+  {
+    id: "bhagavad-gita",
+    titleDev: "श्रीमद्भगवद्गीता",
+    titleIast: "śrīmadbhagavadgītā",
+    titleEn: "Bhagavad Gītā",
+    blurb: "The seven hundred verses as Śaṅkara reads them, word by word.",
+    chapters: [
+      comingSoon("gita-01", "प्रथमोऽध्यायः", "prathamo'dhyāyaḥ", "Chapter 1"),
+      comingSoon("gita-02", "द्वितीयोऽध्यायः", "dvitīyo'dhyāyaḥ", "Chapter 2"),
+      comingSoon("gita-03", "तृतीयोऽध्यायः", "tṛtīyo'dhyāyaḥ", "Chapter 3"),
+      comingSoon("gita-04", "चतुर्थोऽध्यायः", "caturtho'dhyāyaḥ", "Chapter 4"),
+      comingSoon("gita-05", "पञ्चमोऽध्यायः", "pañcamo'dhyāyaḥ", "Chapter 5"),
+      comingSoon("gita-06", "षष्ठोऽध्यायः", "ṣaṣṭho'dhyāyaḥ", "Chapter 6"),
+      comingSoon("gita-07", "सप्तमोऽध्यायः", "saptamo'dhyāyaḥ", "Chapter 7"),
+      comingSoon("gita-08", "अष्टमोऽध्यायः", "aṣṭamo'dhyāyaḥ", "Chapter 8"),
+      comingSoon("gita-09", "नवमोऽध्यायः", "navamo'dhyāyaḥ", "Chapter 9"),
+      comingSoon("gita-10", "दशमोऽध्यायः", "daśamo'dhyāyaḥ", "Chapter 10"),
+      comingSoon("gita-11", "एकादशोऽध्यायः", "ekādaśo'dhyāyaḥ", "Chapter 11"),
+      gita12,
+      comingSoon("gita-13", "त्रयोदशोऽध्यायः", "trayodaśo'dhyāyaḥ", "Chapter 13"),
+      comingSoon("gita-14", "चतुर्दशोऽध्यायः", "caturdaśo'dhyāyaḥ", "Chapter 14"),
+      comingSoon("gita-15", "पञ्चदशोऽध्यायः", "pañcadaśo'dhyāyaḥ", "Chapter 15"),
+      comingSoon("gita-16", "षोडशोऽध्यायः", "ṣoḍaśo'dhyāyaḥ", "Chapter 16"),
+      comingSoon("gita-17", "सप्तदशोऽध्यायः", "saptadaśo'dhyāyaḥ", "Chapter 17"),
+      comingSoon("gita-18", "अष्टादशोऽध्यायः", "aṣṭādaśo'dhyāyaḥ", "Chapter 18"),
     ],
   },
 ];

@@ -5,7 +5,12 @@ import { walkLeaves } from "../lib/tree";
 import type { Chapter } from "../types";
 
 const linkFiles = import.meta.glob(
-  ["../../docs/sandhya/links/*.md", "../../docs/mangala-shlokas/links/*.md", "../../docs/ddv/links/*.md"],
+  [
+    "../../docs/sandhya/links/*.md",
+    "../../docs/mangala-shlokas/links/*.md",
+    "../../docs/ddv/links/*.md",
+    "../../docs/gita/links/*/*.md",
+  ],
   { query: "?raw", import: "default", eager: true },
 ) as Record<string, string>;
 
@@ -56,7 +61,7 @@ function indexChapter(chapter: Chapter, markdown: string) {
   const words = new Map<string, LinkedWord>();
   const leaves: LinkedWord[] = [];
   for (const leaf of walkLeaves(chapter.root)) {
-    const word = { id: leaf.id, dev: leaf.dev, iast: leaf.iast, meaning: leaf.meaning };
+    const word = { id: leaf.id, dev: leaf.dev, iast: leaf.pada ?? leaf.iast, meaning: leaf.meaning };
     words.set(leaf.id, word);
     leaves.push(word);
   }
@@ -99,10 +104,20 @@ function chapterById(id: string): Chapter | undefined {
   return undefined;
 }
 
-for (const [path, markdown] of Object.entries(linkFiles)) {
-  const id = path.split("/").pop()?.replace(/\.md$/, "");
-  const chapter = id ? chapterById(id) : undefined;
-  if (chapter) indexChapter(chapter, markdown);
+// A Gītā chapter keeps one links file per verse in a folder named for the chapter.
+// Every other chapter is one file named for the chapter.
+const notesByChapter = new Map<string, string[]>();
+for (const path of Object.keys(linkFiles).sort()) {
+  const folder = path.match(/\/docs\/gita\/links\/(\d+)\//);
+  const id = folder ? `gita-${folder[1]}` : path.split("/").pop()?.replace(/\.md$/, "");
+  if (!id) continue;
+  const list = notesByChapter.get(id);
+  if (list) list.push(linkFiles[path]);
+  else notesByChapter.set(id, [linkFiles[path]]);
+}
+for (const [id, parts] of notesByChapter) {
+  const chapter = chapterById(id);
+  if (chapter) indexChapter(chapter, parts.join("\n"));
 }
 
 export function wordLinks(id: string): WordLink[] {
