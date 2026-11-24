@@ -124,6 +124,7 @@ import { ddv44 } from "./ddv/ddv-44";
 import { ddv45 } from "./ddv/ddv-45";
 import { ddv46 } from "./ddv/ddv-46";
 import { gita01 } from "./gita/gita-01";
+import { gita02 } from "./gita/gita-02";
 import { gita12 } from "./gita/gita-12";
 import type { Book } from "../types";
 
@@ -317,7 +318,7 @@ export const books: Book[] = [
     blurb: "The seven hundred verses as Śaṅkara reads them, word by word.",
     chapters: [
       gita01,
-      comingSoon("gita-02", "द्वितीयोऽध्यायः", "dvitīyo'dhyāyaḥ", "Chapter 2"),
+      gita02,
       comingSoon("gita-03", "तृतीयोऽध्यायः", "tṛtīyo'dhyāyaḥ", "Chapter 3"),
       comingSoon("gita-04", "चतुर्थोऽध्यायः", "caturtho'dhyāyaḥ", "Chapter 4"),
       comingSoon("gita-05", "पञ्चमोऽध्यायः", "pañcamo'dhyāyaḥ", "Chapter 5"),

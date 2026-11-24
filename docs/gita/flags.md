@@ -15,8 +15,8 @@ For each, the print decides. Write what the page has when the chapter is done.
 | 1.8 | `सौमदत्तिर्जयद्रथः` | `सौमदत्तिस्तथैव च` | `सौमदत्तिर्जयद्रथः` |
 | 1.28 | `दृष्ट्वेमान्स्वजनान् … युयुत्सून् समुपस्थितान्` | `दृष्ट्वेमं स्वजनं … युयुत्सुं समुपस्थितम्` | the plural, as Sringeri |
 | 1.37 | `सबान्धवान्` | `स्वबान्धवान्` | `सबान्धवान्` |
-| 2.5 | `भैक्षम्` | `भैक्ष्यम्` | |
-| 2.9 | `परन्तपः` | `परन्तप` | |
+| 2.5 | `भैक्षम्` | `भैक्ष्यम्` | `भैक्षम्` |
+| 2.9 | `परन्तपः` | `परन्तप` | `परंतपः` |
 | 3.23 | `वर्तेय` | `वर्तेयं` | |
 | 6.19 | `यदा दीपो` | `यथा दीपो` | |
 | 7.11 | `बलवतां चाहं` | `बलवतामस्मि` | |
@@ -41,7 +41,7 @@ For each, the print decides. Write what the page has when the chapter is done.
 
 Still read these on the page.
 
-2.33, 2.54, 4.29, 5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
+4.29, 5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
 
 ## Supersite's extra verse
 
@@ -54,6 +54,12 @@ Read from the print, vol. 11 pp. 4–12. 47 verses. The print writes संज�
 The page agrees with Sringeri on the real readings: 1.8 `सौमदत्तिर्जयद्रथः`, 1.28 the plural `दृष्ट्वेमान्स्वजनान् … युयुत्सून्समुपस्थितान्`, 1.37 `सबान्धवान्`. Also `श्वशुराः` and `स्यालाः` in 1.34, not the Supersite spellings.
 
 Two short vowels, each one mark on the page: `काशिराजः` in 1.5, and `पितृन्` / `भ्रातृन्` in 1.26. A second look at 1.26, enlarged, shows a single hook under त, so the short vowel stands.
+
+## Chapter 2 — resolved
+
+Read from the print, vol. 11 pp. 15–71. 72 verses. The colophon names सांख्ययोगः.
+
+The page has `भैक्षम्` in 2.5, `परंतपः` in 2.9 (the vocative in 2.3 is `परन्तप`), and `चेत्` in 2.33. At 2.54 the verse line prints `पृभाषेत`; the commentary on that page glosses `प्रभाषेत`. The verse file keeps the printed `पृ`.
 
 ## Chapter 12 — resolved
 
