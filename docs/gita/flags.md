@@ -12,9 +12,9 @@ For each, the print decides. Write what the page has when the chapter is done.
 
 | Verse | Sringeri | Supersite | Print (1910) |
 | --- | --- | --- | --- |
-| 1.8 | `सौमदत्तिर्जयद्रथः` | `सौमदत्तिस्तथैव च` | |
-| 1.28 | `दृष्ट्वेमान्स्वजनान् … युयुत्सून् समुपस्थितान्` | `दृष्ट्वेमं स्वजनं … युयुत्सुं समुपस्थितम्` | |
-| 1.37 | `सबान्धवान्` | `स्वबान्धवान्` | |
+| 1.8 | `सौमदत्तिर्जयद्रथः` | `सौमदत्तिस्तथैव च` | `सौमदत्तिर्जयद्रथः` |
+| 1.28 | `दृष्ट्वेमान्स्वजनान् … युयुत्सून् समुपस्थितान्` | `दृष्ट्वेमं स्वजनं … युयुत्सुं समुपस्थितम्` | the plural, as Sringeri |
+| 1.37 | `सबान्धवान्` | `स्वबान्धवान्` | `सबान्धवान्` |
 | 2.5 | `भैक्षम्` | `भैक्ष्यम्` | |
 | 2.9 | `परन्तपः` | `परन्तप` | |
 | 3.23 | `वर्तेय` | `वर्तेयं` | |
@@ -41,11 +41,19 @@ For each, the print decides. Write what the page has when the chapter is done.
 
 Still read these on the page.
 
-1.5, 1.26, 1.34, 2.33, 2.54, 4.29, 5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
+2.33, 2.54, 4.29, 5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
 
 ## Supersite's extra verse
 
 Supersite prints 35 verses in chapter 13: Arjuna's question `प्रकृतिं पुरुषं चैव …` stands before 13.1. Śaṅkara's text does not have it, and the 1910 print numbers 34. The compare script drops it.
+
+## Chapter 1 — resolved
+
+Read from the print, vol. 11 pp. 4–12. 47 verses. The print writes संजय with anusvāra every time.
+
+The page agrees with Sringeri on the real readings: 1.8 `सौमदत्तिर्जयद्रथः`, 1.28 the plural `दृष्ट्वेमान्स्वजनान् … युयुत्सून्समुपस्थितान्`, 1.37 `सबान्धवान्`. Also `श्वशुराः` and `स्यालाः` in 1.34, not the Supersite spellings.
+
+Two short vowels, each one mark on the page: `काशिराजः` in 1.5, and `पितृन्` / `भ्रातृन्` in 1.26. A second look at 1.26, enlarged, shows a single hook under त, so the short vowel stands.
 
 ## Chapter 12 — resolved
 
