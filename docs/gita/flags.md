@@ -81,6 +81,14 @@ The heading on the text page is पञ्चमोऽध्यायः. After v
 
 At 5.1 the print ends `सुनिश्चितम्`. At 5.2 the speaker line is `श्रीभगवानुवाच`, with no space. At 5.8 the print joins the participles, `पश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन्`, and `शृण्वन्` has a short `ṛ`. At 5.9 there is a space, `प्रलपन् विसृजन्`. At 5.11 the print has `त्यक्त्वात्मशुद्धये`, with no avagraha. At 5.20 the print has `असंमूढो`, with anusvāra. At 5.23 the verse line prints `प्राक्छरीर`, with `छ`. The pada is `शरीर`, and the commentary glosses `शरीर`.
 
+## Chapter 6
+
+Read from the print, vol. 11. Numbered pages run 180–210. In this stretch the printed page is the PDF index minus 36. The opening leaf has no printed number.
+
+The long colophon names ध्यानयोगः. The short ācārya formula follows the commentary.
+
+At 6.1 the speaker line is `श्रीभगवानुवाच`, with no space. At 6.2 and 6.4 `संकल्प` has anusvāra. At 6.5 `उद्धरेदात्मनात्मानं` and at 6.6 `बन्धुरात्मात्मनस्तस्य` have no avagraha. At 6.8 the print has `काश्चनः`, with श, and the commentary repeats it. At 6.15 `सदात्मानं` has no avagraha. At 6.16 the print has `न चातिस्वप्नशीलस्य`. At 6.20 the print has `आत्मनात्मानं`, with no avagraha. At 6.23 `विद्यादुःखसंयोगवियोगं` has no space. At 6.24 `संकल्प` has anusvāra. At 6.25 `उपरमेद्बुद्ध्या` has no space, and `किंचित्` has anusvāra. At 6.28 `सदात्मानं` has no avagraha. At 6.32 the line is `स योगी`, with no visarga. At 6.39 the verse line doubles the छ, `च्छेत्तुम्` and `च्छेत्ता`. The padas are `छेत्तुम्` and `छेत्ता`, and the commentary glosses the single छ. 6.19 prints `यथा दीपो`.
+
 ## Chapter 12 — resolved
 
 All 20 verses were read from the print, vol. 12 pp. 339–354. The wording is the same in the print, Sringeri, Supersite, and GRETIL. `python3 scripts/gita-compare.py --locked 12` prints no difference.
