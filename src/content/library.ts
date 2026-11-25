@@ -126,6 +126,7 @@ import { ddv46 } from "./ddv/ddv-46";
 import { gita01 } from "./gita/gita-01";
 import { gita02 } from "./gita/gita-02";
 import { gita03 } from "./gita/gita-03";
+import { gita04 } from "./gita/gita-04";
 import { gita12 } from "./gita/gita-12";
 import type { Book } from "../types";
 
@@ -321,7 +322,7 @@ export const books: Book[] = [
       gita01,
       gita02,
       gita03,
-      comingSoon("gita-04", "चतुर्थोऽध्यायः", "caturtho'dhyāyaḥ", "Chapter 4"),
+      gita04,
       comingSoon("gita-05", "पञ्चमोऽध्यायः", "pañcamo'dhyāyaḥ", "Chapter 5"),
       comingSoon("gita-06", "षष्ठोऽध्यायः", "ṣaṣṭho'dhyāyaḥ", "Chapter 6"),
       comingSoon("gita-07", "सप्तमोऽध्यायः", "saptamo'dhyāyaḥ", "Chapter 7"),

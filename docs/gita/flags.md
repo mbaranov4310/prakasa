@@ -41,7 +41,7 @@ For each, the print decides. Write what the page has when the chapter is done.
 
 Still read these on the page.
 
-4.29, 5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
+5.8, 5.23, 6.32, 6.35, 7.12, 8.5, 8.6, 9.4, 9.21, 9.25, 10.29, 11.28, 15.4, 16.1, 16.20, 17.6, 17.23, 17.25, 18.40, 18.72
 
 ## Supersite's extra verse
 
@@ -66,6 +66,12 @@ The page has `भैक्षम्` in 2.5, `परंतपः` in 2.9 (the vo
 Read from the print, vol. 11 pp. 75–108. 43 verses. The heading and the colophon both say तृतीयोऽध्यायः. The close is the short ācārya formula, not the long महाभारत colophon, and it does not add कर्मयोगो नाम.
 
 The page has `वर्तेय` in 3.23, and `वर्त एव` as two words in 3.22. At 3.8 the verse line is `प्रसिध्येद`, one `ध्य`. The commentary glosses `प्रसिध्येत्`.
+
+## Chapter 4 — resolved
+
+Read from the print, vol. 11 pp. 110–147. 42 verses. The heading and the colophon both say चतुर्थोऽध्यायः. The close is the short ācārya formula.
+
+At 4.20 the long ā in `कर्मफलासङ्गं` is `फल` meeting `आसङ्ग`, attachment, which is what Śaṅkara says he gives up. At 4.29 the page has `प्राणं`, the avagraha in `प्राणेऽपानं`, and `तथापरे` with no avagraha. The print also keeps `परंतप` (4.2, 4.5, 4.33), `तदात्मानं` with no avagraha (4.7), and `ज्ञानासिनात्मनः` with no avagraha (4.42). At 4.39 the page prints a candrabindu; the verse file stores the anusvāra, because the checker turns a candrabindu back into one.
 
 ## Chapter 12 — resolved
 
