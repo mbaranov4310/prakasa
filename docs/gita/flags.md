@@ -17,7 +17,7 @@ For each, the print decides. Write what the page has when the chapter is done.
 | 1.37 | `सबान्धवान्` | `स्वबान्धवान्` | `सबान्धवान्` |
 | 2.5 | `भैक्षम्` | `भैक्ष्यम्` | `भैक्षम्` |
 | 2.9 | `परन्तपः` | `परन्तप` | `परंतपः` |
-| 3.23 | `वर्तेय` | `वर्तेयं` | |
+| 3.23 | `वर्तेय` | `वर्तेयं` | `वर्तेय` |
 | 6.19 | `यदा दीपो` | `यथा दीपो` | |
 | 7.11 | `बलवतां चाहं` | `बलवतामस्मि` | |
 | 8.7 | `असंशयः` | `असंशयम्` | |
@@ -60,6 +60,12 @@ Two short vowels, each one mark on the page: `काशिराजः` in 1.5, 
 Read from the print, vol. 11 pp. 15–71. 72 verses. The colophon names सांख्ययोगः.
 
 The page has `भैक्षम्` in 2.5, `परंतपः` in 2.9 (the vocative in 2.3 is `परन्तप`), and `चेत्` in 2.33. At 2.54 the verse line prints `पृभाषेत`; the commentary on that page glosses `प्रभाषेत`. The verse file keeps the printed `पृ`.
+
+## Chapter 3 — resolved
+
+Read from the print, vol. 11 pp. 75–108. 43 verses. The heading and the colophon both say तृतीयोऽध्यायः. The close is the short ācārya formula, not the long महाभारत colophon, and it does not add कर्मयोगो नाम.
+
+The page has `वर्तेय` in 3.23, and `वर्त एव` as two words in 3.22. At 3.8 the verse line is `प्रसिध्येद`, one `ध्य`. The commentary glosses `प्रसिध्येत्`.
 
 ## Chapter 12 — resolved
 
