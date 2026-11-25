@@ -73,6 +73,14 @@ Read from the print, vol. 11 pp. 110–147. 42 verses. The heading and the colop
 
 At 4.20 the long ā in `कर्मफलासङ्गं` is `फल` meeting `आसङ्ग`, attachment, which is what Śaṅkara says he gives up. At 4.29 the page has `प्राणं`, the avagraha in `प्राणेऽपानं`, and `तथापरे` with no avagraha. The print also keeps `परंतप` (4.2, 4.5, 4.33), `तदात्मानं` with no avagraha (4.7), and `ज्ञानासिनात्मनः` with no avagraha (4.42). At 4.39 the page prints a candrabindu; the verse file stores the anusvāra, because the checker turns a candrabindu back into one.
 
+## Chapter 5 — resolved
+
+Read from the print, vol. 11. The numbered pages run 152–176. In this stretch the printed page is the PDF index minus 37.
+
+The heading on the text page is पञ्चमोऽध्यायः. After verse 29 the print sets the long colophon, and the name in it is संन्यासयोगः. The short ācārya formula follows the commentary.
+
+At 5.1 the print ends `सुनिश्चितम्`. At 5.2 the speaker line is `श्रीभगवानुवाच`, with no space. At 5.8 the print joins the participles, `पश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन्`, and `शृण्वन्` has a short `ṛ`. At 5.9 there is a space, `प्रलपन् विसृजन्`. At 5.11 the print has `त्यक्त्वात्मशुद्धये`, with no avagraha. At 5.20 the print has `असंमूढो`, with anusvāra. At 5.23 the verse line prints `प्राक्छरीर`, with `छ`. The pada is `शरीर`, and the commentary glosses `शरीर`.
+
 ## Chapter 12 — resolved
 
 All 20 verses were read from the print, vol. 12 pp. 339–354. The wording is the same in the print, Sringeri, Supersite, and GRETIL. `python3 scripts/gita-compare.py --locked 12` prints no difference.

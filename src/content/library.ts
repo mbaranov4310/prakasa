@@ -127,6 +127,7 @@ import { gita01 } from "./gita/gita-01";
 import { gita02 } from "./gita/gita-02";
 import { gita03 } from "./gita/gita-03";
 import { gita04 } from "./gita/gita-04";
+import { gita05 } from "./gita/gita-05";
 import { gita12 } from "./gita/gita-12";
 import type { Book } from "../types";
 
@@ -323,7 +324,7 @@ export const books: Book[] = [
       gita02,
       gita03,
       gita04,
-      comingSoon("gita-05", "पञ्चमोऽध्यायः", "pañcamo'dhyāyaḥ", "Chapter 5"),
+      gita05,
       comingSoon("gita-06", "षष्ठोऽध्यायः", "ṣaṣṭho'dhyāyaḥ", "Chapter 6"),
       comingSoon("gita-07", "सप्तमोऽध्यायः", "saptamo'dhyāyaḥ", "Chapter 7"),
       comingSoon("gita-08", "अष्टमोऽध्यायः", "aṣṭamo'dhyāyaḥ", "Chapter 8"),
