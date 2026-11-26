@@ -103,6 +103,14 @@ Read from the print, vol. 11. The title plate is PDF index 266. The opening leaf
 
 At 8.5 and 8.6 the line prints `कलेवरम्`, with व. At 8.7 the line ends `संशयः`, with visarga. At 8.16 there is a space, `आ ब्रह्मभुवनाल्लोकाः`. At 8.22 the line prints `सर्वमिदं`, and at 8.28 `तत्सर्वमिदं`. The ि of मि is the i-mark of इदम्, not an extra ए. At 8.25 the line wraps after `ज्योति`, and the next line starts `योगी` with no repha, so the joined line is `ज्योतियोगी`. At 8.26 the line prints `अन्ययावर्तते`, with no avagraha. The long colophon names तारकब्रह्मयोगः. On that line the print has anusvāra in `ब्रह्मविद्यायां`. The short ācārya formula follows the commentary.
 
+## Chapter 9
+
+Read from the print, vol. 11. The opening leaf, PDF index 286, has no printed number; the next header is 254, so that leaf is 253. Numbered pages run 254–276. In this stretch the printed page is the PDF index minus 33. Verse 1 is on 253. The last page of the volume, 276, carries the short ācārya formula.
+
+The long colophon names राजविद्याराजगुह्ययोगः. On that line the print has no anusvāra at the end of `संहिताया`, `वैयासिक्या`, or `ब्रह्मविद्याया`, and none on `सूपनिषत्सु`.
+
+At 9.1 the speaker line is `श्रीभगवानुवाच`, with no space. At 9.3 `परंतप` has anusvāra. At 9.4 the line prints `जगदव्यक्तमूर्तिना`. At 9.6 `यथाकाशस्थितो` has no avagraha. At 9.9 `धनंजय` has anusvāra. At 9.10 `मयाध्यक्षेण` and `हेतुनानेन` have no avagraha. At 9.16 `स्वधाहम्` has no avagraha, and `मन्त्रोऽहम्` has the class nasal and an avagraha. At 9.17 `पिताहम्` has no avagraha, and `ऋक्साम` is one run. At 9.20 the line wraps after `सुरेन्द्रलोक` and the next line starts `मश्नन्ति`; the hyphen is not stored, and `दिव्यान्दिवि` has no space. At 9.21 `एवं` has anusvāra. At 9.22 the line prints `अनन्याश्चिन्तयन्तो`. At 9.23 `अन्यदेवताभक्ता` is one word, with no avagraha, and `श्रद्धयान्विताः` has no avagraha. At 9.25 the line wraps after `देवा` and the next line starts `न्पितॄन्`; the hyphen is not stored, so the joined line is `देवान्पितॄन्यान्ति`, with no space and a long `ॠ`.
+
 ## Chapter 12 — resolved
 
 All 20 verses were read from the print, vol. 12 pp. 339–354. The wording is the same in the print, Sringeri, Supersite, and GRETIL. `python3 scripts/gita-compare.py --locked 12` prints no difference.
