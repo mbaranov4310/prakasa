@@ -89,6 +89,14 @@ The long colophon names ध्यानयोगः. The short ācārya formula 
 
 At 6.1 the speaker line is `श्रीभगवानुवाच`, with no space. At 6.2 and 6.4 `संकल्प` has anusvāra. At 6.5 `उद्धरेदात्मनात्मानं` and at 6.6 `बन्धुरात्मात्मनस्तस्य` have no avagraha. At 6.8 the print has `काश्चनः`, with श, and the commentary repeats it. At 6.15 `सदात्मानं` has no avagraha. At 6.16 the print has `न चातिस्वप्नशीलस्य`. At 6.20 the print has `आत्मनात्मानं`, with no avagraha. At 6.23 `विद्यादुःखसंयोगवियोगं` has no space. At 6.24 `संकल्प` has anusvāra. At 6.25 `उपरमेद्बुद्ध्या` has no space, and `किंचित्` has anusvāra. At 6.28 `सदात्मानं` has no avagraha. At 6.32 the line is `स योगी`, with no visarga. At 6.39 the verse line doubles the छ, `च्छेत्तुम्` and `च्छेत्ता`. The padas are `छेत्तुम्` and `छेत्ता`, and the commentary glosses the single छ. 6.19 prints `यथा दीपो`.
 
+## Chapter 7
+
+Read from the print, vol. 11. Verses 1–15 are on printed pages 213–221. The opening leaf has no printed number; the next header is 214, so that leaf is 213. In this stretch the printed page is the PDF index minus 35.
+
+At 7.1 the speaker line is `श्रीभगवानुवाच`, with no space, and `तच्छृणु` doubles the छ. The pada is `शृणु` and the slice keeps `छ`. At 7.4 `अहंकार` has anusvāra. At 7.7 `किंचित्` has च, `धनंजय` has anusvāra, and the line prints `सूत्रे`, with त्र. At 7.9 the verse prints `पुण्यो`. At 7.11 the line is `बलवतां चाहं`. At 7.12 there is a space, `न त्वहं`. At 7.15 `माययापहृतज्ञाना` has no avagraha.
+
+Numbered pages run 214–230. At 7.20 the line prints `खया`, and the commentary repeats `खया` before glossing it `आत्मीयया`. At 7.22 there is a space, `तस्याराधन` is split `तस्या राधन`, and `विहितान् हि` is joined. At 7.27 `परंतप` has anusvāra. The long colophon names ज्ञानविज्ञानयोगः. On that line the print has anusvāra in `सूपनिषत्सुं` and none in `ब्रह्मविद्याया`. The short ācārya formula follows the commentary.
+
 ## Chapter 12 — resolved
 
 All 20 verses were read from the print, vol. 12 pp. 339–354. The wording is the same in the print, Sringeri, Supersite, and GRETIL. `python3 scripts/gita-compare.py --locked 12` prints no difference.
