@@ -97,6 +97,12 @@ At 7.1 the speaker line is `श्रीभगवानुवाच`, with no sp
 
 Numbered pages run 214–230. At 7.20 the line prints `खया`, and the commentary repeats `खया` before glossing it `आत्मीयया`. At 7.22 there is a space, `तस्याराधन` is split `तस्या राधन`, and `विहितान् हि` is joined. At 7.27 `परंतप` has anusvāra. The long colophon names ज्ञानविज्ञानयोगः. On that line the print has anusvāra in `सूपनिषत्सुं` and none in `ब्रह्मविद्याया`. The short ācārya formula follows the commentary.
 
+## Chapter 8
+
+Read from the print, vol. 11. The title plate is PDF index 266. The opening leaf, index 267, has no printed number; the next header is 234, so that leaf is 233. Numbered pages run 234–250. In this stretch the printed page is the PDF index minus 34.
+
+At 8.5 and 8.6 the line prints `कलेवरम्`, with व. At 8.7 the line ends `संशयः`, with visarga. At 8.16 there is a space, `आ ब्रह्मभुवनाल्लोकाः`. At 8.22 the line prints `सर्वमिदं`, and at 8.28 `तत्सर्वमिदं`. The ि of मि is the i-mark of इदम्, not an extra ए. At 8.25 the line wraps after `ज्योति`, and the next line starts `योगी` with no repha, so the joined line is `ज्योतियोगी`. At 8.26 the line prints `अन्ययावर्तते`, with no avagraha. The long colophon names तारकब्रह्मयोगः. On that line the print has anusvāra in `ब्रह्मविद्यायां`. The short ācārya formula follows the commentary.
+
 ## Chapter 12 — resolved
 
 All 20 verses were read from the print, vol. 12 pp. 339–354. The wording is the same in the print, Sringeri, Supersite, and GRETIL. `python3 scripts/gita-compare.py --locked 12` prints no difference.
