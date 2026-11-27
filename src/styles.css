@@ -352,6 +352,30 @@ button {
   margin-top: 0.45rem;
 }
 
+.verse-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 1.8rem;
+}
+
+.verse-stack h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.group-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+
+.group-nav .back {
+  margin: 0;
+}
+
 .is-deva {
   font-family: "Noto Serif Devanagari", serif;
   font-style: normal;

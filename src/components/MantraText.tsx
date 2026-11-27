@@ -63,10 +63,9 @@ export function MantraText({
     const container = containerRef.current;
 
     function update() {
-      if (!selectedId || !container) {
-        onAnchorChange(null);
-        return;
-      }
+      // Several verses can share a page. A verse that does not contain the
+      // tapped word must leave the anchor alone, or it clears the popover.
+      if (!selectedId || !container || !findPath(root, selectedId)) return;
       const rects = [...container.querySelectorAll("[data-word-id]")]
         .filter((el) => highlighted.has(el.getAttribute("data-word-id") ?? ""))
         .map((el) => el.getBoundingClientRect());
