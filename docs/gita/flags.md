@@ -1,6 +1,6 @@
 # Flags — where the digital copies of the Gītā disagree
 
-The text we follow is the 1910 Vāṇī Vilās print (`docs/gita/ENCODE.md`). This list says where to look hardest on the page: the verses where the Sringeri text and the Gita Supersite text differ by a letter or a word after spelling conventions are set aside.
+The text we follow is the 1910 Vāṇī Vilās print (`docs/gita/gita-workflow.md`). This list says where to look hardest on the page: the verses where the Sringeri text and the Gita Supersite text differ by a letter or a word after spelling conventions are set aside.
 
 Regenerate the detail, with the letters on each side: `python3 scripts/gita-compare.py` (needs `data/gita/`).
 

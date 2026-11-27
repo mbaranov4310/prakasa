@@ -1,6 +1,6 @@
 # Bhagavad Gītā words and meanings — one chapter
 
-Work in `/Users/max/Desktop/projects/prakasa`. You own **one chapter**. Read `docs/gita/ENCODE.md` for the sources and conventions, then read chapter 12 before you write anything. Chapter 12 is the standard:
+Work in `/Users/max/Desktop/projects/prakasa`. You own **one chapter**. Read `docs/gita/gita-workflow.md` for the sources and conventions, then read chapter 12 before you write anything. Chapter 12 is the standard:
 
 - `docs/gita/text/12/_chapter.md`
 - `docs/gita/text/12/gita-12-01.md` (a speaker line, a carried-over verb)

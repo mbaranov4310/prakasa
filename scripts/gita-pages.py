@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render pages of the 1910 Vāṇī Vilās scan to PNG, for reading verses off the print.
 
-The scans are not in git (data/gita/vv/, see docs/gita/ENCODE.md).
+The scans are not in git (data/gita/vv/, see docs/gita/gita-workflow.md).
 
 Usage:
   python3 scripts/gita-pages.py 12 67 84     # volume 12, PDF pages 67–84 (counted from 0)
@@ -28,7 +28,7 @@ def main() -> int:
     volume, first, last = (int(arg) for arg in sys.argv[1:])
     pdf = VV / VOLUMES[volume]
     if not pdf.exists():
-        print(f"missing {pdf}; download it as docs/gita/ENCODE.md says")
+        print(f"missing {pdf}; download it as docs/gita/gita-workflow.md says")
         return 1
     out = VV / "pages"
     out.mkdir(parents=True, exist_ok=True)

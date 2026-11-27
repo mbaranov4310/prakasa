@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compare the digital witnesses of the Bhagavad Gītā verse text.
 
-Witnesses live in data/gita/ (not in git; see docs/gita/ENCODE.md):
+Witnesses live in data/gita/ (not in git; see docs/gita/gita-workflow.md):
   supersite/ss_<N>.txt             Gita Supersite verses (CLTK copy), Devanagari
   sringeri/sr_<N>.html             Advaita Śāradā reader pages, Devanagari
   gretil/bhg-sankara-1-17.txt      GRETIL verses with Śaṅkara's bhāṣya, IAST, chapters 1–17
